@@ -1,0 +1,42 @@
+body {
+    background-color: #f3f3f3;
+}
+
+div {
+    width: 80%;
+    padding: 20px;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: 3px 2px 10px 1px gray;
+    transition: 500ms all;
+    background-image: linear-gradient(#ffffff, rgb(211, 211, 211));
+}
+
+div:hover {
+    box-shadow: none;
+    transform: scale(1.03);
+}
+
+mark {
+    background-color: #00ff84;
+}
+
+.a {
+    color: red;
+}
+
+.b {
+    color: rgb(33, 220, 249);
+}
+
+header {
+    width: 80%;
+    margin: 4rem auto;
+}
+
+a {
+    background-color: green;
+    color: white;
+    padding: 10px 40px;
+    border-radius: 20px;
+}
