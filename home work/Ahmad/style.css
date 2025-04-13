@@ -1,0 +1,55 @@
+body{
+    background-image: url(p3.avif);
+}
+div{
+width: 75%;
+margin: auto;
+padding: 25px;
+backdrop-filter: blur(20px);
+border-radius: 30px;
+margin-top: 5px;
+transition: all 250ms;
+color: white;
+
+
+}
+div:hover{
+    transform: scale(1.04);
+    
+}
+header{
+    width: 90%;
+    padding: 20px;
+    backdrop-filter: blur(20px);
+    border-radius: 30px;
+    
+    
+    
+    
+
+}
+header {
+    width: 80%;
+    margin: 4rem auto;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center; 
+    gap: 1rem;
+    
+    
+}
+
+a {
+    backdrop-filter: blur(20px);
+    color: white;
+    padding: 10px 40px;
+    border-radius: 20px;
+    text-decoration: none;
+    background-color: rgba(42, 25, 77, 0.293);
+   
+    
+}
+a:hover{
+    transform: scale(1.09);
+    transition: all 300ms;
+}
