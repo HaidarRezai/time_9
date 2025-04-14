@@ -4,18 +4,37 @@ body {
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
-    background-image: url('./image/bg.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
+
 }
 
 div {
     width: 18rem;
     height: 12rem;
     border-radius: 20px;
-    overflow: hidden;
     box-shadow: 2px 3px 10px 1px gray;
     transition: all 300ms;
+    margin-bottom: 80px;
+}
+
+div a {
+    width: 18rem;
+    height: 12rem;
+    border-radius: 20px;
+    overflow: hidden;
+    display: block;
+}
+
+div h1 {
+    font-size: small;
+    margin-bottom: -15px;
+}
+
+div p {
+    margin-bottom: 0px;
+}
+
+div time {
+    color: rgb(158, 158, 158);
 }
 
 div:hover {
