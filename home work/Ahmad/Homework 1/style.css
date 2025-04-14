@@ -32,10 +32,11 @@ header {
     width: 80%;
     margin: 4rem auto;
     display: flex;
-    flex-wrap:wrap;
-    justify-content: center; 
-    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
     
+   
     
 }
 
