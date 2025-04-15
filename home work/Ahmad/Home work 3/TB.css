@@ -11,9 +11,11 @@ hr {
     height: 2px;
     background-color: black;
 }
-.general{
+
+.general {
     margin: 20px 20px;
 }
+
 .t1 {
     width: 100%;
     text-align: center;
@@ -21,17 +23,17 @@ hr {
 
 }
 
-.t1, th , td {
+.t1, th, td {
     border: 1px solid black;
-   
+
 
 }
 
 .t1 td {
-    text-align:center;
+    text-align: center;
     vertical-align: top;
     padding: 5px;
-    
+
 
 }
 
@@ -44,7 +46,7 @@ hr {
     display: flex;
     align-items: flex-start;
     gap: 10px;
-    
+
 
 }
 
@@ -61,7 +63,7 @@ hr {
 .t2 th {
     text-align: left;
     padding: 5px;
-    background-color:#143670;
+    background-color: #143670;
     color: white;
 }
 
@@ -148,7 +150,7 @@ hr {
 
 .t6 th {
     padding: 5px;
-    background-color:#143670;
+    background-color: #143670;
     color: white;
 }
 
@@ -161,14 +163,18 @@ hr {
     background-color: #143670;
     color: white;
 }
-p{
+
+p {
     text-align: justify;
     font-style: oblique;
 }
-.t2t{
+
+.t2t {
     text-align: left;
 }
-.t3t{
+
+.t3t {
     text-align: left;
 }
+
 /* #134B70 Alternativ Color  #134B70
