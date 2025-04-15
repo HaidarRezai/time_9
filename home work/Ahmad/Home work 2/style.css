@@ -10,33 +10,45 @@ body {
     padding: 20px;
     margin: 0;
 }
-div{
+
+div {
     width: 18rem;
-    height: autos;
+    height: auto;
     border: 1px solid rgba(96, 173, 180, 0.30);
     border-radius: 20px;
     overflow: hidden;
     transition: all 300ms;
 }
-div:hover{
+
+div a {
+    width: 100%;
+    height: 12rem;
+    overflow: hidden;
+    display: block;
+}
+
+div a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+div:hover {
     transform: scale(1.13);
 }
-.desc{
-    font-size: 20px;  
+
+.desc {
+    font-size: 20px;
     text-align: center;
     padding: 5px;
     font-weight: bold;
-    color: rgb(33, 33, 33);   
+    color: rgb(33, 33, 33);
 }
 
-div img {
-    width: 100%;
-    height: auto;
-  }
-  header{
+header {
     width: 86%;
     text-align: center;
     font-weight: bold;
-    background-color:rgba(96, 173, 180, 0.30);
+    background-color: rgba(96, 173, 180, 0.30);
     border-radius: 20px;
-  }
+}
