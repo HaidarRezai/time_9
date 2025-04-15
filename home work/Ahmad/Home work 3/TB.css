@@ -1,0 +1,180 @@
+.text1 {
+    float: left;
+}
+
+.text2 {
+    float: right;
+}
+
+hr {
+    width: 100%;
+    height: 2px;
+    background-color: black;
+}
+
+.general {
+    margin: 20px 20px;
+}
+
+.t1 {
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+
+}
+
+.t1, th, td {
+    border: 1px solid black;
+
+
+}
+
+.t1 td {
+    text-align: center;
+    vertical-align: top;
+    padding: 5px;
+
+
+}
+
+.t1 img {
+    width: 100px;
+    display: block;
+}
+
+.logo {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+
+
+}
+
+.info-text {
+    text-align: left;
+}
+
+.t2 {
+    width: 49%;
+    border-collapse: collapse;
+
+}
+
+.t2 th {
+    text-align: left;
+    padding: 5px;
+    background-color: #143670;
+    color: white;
+}
+
+.t2 td {
+    padding: 5px;
+}
+
+.t3 {
+    width: 49%;
+    border-collapse: collapse;
+    margin-top: -96px;
+    float: right;
+
+
+}
+
+.t3 th {
+    text-align: left;
+    padding: 5px;
+    background-color: #143670;
+    color: white;
+}
+
+.t3 td {
+    padding: 5px;
+}
+
+.t4 {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.t4 th {
+    padding: 5px;
+    background-color: #143670;
+    color: white;
+}
+
+.t4 td {
+    padding: 5px;
+}
+
+.t4 td:nth-child(odd) {
+    background-color: #143670;
+    color: white;
+}
+
+.t5 {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    margin-top: 5px;
+
+
+}
+
+.t5 th {
+    padding: 5px;
+    background-color: #143670;
+    color: white;
+}
+
+.t5 td {
+    padding: 5px;
+}
+
+.t5 td:first-child {
+    background-color: #143670;
+    color: white;
+}
+
+
+
+.t6 {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    margin-top: 5px;
+
+
+}
+
+.t6 th {
+    padding: 5px;
+    background-color: #143670;
+    color: white;
+}
+
+.t6 td {
+    padding: 5px;
+    width: 50px;
+}
+
+.t6 td:nth-child(odd) {
+    background-color: #143670;
+    color: white;
+}
+
+p {
+    text-align: justify;
+    font-style: oblique;
+}
+
+.t2t {
+    text-align: left;
+}
+
+.t3t {
+    text-align: left;
+}
+
+/* #134B70 Alternativ Color  #134B70
