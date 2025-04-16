@@ -1,0 +1,121 @@
+body {
+    background-color: rgb(224, 234, 236);
+}
+.b1 {
+    width: 75%;
+    margin: auto;
+    padding: 20px;
+
+    background-color: rgb(43, 41, 39);
+    color: rgb(239, 234, 234);
+    display: flex;
+    gap: 30px;
+    border-radius: 20px;
+    box-shadow: 2px 3px 4px 4px color rgb(27, 25, 25);
+}
+.a2:hover {
+    color: aliceblue;
+    transform: scale(1.2);
+}
+.a1 {
+    display: flex;
+    gap: 15px;
+    margin-top: 8px;
+    transition: all 200ms;
+}
+.logo {
+    flex: auto;
+    text-align: left;
+    margin-top: 6px;
+}
+.a2 {
+    background-color: rgb(101, 96, 122);
+    padding: 10px;
+    border-radius: 20px;
+    transition: all 300ms;
+}
+ul {
+    list-style-type: none;
+}
+.a1 li:hover {
+    transform: scale(1.2);
+}
+.b2 {
+    width: 75%;
+    margin: auto;
+    padding: 20px;
+    background-color: rgb(43, 41, 39);
+    color: rgb(239, 234, 234);
+    display: flex;
+    gap: 30px;
+    border-radius: 20px;
+    box-shadow: 2px 3px 4px 4px color rgb(27, 25, 25);
+}
+.c2:hover {
+    color: aliceblue;
+    transform: scale(1.2);
+}
+.c1 {
+    display: flex;
+    gap: 10px;
+    transition: all 200ms;
+    margin-right: 250px;
+}
+.logo1 {
+    flex: auto;
+    text-align: left;
+    margin-top: 6px;
+}
+.c2 {
+    background-color: rgb(101, 96, 122);
+    padding: 10px;
+    border-radius: 20px;
+    transition: all 300ms;
+}
+ul {
+    list-style-type: none;
+}
+
+.c1 li:hover {
+    transform: scale(1.2);
+}
+
+.class3 {
+    width: 75%;
+    margin: auto;
+    padding: 20px;
+
+    background-color: rgb(43, 41, 39);
+    color: rgb(239, 234, 234);
+    display: flex;
+    gap: 30px;
+    border-radius: 20px;
+    box-shadow: 2px 3px 4px 4px color rgb(27, 25, 25);
+}
+.class1:hover {
+    color: aliceblue;
+    transform: scale(1.2);
+}
+.class2 {
+    display: flex;
+    gap: 15px;
+    margin-top: 8px;
+    transition: all 200ms;
+}
+.logo3 {
+    text-align: right;
+    margin-left: 500px;
+    margin-top: 10px;
+}
+.class1 {
+    background-color: rgb(101, 96, 122);
+    padding: 10px;
+    border-radius: 20px;
+    transition: all 300ms;
+}
+ul {
+    list-style-type: none;
+}
+.class2 li:hover {
+    transform: scale(1.2);
+}
