@@ -1,0 +1,64 @@
+div {
+    width: 80%;
+    margin: auto;
+}
+
+ul {
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    text-align: right;
+    background-color: black;
+    border-radius: 15px;
+    gap: 20px;
+}
+
+.right {
+    display: flex;
+    flex: 10 auto;
+    justify-content: right;
+    text-align: right;
+    margin-right: 30px;
+}
+
+.lilogo {
+    justify-content: left;
+    flex: auto;
+    text-align: left;
+    width: 140px;
+}
+
+ul li .contact {
+    background-color: rgb(0, 119, 255);
+}
+
+ul li {
+    padding: 10px;
+    color: white;
+    border-radius: 10px;
+}
+
+li:hover {
+    background-color: rgb(0, 119, 255);
+
+}
+
+.ul2 {
+    width: 100%;
+}
+
+ul div,
+.ul2_1 {
+    justify-content: left;
+}
+
+ul div,
+.ul2 {
+    display: flex;
+}
+
+ul div,
+.ul_3 {
+    justify-content: right;
+    margin-right: 10px;
+}
