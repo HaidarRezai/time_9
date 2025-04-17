@@ -1,0 +1,117 @@
+body{
+    display: grid;
+    grid-template-columns: auto auto ;
+    gap: 1px;
+}
+header,footer,main,aside{
+    box-shadow: 1px 1px 4px 1px gray;
+}
+header,footer{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.container{
+    width: auto;
+    box-shadow: 3px 3px 20px 3px grey;
+    padding: 0.2rem;
+    margin: auto;
+    background-color: #acd7e1;
+}
+ ul{
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+    cursor: pointer;
+}
+.logo{
+    justify-content:left ;
+    color: rgb(0, 0, 0);
+    flex: auto;    
+    padding: 15px;
+    font-weight: bold;  
+}
+.content{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 14px ; 
+}
+.content li{
+    border-radius: 10px;
+    transition: all 400ms;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+.content li:hover{
+    transform:scale(1.2);  
+}
+.contact{
+    padding: 15px;
+    background-color: #3e8b92;
+    color: rgb(255, 255, 255);
+    border-radius:15px;
+    transition: all 400ms;
+    margin-right: 25px;
+}
+.contact:hover{
+    transform: scale(1.2);
+}
+p{
+    text-align: center;
+    padding: 10px;
+}
+h1{
+    text-align: center;
+}
+.iframe{
+    width: 80rem;
+    height: 897px;
+    border: none;
+}
+.p1{
+    height: 900px;
+    width: 200px;
+    background: linear-gradient(45deg, #075373, #acd7e1);
+    color: rgb(230, 230, 230);
+    text-align: justify;
+    font-style:italic ;
+}
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+.fa:hover {
+    opacity: 0.7;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+.icons{
+    margin-left: 500px;
+}
+footer{
+    background: linear-gradient(45deg, #075373, #acd7e1);
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
