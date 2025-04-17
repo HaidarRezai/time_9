@@ -1,0 +1,22 @@
+body {
+    background-color: #f3f3f3;
+    padding: 40px;
+    display: grid;
+    gap: 5px;
+    grid-template-columns: 20% auto;
+}
+
+header,
+footer,
+main,
+aside {
+    box-shadow: 3px 4px 10px 1px gray;
+    padding: 20px;
+    background-color: white;
+}
+
+header,
+footer {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}

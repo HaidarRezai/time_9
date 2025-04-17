@@ -23,7 +23,9 @@ hr {
 
 }
 
-.t1,th,td {
+.t1,
+th,
+td {
     border: 1px solid black;
 
 
@@ -46,8 +48,6 @@ hr {
     display: flex;
     align-items: flex-start;
     gap: 10px;
-
-
 }
 
 .info-text {
@@ -76,8 +76,6 @@ hr {
     border-collapse: collapse;
     margin-top: -96px;
     float: right;
-
-
 }
 
 .t3 th {
@@ -118,8 +116,6 @@ hr {
     border-collapse: collapse;
     text-align: center;
     margin-top: 5px;
-
-
 }
 
 .t5 th {
@@ -137,15 +133,11 @@ hr {
     color: white;
 }
 
-
-
 .t6 {
     width: 100%;
     border-collapse: collapse;
     text-align: center;
     margin-top: 5px;
-
-
 }
 
 .t6 th {

@@ -11,6 +11,9 @@
     list-style-type: none;
     display: flex;
     gap: 30px;
+    cursor:progress;
+    justify-content: space-between;
+    
 }
 .logo{
     justify-content:left ;
