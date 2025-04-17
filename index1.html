@@ -23,10 +23,22 @@
         <summary>More</summary>
         <h1>hello</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro debitis, repellendus eos ab ducimus minus cumque laboriosam deserunt, labore alias qui rem quo voluptatibus. Voluptas veniam sapiente atque omnis ullam?</p>
-        <img src="./image/2.webp" width="500px" alt="">
+        <picture>
+            <source srcset="./image/2.webp" media="(max-width: 600px)">
+            <source srcset="./image/bg.jpg" media="(max-width: 1500px)">
+            <source srcset="./image/abcd.png">
+            <img src="./image/abcd.png" alt="Flowers">
+          </picture>
     </details>
-    
+    <code>
+        <pre>
+            print("hello world")
+            def sum(a,b,c,d):
+                print(a+b+c+d)/4
+            sum(20,30,40,50)
+        </pre>
+    </code>
    </main>
-   <footer>Footer</footer>
+   <footer>Footer 	&copy;  		&nbsp;	&nbsp;	&nbsp;	&nbsp;&nbsp; &#169; </footer>
 </body>
 </html>

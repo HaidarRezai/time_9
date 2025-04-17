@@ -9,6 +9,7 @@ ul {
     border-radius: 30PX;
     list-style-type: none;
     display: flex;
+    justify-content: space-between;
     gap: 2px;
     background-color: black;
     margin-top: 50px;
@@ -18,6 +19,8 @@ ul {
 
 li {
     padding: 20px;
+    transition: all 400ms;
+    cursor: pointer;
 }
 
 li:hover {

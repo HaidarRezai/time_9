@@ -1,4 +1,4 @@
-.container{
+.container {
     width: 75%;
     border-radius: 20px;
     box-shadow: 3px 3px 20px 3px grey;
@@ -7,135 +7,159 @@
     background-color: black;
     margin-top: 40px;
 }
- ul{
+
+ul {
     list-style-type: none;
     display: flex;
     gap: 30px;
 }
-.logo{
-    justify-content:left ;
+
+.logo {
+    justify-content: left;
     color: white;
-    flex: auto;    
+    flex: auto;
     padding: 15px;
 }
-.content{
+
+.content {
     display: flex;
     justify-content: center;
     gap: 20px;
-    padding: 14px ; 
+    padding: 14px;
 }
-.content li{
+
+.content li {
     border-radius: 10px;
     transition: all 400ms;
     color: rgb(255, 255, 255);
+    cursor: pointer;
 }
-.content li:hover{
-    transform:scale(1.2);  
+
+.content li:hover {
+    transform: scale(1.2);
 }
-.contact{
+
+.contact {
     padding: 15px;
     background-color: #205781;
     color: white;
-    border-radius:15px;
+    border-radius: 15px;
     transition: all 400ms;
     margin-right: 25px;
 }
-.contact:hover{
+
+.contact:hover {
     transform: scale(1.2);
 }
-.container2{
+
+.container2 {
     width: 75%;
     border-radius: 20px;
     box-shadow: 3px 3px 20px 3px grey;
     padding: 0.5rem;
     margin: auto;
     background-color: black;
-    margin-top: 40px;   
+    margin-top: 40px;
 }
- ul{
+
+ul {
     list-style-type: none;
     display: flex;
     gap: 30px;
 }
-.logo2{
-    justify-content:left ;
+
+.logo2 {
+    justify-content: left;
     color: white;
     text-align: left;
-    flex: auto;    
+    flex: auto;
     padding: 15px;
 }
-.content2{
+
+.content2 {
     display: flex;
     justify-content: center;
     flex: 100 auto;
     gap: 20px;
-    padding: 14px ; 
+    padding: 14px;
 }
-.content2 li{
+
+.content2 li {
+    cursor: pointer;
     border-radius: 10px;
     transition: all 400ms;
     color: rgb(255, 255, 255);
 }
-.content2 li:hover{
-    transform:scale(1.2);  
+
+.content2 li:hover {
+    transform: scale(1.2);
 }
-.contact2{
+
+.contact2 {
     padding: 15px;
     background-color: #205781;
     color: white;
-    border-radius:15px;
+    border-radius: 15px;
     transition: all 400ms;
     margin-right: 25px;
 }
-.contact2:hover{
+
+.contact2:hover {
     transform: scale(1.2);
 }
-.container3{
+
+.container3 {
     width: 75%;
     border-radius: 20px;
     box-shadow: 3px 3px 20px 3px grey;
     padding: 0.5rem;
     margin: auto;
     background-color: black;
-    margin-top: 40px; 
+    margin-top: 40px;
 }
- ul{
+
+ul {
     list-style-type: none;
     display: flex;
-    gap: 30px; 
+    gap: 30px;
+    cursor: pointer;
+    justify-content: space-between;
 }
-.logo3{
-    justify-content:right ;
-    flex: auto auto  ;
+
+.logo3 {
     color: white;
-    text-align: right; 
+    text-align: right;
     padding: 15px;
-    margin-left: 420px;   
+    margin-left: 420px;
 }
-.content3{
+
+.content3 {
     display: flex;
     justify-content: left;
-    flex:  auto auto auto;
+    flex: auto auto auto;
     gap: 20px;
-    padding: 14px ; 
+    padding: 14px;
 }
-.content3 li{
+
+.content3 li {
     border-radius: 10px;
     transition: all 400ms;
     color: rgb(255, 255, 255);
 }
-.content3 li:hover{
-    transform:scale(1.2);  
-}
-.contact3{
-    padding: 15px;
-    background-color: #205781;
-    color: white;
-    border-radius:15px;
-    transition: all 400ms;
-    margin-right: 25px;
-}
-.contact3:hover{
+
+.content3 li:hover {
     transform: scale(1.2);
 }
 
+.contact3 {
+    padding: 15px;
+    background-color: #205781;
+    color: white;
+    border-radius: 15px;
+    transition: all 400ms;
+    margin-right: 25px;
+}
+
+.contact3:hover {
+    transform: scale(1.2);
+}
