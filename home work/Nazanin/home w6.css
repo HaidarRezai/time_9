@@ -1,0 +1,49 @@
+body {
+    display: grid;
+    grid-template-columns: 20% auto;
+    gap: 2px;
+}
+
+header,
+aside,
+main,
+footer {
+    box-shadow: 1px 2px 3px 1px gray;
+    padding: 20px;
+    background-color: #f3f3f3;
+}
+
+main {
+    height: 800px;
+
+}
+
+aside {
+    overflow-y: scroll;
+    height: 900px;
+}
+
+main {
+    overflow-y: scroll;
+    height: 900px;
+    width: auto;
+}
+
+header,
+footer {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: cadetblue;
+}
+
+ul {
+    color: white;
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+li:hover {
+    background-color: darkgrey;
+    border-radius: 5px;
+}
