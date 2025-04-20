@@ -1,0 +1,38 @@
+body {
+    background-color: #f3f3f3;
+    display: grid;
+    grid-template-columns: 10% auto;
+    gap: 2px;
+
+
+
+}
+
+header,
+footer,
+aside,
+main {
+    box-shadow: 2px 3px 4px 1px gray;
+    background-color: white;
+    padding: 20px;
+
+}
+
+header,
+footer {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: cadetblue;
+    color: white;
+}
+
+ul {
+    display: flex;
+    gap: 30px;
+    list-style-type: none;
+}
+
+li:hover {
+    background-color:lightblue;
+    border-radius: 3px;
+}
