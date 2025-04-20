@@ -5,21 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        div {
+        .cover{
             margin-top: 100px;
         }
 
         ul {
-             padding: 10px;
+            padding: 10px;
             width: 50%;
             margin: auto;
             background-color: black;
             color: white;
             list-style-type: none;
             display: flex;
+            justify-content: space-between;
             gap: 5px;
+            border-radius: 20px;
         }
-
+        .inner_div{
+            display: flex;
+        }
         li {
             padding: 20px;
         }
@@ -31,20 +35,23 @@
 
         .a {
             background-color: midnightblue;
-            margin-left: 60%;
             border-radius: 50px;
          }
     </style>
 </head>
 
 <body>
-    <div>
+    <div class="cover">
 
         <ul>
-            <li>Home</li>
-            <li>Gallary</li>
-            <li>About</li>
-            <li class="a">Project</li>
+            <div class="inner_div">
+                <li>Home</li>
+                <li>Gallary</li>
+                <li>About</li>
+            </div>
+            <div class="inner_div">
+                <li class="a">Project</li>
+            </div>
         </ul>
     </div>
  </body>
