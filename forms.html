@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="forms.css">
+    <title>Forms</title>
+</head>
+<body>
+    <!-- 
+    form  att
+        1 lable att
+        2 input att
+        3 button att
+    -->
+    <div class="cover">
+        <form method="get">
+            <div class="input_label">
+                <label for="image" class="image">
+                    <img src="./image/profile.webp" alt="">
+                </label>
+                <input type="file" required hidden id="image" name="profile_pic">
+            </div>
+            <div class="input_label">
+                <label for="first_name">Fist Name</label>
+                <input type="text" minlength="3" maxlength="20" required id="first_name" name="first_name" placeholder="First name">
+            </div>
+            <div class="input_label">
+                <label for="last_name">Lasr Name</label>
+                <input type="text" minlength="3" maxlength="20" required id="last_name" name="last_name" placeholder="Last Name">
+            </div>
+            <div class="input_label">
+                <label for="dob">DOB</label>
+                <input type="date" required id="dob" name="dob">
+            </div>
+            <div class="input_label">
+                <label for="size">Size</label>
+                <input type="number" required id="size" min="5" max="300" name="size" placeholder="Size">
+            </div>
+            <input type="submit" class="btn" value="Save">
+        </form>
+    </div>
+</body>
+</html>

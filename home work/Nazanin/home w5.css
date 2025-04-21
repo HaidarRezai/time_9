@@ -3,9 +3,6 @@ body {
     display: grid;
     grid-template-columns: 10% auto;
     gap: 2px;
-
-
-
 }
 
 header,
@@ -33,6 +30,6 @@ ul {
 }
 
 li:hover {
-    background-color:lightblue;
+    background-color: lightblue;
     border-radius: 3px;
 }
