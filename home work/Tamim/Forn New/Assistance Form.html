@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christmis Assistance</title>
+    <style>
+        body {
+            display: grid;
+            grid-template-columns: auto auto;
+        }
+
+        .container {
+            width: 70%;
+            margin: auto;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 1px 1px 10px 1px gray;
+            height: 800px;
+            padding: 20px;
+        }
+
+        .image {
+            width: 100%;
+        }
+
+        header,
+        footer {
+            grid-column-start: 1;
+            grid-column-end: 2;
+        }
+
+        main {
+            display: grid;
+        }
+
+        input {
+            box-shadow: 1px 1px 5px 1px gray;
+            width: 300px;
+            outline: none;
+            border: none;
+            border-radius: 12px;
+            height: 28px;
+            margin-left: 20px;
+            margin-bottom: 10px;
+        }
+
+        input:hover {
+            box-shadow: 1px 1px 10px 1px gray;
+        }
+
+        .headertitle {
+            text-align: center;
+            margin-bottom: 30px;
+            color: rgb(0, 131, 50);
+        }
+
+        label {
+            margin-left: 10px;
+            color: rgb(182, 182, 182);
+            font-size: large;
+        }
+
+        form {
+            display: grid;
+            grid-template-columns: auto auto;
+            padding: 10px;
+        }
+
+        .need label {
+            margin-left: 10px;
+            font-size: large;
+        }
+
+        .need input {
+            width: auto;
+            height: auto;
+            margin-top: 20px;
+        }
+
+        .comment textarea {
+            width: 100%;
+            border-radius: 10px;
+            outline: none;
+            border: none;
+            box-shadow: 1px 1px 10px 1px gray;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <img src="./assistance.webp" width="100%">
+            <h1 class="headertitle">Christmas Assistance Application Form</h1>
+        </header>
+        <main>
+            <form autocomplete="on">
+                <label for="name">First Name</label>
+                <input type="text" name="name" id="name" autofocus placeholder="First Name">
+                <label for="lastname">Last Nanme</label>
+                <input type="text" name="name" id="lastname" placeholder="Last Name">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Email">
+                <label for="phone">Phone</label>
+                <input type="tel" name="phone" id="phone" pattern="[0093]{9}" placeholder="Phone"
+                    title="Please enter your phone number with country code">
+                <label for="address">Address</label>
+                <input type="text" placeholder="Address" width="100%">
+                <div class="need">
+                    <label for="need">Type of Assistance Needed</label><br>
+                    <input type="checkbox" name="" id="need" value="Food" class="check">
+                    <label for="food">Food</label>
+                    <input type="checkbox" name="" id="need" value="Food" class="check">
+                    <label for="food">Clothing</label><br>
+                    <input type="checkbox" name="" id="need" value="Food" class="check">
+                    <label for="food">Financial Assistance for Utilities</label>
+                    <input type="checkbox" name="" id="need" value="Food" class="check">
+                    <label for="food">Other</label>
+                </div>
+                <br>
+                <div class="comment">
+                    <label for="comment">Comments and Special Needs</label><br>
+                    <textarea rows="10" cols="10" placeholder="Type your comments"></textarea>
+                </div>
+            </form>
+        </main>
+    </div>
+</body>
+
+</html>
