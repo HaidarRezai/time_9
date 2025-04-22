@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="hw8.css">
+</head>
+
+<body>
+    <div class="cover">
+        <form>
+            <div class="jpg">
+                <label for="">
+                    <img src="pro.jpg" alt="">
+                </label>
+                <input type="file" hidden name="" id="">
+            </div>
+            <div>
+                <label for="Username">Username</label>
+                <input type="text" placeholder="unsername" id="unsername" required autofocus minlength="6" maxlength="20">
+            </div>
+            <div>
+                <label for="password">Password</label>
+                <input type="password" placeholder="password" id="password" required>
+            </div>
+            <div>
+                <label for="size">Size</label>
+                <input type="number" placeholder="size" id="size" required>
+            </div>
+            <div>
+                <label for="e-mail">E-mail</label>
+                <input type="text" placeholder="e-mail" id="e-mail" required>
+            </div>
+            <div>
+                <label for="kurs">Kurs</label>
+                <input type="text" placeholder="kurs" id="kurs" required readonly>
+            </div>
+            <div>
+                <label for="fee">Fee</label>
+                <input type="number" placeholder="fee" id="fee" required value="2000" step="500" min="500" max="4000">
+            </div>
+            <div>
+                <label for="Contry">Contry</label>
+                <input list="Contry" placeholder="Contry" id="Contry" required>
+                <datalist id="Contry">
+                    <option>Badakhshan</option>
+                    <option>Baghlan</option>
+                    <option>Bamyan</option>
+                    <option>Farah</option>
+                    '<option>Jowzjan</option>
+                    <option>Jowzjan</option>
+                    <option>Kabul</option>
+                </datalist>
+            </div>
+            <input type="submit" class="login" value="login">
+        </form>
+    </div>
+</body>
+
+</html>
