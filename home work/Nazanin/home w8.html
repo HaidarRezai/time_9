@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="home w8.css">
+</head>
+
+<body>
+    <div class="cover">
+        <form>
+            <div class="logo">
+                <label for="image">
+                    <img src="logo.jpg" alt="">
+                </label>
+            </div>
+            <div>
+                <label for="firstname"> First Name</label>
+                <input type="text" maxlength="5" placeholder="First Name" autofocus>
+            </div>
+            <div>
+                <label for="e-mail">E-mail</label>
+                <input type="email" minlength="7" maxlength="10" placeholder="E-mail">
+            </div>
+            <div>
+                <label for="kurs">Kurse</label>
+                <input list="kurs" placeholder="Kurs">
+                <datalist id="kurs">
+                    <option value="DIT"></option>
+                    <option value="ISDL"></option>
+                    <option value="DEL"></option>
+                </datalist>
+            </div>
+            <div>
+                <label for="fee">Fee</label>
+                <input type="number" step="500" placeholder="Fee">
+            </div>
+            <div>
+                <input type="submit" value="login" class="login">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
