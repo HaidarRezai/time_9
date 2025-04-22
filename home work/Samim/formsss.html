@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form {
+            background-color: rgba(5, 89, 99, 0.722);
+            padding: 10 px;
+            margin: auto;
+            display: flex;
+            width: 40%;
+            display: grid;
+            grid-template-columns: auto;
+            gap: 20px;
+            border-radius: 10px;
+            box-shadow: 1px 2px 10px 1px black;
+            border: 3px;
+            height: 550px;
+            align-items: center;
+            border: 1px solid red;
+        }
+
+        .cover {
+            padding: 20px;
+            border: 1px black;
+        }
+
+        .btn {
+            margin-top: -60px;
+            padding: 10px;
+            align-items: center;
+        }
+
+        .btn input {
+            width: 80%;
+            margin-left: 70px;
+            margin-top: -20px;
+        }
+
+        label {
+            padding: 10px;
+            border: 10px;
+            margin-right: 10px;
+            ;
+        }
+
+        input {
+            border-radius: 30px;
+            width: 70%;
+            border: 1px solid black;
+            width: 80%;
+            padding: 5px;
+            height: 20px;
+            margin-left: 5px;
+        }
+
+        .sv {
+            width: 96%;
+            height: 50px;
+
+            background-color: green;
+            color: rgb(232, 226, 226);
+        }
+
+        .pic {
+            width: 100px;
+            height: 100px;
+            margin: auto;
+        }
+
+        .pic img {
+            width: 100%;
+            height: 90%;
+            object-fit: cover;
+            border-radius: 30px;
+            border: 1px solid black;
+            margin-top: -30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cover">
+        <form>
+            <div class="pic">
+                <label for="img">
+                    <img src="zz.png">
+                </label>
+                <input type="file" id="img" hidden multiple autofocus>
+            </div>
+            <div class="btn">
+                <label for="Name">Name</label>
+                <input type="text" id="Name" placeholder="name">
+            </div>
+            <div class="btn">
+                <label for="F.name">F.name</label>
+                <input type="text" id="F.name" placeholder="F.name">
+            </div>
+            <div class="btn">
+                <label for="Email">Email</label>
+                <input type="text" id="Email" placeholder="Email">
+            </div>
+            <div class="btn">
+                <label for="Age">Age</label>
+                <input type="number" placeholder="Age" min="1" max="100" id="Age">
+            </div>
+            <div class="btn">
+                <label for="Fee">Fee</label>
+                <input type="number" id="Fee" placeholder="Fee" step="500" value="2000" min="1000" max="500">
+            </div>
+            <div class="btn">
+                <label for="list">Contry</label>
+                <input list="Contry" placeholder="Contry" id="list">
+                <datalist id="Contry">
+                    <option>Habul</option>
+                    <option>herat</option>
+                    <option>Logar</option>
+                    <option>Mazar</option>
+                    <option>Lachman</option>
+                </datalist>
+            </div>
+            <div class="btn">
+                <label for="Woman">woman</label>
+                <input type="radio" name="a" id="Woman">
+                <label for="Man">man</label>
+                <input type="radio" name="a" id="Man">
+            </div>
+            <input type="submit" value="Save" class="sv">
+        </form>
+    </div>
+</body>
+
+</html>
