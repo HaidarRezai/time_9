@@ -1,7 +1,8 @@
 body {
-     margin: 50px;}
-   
-     .a {
+    margin: 50px;
+}
+
+.a {
     width: 40%;
     padding: 20px;
     margin: 20px auto;
@@ -20,19 +21,22 @@ form div {
 form div input {
     border: none;
     outline: none;
-    border-radius: 5px;
+    border-radius: 10px;
     box-shadow: 1px 2px 10px 1px gray;
+    padding: 10px;
 }
 
 .login {
-    width: 700px;
+    width: 100%;
     background-color: darkslategrey;
     color: white;
-
+    grid-column-start: 1;
+    grid-column-end: 3;
 }
 
 .logo img {
     width: 70%;
-    margin-left: 350px;
-    margin-top: -200px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+
 }

@@ -19,9 +19,10 @@
             justify-content: center;
             border-radius: 19px;
             overflow: hidden;
+           
         }
         form input{
-            width: 100%;
+            width: 97%;
             border-radius: 10px;
             border-style: none;
             background-color: rgb(255, 255, 255);
@@ -41,10 +42,8 @@
         form input:hover{
            transition: all 200ms;
            box-shadow: 1px 1px 10px 1px gray;
-
-
-
         }
+
         textarea:hover{
             transition: all 200ms;
            box-shadow: 1px 1px 10px 1px gray;
@@ -54,31 +53,33 @@
         }
         .send input{
             width: 140px;
-           background-color: lightseagreen;
-            
+           background-color: lightseagreen;   
         }
         .textarea{
-            width: 100%;
+            width: 97%;
             border: none;
             border-radius: 10px;
             padding: 10px;
             outline:none;
         }
+       
     </style>
 </head>
 <body>
     <div class="cover">
-        <div class="title"><h1>SEND US A MESSAGE</h1></div>
-    <form>
-        <input type="text" name="" id="fullname" placeholder=" Type your Fullname"><br>
-        <input type="email" id="email" placeholder="Type your Email"><br>
-        <input type="tel" placeholder="Type your phone Number"><br>
-        <input type="file"> 
-        <textarea name="" id="" rows="7" cols="10" class="textarea" placeholder="Your message"></textarea>
-        <div class="send">
-        <input type="submit" value="Send">
-    </div>
-    </form>
+        <div class="title">
+            <h1>SEND US A MESSAGE</h1>
+        </div>
+        <form>
+            <input type="text" name="" id="fullname" placeholder=" Type your Fullname"><br>
+            <input type="email" id="email" placeholder="Type your Email"><br>
+            <input type="tel" placeholder="Type your phone Number"><br>
+            <input type="file"> 
+            <textarea name="" id="" rows="7" cols="10" class="textarea" placeholder="Your message"></textarea>
+            <div class="send">
+                <input type="submit" value="Send">
+            </div>
+        </form>
     </div>
 </body>
 </html>

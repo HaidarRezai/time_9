@@ -19,8 +19,6 @@ body {
     box-shadow: 3px 4px 10px 1px;
 }
 
-form {}
-
 form div {
     display: grid;
     gap: 12px;

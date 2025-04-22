@@ -16,7 +16,6 @@
             <h1>Patient Admission</h1>
         </div>
         <form>
-
             <div class="input_box">
                 <label for="full_name">Full Name</label>
                 <div class="input-icon">
@@ -35,7 +34,7 @@
                 <label for="age">Age</label>
                 <div class="input-icon">
                     <i class='bx bx-heart'></i>
-                    <input type="number" id="age" placeholder="Enter Age" required>
+                    <input type="number" max="120" min="1" id="age" placeholder="Enter Age" required>
                 </div>
             </div>
             <div class="input_box">
@@ -49,20 +48,20 @@
                 <label>Have you consulted any other doctor? </label>
             </div>
             <div class="yes_no">
-                <label for="yes"> <input type="radio" id="yes"> Yes</label><br>
-                <label for="no"> <input type="radio" id="no"> No</label>
+                <label for="yes"> <input type="radio" id="yes" name="test"> Yes</label><br>
+                <label for="no"> <input type="radio" id="no" name="test"> No</label>
             </div>
-                <div class="input_box_file">
-                    <label for="file">Upload Your Photo </label>
-                </div>
-                <div class="file">
-                    <label for="file">Upload File</label>
-                    <input type="file" id="file">
-                </div>
-                <div class="input_box1">
-                    <button type="submit">Submit</button>
-                    <button type="reset">Reset</button>
-                </div>
+            <div class="input_box_file">
+                <label for="file">Upload Your Photo </label>
+            </div>
+            <div class="file">
+                <label for="file">Upload File</label>
+                <input type="file" multiple id="file">
+            </div>
+            <div class="input_box1">
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </div>
         </form>
     </div>
 </body>
