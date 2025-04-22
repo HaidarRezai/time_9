@@ -1,0 +1,77 @@
+body {
+    background-color: #f3f3f3;
+
+}
+
+.chart {
+    width: 40%;
+    padding: 20px;
+    margin: 20px auto;
+    box-shadow: 3px 4px 10px 1px gray;
+    border-radius: 20px;
+    margin-top: 90px;
+    outline: none;
+
+}
+
+.chart input:hover {
+    outline: 2px solid lightslategray;
+    box-shadow: 3px 4px 10px 1px;
+}
+
+form {}
+
+form div {
+    display: grid;
+    gap: 12px;
+    grid-template-columns: 4.5rem auto;
+    margin-bottom: 30px;
+    align-items: center;
+}
+
+form div input {
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 3px 4px 10px 1px gray;
+}
+
+.but {
+    border: none;
+    border-radius: 20px;
+    color: white;
+    background-color: lightblue;
+    width: 100%;
+    padding: 10px;
+
+}
+
+.but:hover {
+    outline: solid white;
+}
+
+.image {
+    width: 70px;
+    height: 70px;
+    overflow: hidden;
+    border: none;
+    box-shadow: 3px 4px 10px 1px gray;
+    border-radius: 50%;
+    transition: 100ms all;
+    margin: auto;
+    margin-top: -60px;
+    margin-bottom: 30px;
+
+}
+
+.image:hover {
+    transform: scale(1.1);
+    outline: 2px solid lightslategray;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}

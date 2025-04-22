@@ -1,0 +1,38 @@
+body {
+     margin: 50px;}
+   
+     .a {
+    width: 40%;
+    padding: 20px;
+    margin: 20px auto;
+    box-shadow: 1px 2px 10px 1px gray;
+    border-radius: 10px;
+    margin: auto;
+}
+
+form div {
+    display: grid;
+    grid-template-columns: 6rem auto;
+    gap: 5px;
+    margin: 20px;
+}
+
+form div input {
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    box-shadow: 1px 2px 10px 1px gray;
+}
+
+.login {
+    width: 700px;
+    background-color: darkslategrey;
+    color: white;
+
+}
+
+.logo img {
+    width: 70%;
+    margin-left: 350px;
+    margin-top: -200px;
+}
