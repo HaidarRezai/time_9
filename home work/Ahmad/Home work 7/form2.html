@@ -15,27 +15,46 @@
             <img src="p1.jpg" alt="">
             <h1>Patient Admission</h1>
         </div>
-        <form>
+        <form autocomplete="on">
 
             <div class="input_box">
                 <label for="full_name">Full Name</label>
                 <div class="input-icon">
                     <i class='bx bx-user'></i>
-                    <input type="text" id="full_name" placeholder="Enter full name" required>
+                    <input type="text" id="full_name" autofocus  minlength="3" maxlength="25"  placeholder="Enter full name"required >
                 </div>
             </div>
             <div class="input_box">
                 <label for="email">Email</label>
                 <div class="input-icon">
                     <i class='bx bx-envelope'></i>
-                    <input type="email" id="email" placeholder="Enter Email" required>
+                    <input type="email" id="email" minlength="3" placeholder="Enter Email" required>
                 </div>
             </div>
             <div class="input_box">
                 <label for="age">Age</label>
                 <div class="input-icon">
-                    <i class='bx bx-heart'></i>
-                    <input type="number" id="age" placeholder="Enter Age" required>
+                    <i class='bx bxs-group'></i>
+                    <input type="number" id="age" min="1" max="110" placeholder="Enter Age" required>
+                </div>
+            </div>
+            <div class="input_box">
+                <label for="disease">Type of Disease</label>
+                <div class="input-icon">
+                    <i class='bx bx-health'></i>
+                    <input  id="disease" list="disease1" placeholder="Please select your Disease type" required>
+                    <datalist id="disease1" >
+                        <option >Influenza (Flu)</option>
+                        <option >Diabetes</option>
+                        <option >Hypertension (High Blood Pressure)</option>
+                        <option >Asthma</option>
+                        <option >Pneumonia</option>
+                        <option >Tuberculosis (TB)</option>
+                        <option >Hepatitis B</option>
+                        <option >Malaria</option>
+                        <option >Arthritis</option>
+                        <option >Migraine</option>
+                    </datalist>
                 </div>
             </div>
             <div class="input_box">
@@ -49,15 +68,15 @@
                 <label>Have you consulted any other doctor? </label>
             </div>
             <div class="yes_no">
-                <label for="yes"> <input type="radio" id="yes"> Yes</label><br>
-                <label for="no"> <input type="radio" id="no"> No</label>
+                <label for="yes"> <input type="radio" id="yes" required> Yes</label><br>
+                <label for="no"> <input type="radio" id="no" required> No</label>
             </div>
                 <div class="input_box_file">
                     <label for="file">Upload Your Photo </label>
                 </div>
                 <div class="file">
                     <label for="file">Upload File</label>
-                    <input type="file" id="file">
+                    <input type="file" id="file" multiple required>
                 </div>
                 <div class="input_box1">
                     <button type="submit">Submit</button>
