@@ -14,29 +14,53 @@
         3 button att
     -->
     <div class="cover">
-        <form method="get">
+        <form method="get" autocomplete="on">
             <div class="input_label">
                 <label for="image" class="image">
                     <img src="./image/profile.webp" alt="">
                 </label>
                 <input type="file" required hidden id="image" name="profile_pic">
             </div>
+    
             <div class="input_label">
-                <label for="first_name">Fist Name</label>
-                <input type="text" minlength="3" maxlength="20" required id="first_name" name="first_name" placeholder="First name">
+                <label for="subject">Subject</label>
+                <input type="text" autofocus value="TOEFL" id="subject" placeholder="Enter subject" required>
             </div>
+            
             <div class="input_label">
-                <label for="last_name">Lasr Name</label>
-                <input type="text" minlength="3" maxlength="20" required id="last_name" name="last_name" placeholder="Last Name">
+                <label for="fee">Fee</label>
+                <input type="number" id="fee" placeholder="Enter Fee" step="0.0001" min="2500" max="10000">
             </div>
+
             <div class="input_label">
-                <label for="dob">DOB</label>
-                <input type="date" required id="dob" name="dob">
+                <label for="first_name">First Name</label>
+                <input type="text" minlength="3" maxlength="20" required id="first_name" placeholder="First name">
             </div>
+            
             <div class="input_label">
-                <label for="size">Size</label>
-                <input type="number" required id="size" min="5" max="300" name="size" placeholder="Size">
+                <label for="document">Document</label>
+                <input type="file" required id="document" multiple>
             </div>
+
+            <div class="input_label">
+                <label for="phone">Phone</label>
+                <input type="text" required id="phone" pattern="[0-9]{4}-[0-9]{9}" placeholder="0093-*********">
+            </div>
+
+            <div class="input_label">
+                <label for="city">City</label>
+                <input type="text" required id="city" list="city_list" placeholder="City">
+
+                <datalist id="city_list">
+                    <option value="Kabul">
+                    <option value="Herat">
+                    <option value="Mazar">
+                    <option value="Badakhshan">
+                    <option value="Jalalabad">
+                </datalist>
+            </div>
+
+
             <input type="submit" class="btn" value="Save">
         </form>
     </div>
