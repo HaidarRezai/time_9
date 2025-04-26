@@ -1,10 +1,10 @@
 body {
-    background-color: #f3f3f3;
+    background: linear-gradient(to left, #508C9B, #134B70);
 }
 .container {
     width: 50%;
     height: 100%;
-    box-shadow: 1px 2px 10px 2px gray;
+    box-shadow: 1px 2px 10px 2px rgb(8, 119, 159);
     margin: auto;
 }
 .container img {
