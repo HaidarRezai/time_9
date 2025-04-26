@@ -1,0 +1,16 @@
+body {
+   background-image: linear-gradient(40deg, pink, lightblue);
+   background-repeat: no-repeat;
+}
+
+.cover {
+   background-image: url(./image/img5.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   width: 50%;
+   padding: 20px;
+   height: 56rem;
+   margin: auto;
+   box-shadow: 3px 4px 10px 1px gray;
+   border-radius: 40px;
+}
