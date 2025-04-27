@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vidoes Gallery</title>
+    <style>
+        body {
+            background-color: #f3f3f3;
+            display: grid;
+            grid-template-columns: 20% auto;
+            padding: 10px;
+        }
+
+        header,
+        footer,
+        aside,
+        main {
+            box-shadow: 1px 1px 10px 1px gray;
+            background-color: white;
+            border-radius: 3px;
+            padding: 5px;
+            margin-bottom: 3px;
+        }
+
+        header,
+        footer {
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+
+        header,
+        footer {
+            background-color: #023e8a;
+            color: white;
+        }
+
+        aside {
+            overflow-y: scroll;
+        }
+
+        ul {
+            list-style-type: none;
+            display: flex;
+            text-decoration: none;
+            margin-left: -20px;
+        }
+
+        ul li {
+            color: white;
+            margin-right: 10px;
+        }
+
+        li:hover {
+            box-shadow: 1px 1px 10px 1px white;
+            border-radius: 10px;
+            padding: 1px;
+            cursor: pointer;
+        }
+
+        .videoiframe {
+            height: auto;
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 4px;
+        }
+
+        .videoiframe iframe {
+            border-radius: 10px;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <ul>
+            <li>Home</li>
+            <li>Stories</li>
+            <li>Programs</li>
+            <li>About Us</li>
+            <li>Contact Us</li>
+        </ul>
+    </header>
+    <aside>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam laborum eaque cum velit accusantium quia,
+            assumenda itaque beatae molestias, illum et aperiam animi ipsa fuga, magni quod eveniet recusandae! Fugit.
+        </p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam laborum eaque cum velit accusantium quia,
+            assumenda itaque beatae molestias, illum et aperiam animi ipsa fuga, magni quod eveniet recusandae! Fugit.
+        </p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam laborum eaque cum velit accusantium quia,
+            assumenda itaque beatae molestias, illum et aperiam animi ipsa fuga, magni quod eveniet recusandae! Fugit.
+        </p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam laborum eaque cum velit accusantium quia,
+            assumenda itaque beatae molestias, illum et aperiam animi ipsa fuga, magni quod eveniet recusandae! Fugit.
+        </p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam laborum eaque cum velit accusantium quia,
+            assumenda itaque beatae molestias, illum et aperiam animi ipsa fuga, magni quod eveniet recusandae! Fugit.
+        </p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam laborum eaque cum velit accusantium quia,
+            assumenda itaque beatae molestias, illum et aperiam animi ipsa fuga, magni quod eveniet recusandae! Fugit.
+        </p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam laborum eaque cum velit accusantium quia,
+            assumenda itaque beatae molestias, illum et aperiam animi ipsa fuga, magni quod eveniet recusandae! Fugit.
+        </p>
+    </aside>
+    <main>
+        <div class="videoiframe">
+            <iframe width="200px" height="200px" src="https://www.youtube.com/embed/j6Ule7GXaRs"
+                title="Learn Web Design For Beginners - Full Course" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="200px" height="200px" src="https://www.youtube.com/embed/j6Ule7GXaRs"
+                title="Learn Web Design For Beginners - Full Course" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><br>
+            <iframe width="200px" height="200px" src="https://www.youtube.com/embed/j6Ule7GXaRs"
+                title="Learn Web Design For Beginners - Full Course" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="200px" height="200px" src="https://www.youtube.com/embed/j6Ule7GXaRs"
+                title="Learn Web Design For Beginners - Full Course" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="200px" height="200px" src="https://www.youtube.com/embed/j6Ule7GXaRs"
+                title="Learn Web Design For Beginners - Full Course" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="200px" height="200px" src="https://www.youtube.com/embed/j6Ule7GXaRs"
+                title="Learn Web Design For Beginners - Full Course" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="200px" height="200px" src="https://www.youtube.com/embed/j6Ule7GXaRs"
+                title="Learn Web Design For Beginners - Full Course" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="200px" height="200px" src="https://www.youtube.com/embed/j6Ule7GXaRs"
+                title="Learn Web Design For Beginners - Full Course" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="200px" height="200px" src="https://www.youtube.com/embed/j6Ule7GXaRs"
+                title="Learn Web Design For Beginners - Full Course" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="200px" height="200px" src="https://www.youtube.com/embed/j6Ule7GXaRs"
+                title="Learn Web Design For Beginners - Full Course" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="200px" height="200px" src="https://www.youtube.com/embed/j6Ule7GXaRs"
+                title="Learn Web Design For Beginners - Full Course" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="200px" height="200px" src="https://www.youtube.com/embed/j6Ule7GXaRs"
+                title="Learn Web Design For Beginners - Full Course" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </main>
+    <footer>
+        Copyright 1999-2025 by Refsnes Data. All Rights Reserved. W3Schools is Powered by W3.CSS.
+    </footer>
+</body>
+
+</html>
