@@ -1,0 +1,53 @@
+body {
+    background-color: white;
+}
+.one {
+    background-color: #000B58;
+    color: white;
+    text-align: center;
+    padding: 40px;
+    margin-top: 150px;
+    width: 95%;
+}
+
+.a {
+    border: 1px solid #000;
+    border-radius: 20px;
+    width: 20%;
+    padding: 1%;
+    text-align: left;
+    background-color: #003161;
+    display: inline-block;
+    margin: 10px;
+}
+
+.b button {
+    background-color: indigo;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+}
+
+i {
+    background-color: indigo;
+    font-size: 30px;
+    border-radius: 8px;
+    padding: 5px;
+}
+@media screen and (max-width:900px) {
+     .one{
+        flex-direction: column;
+       
+        height:fit-content ;
+
+     } 
+     .a{
+        width:100%;
+        margin-left: 10px;
+  
+    
+     }
+    
+}
+
