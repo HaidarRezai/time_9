@@ -1,0 +1,35 @@
+body {
+    background-color: #f3f3f3;
+
+}
+
+/* ------------------- start form style ---------------------- */
+#one {
+    /* background-image: url(./../image/pen.png), url(./../image/bg.jpg);
+    background-repeat: no-repeat, no-repeat;
+    background-size: 15%, 100%;
+    background-position: bottom right, center; */
+
+    /* box-shadow: 4px 5px 10px 1px gray; */
+
+    /* width: 50%;
+    height: 12rem; */
+    /* padding: 10px; */
+    /* margin: auto; */
+    border-radius: 20px;
+    /* border-width: 5px;
+    border-style: solid dashed;
+    border-color: rgb(26, 244, 237); */
+    border: 8px solid green;
+}
+
+.b {
+    /* margin: 100px; */
+    background-image: linear-gradient(white, gray);
+    margin: 40px auto;
+    padding: 4px 20px;
+    width: 50%;
+    height: 90vh;
+}
+
+/* ----------------- end form style ---------------- */
