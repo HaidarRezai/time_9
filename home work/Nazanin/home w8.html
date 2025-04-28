@@ -12,17 +12,18 @@
     <div class="cover">
         <form>
             <div class="logo">
+                <input type="file" name="" hidden id="image">
                 <label for="image">
                     <img src="logo.jpg" alt="">
                 </label>
             </div>
             <div>
-                <label for="firstname"> First Name</label>
-                <input type="text" maxlength="5" placeholder="First Name" autofocus>
+                <label for="firstname">First Name</label>
+                <input type="text" id="firstname" maxlength="5" placeholder="First Name" autofocus>
             </div>
             <div>
                 <label for="e-mail">E-mail</label>
-                <input type="email" minlength="7" maxlength="10" placeholder="E-mail">
+                <input type="email" id="e-mail" minlength="7" maxlength="150" placeholder="E-mail">
             </div>
             <div>
                 <label for="kurs">Kurse</label>
@@ -35,7 +36,7 @@
             </div>
             <div>
                 <label for="fee">Fee</label>
-                <input type="number" step="500" placeholder="Fee">
+                <input type="number" id="fee" min="0" step="500" placeholder="Fee">
             </div>
             <div>
                 <input type="submit" value="login" class="login">

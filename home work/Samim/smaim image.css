@@ -1,0 +1,17 @@
+body{
+    background-color: rgb(235, 232, 232);
+    border-radius: 20px;
+    padding: 20px;
+}
+.cover{
+    background-image: url(jab.jpeg);
+    width: 50%;
+    height: 600px;
+    border-radius: 40px;
+    background-position: center;
+    background-size: cover;
+    padding: 30px;
+    margin: auto;
+
+
+}
