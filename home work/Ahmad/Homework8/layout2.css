@@ -11,6 +11,7 @@ body {
     grid-template-columns: auto auto;
 }
 
+
 header,
 footer {
     grid-column-start: 1;
@@ -78,43 +79,12 @@ ul li:hover {
     display: none;
 }
 
-@media screen and (max-width:952px) {
-    label.logo {
-        font-size: 30px;
-        padding-left: 20px;
-    }
-
-    nav ul li {
-        font-size: 16px;
-    }
-
+.video {
+    width: 418px;
+    height: 743px;
 }
 
-@media screen and (max-width:858px) {
-    .checkbtn {
-        display: block;
-    }
 
-    ul {
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        background-color: #134B70;
-        top: 80px;
-        left: -100%;
-        text-align: center;
-        transition: all .5s;
-    }
-
-    nav ul li {
-        display: block;
-        width: 550px;
-    }
-
-    #check:checked~ul {
-        left: 0;
-    }
-}
 
 main,
 aside {
@@ -143,18 +113,6 @@ ol li:hover {
     background-color: #134B70;
     color: white;
 }
-
-@media screen and (max-width:852px) {
-    .container_aside {
-        width: 200px;
-    }
-
-    ol li {
-        text-align: center;
-        width: 100%;
-    }
-}
-
 
 
 
@@ -205,42 +163,97 @@ footer {
     width: 100%;
     text-align: center;
 }
-.iframe iframe{
+
+.iframe iframe {
     height: 250px;
     width: 250px;
     box-shadow: 1px 2px 10px 1px gray;
     transition: all 500ms;
     border-radius: 10px
 }
-.iframe iframe:hover{
+
+.iframe iframe:hover {
     transform: scale(1.04);
 
 }
-.iframe{
+
+.iframe {
     display: flex;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
     gap: 10px;
     justify-content: center;
     border-radius: 10px;
     margin-top: 10px;
 }
-.iframe2 iframe{
+
+.iframe2 iframe {
     width: 500px;
     height: 400px;
     border-radius: 10px
-
 }
-.iframe2{
+
+.iframe2 {
     margin-top: 10px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
-   
+
 }
-object{
+
+object {
     width: 100%;
     height: auto;
     border: none;
-    margin-top:5px ;
+    margin-top: 5px;
+}
+
+@media screen and (max-width:952px) {
+    label.logo {
+        font-size: 30px;
+        padding-left: 20px;
+    }
+
+    nav ul li {
+        font-size: 16px;
+    }
+
+}
+
+@media screen and (max-width:858px) {
+    .checkbtn {
+        display: block;
+    }
+
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: #134B70;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    nav ul li {
+        display: block;
+        width: 550px;
+    }
+
+    #check:checked~ul {
+        left: 0;
+    }
+}
+
+
+@media screen and (max-width:852px) {
+    .container_aside {
+        width: 200px;
+    }
+
+    ol li {
+        text-align: center;
+        width: 100%;
+    }
 }

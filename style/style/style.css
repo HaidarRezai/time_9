@@ -1,35 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+
 body {
     background-color: #f3f3f3;
 
 }
 
 /* ------------------- start form style ---------------------- */
-#one {
-    /* background-image: url(./../image/pen.png), url(./../image/bg.jpg);
-    background-repeat: no-repeat, no-repeat;
-    background-size: 15%, 100%;
-    background-position: bottom right, center; */
+/* @keyframes show {
+    from {
+        outline-offset: 10px;
+        width: 100px;
+        height: 100px;
+    }
 
-    /* box-shadow: 4px 5px 10px 1px gray; */
-
-    /* width: 50%;
-    height: 12rem; */
-    /* padding: 10px; */
-    /* margin: auto; */
-    border-radius: 20px;
-    /* border-width: 5px;
-    border-style: solid dashed;
-    border-color: rgb(26, 244, 237); */
-    border: 8px solid green;
-}
+    to {
+        outline-offset: 100px;
+        width: 300px;
+        height: 300px;
+    }
+} */
 
 .b {
-    /* margin: 100px; */
-    background-image: linear-gradient(white, gray);
-    margin: 40px auto;
-    padding: 4px 20px;
-    width: 50%;
-    height: 90vh;
+    background-image: linear-gradient(rgb(221, 255, 231), rgb(157, 222, 230));
+    width: 800px;
+    height: auto;
+    margin: 20vh auto;
+    padding: 40px 50px;
+    box-shadow: 3px 4px 10px 1px gray;
+    font-size: 20px;
+
 }
+
+p {
+    font-family: "Tajawal", sans-serif;
+    text-decoration: none;
+    text-shadow: 1px 2px 4px rgb(255, 255, 255);
+    font-size: 4vw;
+    font-weight: bolder;
+    color: red;
+    font-style: oblique;
+
+}
+
+
+
+.b img {
+    width: 20%;
+    vertical-align: super;
+}
+
+
+
+/* 
+text-align
+    left 
+    center
+    right
+    justify
+
+direction
+    rtl
+    ltr
+
+*/
 
 /* ----------------- end form style ---------------- */
