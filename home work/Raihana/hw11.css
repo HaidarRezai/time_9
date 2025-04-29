@@ -4,9 +4,9 @@ body {
 
 .cover {
     width: 100%;
-    height: 50vh;
+    height: auto;
     box-shadow: 3px 4px 10px 1px gray;
-    padding-top: 4px;
+    padding: 30px;
     background-color: #1f1346;
     color: white;
     text-align: center;
@@ -19,12 +19,12 @@ body {
 }
 
 .a1 {
-    width: 16%;
-    height: 40%;
+    width: 20%;
+    height: auto;
     border-radius: 20px;
     background-color: #2f1c6a;
     text-align: justify;
-    padding: 20px;
+    padding: 10px;
     display: inline-block;
     font-size: 15px;
     margin-left: 20px;
@@ -32,8 +32,8 @@ body {
 
 .a1 p {
     width: 100%;
-    padding: 5px;
-    margin-left: 30px;
+    padding: 10px;
+    /* margin-left: 30px; */
 }
 
 .a2 {
@@ -58,32 +58,34 @@ body {
 }
 
 .a2 button:hover {
-    background-color:#1d0568 ;
+    background-color: #1d0568;
 }
 
 i {
     padding-top: 5px;
     height: 3vh;
-    margin-left: 30px;
+    /* margin-left: 30px; */
     padding: 12px;
     background-color: #673de6;
     border-radius: 10px;
     font-size: 22px;
-    
+
 }
-@media screen and (max-width:1024px){
-    .cover{
+
+@media screen and (max-width:1024px) {
+    .cover {
         width: 100%;
         flex-direction: column;
         height: fit-content;
-       
+
     }
-    .a1{
+
+    .a1 {
         height: 50%;
         width: 100%;
         margin: 5%;
         margin-left: 0px;
-        
+
     }
 
 }
