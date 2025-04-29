@@ -8,7 +8,7 @@ header,
 footer,
 aside,
 main {
-     box-shadow: 1px 2px 10px 1px gray;
+    box-shadow: 1px 2px 10px 1px gray;
     padding: 30px;
 }
 
@@ -20,10 +20,23 @@ footer {
     color: white;
 }
 
-aside,
-main {
-    height: 1000px;
+aside {
+    height: 77vh;
     overflow-y: scroll;
+}
+
+aside,
+header {
+    position: sticky;
+    top: 0;
+}
+
+aside {
+    top: 15vh;
+}
+
+footer {
+    z-index: 300;
 }
 
 ul {
@@ -37,7 +50,7 @@ ul {
 li:hover {
     transform: scale(1.2);
     box-shadow: 2px 1px 10px 1px gray;
-   border-radius: 5px;
+    border-radius: 5px;
 }
 
 iframe {
