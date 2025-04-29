@@ -35,7 +35,7 @@ p {
     font-family: "Tajawal", sans-serif;
     text-decoration: none;
     text-shadow: 1px 2px 4px rgb(255, 255, 255);
-    font-size: 4vw;
+    font-size: 1vw;
     font-weight: bolder;
     color: red;
     font-style: oblique;
@@ -50,18 +50,83 @@ p {
 }
 
 
+.btn_a {
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    box-shadow: 2px 2px 10px 1px gray;
+    transition: all 500ms;
+    display: inline-block;
+}
 
-/* 
-text-align
-    left 
-    center
-    right
-    justify
+.btn_a:hover {
+    transform: scale(1.05);
+    box-shadow: 1px 1px 10px 1px rgba(128, 128, 128, 0.39);
+}
 
-direction
-    rtl
-    ltr
+.btn_a:active {
+    background-image: linear-gradient(rgb(147, 255, 251), rgb(73, 236, 89));
+}
 
-*/
+.btn_a:visited {
+    color: red;
+}
+
+ul {
+    display: flex;
+    gap: 5px;
+}
+
+ul li {
+    list-style-type: none;
+    background-color: rgb(117, 150, 214);
+    padding: 5px 20px;
+    border-radius: 10px;
+    transition: 250ms all;
+}
+
+ul li:hover {
+    box-shadow: 3px 3px 10px 1px gray;
+}
+
+ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+table {
+    width: 80%;
+    margin: auto;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 3px 3px 10px 1px gray;
+    text-align: left;
+    border-collapse: collapse;
+}
+
+table thead tr {
+    background-color: black;
+    color: white;
+}
+
+
+table tbody tr {
+    background-color: rgb(215, 215, 215);
+    /* color: ; */
+    border: 1px solid rgb(162, 162, 162);
+}
+
+table thead tr th,
+td {
+    padding: 5px;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: rgb(230, 230, 230);
+    /* color: ; */
+    border: 1px solid rgb(187, 187, 187);
+}
 
 /* ----------------- end form style ---------------- */
