@@ -1,0 +1,123 @@
+body {
+    background-color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.cover {
+    text-align: center;
+    line-height: 40px;
+}
+
+p {
+    font-size: 16px;
+    color: #231747;
+}
+
+h1 {
+    font-size: 35px;
+    color: #2f1c6a;
+}
+
+.link {
+    text-align: center;
+    padding: 10px;
+}
+
+.link ul {
+    list-style-type: none;
+    display: flex;
+    gap: 0.4%;
+    justify-content: center;
+    align-items: center;
+    line-height: 40px;
+    margin-left: -2%;
+}
+
+.link a {
+    text-decoration: none;
+    background-color: #f4f5ff;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.link a:hover {
+    background-color: #d5dfff;
+
+}
+
+.chart {
+    width: 60%;
+    height: 50vh;
+    border-radius: 20px;
+    padding: 30px;
+    margin: auto;
+    border: 1px solid black;
+    background-image: url(chart.jpg), linear-gradient(150deg, #352072, #000000, #000000, #000000, #000000);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 50% 60vh, cover;
+
+}
+
+.chart p {
+    width: 16%;
+    border-radius: 20px;
+    font-size: 15px;
+    padding: 10px;
+    color: #8c85f6;
+    background-color: #2f1c6a;
+    margin-top: 90px;
+}
+
+.chart h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.chart h5 {
+    color: white;
+}
+
+#start {
+    color: #673de6;
+    font-size: 13px;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+@media screen and (max-width=900) {
+    .cover {
+        flex-direction: column;
+        background-size: 10% 60vh, cover;
+        background-position: bottom top ;
+    }
+
+    .link a {
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 5%;
+        padding: 10px;
+    }
+
+    .chart {
+        flex-direction: column;
+    }
+
+    .chart p {
+        flex-direction: column;
+    }
+
+    .chart h1 {
+        flex-direction: column;
+        padding: 50px;
+        font-size: 10px;
+        width: 10px;
+    }
+
+    .chart h5 {
+        flex-direction: column;
+        font-size: 5px;
+
+    }
+}
