@@ -1,0 +1,134 @@
+body {
+    background-color: #ffffff;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.cover {
+    width: 60%;
+    height: 78vh;
+    border: none;
+    margin: auto;
+    padding: 80px;
+}
+
+.a1 {
+    line-height: 10px;
+}
+
+.a2 {
+    line-height: 10px;
+    margin-top: 50px;
+}
+
+.a3 {
+    width: 20%;
+    height: 10vh;
+    border: 1px solid black;
+    border-radius: 5px;
+    float: right;
+    margin-top: -300px;
+
+}
+
+.a3 p {
+    text-align: center;
+    color: gray;
+    margin-top: 40px;
+    font-size: large;
+}
+
+.a3 p i {
+    font-size: larger;
+}
+
+.table_1 {
+    float: right;
+    margin-top: -100px;
+    font-size: large;
+}
+
+.table_b1 tr td {
+    border: none;
+}
+
+.table_b1 tr td:first-child {
+    color: rgb(226, 86, 86);
+}
+
+.table_2 {
+    width: 100%;
+
+}
+
+.table_2b {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table_2b tr th,
+td {
+    border: 1px solid lightgray;
+}
+
+.table_2b td {
+    text-align: right;
+}
+
+.table_2 th {
+    background-color: rgb(226, 86, 86);
+    color: white;
+}
+
+.chart {
+    float: right;
+    margin-top: 20px;
+}
+
+.chart_1 {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.chart_1 tr:last-child {
+    background-color: rgba(226, 86, 86, 0.4);
+}
+
+.paragraph {
+    line-height: 20px;
+    margin-top: 150px;
+}
+
+.footer {
+    height: 5vh;
+    width: 60%;
+    margin: auto;
+    padding: 10px 80px;
+}
+
+.footer tr,
+.footer td {
+    border:none;
+}
+@media screen and(max-width:900px){
+    .cover{
+        flex-direction: column;
+        width: 30%;
+        padding: 40px;
+    }
+    .a2{
+        flex-direction: column;
+    }
+    .a3{
+        flex-direction: column;
+        padding: 10%;
+        font-size: small;
+    }
+    .a2{
+        flex-direction: column;
+        font-size: small;
+    }
+    .table_1{
+        flex-direction: column;
+    }
+
+}
