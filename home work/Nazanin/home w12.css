@@ -1,0 +1,70 @@
+body {
+    background-color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.heading {
+    text-align: center;
+}
+
+.list ul {
+    text-align: center;
+    list-style-type: none;
+    display: flex;
+    gap: 20PX;
+    margin-left: 35%;
+    line-height: 50px;
+}
+
+.list a {
+    text-decoration: none;
+    border-radius: 20px;
+    padding: 10px 12px;
+    justify-content: flex;
+    background-color: #f4f5ff;
+}
+
+.list a:hover {
+    background-color: #d5dfff;
+}
+
+.cover {
+    width: 60%;
+    height: 60vh;
+    border: 1px solid black;
+    margin: auto;
+    border-radius: 10px;
+    background-image: url(./chart.jpg), linear-gradient(150deg, #301c6b, #000000, #000000, #000000, #000000);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 50% 60vh cover;
+    color: white;
+    padding: 20px;
+}
+
+button {
+    border: none;
+    background-color: #462f8d;
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: 100px;
+    color: #9d8ad3;
+}
+
+.start {
+    background-color: none;
+    padding: 10px;
+    background-color: #000000;
+    font-size: larger;
+}
+
+@media screen und (max-width:1024px) {
+    .cover {
+        width: 100%;
+    }
+
+    @media screen and (max-width:600px) {
+        ul {
+            flex-direction: column;
+        }
+    }
