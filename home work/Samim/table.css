@@ -1,0 +1,73 @@
+.cover{
+    /* border: 1px  solid black;  */
+   margin: auto;
+   width: 74%;  
+   height: 90vh;
+}
+
+.a3{
+   float: right;
+   border: 1px solid rgb(211, 190, 190);
+   margin-top: -159px;
+   width: 200px;
+   text-align: center;
+   margin-right: 1px;
+   color: #877777;
+}
+
+.a4{
+   float: right;
+   margin-top: -111px;
+   color: rgba(89, 31, 31, 0.991);
+   margin-right: 1px;
+}
+
+.a5{
+   float: right; 
+}
+.a6 {
+   margin-top: -60px;
+}
+
+.b1{
+   border: 1px solid black;
+   margin-top: 30px;
+}
+
+.b2{
+   border: 1px solid green;
+   width: 100%;
+   margin-top: 50px;
+   border-collapse: collapse;
+   text-align: right;
+}
+
+.b2 tr, .b2 th, .b2 td{
+   border: 1px solid #d1bcbc;
+}
+
+.table{
+   float: right;
+   margin-top: 30px;
+   padding: px;
+   margin-right: 1px;
+   border-collapse: collapse;
+  
+}
+.table tr td{
+    border: 1px solid #d1bcbc;
+}
+
+.table2 {
+   margin: auto;
+   margin-top: 100px;
+   text-align: center;
+   width: 100%;
+   padding: 10px;
+
+}
+
+.p1{
+   margin-top: 120px;
+}
+
