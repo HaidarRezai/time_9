@@ -1,0 +1,67 @@
+.container {
+    width: 70%;
+    margin: auto;
+    height: 900px;
+    padding: 10px;
+}
+
+.table_contents {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table_contents thead tr th,
+td {
+    border: 1px solid #f3f3f3;
+}
+
+.table_total {
+    width: 40%;
+    margin-top: 18px;
+    float: right;
+}
+
+/* .head {
+    float: left;
+} */
+.logo {
+    float: right;
+    margin-top: -60px;
+}
+
+.head2 {
+    float: none;
+}
+
+.head1-2 {
+    margin-top: 40px;
+}
+
+.table_first {
+    float: right;
+    margin-top: -50px;
+    margin-right: -140px;
+    width: 25%;
+}
+
+.table_first1 {
+    width: 100%;
+}
+
+.terms {
+    margin-top: 100px;
+}
+
+.last {
+    display: inline-block;
+}
+
+.footer {
+    width: 70%;
+    margin: auto;
+    padding: 10px;
+}
+
+.footer footer {
+    text-align: center;
+}
