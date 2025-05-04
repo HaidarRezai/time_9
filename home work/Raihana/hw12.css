@@ -43,7 +43,6 @@ h1 {
 
 .link a:hover {
     background-color: #d5dfff;
-
 }
 
 .chart {
@@ -86,11 +85,11 @@ h1 {
     text-decoration: none;
 }
 
-@media screen and (max-width=900) {
+@media screen and (max-width:900px) {
     .cover {
         flex-direction: column;
         background-size: 10% 60vh, cover;
-        background-position: bottom top ;
+        background-position: bottom top;
     }
 
     .link a {

@@ -20,7 +20,7 @@ li {
     border-radius: 25px;
     padding: 5PX 12PX;
     color: rgb(108, 35, 117);
-
+    cursor: pointer;
 }
 
 li:hover {
