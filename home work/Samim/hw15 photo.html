@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cover {
+            margin: auto;
+            border: 1px solid black;
+            background-color: #1d304e;
+            margin-top: 20px;
+            padding: 20px;
+            display: flex;
+            box-shadow: 1px 1px 10px 2px black;
+        }
+
+        .img-1,
+        .img-2,
+        .img-3 {
+            margin: auto;
+            width: 13rem;
+            height: 14rem;
+            overflow: hidden;
+            border-radius: 200px;
+            object-fit: cover;
+        }
+
+        .img-1 img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .img-1 {
+            position: relative;
+            right: -250px;
+        }
+
+        .img-2 {
+            position: relative;
+            right: 3px;
+        }
+
+        .img-2 img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .img-3 {
+            position: relative;
+            right: 255px;
+        }
+
+        .img-3 img {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="cover">
+        <div class="img-1"> <img src="sty.jpg" alt=""></div>
+        <div class="img-2"> <img src="sy.webp" alt=""></div>
+        <div class="img-3"> <img src="ttt.jpg" alt=""></div>
+    </div>
+</body>
+</html>
