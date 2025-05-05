@@ -1,0 +1,163 @@
+ body {
+     background-color: #f5f5ff;
+ }
+
+ .cover {
+     background-color: white;
+     width: 50%;
+     border: 1px solid lightgray;
+     border-radius: 20px;
+     padding: 25px;
+     margin: auto;
+     display: flex;
+     flex-wrap: wrap;
+ }
+
+ .running {
+     border: none;
+     border-radius: 10px;
+     padding: 2px 4px;
+     background-color: #daf6f2;
+     color: #24645d;
+ }
+
+ .icon-edit {
+     background-color: red;
+     font-size: 20px;
+     border: 1px solid black;
+ }
+
+ #icon_1 {
+     font-size: 30px;
+     padding: 5px;
+     color: #cd510b;
+     background-color: #f5f5ff;
+     border-radius: 10px;
+ }
+
+ #icon_2 {
+     font-size: 30px;
+     position: absolute;
+     right: 0;
+     margin: 0.6%;
+ }
+
+ .cover_2 {
+     border: none;
+     width: 100%;
+     padding: 10px;
+     position: relative;
+     display: flex;
+     justify-content: space-between;
+ }
+
+ .cover_2 p {
+     display: inline-block;
+ }
+
+ .cover_2 a {
+     border-radius: 10px;
+     width: 8%;
+     padding: 10px;
+     text-decoration: none;
+     font-size: 15px;
+     color: blueviolet;
+ }
+
+ .link {
+     border: 1px solid lightgray;
+     margin: 1%;
+     position: absolute;
+     right: 6%;
+ }
+
+ #icon-search-1,
+ #icon-search-2,
+ #icon-search-3 {
+     position: relative;
+     left: 77%;
+     top: -20px;
+     font-size: 25px;
+ }
+
+ #icon-search-4 {
+     position: relative;
+     left: 55%;
+     top: -20px;
+     font-size: 25px;
+ }
+
+ .box {
+     border: 1px solid lightgray;
+     width: 29%;
+     padding: 10px;
+     border-radius: 10px;
+     margin: auto;
+     margin-top: 3%;
+ }
+
+ .form {
+     width: 55%;
+     border: none;
+     border-radius: 10px;
+     padding: 5px;
+     margin: auto;
+     margin-top: 1%;
+     background-color: #f5f5ff;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-around;
+ }
+
+ .form-input {
+     width: 20%;
+     border: 1px solid lightgray;
+     border-radius: 16px;
+     padding: 7px;
+     background-color: white;
+ }
+
+ .last-form {
+     width: 50%;
+     border: 1px solid lightgray;
+     border-radius: 16px;
+     background-color: #e9eaff;
+     margin: auto;
+     margin-top: 1%;
+     padding: 25px;
+ }
+
+ #last-span {
+     margin-left: 16%;
+
+ }
+
+ #last-link {
+     text-decoration: none;
+     background-color: #683ce7;
+     color: white;
+     border-radius: 10px;
+     padding: 8px 16px;
+     transition: 300ms all;
+
+ }
+
+ #last-link:hover {
+     transform: scale(1.4);
+     box-shadow: 3px 4px 10px 1px gray;
+ }
+
+ .chart-1 {
+     width: 150px;
+     height: 80px;
+     display: flex;
+     position: relative;
+     right: -40%;
+     top: -70px;
+     overflow: hidden;
+ }
+
+ #chart-1,
+ #chart-2 {
+     height: 8vh;
+ }
