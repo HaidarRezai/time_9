@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+    <title>Hostinger</title>
+</head>
+<body>
+    <div class="dashboard">
+        <!-- start of head-->
+        <div class="header">
+            <div class="left_group_head">
+                <span><img src="Andrew-Tate-Logo.png" alt=""></span>
+                <div class="inside_header_1">
+                    <h3>Ubuntu 24.04</h3>
+                    <span>KVM 2 </span>
+                    <span class="badge">Running</span>
+                </div>
+            </div>
+            <div class="inside_header_2">
+                <h3>Root access</h3>
+                <span>323@dsda.1232fe23e32 <i class='bx bx-copy'></i></span>
+            </div>
+            <div class="inside_header_3">
+                <h3>Root password</h3>
+                <span class="change">Change</span>
+            </div>
+            <div class="inside_header_4">
+                <input type="button" class="btn_head" value="Reboot VPS">
+                <i class='bx bx-dots-horizontal-rounded' class="i_2"></i>
+            </div>
+        </div>
+        <!-- end of head-->
+        <!-- start of main body-->
+        <div class="cart_main">
+            <div class="cart">
+                <h4>CPU usage <i class="fa-solid fa-angle-right"></i></h4>
+                <div class="stat-row">
+                    <h2>1%</h2>
+                    <canvas id="cpuChart"></canvas>
+                </div>
+            </div>
+            <div class="cart">
+                <h4>Memory usage <i class="fa-solid fa-angle-right"></i></h4>
+                <div class="stat-row">
+                    <h2>10%</h2>
+                    <canvas id="cpuChart2"></canvas>
+                </div>
+            </div>
+            <div class="cart">
+                <h4>Disk usage <i class="fa-solid fa-angle-right"></i></h4>
+                <div class="stat-row1">
+                    <h2>75 GB/<small>100 GB</small> </h2>
+                    <canvas id="internetChart" width="60" height="60"></canvas>
+                </div>
+            </div>
+            <div class="cart">
+                <h4>CPU usage <i class="fa-solid fa-angle-right"></i></h4>
+                <div class="stat-row">
+                    <h2>1%</h2>
+                    <canvas id="cpuChart3"></canvas>
+                </div>
+            </div>
+            <div class="cart">
+                <h4>CPU usage <i class="fa-solid fa-angle-right"></i></h4>
+                <div class="stat-row">
+                    <h2>1%</h2>
+                    <canvas id="cpuChart4"></canvas>
+                </div>
+            </div>
+            <div class="cart">
+                <h4>Disk usage <i class="fa-solid fa-angle-right"></i></h4>
+                <div class="stat-row1">
+                    <h2>0 TB/<small>8 TB</small> </h2>
+                    <canvas id="internetChart2" width="60" height="60"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="third_part">
+        <div class="third_part_first">
+            <h3>SSH Key</h3>
+            <span>0</span>
+            <span><i class="fa-solid fa-angle-right" id="icon"></i></span>
+        </div>
+        <div class="third_part_first">
+            <h3>Firewall rules</h3>
+            <span>0</span>
+            <span><i class="fa-solid fa-angle-right" id="icon2"></i></span>
+        </div>
+        <div class="third_part_first">
+            <h3>Snapshot & backups</h3>
+            <span>0</span>
+            <span><i class="fa-solid fa-angle-right" id="icon3"></i></span>
+        </div>
+    </div>
+    <div class="last_part">
+        <div>
+            <h3>Upgrade to automated daily backups</h3>
+        </div>
+        <div>
+            <i class="fa-solid fa-file-shield"></i><span> Data protected every day</span>&nbsp;&nbsp;
+            <i class="fa-solid fa-rotate"></i><span> Backups run automatically</span>&nbsp;&nbsp;
+            <i class="fa-solid fa-clock-rotate-left"></i><span> Hassle-free data restoration</span>
+            <span class="last_part_price">US$ 6.00<small>/mo</small></span>
+            <input type="button" value="Upgrade" class="btn_2">
+            <i class="fa-solid fa-xmark" id="icon4"></i>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="chart.js"></script>
+</body>
+</html>

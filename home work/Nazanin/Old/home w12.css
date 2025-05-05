@@ -29,12 +29,12 @@ body {
 }
 
 .cover {
-    width: 60%;
-    height: 60vh;
+    width: 70%;
+    height: 55vh;
     border: 1px solid black;
     margin: auto;
     border-radius: 10px;
-    background-image: url(./chart.jpg), linear-gradient(150deg, #301c6b, #000000, #000000, #000000, #000000);
+    background-image: url(./chart.jpg), linear-gradient(150deg, #412c7f, #000000, #000000, #000000, #000000);
     background-repeat: no-repeat;
     background-position: right;
     background-size: 50% 60vh cover;
@@ -58,13 +58,14 @@ button {
     font-size: larger;
 }
 
-@media screen und (max-width:1024px) {
+@media screen and (max-width:1024px) {
     .cover {
         width: 100%;
     }
+}
 
-    @media screen and (max-width:600px) {
-        ul {
-            flex-direction: column;
-        }
+@media screen and (max-width:600px) {
+    ul {
+        flex-direction: column;
     }
+}

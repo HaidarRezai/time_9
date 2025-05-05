@@ -32,11 +32,11 @@ a {
     background-color: rgb(146, 161, 247);
     padding: 9px;
     border-radius: 20px;
+    transition: 550ms all;
 }
 
 a:hover {
-    background-color: white;
-
+    background-color: rgb(106, 127, 241);
 }
 
 .background {
