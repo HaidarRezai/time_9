@@ -95,39 +95,45 @@ td {
 
 .paragraph {
     line-height: 20px;
-    margin-top: 150px;
+    /* margin-top: 150px; */
 }
 
 .footer {
-    height: 5vh;
+    height: auto;
     width: 60%;
     margin: auto;
     padding: 10px 80px;
+    /* border: 1px solid blue; */
 }
 
 .footer tr,
 .footer td {
-    border:none;
+    border: none;
 }
-@media screen and(max-width:900px){
-    .cover{
+
+@media screen and(max-width:900px) {
+    .cover {
         flex-direction: column;
         width: 30%;
         padding: 40px;
     }
-    .a2{
+
+    .a2 {
         flex-direction: column;
     }
-    .a3{
+
+    .a3 {
         flex-direction: column;
         padding: 10%;
         font-size: small;
     }
-    .a2{
+
+    .a2 {
         flex-direction: column;
         font-size: small;
     }
-    .table_1{
+
+    .table_1 {
         flex-direction: column;
     }
 

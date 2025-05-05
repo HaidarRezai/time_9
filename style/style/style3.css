@@ -1,0 +1,30 @@
+body {
+    background-color: #f3f3f3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid red;
+    height: 100vh;
+
+}
+
+div {
+    width: 30%;
+    padding: 20px;
+    box-shadow: 3px 3px 10px 1px gray;
+    background-color: white;
+    text-align: justify;
+    transition: 1s;
+}
+
+/* div:hover {
+    transform: rotate(6deg);
+    box-shadow: 5px 5px 40px 4px gray;
+
+} */
+
+div:active {
+    background-color: green;
+    padding: 10px;
+}
