@@ -1,0 +1,19 @@
+body {
+    background-color: #f3f3f3;
+}
+
+.cover_img {
+    border: 1px solid black;
+    box-shadow: 3px 3px 10px 1px gray;
+    width: 8rem;
+    height: 8rem;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.cover_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

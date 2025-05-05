@@ -1,11 +1,11 @@
-.cover{
-    /* border: 1px  solid black;  */
+.cover {
+   /* border: 1px  solid black;  */
    margin: auto;
-   width: 74%;  
-   height: 90vh;
+   width: 74%;
+   height: auto;
 }
 
-.a3{
+.a3 {
    float: right;
    border: 1px solid rgb(211, 190, 190);
    margin-top: -159px;
@@ -15,26 +15,27 @@
    color: #877777;
 }
 
-.a4{
+.a4 {
    float: right;
    margin-top: -111px;
    color: rgba(89, 31, 31, 0.991);
    margin-right: 1px;
 }
 
-.a5{
-   float: right; 
+.a5 {
+   float: right;
 }
+
 .a6 {
    margin-top: -60px;
 }
 
-.b1{
+.b1 {
    border: 1px solid black;
    margin-top: 30px;
 }
 
-.b2{
+.b2 {
    border: 1px solid green;
    width: 100%;
    margin-top: 50px;
@@ -42,20 +43,22 @@
    text-align: right;
 }
 
-.b2 tr, .b2 th, .b2 td{
+.b2 tr,
+.b2 th,
+.b2 td {
    border: 1px solid #d1bcbc;
 }
 
-.table{
+.table {
    float: right;
    margin-top: 30px;
-   padding: px;
    margin-right: 1px;
    border-collapse: collapse;
-  
+
 }
-.table tr td{
-    border: 1px solid #d1bcbc;
+
+.table tr td {
+   border: 1px solid #d1bcbc;
 }
 
 .table2 {
@@ -67,7 +70,6 @@
 
 }
 
-.p1{
+.p1 {
    margin-top: 120px;
 }
-
