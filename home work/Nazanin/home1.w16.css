@@ -1,0 +1,51 @@
+body {
+    background-color: #f3f3f3;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.cover {
+    box-shadow: 3px 3px 10px 1px gray;
+    background-color: #B3C8CF;
+    border-radius: 10px;
+    width: 60%;
+    height: 30vh;
+    margin: auto;
+    display: flex;
+    gap: 90px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 250px;
+
+}
+.chart1,
+.chart2,
+.chart3 {
+    border-radius: 20px;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1px;
+    line-height: 1px;
+    color: white;
+}
+#icon1,
+#icon2,
+#icon3 {
+    font-size: 40px;
+    background-color: #89A8B2;
+    padding: 40px;
+    border-radius: 15px;
+}
+#icon-1,
+#icon-2 {
+    font-size: 10px;
+}
+.paragraf {
+    margin-bottom: 5px;
+}
