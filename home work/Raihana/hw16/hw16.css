@@ -1,0 +1,46 @@
+body {
+    background-color: #f3f3f3;
+    font-family: Agency FB;
+    text-align: center;
+}
+
+.container {
+    width: 50%;
+    height: 20vh;
+    padding: 6px 80px;
+    margin: auto;
+    margin-top: 10%;
+    border-radius: 20px;
+    box-shadow: 3px 4px 10px 1px gray;
+    background-color: #9ACBD0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cover {
+    border: none;
+    width: 25%;
+    padding: 15px;
+}
+
+#icon-1,
+#icon-2,
+#icon-3 {
+    background-color: #48A6A7;
+    padding: 25px;
+    border-radius: 10px;
+    transition: all 300ms;
+}
+
+#icon-1:hover,
+#icon-2:hover,
+#icon-3:hover {
+    transform: scale(1.03);
+    box-shadow: 3px 4px 10px 1px gray;
+
+}
+
+#box-icon-1,
+#box-icon-2 {
+    font-size: medium;
+}
