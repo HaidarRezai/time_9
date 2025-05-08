@@ -1,0 +1,117 @@
+body{
+    /* display: flex; */
+}
+.cover{
+    border: 1px solid black;
+    height: auto;
+    display: flex;
+    width: 70%;
+    margin: auto;
+    padding: 20px;
+    display: inline-block;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    justify-content: space-around;
+    row-gap: 20px;
+
+
+}
+#icon_1{
+font-size: 60px;
+background-color: aliceblue;
+padding:10px ;
+border-radius: 10px;
+color: chocolate;
+
+}
+#icon_2{
+    font-size: 50px;
+}
+
+
+.cover p{
+    display: inline-block;
+    text-align: center;
+   
+  
+}
+.cover_1{
+   
+    width:100%;
+    display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     gap: 150px;
+
+   
+
+}
+
+
+
+.form{
+    /* display:inline-block; */
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 40px;
+     width: 250px;
+    
+}
+.last_chart{
+    margin: auto;
+    width: 72%;
+    align-items: center;
+    display: flex;
+    gap:40px;
+    justify-content: space-between;
+
+  
+    
+}
+ .chart{
+    border: 1px solid black;
+    width: 650px;
+    padding: 30px;
+    margin-top: 10px;
+    border-radius: 10px;
+
+
+
+}
+.last_form{
+    border: 1px solid black;
+    padding: 10px;
+    width: 71%;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+.last_span{
+  position: relative;
+  right: -85%;
+  top: -40px;
+}
+button{
+    position: relative;
+    right: -85%;
+    top: -40px;
+    padding: 10px;
+    background-color: rgb(47, 47, 80);
+    color: aliceblue;
+    border-radius: 10px;
+}
+#icon-search-1, #icon-search-2 , #icon-search-3, #icon-search-4{
+    position: relative;
+    right: -90%;
+    font-size: 20px;
+}
+.a{
+    position:relative;
+    left: 100px;
+    top: 2px;
+    padding: 2px 30px ;
+    color: blueviolet;
+    background-color:white;
+    border: 1px solid lightgrey;
+}

@@ -2,12 +2,14 @@ body {
     background-color: #f3f3f3;
     font-family: 'Times New Roman', Times, serif;
 }
+
 .container {
     margin: auto;
     width: 70%;
     box-shadow: 1px 2px 10px 1px gray;
     padding: 40px;
 }
+
 /*start of header */
 .address_1 h1,
 .address_2 h1 {
@@ -144,58 +146,67 @@ h1 {
 /* end of bottom info */
 /* start of contact*/
 .contact {
-    display: inline-flex;
-    gap: 200px;
-    margin: 130px 0 10px 78px;
+    display: flex;
+    justify-content: space-between;
     color: #134B70;
 }
+
 /* end of  contact */
-@media  screen and (max-width:1024px) {
-        .contact{
-            display: flex;
-            justify-content: left;
-            gap: 10px;
-            width: 100%;
-        }
-        .contact p{
-            text-align: left;
-        }
+@media screen and (max-width:1024px) {
+    .contact {
+        display: flex;
+        justify-content: left;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .contact p {
+        text-align: left;
+    }
 }
-@media  screen and (max-width:600px) {
-    .main_table_inside, 
-    .main_table_inside th, 
-    .main_table_inside td, 
+
+@media screen and (max-width:600px) {
+
+    .main_table_inside,
+    .main_table_inside th,
+    .main_table_inside td,
     .main_table_inside tr {
         display: block;
         width: 100%;
     }
+
     .main_table_inside tr {
         margin-bottom: 15px;
         border: 1px solid #ccc;
         padding: 15px;
     }
-    .main_table_inside td{
+
+    .main_table_inside td {
         width: 100%;
     }
+
     .main_table tr,
-    .main_table td{
+    .main_table td {
         width: 330px;
     }
-    .main_table th:nth-child(2){
+
+    .main_table th:nth-child(2) {
         width: 330px;
         text-align: center;
     }
-    .main_table_inside td:nth-child(2){
+
+    .main_table_inside td:nth-child(2) {
         width: 330px;
     }
-    .table_2{
+
+    .table_2 {
         display: flex;
         justify-content: flex-start;
     }
-    .contact{
+
+    .contact {
         display: block;
         justify-content: center;
     }
-        
-    }
 
+}
