@@ -202,7 +202,7 @@ body {
 }
 .last_part_price {
     position: relative;
-    left: 20%;
+    left: 38%;
     top: -25px;
     transform: translateY(100%);
     font-size: 20px;
@@ -215,7 +215,7 @@ body {
     height: 40px;
     border-radius: 15px;
     position: relative;
-    left: 21%;
+    left: 39%;
     top: -65px;
     transform: translateY(100%);
     font-size: 20px;
@@ -223,7 +223,7 @@ body {
 }
 #icon4 {
     position: relative;
-    left: 22%;
+    left: 40%;
     top: -43px;
     cursor: pointer;
     transform: translateY(100%);
