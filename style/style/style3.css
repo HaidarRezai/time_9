@@ -3,28 +3,104 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-
-    border: 1px solid red;
-    height: 100vh;
-
+    flex-direction: column;
 }
 
-div {
-    width: 30%;
+.cover {
+    border: 1px solid black;
     padding: 20px;
-    box-shadow: 3px 3px 10px 1px gray;
-    background-color: white;
-    text-align: justify;
-    transition: 1s;
+    display: flex;
+    align-items: center;
+    width: 50%;
+    justify-content: space-between;
 }
 
-/* div:hover {
-    transform: rotate(6deg);
-    box-shadow: 5px 5px 40px 4px gray;
+.cover_1 {
+    border: 1px solid black;
+    padding: 20px;
+    margin: auto;
+    display: flex;
+    width: 50%;
+    gap: 10px;
+}
 
-} */
+.cover_1 img {
+    width: 12rem;
+    opacity: 0.7;
+}
 
-div:active {
-    background-color: green;
+.cover_1 img:hover {
+    opacity: 1;
+}
+
+.cover div {
+    background-color: greenyellow;
     padding: 10px;
+    margin: 10px;
+    border-radius: 50%;
+
+    width: 1rem;
+    height: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 3px 10px 1px rgb(225, 241, 143);
+    transition: all 250ms ease-in;
+}
+
+.cover div:hover {
+    transform: scale(1.03);
+    cursor: pointer;
+    box-shadow: 4px 6px 20px 2px gray;
+}
+
+.cover div:first-child {
+    background-color: red;
+    box-shadow: 4px 6px 20px 2px rgb(254, 178, 178);
+}
+
+.cover div:last-child {
+    background-color: yellow;
+    box-shadow: 2px 3px 10px 1px rgb(253, 252, 182);
+}
+
+.cover div:nth-child(2) {
+    background-color: aqua;
+    box-shadow: 2px 3px 10px 1px rgb(158, 255, 247);
+}
+
+.cover div:nth-child(3) {
+    background-color: rgb(242, 0, 255);
+    box-shadow: 2px 3px 10px 1px rgb(253, 158, 255);
+}
+
+input {
+    border: none;
+    border-radius: 20px;
+    height: 30px;
+    padding: 4px 10px;
+    box-shadow: 3px 3px 10px 1px rgba(128, 128, 128, 0.307);
+    transition: all 300ms;
+}
+
+input:focus {
+    outline: none;
+    box-shadow: 3px 3px 10px 1px rgba(154, 255, 162, 0.852);
+    transform: scale(1.05);
+}
+
+/* ----------------------------------------------- */
+p::first-letter {
+    color: green;
+    font-size: 2rem;
+}
+
+::marker {
+    color: red;
+    font-size: larger;
+}
+
+p::selection {
+    background-color: red;
+    color: rgb(170, 237, 247);
 }
