@@ -17,9 +17,7 @@ body {
     color: #2f1c6a;
 }
 
-.cover,
-.cover-1,
-.cover-2 {
+.cover {
     width: 25%;
     height: 40vh;
     padding: 10px 20px;
@@ -29,9 +27,7 @@ body {
     transition: all 400ms;
 }
 
-.cover:hover,
-.cover-1:hover,
-.cover-2:hover {
+.cover:hover {
     transform: scale(1.03);
 }
 
@@ -56,16 +52,11 @@ p {
 }
 
 .container2 img {
-    width: 5rem;
-    height: 5rem;
+    width: 4rem;
+    height: 4rem;
     border: none;
-    border-radius: 50%;
-}
-
-.container2 img img {
-    width: 100%;
-    height: 100%;
     object-fit: cover;
+    border-radius: 50%;
 }
 
 .first.link {
@@ -89,6 +80,11 @@ p {
     font-size: medium;
     font-weight: 600;
     color: #673de6;
+}
+
+.profile_inof {
+    display: flex;
+    align-items: center;
 }
 
 .link-1 {
@@ -125,7 +121,10 @@ i {
 }
 
 .name {
-    position: relative;
-    top: -70PX;
-    left: 30%;
+    line-height: 0;
+}
+
+.name h1 {
+    font-size: medium;
+    font-weight: bolder;
 }

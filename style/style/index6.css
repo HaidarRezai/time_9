@@ -1,0 +1,55 @@
+body {
+    background-color: #f3f3f3;
+}
+
+.form {
+    width: 40%;
+    /* border: 1px solid black; */
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+    margin-top: 10vh;
+}
+
+.form .cover_input {
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-columns: auto;
+    position: relative;
+}
+
+
+.form .cover_input input {
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: 3px 3px 10px 1px rgba(128, 128, 128, 0.38);
+    transition: 250ms all;
+}
+
+.form .cover_input input:hover {
+    box-shadow: none;
+}
+
+.form .cover_input label {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+}
+
+.input:focus~label,
+.input:not(:placeholder-shown).input:not(:focus)~label {
+    top: -10px;
+    font-size: 0.6rem;
+    left: 3rem;
+}
+
+/* 
+.form_input:focus~.form_label,
+.form_input:not(:placeholder-shown).form_input:not(:focus)~.form_label {
+    top: -0.6rem;
+    font-size: 1.1rem;
+    left: 0.8rem;
+} */

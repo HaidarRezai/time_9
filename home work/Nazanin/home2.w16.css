@@ -1,21 +1,21 @@
 body .container {
     border-radius: 20px;
     width: 80%;
-    height: 60vh;
+    /* height: ; */
     margin: auto;
-    margin-top: 30pxpx;
+    margin-top: 30px;
     display: flex;
     justify-content: center;
 }
+
 .header {
     text-align: center;
     margin: auto;
     margin-top: 100px;
     font-size: 30px;
 }
-.cover1,
-.cover2,
-.cover3 {
+
+.cover1 {
     border: 1px solid lightblue;
     border-radius: 15px;
     width: 350px;
@@ -23,9 +23,8 @@ body .container {
     margin: 10px;
     overflow: hidden;
 }
-.head1,
-.head2,
-.head3 {
+
+.head1 {
     width: 100%;
     height: 70px;
     background-color: rgb(226, 231, 238);
@@ -34,48 +33,45 @@ body .container {
     padding: 20px;
 
 }
-.head1 img,
-.head2 img,
-.head3 img {
+
+.head1 img {
     width: 60px;
     height: 60px;
     border-radius: 50%;
     padding: 20px;
 
 }
-.foto1,
-.foto2,
-.foto3 {
+
+.foto1 {
     margin-top: -20px;
 }
-#icon1,
-#icon2,
-#icon3,
-#icon4,
-#icon5 {
+
+.icon1 {
     color: blue;
     margin-top: 50px;
     padding-left: px;
 }
+
 div p {
     color: black;
     padding: 20px;
 }
+
 a {
     padding: 20px;
     text-decoration: none;
     color: blue;
 }
+
 .link {
     border: 1px solid blue;
     border-radius: 15px;
     padding: 10px 20px;
-    margin-top: -100px;
-    margin-left: 43%;
+    margin: auto;
     width: 250px;
     text-align: center;
-
 }
+
 .name {
     display: flex;
     flex-direction: column;
@@ -85,22 +81,23 @@ a {
     /* increases line spacing */
 }
 
-#icon1,
-#icon2,
-#icon3,
-#icon4,
-#icon5 {
+.cover_icon {
+    padding: 0 20px;
+}
+
+.icon {
     color: blue;
     margin-top: 30px;
     padding-left: 1px;
-    /* or some value */
 }
+
 .name h3 {
     font-weight: bold;
     margin: 0;
     margin-top: 20px;
 
 }
+
 .name p {
     margin-left: 10px;
     font-size: 14px;
