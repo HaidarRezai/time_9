@@ -1,0 +1,132 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #f3f3f3;
+    background-image: url(360_F_579485255_hzHox0stuQmBx5QViwnQqQjk7RD2AJza.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgb(0, 100, 150);
+    color: white;
+    height: 90px;
+    font-size: 23px;
+    flex-direction: row-reverse;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    gap: 15px;
+}
+
+nav ul li:hover {
+    background-color: #0074c1a0;
+}
+
+nav ul li {
+    padding: 10px 10px;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+.check_btn {
+    display: none;
+}
+
+.div_img img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin: 0 0 0 8px;
+}
+
+.div_img {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.img_text {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-container {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    background-color: rgb(0, 100, 150);
+    min-width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+.dropdown-menu a {
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+.dropdown-menu a:hover {
+    background-color: #0074c1a0;
+}
+
+    .profile-container:hover  .dropdown-menu {
+    display: block;
+}
+
+@media screen and (max-width: 900px) {
+    nav ul {
+        flex-direction: column;
+        position: absolute;
+        top: 110px;
+        left: -100%;
+        width: 70vw;
+        height: 100vh;
+        background-color: rgb(0, 100, 150);
+        align-items: center;
+        transition: left 1000ms ease;
+
+    }
+
+    nav ul li:hover {
+        background-color: #0074c1a0;
+    }
+
+    nav ul li {
+        padding: 10px 100px;
+    }
+
+    #menu.show {
+        left: 0;
+    }
+
+    #menu.close {
+        left: -100%;
+    }
+
+    .check_btn {
+        display: block;
+    }
+}

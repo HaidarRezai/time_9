@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ body {
+  background-color: #f3f3f3;
+  background-image: url(360_F_579485255_hzHox0stuQmBx5QViwnQqQjk7RD2AJza.jpg) ;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+nav {
+  width: 100vw;
+  height: 90px;
+  background-color: rgb(0, 100, 150);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.logo {
+  font-size: 30px;
+  color: white;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 10px;
+  cursor: pointer;
+}
+
+nav ul li {
+  color: white;
+
+  padding: 20px;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+.check_btn {
+  font-size: 30px;
+  color: white;
+  display: none;
+}
+nav ul li:hover{
+    background-color: rgba(17, 143, 206, 0.185);
+    padding: 20px;
+}
+@media screen and (max-width: 700px) {
+  .check_btn {
+    display: block;
+  }
+
+  nav ul {
+    flex-direction: column;
+    position: absolute;
+    top: 90px;
+    left: -100%;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(0, 100, 150);
+    align-items: center;
+    transition: left 900ms ease;
+  }
+  nav ul li{
+    font-size: 28px;
+  }
+  #check:checked~ul{
+    left: 0px;
+  }
+  nav ul li:hover{
+    background-color: rgba(17, 143, 206, 0.185);
+    padding: 15px 37%;
+
+}
+}
