@@ -92,7 +92,7 @@ input[type="checkbox"] {
     background-color: #0074c1a0;
 }
 
-.profile-container:hover .dropdown-menu {
+    .profile-container:hover  .dropdown-menu {
     display: block;
 }
 
