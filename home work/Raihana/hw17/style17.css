@@ -33,8 +33,8 @@ body {
 
 .img-cover {
     border-radius: 50%;
-    width: 4rem;
-    height: 4rem;
+    width: 3rem;
+    height: 3rem;
     overflow: hidden;
 }
 
@@ -54,6 +54,10 @@ body {
     color: white;
 }
 
+.link a h1 {
+    font-size: larger;
+}
+
 .list-link ul {
     list-style-type: none;
     display: flex;
@@ -70,8 +74,6 @@ body {
 .list-link ul li a {
     text-decoration: none;
     color: rgba(211, 211, 211, 0.541);
-
-
 }
 
 .gallary img {
@@ -150,7 +152,7 @@ body {
     }
 
     .list-link ul {
-        flex-direction: column;
+        flex-direction: row;
     }
 
 }
