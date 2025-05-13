@@ -1,0 +1,158 @@
+body {
+    background-color: #0e1217;
+}
+
+.container {
+    padding: 10px;
+    width: 80%;
+    flex-wrap: wrap;
+    display: flex;
+    gap: 20px;
+    margin: auto;
+    justify-content: center;
+}
+
+.cover {
+    width: 20%;
+    height: auto;
+    border-radius: 20px;
+    border: 1px solid rgba(211, 211, 211, 0.449);
+    padding: 10px;
+    background-color: #1c1f26;
+}
+
+.cover:hover {
+    transform: 1.03;
+    box-shadow: 2px 2px 10px 1px rgba(103, 103, 128, 0.857);
+}
+
+.cover-1 {
+    display: flex;
+    gap: 20px;
+}
+
+.img-cover {
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    overflow: hidden;
+}
+
+.img-cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.info {
+    text-align: center;
+    color: white;
+}
+
+.link a {
+    text-decoration: none;
+    color: white;
+}
+
+.link a h1 {
+    font-size: larger;
+}
+
+.list-link ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.list-link ul li {
+    border: 1px solid rgba(211, 211, 211, 0.33);
+    border-radius: 8px;
+    padding: 2px 10px;
+}
+
+.list-link ul li a {
+    text-decoration: none;
+    color: rgba(211, 211, 211, 0.541);
+}
+
+.gallary img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.gallary:hover {
+    border: 1px solid rgba(109, 128, 133, 0.476);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.icon {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+}
+
+.icon i {
+    width: 6%;
+    padding: 6px;
+    color: rgba(211, 211, 211, 0.378);
+}
+
+.dow-uvp {
+    display: inline;
+    background-color: rgba(128, 128, 128, 0.427);
+    border-radius: 10px;
+}
+
+.dow-uvp:hover {
+    border-radius: 10px;
+}
+
+#color-1 {
+    width: 40px;
+}
+
+#color-2 {
+    width: 20px;
+}
+
+.icon i:hover {
+    border-radius: 8px;
+    background-color: rgba(21, 155, 173, 0.274);
+}
+
+.icon #color-1:hover {
+    background-color: rgba(137, 43, 226, 0.242);
+}
+
+.icon #color-2:hover {
+    background-color: rgba(178, 65, 84, 0.435);
+}
+
+.icon #color-3:hover {
+    background-color: rgba(86, 226, 43, 0.385);
+}
+
+.icon #color-4:hover {
+    background-color: rgba(162, 106, 18, 0.435);
+}
+
+@media screen and (max-width:1200px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .cover {
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .list-link ul {
+        flex-direction: row;
+    }
+
+}

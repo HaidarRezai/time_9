@@ -3,25 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="style.css">
-    <title>NAV BAR</title>
+    <style>
+    .dropdowen{
+        position:relative ;
+        display: inline-block;
+    }
+    .dropdowen-content{
+             position: absolute;
+             background-color: aquamarine;
+             z-index: 100;
+    }
+    </style>
+   
 </head>
 <body>
-    <nav>
-        <input type="checkbox" id="check">
-        
-        <label class="logo">LogoX</label>
-        <label for="check" class="check_btn">
-            <i class="bx bx-menu"></i>
-        </label>
-        <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Contact us</li>
-        </ul>
+    <div class="dropdown">
+        <p>menu</p>
+        <div class="dropdown-content">
+            <p>about</p>
+            <p>gallary</p>
+        </div>
+    </div>
+ 
 
-    </nav>
+    
 </body>
 </html>

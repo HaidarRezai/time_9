@@ -11,11 +11,19 @@
 <body>
 
     <header>
-        <nav class="sup">
+        <nav class="sup" id="show_sup">
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="#" class="a">About</a></li>
-                <li><a href="#">News</a></li>
+                <li><a href="#">About</a></li>
+                <li>
+                    <a href="#" class="news_list">News</a>
+                    <div class="dl">
+                        <dl><a href="#">Sport</a></dl>
+                        <dl><a href="#">Law</a></dl>
+                        <dl><a href="#">Ecammerce</a></dl>
+                        <dl><a href="#">New Page</a></dl>
+                    </div>
+                </li>
                 <li><a href="#">Blog</a></li>
                 <li><a href="#">FAQs</a></li>
                 <li><a href="#">Contact us</a></li>
@@ -29,14 +37,41 @@
                     <img src="./image/img-4.jpg" alt="">
                 </div>
             </div>
+            <div class="close_btn">
+                <i class='bx bx-x' onclick="close_nav()"></i>
+            </div>
         </nav>
         <nav class="sub">
             <h1>Hello</h1>
-            <i class='bx bx-menu'></i>
+            <i class='bx bx-menu' onclick="show_nav()"></i>
         </nav>
     </header>
 
-    <main></main>
+    <main>
+        <div>
+            <h1>more</h1>
+            <div class="window">
+                <img src="./image/bg.jpg" alt="">
+                <div>
+                    <h1>Hello css</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores doloribus facere assumenda ipsum commodi molestiae voluptatem maiores quidem voluptas repudiandae eos libero rerum ut officia, ullam nulla sunt vel quaerat!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium inventore, tempore quis ratione explicabo perferendis cupiditate, voluptate minima temporibus sed consequuntur hic est consequatur quia quo itaque fugiat! Sit, repudiandae.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, earum nisi a amet esse pariatur soluta atque alias? Repellendus deserunt officia suscipit dolores eveniet non numquam iusto incidunt et a.</p>
+                </div>
+            </div>
+        </div>
+    </main>
     <footer></footer>
+
+    <script>
+        function show_nav(){
+            document.getElementById("show_sup").classList.add('show_nav')
+            document.getElementById("show_sup").classList.remove('close_nav')
+        }
+        function close_nav(){
+            document.getElementById("show_sup").classList.remove("show_nav")
+            document.getElementById("show_sup").classList.add('close_nav')
+        }
+    </script>
 </body>
 </html>

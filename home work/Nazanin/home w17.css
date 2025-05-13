@@ -1,0 +1,138 @@
+body {
+    background-color: black;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.continer {
+    border: 1px solid rgb(127, 122, 122);
+    background-color: #1c1f26;
+    border-radius: 20px;
+    width: 19%;
+    height: auto;
+    margin: 20px;
+    padding: 20px;
+    transition: 2ms;
+
+}
+
+.continer:hover {
+    transform: scale(1.03);
+    border: 1px solid lightcyan;
+}
+
+.foto1 {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.foto1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+h1 {
+    color: aliceblue;
+    font-size: large;
+}
+
+button {
+    border: 1px solid gray;
+    border-radius: 10px;
+    background-color: black;
+    outline: none;
+    padding: 5px 10px;
+    color: gray;
+    display: inline;
+    justify-content: space-between;
+}
+
+p {
+    color: gray;
+}
+
+.book {
+    width: 360px;
+    height: 250px;
+    border-radius: 10px;
+    transition: 2ms;
+}
+
+.book:hover {
+    transform: scale(1.03);
+}
+
+.main_image {
+    height: 24vh;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.main_image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.icon-all {
+    display: inline;
+    font-size: 30px;
+    color: gray;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.icon {
+    display: inline;
+    background-color: rgb(34, 33, 33);
+    border-radius: 20px;
+    padding: 0px 20px;
+}
+
+#icon3,
+#icon4,
+#icon5 {
+    padding: 0px 10px;
+}
+
+.icon:hover {
+    background-color: rgba(51, 130, 130, 0.504);
+    border-radius: 10px;
+}
+
+#icon3:hover {
+    background-color: rgba(179, 221, 107, 0.2);
+    border-radius: 10px;
+}
+
+#icon4:hover {
+    background-color: rgba(137, 43, 226, 0.242);
+    border-radius: 10px;
+}
+
+#icon5:hover {
+    background-color: rgba(174, 95, 95, 0.649);
+
+    border-radius: 10px;
+}
+
+@media screen and (max-width:1200px) {
+    .continer {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        margin-bottom: -40px;
+    }
+
+    .book {
+        width: 100%;
+    }
+}
