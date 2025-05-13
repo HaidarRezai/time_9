@@ -1,0 +1,120 @@
+body {
+    background-color: #f3f3f3;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 60px;
+}
+.container {
+    border: 1px solid rgb(181, 167, 209);
+    border-radius: 20px;
+    width: 20%;
+    height: auto;
+    background-color: white;
+    padding: 10px 10px;
+}
+.box {
+    border-radius: 20px;
+    background-color: #b5cceb;
+    float: right;
+    margin-right: 20px;
+    padding: 10px 20px;
+}
+.box-2 {
+    background-color: rgb(93, 39, 218);
+    border: 1px solid rgb(93, 39, 218);
+    border-radius: 8px;
+    width: 300px;
+    padding: 10px 20px;
+    margin: auto;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+}
+b {
+    font-size: 30px;
+}
+.box-1 {
+    border: 2px solid rgb(93, 39, 218);
+    border-radius: 10px;
+    width: 300px;
+    padding: 10px 20px;
+    margin: auto;
+    text-align: center;
+    font-weight: bold;
+    color: rgb(93, 39, 218);
+}
+.header {
+    margin-top: 50px;
+    /* line-height: 1px; */
+    padding: 20PX;
+    color: rgb(56, 25, 83);
+}
+.paragraph {
+    color: gray;
+    padding: 5px 20px;
+}
+hr {
+    width: 330px;
+    border: 0.1px solid rgb(136, 136, 222);
+}
+#icon-1,
+#icon-2,
+#icon-3 {
+    display: inline;
+    padding-left: 30px;
+    color: gray;
+}
+.icon-1content,
+.icon-1content,
+.icon-1content {
+    display: inline;
+    line-height: 10px;
+    line-height: 10px;
+    color: rgb(56, 25, 83);
+}
+.underline {
+    color: rgb(56, 25, 83);
+
+}
+.underline-1 {
+    padding-left: 25PX;
+    color: rgb(56, 25, 83);
+}h3 {
+    padding-left: 30px;
+    color: rgb(56, 25, 83);
+}
+.paragraph-2 {
+    display: inline;
+}
+span {
+    position: absolute;
+    right: 20px;
+    bottom: 120px;
+    border-radius: 10px;
+    background-color: rgba(148, 233, 162, 0.7);
+    padding: 10px 20px;
+}
+.paragraph-3 {
+    position: relative;
+    padding-left: 35PX;
+    line-height: 20px;
+}
+.paragraph-3 p:before {
+    content: "✓";
+    position: absolute;
+    color: rgb(56, 25, 83);
+    font-weight: 600;
+    left: 20px;
+}
+@media screen and (max-width:1200px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }    .container {
+        height: auto;
+        width: 100%;
+    }
+}
