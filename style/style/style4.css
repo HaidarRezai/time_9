@@ -71,6 +71,45 @@ header .sup ul li a {
     display: none;
 }
 
+li .dl {
+    visibility: hidden;
+    position: absolute;
+    background-color: greenyellow;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.news_list:hover~.dl {
+    visibility: visible;
+}
+
+.dl:hover {
+    visibility: visible;
+}
+
+.close_btn {
+    display: none;
+}
+
+.window {
+    background-color: white;
+    width: 40%;
+    padding: 20px;
+    box-shadow: 3px 4px 10px 1px gray;
+    display: flex;
+    gap: 30px;
+    border-radius: 20px;
+    display: none;
+}
+
+.window img {
+    width: 300px;
+}
+
+h1:hover~.window {
+    display: flex;
+}
+
 @media screen and (max-width:900px) {
     .sub {
         display: flex;
@@ -86,14 +125,35 @@ header .sup ul li a {
         }
     }
 
+    .show_nav {
+        animation-name: showNav;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes closeNav {
+        0% {
+            left: 0;
+        }
+
+        100% {
+            left: -120%;
+        }
+    }
+
+    .close_nav {
+        animation-name: closeNav;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+    }
+
     header .sup {
         flex-direction: column-reverse;
         width: 100%;
         padding: 30px 0;
         position: fixed;
         top: 0;
-        animation-name: showNav;
-        animation-duration: 4s;
+        left: -120%;
     }
 
     header .sup ul {
@@ -107,5 +167,12 @@ header .sup ul li a {
         flex-direction: column-reverse;
         justify-content: center;
         gap: 8px;
+    }
+
+    .close_btn {
+        display: flex;
+        justify-content: end;
+        font-size: larger;
+        width: 100%;
     }
 }
