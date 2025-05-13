@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <title>Daily Div</title>
+    <style>
+        body {
+            background-color: black;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .container {
+            background-color: rgb(22, 22, 22);
+            width: 280px;
+            height: auto;
+            flex-wrap: wrap;
+            border-radius: 10px;
+            outline: 1px solid white;
+            margin: 30px auto;
+            transition: all 300ms;
+            cursor: pointer;
+        }
+        .container:hover {
+            transform: scale(1.03);
+        }
+        .header {
+            display: flex;
+            width: 100%;
+        }
+        .profile {
+            width: 50%;
+            height: 40px;
+            padding: 10px;
+        }
+        .profile img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+        h5 {
+            color: rgb(0, 0, 0);
+        }
+        i {
+            font-size: 22px;
+            color: gold;
+        }
+        h5,
+        .share i {
+            background-color: white;
+            border-radius: 10px;
+            padding: 3px;
+        }
+        .share {
+            display: block;
+        }
+        .share:hover {
+            display: block;
+        }
+        .title {
+            color: white;
+            font-size: 10px;
+            padding: 2px;
+            margin: 0px 3px;
+        }
+        .hashtag {
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            margin: 10px 0px;
+            color: white;
+            font-size: 10px;
+            padding: 0 2px;
+            overflow: hidden;
+        }
+        .subhashtag {
+            width: fit-content;
+            background-color: rgb(39, 39, 39);
+            border-radius: 10px;
+            border: 1px solid #f3f3f3;
+            color: rgb(255, 255, 255);
+            row-gap: 5px;
+            height: 30px;
+            text-align: center;
+            padding: 0px 2px;
+        }
+        .mainimage {
+            width: 100%;
+            height: 140px;
+            border-radius: 20px;
+            border: 1px solid red;
+            margin: auto;
+            overflow: hidden;
+        }
+        .mainimage img {
+            width: 250px;
+            height: 180px;
+            align-content: center;
+        }
+        .icons_bottom {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            cursor: pointer;
+            margin: 10px 0;
+        }
+        .up i {
+            width: 45px;
+            color: #949494;
+            font-size: 15px;
+        }
+        .down i {
+            width: 12px;
+            color: #949494;
+            font-size: 15px;
+            border-radius: 7px;
+            padding: 2px 2px;
+        }
+        .up_down {
+            background-color: #686767;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 57px;
+            border-radius: 7px;
+            padding: 2px 3px;
+            cursor: pointer;
+        }
+        .up i:hover {
+            background-color: green;
+            color: lightgreen;
+        }
+        .down i:hover {
+            background-color: red;
+            color: lightcoral;
+        }
+        .comment i {
+            color: cyan;
+        }
+        .comment i:hover {
+            color: rgb(4, 207, 207);
+        }
+        .link i {
+            color: purple;
+        }
+        .link i:hover {
+            background-color: rgb(206, 5, 206);
+            border-radius: 7px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="profile">
+                <img src="./images.jpeg" alt="">
+            </div>
+            <div class="share">
+                <h5>Share Post <i class='bx bxs-share bx-flip-horizontal'></i></h5>
+            </div>
+        </div>
+        <div class="title">
+            <h1>EP157: How to Learn Backend Development?</h1>
+        </div>
+        <div class="hashtag">
+            <div class="badge">
+                <i class='bx bxs-badge-dollar'></i>
+            </div>
+            <div class="subhashtag">
+                <h3>#Webdev</h3>
+            </div>
+            <div class="subhashtag">
+                <h3>#Frontend</h3>
+            </div>
+            <div class="subhashtag">
+                <h3>#+1</h3>
+            </div>
+        </div>
+        <div class="mainimage">
+            <img src="./12.jpg" alt="">
+        </div>
+        <div class="badge">
+            <div class="icons_bottom">
+                <div class="up_down">
+                    <div class="up">
+                        <i class="fa-solid fa-up-long">&nbsp;552</i>
+                    </div>
+                    <div class="down">
+                        <i class="fa-solid fa-down-long"></i>
+                    </div>
+                </div>
+                <div class="comment">
+                    <i class="fa-solid fa-comment"></i>
+                </div>
+                <div class="bookmark">
+                    <i class="fa-solid fa-bookmark"></i>
+                </div>
+                <div class="link">
+                    <i class="fa-solid fa-link"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="header">
+            <div class="profile">
+                <img src="./images.jpeg" alt="">
+            </div>
+            <div class="share">
+                <h5>Share Post <i class='bx bxs-share bx-flip-horizontal'></i></h5>
+            </div>
+        </div>
+        <div class="title">
+            <h1>EP157: How to Learn Backend Development?</h1>
+        </div>
+        <div class="hashtag">
+            <div class="badge">
+                <i class='bx bxs-badge-dollar'></i>
+            </div>
+            <div class="subhashtag">
+                <h3>#Webdev</h3>
+            </div>
+            <div class="subhashtag">
+                <h3>#Frontend</h3>
+            </div>
+            <div class="subhashtag">
+                <h3>#+1</h3>
+            </div>
+        </div>
+        <div class="mainimage">
+            <img src="./12.jpg" alt="">
+        </div>
+        <div class="badge">
+            <div class="icons_bottom">
+                <div class="up_down">
+                    <div class="up">
+                        <i class="fa-solid fa-up-long">&nbsp;552</i>
+                    </div>
+                    <div class="down">
+                        <i class="fa-solid fa-down-long"></i>
+                    </div>
+                </div>
+                <div class="comment">
+                    <i class="fa-solid fa-comment"></i>
+                </div>
+                <div class="bookmark">
+                    <i class="fa-solid fa-bookmark"></i>
+                </div>
+                <div class="link">
+                    <i class="fa-solid fa-link"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="container">
+        <div class="header">
+            <div class="profile">
+                <img src="./images.jpeg" alt="">
+            </div>
+            <div class="share">
+                <h5>Share Post <i class='bx bxs-share bx-flip-horizontal'></i></h5>
+            </div>
+        </div>
+        <div class="title">
+            <h1>EP157: How to Learn Backend Development?</h1>
+        </div>
+        <div class="hashtag">
+            <div class="badge">
+                <i class='bx bxs-badge-dollar'></i>
+            </div>
+            <div class="subhashtag">
+                <h3>#Webdev</h3>
+            </div>
+            <div class="subhashtag">
+                <h3>#Frontend</h3>
+            </div>
+            <div class="subhashtag">
+                <h3>#+1</h3>
+            </div>
+        </div>
+        <div class="mainimage">
+            <img src="./12.jpg" alt="">
+        </div>
+        <div class="badge">
+            <div class="icons_bottom">
+                <div class="up_down">
+                    <div class="up">
+                        <i class="fa-solid fa-up-long">&nbsp;552</i>
+                    </div>
+                    <div class="down">
+                        <i class="fa-solid fa-down-long"></i>
+                    </div>
+                </div>
+                <div class="comment">
+                    <i class="fa-solid fa-comment"></i>
+                </div>
+                <div class="bookmark">
+                    <i class="fa-solid fa-bookmark"></i>
+                </div>
+                <div class="link">
+                    <i class="fa-solid fa-link"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="container">
+        <div class="header">
+            <div class="profile">
+                <img src="./images.jpeg" alt="">
+            </div>
+            <div class="share">
+                <h5>Share Post <i class='bx bxs-share bx-flip-horizontal'></i></h5>
+            </div>
+        </div>
+        <div class="title">
+            <h1>EP157: How to Learn Backend Development?</h1>
+        </div>
+        <div class="hashtag">
+            <div class="badge">
+                <i class='bx bxs-badge-dollar'></i>
+            </div>
+            <div class="subhashtag">
+                <h3>#Webdev</h3>
+            </div>
+            <div class="subhashtag">
+                <h3>#Frontend</h3>
+            </div>
+            <div class="subhashtag">
+                <h3>#+1</h3>
+            </div>
+        </div>
+        <div class="mainimage">
+            <img src="./12.jpg" alt="">
+        </div>
+        <div class="badge">
+            <div class="icons_bottom">
+                <div class="up_down">
+                    <div class="up">
+                        <i class="fa-solid fa-up-long">&nbsp;552</i>
+                    </div>
+                    <div class="down">
+                        <i class="fa-solid fa-down-long"></i>
+                    </div>
+                </div>
+                <div class="comment">
+                    <i class="fa-solid fa-comment"></i>
+                </div>
+                <div class="bookmark">
+                    <i class="fa-solid fa-bookmark"></i>
+                </div>
+                <div class="link">
+                    <i class="fa-solid fa-link"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="container">
+        <div class="header">
+            <div class="profile">
+                <img src="./images.jpeg" alt="">
+            </div>
+            <div class="share">
+                <h5>Share Post <i class='bx bxs-share bx-flip-horizontal'></i></h5>
+            </div>
+        </div>
+        <div class="title">
+            <h1>EP157: How to Learn Backend Development?</h1>
+        </div>
+        <div class="hashtag">
+            <div class="badge">
+                <i class='bx bxs-badge-dollar'></i>
+            </div>
+            <div class="subhashtag">
+                <h3>#Webdev</h3>
+            </div>
+            <div class="subhashtag">
+                <h3>#Frontend</h3>
+            </div>
+            <div class="subhashtag">
+                <h3>#+1</h3>
+            </div>
+        </div>
+        <div class="mainimage">
+            <img src="./12.jpg" alt="">
+        </div>
+        <div class="badge">
+            <div class="icons_bottom">
+                <div class="up_down">
+                    <div class="up">
+                        <i class="fa-solid fa-up-long">&nbsp;552</i>
+                    </div>
+                    <div class="down">
+                        <i class="fa-solid fa-down-long"></i>
+                    </div>
+                </div>
+                <div class="comment">
+                    <i class="fa-solid fa-comment"></i>
+                </div>
+                <div class="bookmark">
+                    <i class="fa-solid fa-bookmark"></i>
+                </div>
+                <div class="link">
+                    <i class="fa-solid fa-link"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="container">
+        <div class="header">
+            <div class="profile">
+                <img src="./images.jpeg" alt="">
+            </div>
+            <div class="share">
+                <h5>Share Post <i class='bx bxs-share bx-flip-horizontal'></i></h5>
+            </div>
+        </div>
+        <div class="title">
+            <h1>EP157: How to Learn Backend Development?</h1>
+        </div>
+        <div class="hashtag">
+            <div class="badge">
+                <i class='bx bxs-badge-dollar'></i>
+            </div>
+            <div class="subhashtag">
+                <h3>#Webdev</h3>
+            </div>
+            <div class="subhashtag">
+                <h3>#Frontend</h3>
+            </div>
+            <div class="subhashtag">
+                <h3>#+1</h3>
+            </div>
+        </div>
+        <div class="mainimage">
+            <img src="./12.jpg" alt="">
+        </div>
+        <div class="badge">
+            <div class="icons_bottom">
+                <div class="up_down">
+                    <div class="up">
+                        <i class="fa-solid fa-up-long">&nbsp;552</i>
+                    </div>
+                    <div class="down">
+                        <i class="fa-solid fa-down-long"></i>
+                    </div>
+                </div>
+                <div class="comment">
+                    <i class="fa-solid fa-comment"></i>
+                </div>
+                <div class="bookmark">
+                    <i class="fa-solid fa-bookmark"></i>
+                </div>
+                <div class="link">
+                    <i class="fa-solid fa-link"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="header">
+            <div class="profile">
+                <img src="./images.jpeg" alt="">
+            </div>
+            <div class="share">
+                <h5>Share Post <i class='bx bxs-share bx-flip-horizontal'></i></h5>
+            </div>
+        </div>
+        <div class="title">
+            <h1>EP157: How to Learn Backend Development?</h1>
+        </div>
+        <div class="hashtag">
+            <div class="badge">
+                <i class='bx bxs-badge-dollar'></i>
+            </div>
+            <div class="subhashtag">
+                <h3>#Webdev</h3>
+            </div>
+            <div class="subhashtag">
+                <h3>#Frontend</h3>
+            </div>
+            <div class="subhashtag">
+                <h3>#+1</h3>
+            </div>
+        </div>
+        <div class="mainimage">
+            <img src="./12.jpg" alt="">
+        </div>
+        <div class="badge">
+
+            <div class="icons_bottom">
+                <div class="up_down">
+                    <div class="up">
+                        <i class="fa-solid fa-up-long">&nbsp;552</i>
+                    </div>
+                    <div class="down">
+                        <i class="fa-solid fa-down-long"></i>
+                    </div>
+                </div>
+                <div class="comment">
+                    <i class="fa-solid fa-comment"></i>
+                </div>
+                <div class="bookmark">
+                    <i class="fa-solid fa-bookmark"></i>
+                </div>
+                <div class="link">
+                    <i class="fa-solid fa-link"></i>
+                </div>
+            </div>
+        </div>
+</body>
+</html>
