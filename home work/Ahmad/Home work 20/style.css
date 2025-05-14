@@ -11,12 +11,12 @@ body {
 .main_container {
     display: grid;
     grid-template-columns: 1fr 1.2fr 1fr;
-    justify-content: space-evenly;
+    justify-items: center;
     align-items: center;
     margin: auto;
-    width: 60%;
+    width: 50%;
     padding: 7px;
-    gap: 10px;
+    gap: 5px;
 }
 
 .see_feature_box {
