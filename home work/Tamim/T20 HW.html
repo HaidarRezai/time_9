@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="form-container">
+    <form class="registration-form">
+      <h2>Registration Form</h2>
+      <div class="image">
+            <input type="file" name="file" id="file" hidden>    
+            <label for="file" class="file">
+                <img src="./images.jpeg" alt="">
+            </label>
+            </div>
+      <div class="form-row">
+        <div class="form-cover">
+            <input type="text" placeholder="" class="input">
+            <label>First Name</label>
+        </div>
+        <div class="form-cover">
+            <input type="text" placeholder="" class="input">
+            <label>Last Name</label>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-cover">
+            <input type="date" class="input">
+            <label>Birthday</label>
+        </div>
+        <div class="form-cover">
+            <div class="gender-options">
+              <label>Gender</label>
+            <label><input type="radio" name="gender" checked class="input"> Male</label>
+            <label><input type="radio" name="gender" class="input"> Female</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-cover">
+            <input type="email">
+            <label>Email</label>
+        </div>
+        <div class="form-cover">
+            <input type="tel">
+            <label>Phone Number</label> 
+        </div>
+      </div>
+
+      <div class="form-cover">
+        <label>Subject</label>
+        <select>
+          <option>English</option>
+          <option>DEL</option>
+          <option>Front End</option>
+          <option>Backend</option>
+
+        </select>
+      </div>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
