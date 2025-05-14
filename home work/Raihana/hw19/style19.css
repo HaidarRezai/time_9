@@ -63,7 +63,7 @@ body {
 .cover .form label {
     z-index: 200;
     position: absolute;
-    top: 12px;
+    top: 20px;
     left: 16px;
     color: gray;
 }
