@@ -1,0 +1,148 @@
+*{
+    padding: 0;
+    margin: 0%;
+
+}
+
+
+body {
+    background-color: rgb(2, 12, 26);
+    color: white;
+}
+
+.navbar {
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    height: 10%;
+    margin: 0%;
+    background-color: rgb(11, 37, 85);
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+.navbar ul {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 30px;
+    justify-content: space-between;
+    font-size: 20px;
+    /* margin-right: 200px; */
+    margin-left: 800px;
+    cursor: pointer;
+}
+.navbar ul li a {
+    padding: 10px 20px;
+    transition: all .5s;
+}
+.navbar ul li a:hover {
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgb(47, 87, 160);
+}
+.navbar .logo a {
+    position: relative;
+    top: 37px;
+    text-decoration: none;
+    font-size: larger;
+    color: white;
+    padding: 10px 20px;
+    transition: all .5s;
+}
+.navbar .logo a:hover {
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgb(47, 87, 160);
+}
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+}
+.navbar ul li {
+    list-style-type: none;
+}
+.cover-page {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 500px;
+    height: auto;
+    margin-top: 400px;
+    display: flex;
+    margin-left: 100px;
+    line-height: 23px;
+    flex-wrap: wrap;
+}
+.cover-page h1 {
+    line-height: 30px;
+}
+
+.cover-page .cover-icon {
+    display: flex;
+    align-items: center;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    background: rgb(11, 37, 85);
+    border: 2px solid rgb(11, 37, 85);
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgb(11, 37, 85);
+    color: white;
+    text-decoration: none;
+    transition: .5s;
+}
+
+.btn:hover {
+    background: transparent;
+    color: rgb(11, 37, 85);
+}
+
+.cover-icon .icon a {
+    margin-left: 20px;
+    background: rgb(11, 37, 85);
+    border: 1px solid rgb(11, 37, 85);
+    font-size: 20px;
+    padding: 8px;
+    color: white;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgb(11, 37, 85);
+}
+
+.icon a:hover {
+    background: transparent;
+    color: rgb(11, 37, 85);
+}
+
+.cover-page {
+    /* display: flex; */
+    /* justify-content:space-between; */
+    /* align-items:right; */
+}
+
+.cover-img {
+    position: absolute;
+    top: 200px;
+    background: transparent;
+    right: 300px;
+    width: 32vw;
+    height: 32vw;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid rgb(11, 37, 85);
+}
+
+.cover-page .cover-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cover-img:hover {
+    border: 3px solid rgb(11, 37, 85);
+    box-shadow: 0 0 20px rgb(11, 37, 85);
+}
+@media screen and (max-width:1200px) {
+    .navbar{
+        
+    }
+    
+}

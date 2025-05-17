@@ -1,0 +1,232 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000000;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+    color: #fff;
+}
+
+.container {
+    box-shadow: 1px 2px 100px 2px rgba(67, 136, 206, 0.617);
+    width: 75%;
+    height: 80vh;
+    display: flex;
+    margin: 50px auto;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.cover {
+    margin-left: 22%;
+}
+
+.image {
+    width: 45%;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.form {
+    width: 55%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000;
+}
+
+.head {
+    text-align: center;
+    font-size: 28px;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #fff;
+    font-weight: bolder;
+}
+
+.main_form {
+    width: 100%;
+}
+
+.label_input {
+    position: relative;
+    margin: 20px 0;
+    width: 100%;
+}
+
+.input_data input {
+    width: 80%;
+    height: 40px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #999;
+    color: white;
+    font-size: 16px;
+    padding: 5px 10px;
+    transition: 0.3s;
+}
+
+.input_data input:focus {
+    border-color: #1e90ff;
+    outline: none;
+}
+
+.label_input label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #aaa;
+    transition: 0.3s;
+}
+
+.input:focus~label,
+.input:not(:placeholder-shown):not(:focus)~label {
+    top: -10px;
+    left: 5px;
+    font-size: 12px;
+    color: #1e90ff;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0 4px;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    width: 40%;
+    height: 40px;
+    margin: 20px 24%;
+    background-color: #1e90ff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #00bfff;
+}
+
+.stars {
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    background: white;
+    box-shadow: 2vw 5vh 2px white, 10vw 8vh 2px white, 15vw 15vh 1px white,
+        22vw 22vh 1px white, 28vw 12vh 2px white, 32vw 32vh 1px white,
+        38vw 18vh 2px white, 42vw 35vh 1px white, 48vw 25vh 2px white,
+        53vw 42vh 1px white, 58vw 15vh 2px white, 63vw 38vh 1px white,
+        68vw 28vh 2px white, 73vw 45vh 1px white, 78vw 32vh 2px white,
+        83vw 48vh 1px white, 88vw 20vh 2px white, 93vw 52vh 1px white,
+        98vw 35vh 2px white, 5vw 60vh 1px white, 12vw 65vh 2px white,
+        18vw 72vh 1px white, 25vw 78vh 2px white, 30vw 85vh 1px white,
+        35vw 68vh 2px white, 40vw 82vh 1px white, 45vw 92vh 2px white,
+        50vw 75vh 1px white, 55vw 88vh 2px white, 60vw 95vh 1px white,
+        65vw 72vh 2px white, 70vw 85vh 1px white, 75vw 78vh 2px white,
+        80vw 92vh 1px white, 85vw 82vh 2px white, 90vw 88vh 1px white,
+        95vw 75vh 2px white;
+    animation: twinkle 8s infinite linear;
+}
+
+.shooting-star {
+    position: absolute;
+    width: 100px;
+    height: 2px;
+    background: linear-gradient(90deg, white, transparent);
+    animation: shoot 3s infinite ease-in;
+}
+
+.shooting-star:nth-child(1) {
+    top: 20%;
+    left: -100px;
+    animation-delay: 0s;
+}
+
+.shooting-star:nth-child(2) {
+    top: 35%;
+    left: -100px;
+    animation-delay: 1s;
+}
+
+.shooting-star:nth-child(3) {
+    top: 50%;
+    left: -100px;
+    animation-delay: 2s;
+}
+
+@keyframes twinkle {
+
+    0%,
+    100% {
+        opacity: 0.8;
+    }
+
+    50% {
+        opacity: 0.4;
+    }
+}
+
+@keyframes shoot {
+    0% {
+        transform: translateX(0) translateY(0) rotate(25deg);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(120vw) translateY(50vh) rotate(25deg);
+        opacity: 0;
+    }
+}
+
+/* Additional twinkling stars with different animation timing */
+.stars::after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    background: white;
+    box-shadow: 8vw 12vh 2px white, 16vw 18vh 1px white, 24vw 25vh 2px white,
+        33vw 15vh 1px white, 41vw 28vh 2px white, 49vw 35vh 1px white,
+        57vw 22vh 2px white, 65vw 42vh 1px white, 73vw 28vh 2px white,
+        81vw 48vh 1px white, 89vw 32vh 2px white, 97vw 45vh 1px white,
+        3vw 68vh 2px white, 11vw 75vh 1px white, 19vw 82vh 2px white,
+        27vw 88vh 1px white, 35vw 72vh 2px white, 43vw 85vh 1px white,
+        51vw 92vh 2px white, 59vw 78vh 1px white;
+    animation: twinkle 18s infinite linear reverse;
+}
+
+@media screen and (max-width:1200px) {
+    body {
+        overflow-y: scroll;
+    }
+
+    .container {
+        flex-direction: column;
+        height: fit-content;
+    }
+
+    .form,
+    .image {
+        width: 100%;
+        height: 100%;
+    }
+
+    input[type="submit"] {
+        display: flex;
+        margin: auto;
+    }
+}

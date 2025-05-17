@@ -1,0 +1,115 @@
+body {
+        background-color: rgb(13, 11, 43);
+    }
+
+    .nav-1 {
+        width: 100%;
+        background-color: transparent;
+        border-bottom: 1px solid rgb(182, 180, 177);
+        color: rgb(166, 166, 166);
+        height: 5rem;
+        gap: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .nav-1 ul {
+        display: flex;
+        gap: 70px;
+        padding: 20px;
+        list-style-type: none;
+        cursor: pointer;
+        font-size: 23px;
+        color: rgb(155, 153, 153);
+    }
+
+    ul li:hover {
+        transform: scale(1.09);
+        transition: all 400ms ease-in-out;
+        color: whitesmoke;
+    }
+
+    .logo {
+        padding: 3px;
+        color: rgb(153, 151, 151);
+        font-size: 2rem;
+        margin-left: 20px;
+        text-decoration: none;
+        border-radius: 20px;
+        transition: all 300ms;
+    }
+
+    .logo:hover {
+        transform: scale(1.09);
+        color: whitesmoke;
+    }
+
+    .cover-1 {
+        height: 20rem;
+        width: 50%;
+        padding: 20px;
+        position: relative;
+        top: 200px;
+        left: 170px;
+        color: whitesmoke;
+        line-height: 20px;
+    }
+
+    button {
+        width: 150px;
+        padding: 10px;
+        border: 1px solid rgb(15, 180, 31);
+        border-radius: 30px;
+        font-size: 20px;
+        color: rgb(31, 32, 51);
+        background-color: rgb(8, 135, 27);
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: rgb(56, 192, 92);
+        box-shadow: 1px 1px 10px 2px gray;
+    }
+
+    span {
+        border: 2px solid rgb(7, 121, 47);
+        border-radius: 20px;
+        padding: 6px;
+        color: green;
+        margin-right: 6px;
+        margin-left: 5px;
+        cursor: pointer;
+    }
+
+    span:hover {
+        background-color: rgb(56, 192, 92);
+        box-shadow: 1px 1px 10px 2px gray;
+    }
+
+    .cover-image {
+        border: 1px solid rgb(240, 237, 237);
+        height: 300px;
+        width: 20%;
+        float: right;
+        display: flex;
+        justify-content: center;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-top: -150px;
+        margin-right: 200px;
+        border-left: 5px solid green;
+        background-color: transparent;
+    }
+
+    .cover-image img {
+        width: 100%;
+        height: 100%;
+    } 
+    @media screen and (max-width: 1000px) {
+       .nav-1 {
+        width: 50%;
+        height: auto;
+       } 
+    
+    }
