@@ -1,69 +1,72 @@
-*{
+* {
     margin: 0;
     padding: 0px;
-    
+    box-sizing: border-box;
 }
 
-body{
-    background-color:rgb(19, 15, 15);
-    
+body {
+    background-color: rgb(19, 15, 15);
 }
 
-a{
+a {
     color: white;
     text-decoration: none;
-    
 }
-.nav-bar{
+
+.nav-bar {
     position: fixed;
     left: 0;
     top: 0;
     width: 100%;
-   padding: 25px 9%;
+    padding: 25px 9%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 100;
-
 }
-.nav-bar .Logo{
+
+.nav-bar .Logo {
     font-weight: 700;
     font-size: 26px;
-
 }
-.nav-bar ul{
+
+.nav-bar ul {
     display: flex;
 }
-.nav-bar ul li{
+
+.nav-bar ul li {
     list-style-type: none;
     margin-left: 20px;
 }
-.nav-bar ul li a{
+
+.nav-bar ul li a {
     font-weight: 500;
     font-size: 20px;
     transition: .6s;
 }
-.nav-bar ul li:hover a
- {
+
+.nav-bar ul li:hover a {
     color: #7cf03d;
 }
+
 .nav-bar ul li.active a {
     color: #7cf03d;
 }
-.home_info{
-    width: 70%;;
+
+.home_info {
+    width: 70%;
 }
-.main_content{
+
+.main_content {
     margin-top: 10%;
     padding: 30px 9%;
     width: 100%;
     color: white;
     display: flex;
     justify-content: space-between;
-
-    
 }
-.main_content h1{
+
+.main_content h1 {
     color: white;
     font-weight: 700;
     font-size: 40px;
@@ -71,48 +74,52 @@ a{
     color: white;
     margin-top: 10px;
 }
-.main_content h2{
+
+.main_content h2 {
     color: white;
     margin-top: 20px;
 }
-.btn{
+
+.btn {
     margin-top: 20px;
 }
-.btn .socialbtn{
+
+.btn .socialbtn {
     margin-left: 10px;
     background-color: green;
     padding: 10px 30px;
     border-radius: 20px;
     margin-top: 10px;
 }
-.download{
+
+.download {
     background-color: green;
     padding: 10px 30px;
     border-radius: 20px;
-
 }
-.btn a:hover{
+
+.btn a:hover {
     background-color: transparent;
     border: 1px solid green;
     box-shadow: 0px 0px 10px green;
 }
-.main_content .img{
-     padding: 10px;
-     background-color: green;
-     border-radius: 50%;
+
+.main_content .img {
+    padding: 10px;
+    background-color: green;
+    border-radius: 50%;
 }
-.main_content .img .frame{
+
+.main_content .img .frame {
     background-color: red;
     border-radius: 50%;
     width: 350px;
     height: 350px;
     overflow: hidden;
-       object-fit: cover;
-      
+    object-fit: cover;
 }
-.main_content .img .frame img{
+
+.main_content .img .frame img {
     width: 100%;
     height: 100%;
-    
- 
 }
