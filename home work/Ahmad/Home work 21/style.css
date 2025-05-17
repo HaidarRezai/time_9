@@ -12,7 +12,7 @@ body {
 }
 
 .container {
-    box-shadow: 1px 2px 100px 2px rgb(72, 72, 72);
+    box-shadow: 1px 2px 100px 2px rgba(67, 136, 206, 0.617);
     width: 75%;
     height: 80vh;
     display: flex;
@@ -55,7 +55,7 @@ body {
 
 h1 {
     color: #fff;
-    font-weight: normal;
+    font-weight: bolder;
 }
 
 .main_form {
@@ -90,7 +90,6 @@ h1 {
     top: 10px;
     left: 10px;
     color: #aaa;
-    pointer-events: none;
     transition: 0.3s;
 }
 
