@@ -1,0 +1,55 @@
+body {
+    background-color: #f3f3f3;
+    padding: 0;
+    margin: 0;
+}
+
+.cover {
+    background-image: radial-gradient(rgb(251, 190, 255) 10%, rgb(133, 255, 245));
+
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    margin: auto;
+    animation-name: bg-g;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    transition: all 300ms;
+    box-shadow: 100px 100px 100px 2px gray;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+.test p {
+    font-family: "Nunito", sans-serif;
+    border: 1px solid black;
+    width: 30%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: auto;
+    margin-top: 5rem;
+
+}
+
+p span {
+    writing-mode: vertical-rl;
+}
+
+@keyframes bg-g {
+    0% {
+
+        width: 30rem;
+        height: 30rem;
+        box-shadow: 200px 300px 100px 2px gray;
+    }
+
+    100% {
+        width: 10rem;
+        height: 10rem;
+        box-shadow: 20px 30px 10px 2px gray;
+
+    }
+}

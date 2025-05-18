@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style9.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="test">
+        <p id="text" onclick="show_more()">Lorem ipsum dolor <span>tesing</span> sit amet consectetur adipisicing elit. Optio, eaque labore iusto quos dolorem sapiente vel dicta velit doloremque magnam consequatur, autem maiores quidem reprehenderit, quod est aliquam quasi esse!</p>
+    </div>
+    <div class="cover">
+
+    </div>
+
+    <script>
+        function show_more(){
+            document.getElementById("text").style.overflow="visible"
+            document.getElementById("text").style.whiteSpace="wrap"
+        }
+    </script>
+</body>
+</html>
