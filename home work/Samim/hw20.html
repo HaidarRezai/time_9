@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: gray;
+        }
+
+        .cover-1 {
+            display: flex;
+            float: right;
+            width: 10rem;
+            height: 10rem;
+            border: 10px solid rgb(195, 21, 21);
+            border-bottom-color: green;
+            border-left-color: pink;
+            background: black;
+            animation: name1 0.9s infinite;
+            border-radius: 50%;
+            box-shadow: 1px 2px 10px 1px;
+            animation-direction: alternate;
+            animation-duration: 10s;
+
+        }
+
+        .cover {
+            position: relative;
+            top: 0;
+            right: 20px;
+            width: 20rem;
+            height: 20rem;
+            border: 5px solid rgb(81, 80, 129);
+            border-bottom-color: rgb(17, 52, 192);
+            border-left-color: rgb(177, 76, 93);
+            background: rgb(142, 144, 163);
+            animation: name 0.9s infinite;
+            border-radius: 50%;
+            box-shadow: 1px 2px 10px 1px;
+            animation-direction: alternate;
+            animation-duration: 4s;
+
+        }
+
+        @keyframes name {
+            0% {
+                transform: rotate(50deg ease);
+                width: 5rem;
+                height: 5rem;
+                background-color: green;
+                border: red;
+            }
+
+            100% {
+                transform: rotate(360deg);
+                width: 20rem;
+                height: 20rem;
+                background-color: blue;
+            }
+        }
+
+        @keyframes name1 {
+            0% {
+                transform: rotate(100deg);
+                width: 10rem;
+                height: 10rem;
+            }
+
+            10% {
+                transform: rotate(1250deg);
+
+            }
+
+            100% {
+                transform: rotate(360deg);
+                background-color: green;
+
+            }
+
+
+        }
+    </style>
+</head>
+<body>
+    <div class="cover-1">
+    </div>
+    <div class="cover">
+    </div>
+</body>
+</html>
