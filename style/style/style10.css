@@ -1,0 +1,90 @@
+body {
+    background-color: #f3f3f3;
+}
+
+.cover {
+    width: 50%;
+    padding: 20px;
+    box-shadow: 3px 4px 10px 1px gray;
+    background-color: white;
+    margin: auto;
+    margin-top: 10vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.one,
+.two {
+    background-color: green;
+    color: white;
+    margin: 10px;
+    padding: 20px;
+    width: 20rem;
+    height: 20px;
+    transition: ease-in-out;
+    transition-delay: 290ms;
+    transition-duration: 5s;
+    transition-property: all;
+    transition-timing-function: ease-out;
+
+}
+
+.one {
+    animation-delay: 2s;
+
+}
+
+.two,
+.one {
+    animation-name: abcd;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+
+.three {
+    position: relative;
+    cursor: pointer;
+}
+
+.tooltip {
+    background-color: rgb(93, 93, 93);
+    color: white;
+    padding: 6px 20px;
+    border-radius: 20px;
+    display: none;
+    position: absolute;
+    width: auto;
+    top: 40px;
+    right: 0px;
+}
+
+.three:hover .tooltip {
+    display: block;
+}
+
+@keyframes abcd {
+    0% {
+        transform: scale(1.03);
+    }
+
+    30% {
+        transform: rotate(180deg);
+        background-color: rgb(37, 186, 154);
+    }
+
+    50% {
+        transform: scale(2);
+    }
+
+    80% {
+        transform: rotate(-180deg);
+
+    }
+
+    100% {
+        transform: scale(1);
+        box-shadow: 10px 20px 10px 1px rgb(131, 131, 131);
+    }
+}
