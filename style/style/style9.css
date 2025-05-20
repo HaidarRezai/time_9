@@ -46,14 +46,10 @@ p span {
         box-shadow: 200px 300px 100px 2px gray;
     }
 
-
-
     100% {
         width: 10rem;
         height: 10rem;
         box-shadow: 20px 30px 10px 2px gray;
 
     }
-
-
 }
