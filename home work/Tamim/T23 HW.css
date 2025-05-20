@@ -1,0 +1,200 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 85%;
+    margin: auto;
+    padding: 10px;
+}
+
+.menu {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 20px;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: inline-block;
+}
+
+.middle_menu ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.middle_menu ul li a {
+    text-decoration: none;
+    color: rgb(189, 189, 189);
+    margin-left: 6px;
+    padding: 0px 10px;
+}
+
+.right_menu ul {
+    display: flex;
+    list-style-type: none;
+
+}
+
+.right_menu ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin-left: 9;
+    padding: 0px 10px;
+}
+.brightness i:hover{
+    color: rgb(255, 225, 54);
+
+}
+
+.sign_up a:hover {
+    background-color: rgba(0, 15, 226, 0.863);
+    border-radius: 40px;
+    padding: 10px;
+}
+
+.shape {
+    background-color: rgba(0, 0, 255, 0.658);
+    width: 550px;
+    height: 550px;
+    position: fixed;
+    right: -100px;
+    top: -100px;
+    z-index: -100;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.shape .shape_image {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    position: relative;
+}
+
+.shape .shape_image img {
+    width: 80%;
+    height: 80%;
+    object-fit: fill;
+    position: absolute;
+    top: 100px;
+    left: 40px;
+}
+.shape_small{
+    background-color: rgb(255, 238, 0);
+    width: 80px;
+    height: 80px;
+    position:absolute;
+    left: 870px;
+    top: 200px;
+    border-bottom-left-radius: 90%;
+}
+
+.text {
+    margin-top: 80px;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.desc {
+    width: 50%;
+    margin: 10px;
+}
+
+h1 {
+    margin-bottom: 10px;
+    font-weight: bolder;
+    font-size: 2.4rem;
+}
+
+.h1_desc {
+    color: rgb(187, 187, 187);
+    margin-bottom: 40px;
+}
+
+.get_started_now {
+    margin-left: 10px;
+}
+
+.get_started_now a {
+    text-decoration: none;
+    color: white;
+    background-color: blue;
+    border-radius: 70px;
+    padding: 15px;
+}
+
+.start {
+    width: 35%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.start .phone .call {
+    color: black;
+    font-weight: bold;
+}
+
+p {
+    color: rgb(187, 187, 187);
+}
+
+.bottom {
+    width: 80%;
+    height: 30px;
+    padding: 20px 20px;
+    margin: auto;
+    margin-top: 140px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bottom_title {
+    color: black;
+    font-weight: bold;
+}
+
+.left,
+.center,
+.right {
+    width: 16%;
+}
+
+.left::before {
+    content: url(./1.png);
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 153px;
+    top: 520px;
+}
+
+.center::before {
+    content: url(./2.png);
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 540px;
+    top: 520px;
+}
+
+.right::before {
+    content: url(./3.png);
+    position: absolute;
+    left: 900px;
+    top: 528px;
+}
