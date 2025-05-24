@@ -1,0 +1,90 @@
+@font-face {
+    font-family: abcd;
+    src: url(./../font/AlexBrush-Regular.ttf);
+}
+
+:root {
+    --bg_color: #f3f3f3;
+    --white: white;
+    --black: black;
+    --sucess: #8dff8f;
+    --danger: rgb(247, 181, 181);
+    --primary: #f1ca60;
+    --image: url(./../image/bg.jpg);
+}
+
+.dark {
+    --bg_color: #575757;
+    --white: rgb(0, 0, 0);
+    --black: rgb(255, 255, 255);
+    --sucess: #47db4a;
+    --danger: rgb(247, 181, 181);
+    --primary: #f1ca60;
+    font-family: abcd;
+}
+
+.text {
+    background-color: var(--sucess);
+    height: 10rem;
+    width: 60%;
+    margin: auto;
+}
+
+
+body {
+    background-color: var(--bg_color);
+    color: var(--black);
+}
+
+
+.cover {
+    --p: 80px;
+    width: 12rem;
+    height: 60%;
+    padding: var(--p);
+    box-shadow: 3px 4px 10px 1px gray;
+    background-color: var(--white);
+    margin: auto;
+    margin-top: 10vh;
+    display: flex;
+    justify-content: space-between;
+    background-image: var(--image);
+
+    resize: both;
+    overflow: auto;
+}
+
+button {
+    border: none;
+    background-color: var(--sucess);
+    padding: 1px 1px;
+    height: 2rem;
+    color: var(--black);
+    width: 6rem;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 2px 3px 10px 1px rgb(78, 78, 78);
+}
+
+button:hover {
+    box-shadow: none;
+    border: 1px solid var(--bg_color);
+}
+
+button i {
+    padding: 0.5rem;
+    background-color: var(--bg_color);
+    border-radius: 50%;
+
+    color: var(--black);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(159, 159, 159, 0.17) 0px -23px 25px 0px inset, rgba(165, 165, 165, 0.15) 0px -36px 30px 0px inset, rgba(145, 145, 145, 0.1) 0px -79px 40px 0px inset, rgba(173, 173, 173, 0.06) 0px 2px 1px, rgba(174, 174, 174, 0.09) 0px 4px 2px, rgba(175, 175, 175, 0.09) 0px 8px 4px, rgba(149, 149, 149, 0.09) 0px 16px 8px, rgba(203, 203, 203, 0.09) 0px 32px 16px;
+}
+
+button div {
+    padding: 0 1rem;
+}

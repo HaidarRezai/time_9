@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style11.css">
+    <title>Document</title>
+     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body class="" id="body">
+    <button onclick="dark_mode()">Dark Mode</button>
+    <button onclick="light_mode()">Light Mode</button>
+    <div class="cover">
+        <button> <i class='bx bx-x'></i><div>Click</div></button> 
+        <button> <i class='bx bx-x'></i><div>Click</div></button> 
+        <button> <i class='bx bx-x'></i><div>Click</div></button> 
+        <button> <i class='bx bx-x'></i><div>Click</div></button>
+    </div>
+    <div class="text">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor expedita quaerat dolore repellat beatae fugiat dolores. Architecto, laboriosam aspernatur non sequi deserunt culpa est! Iusto delectus officia odit necessitatibus eligendi!
+    </div>
+    <script>
+        function dark_mode(){
+            document.getElementById("body").classList.add("dark")
+        }
+        function light_mode(){
+            document.getElementById("body").classList.remove("dark")
+        }
+    </script>
+</body>
+</html>
