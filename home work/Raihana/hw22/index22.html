@@ -10,7 +10,7 @@
     <title>Document</title>
 </head>
 
-<body>
+<body id="body">
     <div class="container">
         <div class="cover">
             <div class="link-cover-1">
@@ -29,7 +29,8 @@
             </div>
             <div class="link-cover-3">
                 <ul>
-                    <i class="uil uil-brightness"></i>
+                    <i class="uil uil-brightness" onclick="day()" id="right_1"></i>
+                    <i class="bi bi-moon" onclick="night()" id="right_2"></i>
                     <li><a href="" class="link-2">Sign in</a></li>
                     <button class="link-3">Sign Up</button>
                 </ul>
@@ -85,6 +86,14 @@
             </div>
         </div>
     </div>
+    <script>
+        function day() {
+            document.getElementById("body").classList.remove("dark");
+        }
+        function night() {
+            document.getElementById("body").classList.add("dark");
+        }
+    </script>
 </body>
 
 </html>
