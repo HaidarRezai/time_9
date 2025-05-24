@@ -185,76 +185,84 @@ footer i {
     border-radius: 50%;
     color: white;
 }
-input[type="checkbox"] {
-      display: none;
-    }
 
-    #check {
-      font-size: 35px;
-      display: none;
-      position: absolute;
-      top: 30px;
-      right: 30px;
-      color: #0e7bc4;
-      cursor: pointer;
-      z-index: 2;
-    }
+input[type="checkbox"] {
+    display: none;
+}
+
+#check {
+    font-size: 35px;
+    display: none;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    color: #0e7bc4;
+    cursor: pointer;
+    z-index: 2;
+}
 
 @media screen and (max-width:1200px) {
 
     #check {
         display: block;
-      }
+    }
 
-      nav {
+    nav {
         position: fixed;
         top: 0;
         left: -100%;
         height: 100vh;
         width: auto;
-        background-color:rgb(1, 67, 84);
+        background-color: rgb(1, 67, 84);
         color: white;
         flex-direction: column;
         justify-content: center;
         text-align: center;
         transition: left 0.3s ease;
         z-index: 100;
-      }
+    }
 
-      nav ul {
+    nav ul {
         flex-direction: column;
         gap: 30px;
-      }
-      nav ul li{
-        padding: 10px 20px;
-      }
+    }
 
-      #checked:checked ~ nav {
+    nav ul li {
+        padding: 10px 20px;
+    }
+
+    #checked:checked~nav {
         left: 0;
-      }
-      .right_corner_nav{
+    }
+
+    .right_corner_nav {
         margin-top: 30px;
-      }
-      .left_corner_nav{
+    }
+
+    .left_corner_nav {
         margin-top: -200px;
-      }
-      footer{
+    }
+
+    footer {
         display: flex;
         flex-direction: column;
         row-gap: 30px;
-      }
-      .text_button_hero{
+    }
+
+    .text_button_hero {
         flex-direction: column;
         line-height: 30px;
-      }
-      nav ul li:hover{
+    }
+
+    nav ul li:hover {
         background-color: #225679;
         padding: 10px 20px;
         border-radius: 10px;
-      }
-      main{
+    }
+
+    main {
         flex-direction: column;
         width: auto;
         overflow: hidden;
-      }
     }
+}
