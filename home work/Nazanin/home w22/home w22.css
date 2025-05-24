@@ -3,6 +3,28 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    background-color: var(--bgc);
+    color: var(--black);
+}
+
+:root {
+    --bgc: #f3f3f3;
+    --imgbg: rgb(195, 214, 224);
+    --black: black;
+    --withe: white;
+    --shap: #E5E1DA;
+}
+
+.dark {
+    --bgc: #242222;
+    --imgbg: rgb(41, 59, 68);
+    --black: white;
+    --withe: black;
+    --shap: #a09e9a;
+}
+
 nav {
     display: inline-block;
     display: flex;
@@ -19,14 +41,16 @@ nav {
     padding: 7px;
     transition: all .5s;
 }
+
 .nav-1 ul li {
     gap: 20px;
     font-size: 20px;
 }
+
 .nav-2 ul li {
     font-size: 20px;
     margin: 10px;
-    color: gray
+    /* color: gray  */
 }
 .nav-1 ul li:hover,
 .nav-2 ul li:hover,
@@ -42,7 +66,6 @@ nav {
 }
 
 #icon {
-    outline: ;
     padding: 7px;
     font-size: 20px;
     background-color: rgb(128, 180, 201);
@@ -80,7 +103,7 @@ h2 {
 
 h3 {
     display: inline;
-    line-height: 10px;
+    line-height:10px;
     position: relative;
     top: 20px;
     left: 15px;
@@ -101,7 +124,7 @@ h3 {
     top: 0px;
     z-index: -1;
     background-image: url(profil4.png);
-    background-color: rgb(195, 214, 224);
+    background-color: var(--imgbg);
     border-radius: 0 0 0 80%;
     overflow: hidden;
     background-position: 60% 90%;
@@ -113,7 +136,8 @@ h3 {
     position: absolute;
     right: 500px;
     top: 200px;
-    background-color: #E5E1DA;
+    /* background-color: #E5E1DA; */
+    background-color: var(--shap);
     border-radius: 0 0 0 80%;
 }
 
@@ -147,18 +171,20 @@ h3 {
 #icon-1 {
     background-color: rgb(189, 155, 165);
 }
+
 #icon-2 {
     background-color: rgb(135, 184, 161);
 }
-@media screen and (max-width:1200px){
-        nav
-        .nav-1 ul li,
-.nav-2 ul li,
-.nav-3 ul li{
-            display: flex;
-            flex-direction: column;
-        }
-    .footer{
+
+@media screen and (max-width:1200px) {
+
+    nav .nav-1 ul li,
+    .nav-2 ul li,
+    .nav-3 ul li {
+        display: flex;
+        flex-direction: column;
+    }
+    .footer {
         display: flex;
         flex-direction: column;
         justify-content: center;

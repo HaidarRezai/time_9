@@ -29,8 +29,8 @@
             </div>
             <div class="link-cover-3">
                 <ul>
-                    <i class="uil uil-brightness" onclick="night()" id="right_1"></i>
-                    <i class="bi bi-moon" onclick="day()" id="right_2"></i>
+                    <i class="uil uil-brightness" onclick="day()" id="right_1"></i>
+                    <i class="bi bi-moon" onclick="night()" id="right_2"></i>
                     <li><a href="" class="link-2">Sign in</a></li>
                     <button class="link-3">Sign Up</button>
                 </ul>
@@ -87,12 +87,11 @@
         </div>
     </div>
     <script>
-        function night() {
-            document.getElementById("body").classList.add("dark");
-        }
-
         function day() {
             document.getElementById("body").classList.remove("dark");
+        }
+        function night() {
+            document.getElementById("body").classList.add("dark");
         }
     </script>
 </body>
