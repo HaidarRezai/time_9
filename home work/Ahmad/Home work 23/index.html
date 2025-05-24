@@ -8,13 +8,12 @@
     <title>Document</title>
 </head>
 
-<body>
-   
+<body id="body">
     <header>
-         <input type="checkbox"  id="checked">
-   <label for="checked">
-       <i class="bi bi-list" id="check"></i>
-   </label>
+        <input type="checkbox" id="checked">
+        <label for="checked">
+            <i class="bi bi-list" id="check"></i>
+        </label>
         <nav>
             <div class="left_corner_nav">
                 <img src="islam.png">
@@ -23,18 +22,27 @@
             <ul>
                 <li>Home</li>
                 <li>Features</li>
-                <li>Pages <i class="bi bi-chevron-down"></i></li>
+                <li class="dropdown_parent">
+                    Pages <i class="bi bi-chevron-down"></i>
+                    <div class="dropdown">
+                        <div class="dropdown_contant">
+                            <a href="#">Car</a>
+                            <a href="#">Page2</a>
+                            <a href="#">Page3</a>
+                        </div>
+                    </div>
+                </li>
                 <li>Support</li>
             </ul>
             <div class="right_corner_nav">
                 <ul>
-                    <li><i class="bi bi-brightness-high" id="sunlight"></i></li>
+                    <li><i class="bi bi-brightness-high" id="sunlight" onclick="toggle()"></i></li>
                     <li>Sign in</li>
                     <li id="sign_up_button">Sign up</li>
                 </ul>
             </div>
         </nav>
-        
+
     </header>
     <main>
         <div class="left_side_main">
@@ -99,5 +107,11 @@
             </div>
         </div>
     </footer>
+    <script>
+        function toggle() {
+            document.getElementById('body').classList.toggle("dark");
+        }
+    </script>
 </body>
+
 </html>
