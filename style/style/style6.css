@@ -1,0 +1,48 @@
+body {
+    background-color: #f3f3f3;
+}
+
+.cover {
+    background-color: white;
+    padding: 10px;
+    margin: auto;
+    width: 40%;
+}
+
+.cover ul {
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+}
+
+.cover ul li {
+    padding: 2px 10px;
+    transition: 250ms all;
+}
+
+a {
+    color: black;
+
+}
+
+.cover ul li a {
+    text-decoration: none;
+}
+
+.cover ul li:hover {
+    background-color: rgb(203, 203, 203);
+}
+
+.cover ul li.active {
+    background-color: green;
+    color: white !important;
+}
+
+li.active a {
+    color: white;
+}
+
+.text {
+    column-count: 3;
+    column-rule: 4px solid rgb(51, 149, 5);
+}

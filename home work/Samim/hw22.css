@@ -1,0 +1,134 @@
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 5px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+
+.cover {
+    width: 90%;
+    margin: auto;
+}
+
+.logo {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+ul {
+    display: flex;
+    gap: 30px;
+    list-style-type: none;
+}
+
+strong {
+    border-radius: 10px;
+    background-color: rgb(115, 122, 219);
+    color: rgb(229, 229, 243);
+    padding: 6px 10px;
+    font-size: 10px;
+}
+
+#strong-1 {
+    border-radius: 40px;
+    background-color: rgb(52, 98, 182);
+    color: whitesmoke;
+    padding: 10px;
+}
+
+.menu_right {
+    color: whitesmoke;
+}
+
+.image {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 20rem;
+    z-index: -1;
+}
+
+.image-1 {
+    border-radius: 0 0 0 90%;
+    background-color: rgb(69, 95, 211);
+    width: 500px;
+}
+
+.mein {
+    margin-top: 100px;
+    padding: 30px;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.mein-1 {
+    justify-content: start;
+    display: flex;
+    align-items: center;
+}
+
+.mein-2 {
+    width: 30%;
+    height: auto;
+    margin-left: 5px;
+    font-size: 12px;
+}
+
+#i-1 {
+    padding: 17px;
+    font-size: 20px;
+    text-align: center;
+    background-color: rgb(212, 120, 120);
+    color: whitesmoke;
+    border-radius: 50%;
+}
+
+.footer {
+
+    height: auto;
+    padding: px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 220px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    color: rgb(105, 104, 104);
+    font-size: 13px;
+
+
+}
+
+.footer-1 {
+    margin-top: 15px;
+    width: 5%;
+}
+
+.p {
+    width: 20%;
+    margin-left: -170px;
+}
+
+.p-1 {
+    font-size: 15px;
+    color: rgb(105, 102, 102);
+}
+
+b {
+    font-size: 16px;
+    color: black;
+}
+
+.list {
+    position: absolute;
+    top: 200px;
+    right: 400px;
+    width: 100px;
+    height: 100px;
+    border-bottom-left-radius: 100%;
+    background-color: yellow;
+}
