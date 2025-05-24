@@ -1,9 +1,23 @@
+:root{
+    --black:rgb(255, 255, 255)55, 255, 255);
+    --middle_menu:white;
+    --shape:lightblue;
+    --sun:white;
+}
+.dark{
+    --black:black;
+    --middle_menu:white;
+    --shape:lightblue;
+    --sun:gold;
+}
 * {
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
 }
-
+body{
+    background-color: var(--black);
+}
 .container {
     width: 85%;
     margin: auto;
@@ -53,6 +67,12 @@
     color: rgb(255, 255, 255);
     margin-left: 9;
     padding: 0px 10px;
+}
+i{
+    color: white;
+}
+.brightness i{
+    color: var(--sun);
 }
 .brightness i:hover{
     color: rgb(255, 225, 54);
