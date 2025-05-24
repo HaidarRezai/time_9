@@ -89,7 +89,6 @@ strong {
 }
 
 .footer {
-
     height: auto;
     padding: px;
     display: flex;
@@ -99,8 +98,6 @@ strong {
     cursor: pointer;
     color: rgb(105, 104, 104);
     font-size: 13px;
-
-
 }
 
 .footer-1 {

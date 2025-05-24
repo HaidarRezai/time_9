@@ -1,24 +1,5 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
 
-:root {
-    --backGroundColor: #f3f3f3;
-    --rightSideColor: #184554;
-    --textColor: rgb(0, 0, 0);
-    --textColorNav: white;
-    --righCornerButton: white;
-    --shape: #195f76;
-    --btn: 1px 2px 18px 1px #112b33;
-}
-
-.dark {
-    --backGroundColor: #101c26;
-    --rightSideColor: #112b33;
-    --textColor: white;
-    --righCornerButton: rgb(255, 242, 0);
-    --shape: #144455;
-    --btn: 1px 2px 18px 1px #324f57;
-}
-
 * {
     padding: 0;
     margin: 0;
@@ -28,8 +9,7 @@
 }
 
 body {
-    background-color: var(--backGroundColor);
-    color: var(--textColor);
+    background-color: #f3f3f3;
 }
 
 nav {
@@ -66,10 +46,6 @@ nav ul {
     filter: brightness(0.3) saturate(100%) invert(0%) sepia(100%) saturate(900%) hue-rotate(174deg) brightness(100%) contrast(100%);
 }
 
-#sunlight {
-    color: var(--righCornerButton);
-}
-
 #sunlight:hover {
     color: yellow;
 }
@@ -82,7 +58,7 @@ nav ul {
 }
 
 .right_corner_nav {
-    color: var(--textColorNav);
+    color: white;
 }
 
 .right_corner_nav i {
@@ -109,7 +85,7 @@ main {
 }
 
 .right_side_main {
-    background-color: var(--rightSideColor);
+    background-color: rgb(24, 69, 84);
     border-radius: 100% 0% 0% 100% / 100% 74% 26% 100%;
     margin: -100px 0 100px;
     z-index: -1;
@@ -127,7 +103,7 @@ main {
     top: 200px;
     height: 100px;
     width: 150px;
-    background-color: var(--shape);
+    background-color: rgb(6, 114, 141);
     border-radius: 100% 0% 0% 100% / 0% 74% 26% 100%;
 }
 
@@ -176,14 +152,6 @@ footer {
     align-items: center;
     font-size: 12px;
 }
-button{
-    outline: none;
-    border: none;
-    transition: 500ms all;
-}
-button:hover{
-        box-shadow:var(--btn);
-}
 
 .support,
 .ownership,
@@ -231,41 +199,6 @@ input[type="checkbox"] {
     color: #0e7bc4;
     cursor: pointer;
     z-index: 2;
-}
-
-.dropdown_parent {
-    position: relative;
-}
-
-.dropdown {
-    display: none;
-    position: absolute;
-    top: 100%;
-    background-color: var(--rightSideColor);
-    width: 100px;
-
-}
-
-.dropdown_parent:hover .dropdown {
-    display: block;
-}
-
-.dropdown_contant {
-    display: flex;
-    flex-direction: column;
-    row-gap: 10px;
-    padding: 5px 0;
-}
-
-.dropdown_contant a {
-    text-decoration: none;
-    color: var(--textColorNav);
-    padding: 10px;
-    text-align: left;
-}
-
-.dropdown_contant a:hover {
-    background-color: #5c818d;
 }
 
 @media screen and (max-width:1200px) {

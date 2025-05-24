@@ -54,7 +54,8 @@
     margin-left: 9;
     padding: 0px 10px;
 }
-.brightness i:hover{
+
+.brightness i:hover {
     color: rgb(255, 225, 54);
 
 }
@@ -92,14 +93,16 @@
     top: 100px;
     left: 40px;
 }
-.shape_small{
+
+.shape_small {
     background-color: rgb(255, 238, 0);
     width: 80px;
     height: 80px;
-    position:absolute;
-    left: 870px;
+    position: absolute;
+    right: 4 00px;
     top: 200px;
     border-bottom-left-radius: 90%;
+    z-index: 10000;
 }
 
 .text {
