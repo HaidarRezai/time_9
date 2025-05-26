@@ -70,15 +70,48 @@ p {
         margin-bottom: 4cm;
     }
 
+    img {
+        width: 100%;
+    }
+
+
+    .cover {
+        width: 100%;
+        position: relative;
+        top: 10rem;
+        height: 75vh;
+    }
+
     .footerPaper {
         display: block;
         position: fixed;
         bottom: 0;
-        width: 90%;
         left: 0;
+        width: 100%;
+        padding: 10px;
+        background-color: white;
+
+    }
+}
+
+@media screen and (max-width:900px) {
+    body {
+        padding: 10px;
+        margin: 0;
     }
 
     .cover {
         width: 100%;
     }
+
+    img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-height:400px) {
+    body {
+        background-image: linear-gradient(rgb(223, 253, 208), rgb(254, 196, 196));
+    }
+
 }
