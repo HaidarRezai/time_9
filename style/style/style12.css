@@ -1,0 +1,84 @@
+body {
+    background-color: #f3f3f3;
+}
+
+header.page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    line-height: 0.5;
+    display: none;
+}
+
+
+
+.contant img {
+    width: 60px;
+}
+
+.contant h1,
+p {
+    font-size: medium;
+}
+
+.boderLine {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(174, 173, 173);
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.cover {
+    width: 50%;
+    box-sizing: border-box;
+    padding: 10px;
+    margin: auto;
+}
+
+.footerPaper {
+    border-top: 1px solid gray;
+    padding: 10px 0;
+    display: none;
+
+}
+
+@media print {
+    @page {
+        size: A4;
+        margin: 1cm;
+        margin-top: 1cm;
+        margin-bottom: 1cm;
+        margin-left: 1.5cm;
+        margin-right: 1.5cm;
+    }
+
+    body {
+        padding: 0;
+        margin: 0;
+    }
+
+    header.page {
+        display: flex;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        left: 0;
+        z-index: 5000;
+        background-color: white;
+        margin-bottom: 4cm;
+    }
+
+    .footerPaper {
+        display: block;
+        position: fixed;
+        bottom: 0;
+        width: 90%;
+        left: 0;
+    }
+
+    .cover {
+        width: 100%;
+    }
+}
