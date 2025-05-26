@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+
 body {
     background-color: var(--bgc);
     color: var(--black);
@@ -16,6 +17,7 @@ body {
     --withe: white;
     --shap: #E5E1DA;
 }
+              
 
 .dark {
     --bgc: #242222;
