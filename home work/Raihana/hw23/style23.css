@@ -1,0 +1,104 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #f3f3f3;
+}
+
+.container_1{
+    width: 70%;
+    margin: auto;
+    margin-top: 1%;
+    background-color: white;
+}
+
+header{
+    display: flex;
+    justify-content:end;
+}
+
+.oxid img{
+    width: 8rem;
+    height: 8rem;
+}
+
+.container_2{
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.text_left{
+    line-height: 20px;
+}
+
+.text_right{
+    text-align: right;
+    line-height: 25px;
+}
+
+.first_p{
+    font-size: 16px;
+    line-height: 40px;
+}
+
+.next_text{
+    line-height: 35px;
+    padding: 10px;
+}
+
+.tabel{
+    padding: 10px;
+}
+
+.tabel table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tabel table tr, th, td{
+    border-bottom: 1.5px solid rgb(172, 166, 166);
+    padding: 4px;
+}
+
+.tabel table:last-child(even){
+    text-align: right;
+}
+
+.last_footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.three_text{
+    padding: 10px;
+}
+
+.last_text{
+    padding: 8px;
+}
+
+@media print{
+    .container_1{
+        width: 100%;
+        border: none;
+    }
+
+    .footer{
+        margin-top: 60px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
