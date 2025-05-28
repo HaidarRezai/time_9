@@ -1,0 +1,41 @@
+body {
+    background-color: #f3f3f3;
+}
+
+/* 
+justify-content 
+    1 center
+    2 end
+    3 start
+    4 space-between
+    5 space-evenly
+    6 space-around
+
+flex-direction:
+    row
+    row-reverse
+    colume
+    colume-reverse
+*/
+.cover {
+    border: 1px solid green;
+    width: 80%;
+    height: 350px;
+    margin: auto;
+    background-color: white;
+    padding: 20px;
+
+    display: flex;
+    flex-wrap: wrap-reverse;
+    gap: 50px;
+    flex-direction: row-reverse;
+
+}
+
+.cover div {
+    background-color: greenyellow;
+    padding: 20px;
+    border-radius: 20px;
+    width: 100px;
+    height: 6rem;
+}
