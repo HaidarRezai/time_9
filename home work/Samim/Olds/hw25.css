@@ -1,0 +1,152 @@
+
+        .cover {
+            background-color: #f3f3f3;
+            border: 2px solid black;
+            height: 700px;
+            width: 45%;
+            display: flex;
+            gap: 30px;
+            margin: auto;
+            margin-top: -10px;
+            flex-wrap: wrap;
+        }
+
+        .head {
+            color: rgb(5, 5, 129);
+            font-size: 20px;
+            text-align: center;
+        }
+
+        .div_one {
+            border: 1px solid rgb(3, 11, 9);
+            display: flex;
+            width: 105px;
+            height: 100px;
+            gap: 5px;
+            padding: 7px;
+            margin: auto;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin-left: 30px;
+            text-align: left;
+        }
+
+        .div_box {
+            height: 30px;
+            width: 25px;
+            background-color: blue;
+            border-radius: 5px;
+            color: wheat;
+        }
+
+        .div_tow {
+            border: 1px solid rgb(25, 26, 22);
+            display: flex;
+            width: 105px;
+            height: 110px;
+            gap: 5px;
+            padding: 7px;
+            flex-direction: row;
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+
+        .div_three {
+            border: 1px solid rgb(18, 13, 13);
+            display: flex;
+            width: 110px;
+            height: 100px;
+            gap: 5px;
+            padding: 10px;
+            flex-direction: row;
+            flex-wrap: wrap;
+            flex-direction: row-reverse;
+        }
+
+        .div_four {
+            border: 1px solid rgb(5, 1, 1);
+            display: flex;
+            width: 100px;
+            height: 100px;
+            gap: 2px;
+            padding: 7px;
+            flex-direction: row;
+            flex-wrap: wrap;
+            flex-direction: column-reverse;
+        }
+
+        h3 {
+            display: block;
+            margin-top: -2px;
+            text-align: center;
+            margin-left: 30px;
+        }
+
+        .div_box1 {
+            height: 25px;
+            width: 20px;
+            background-color: blue;
+            border-radius: 5px;
+            color: wheat;
+        }
+
+        .cover_2 {
+            height: 13vh;
+            display: flex;
+            gap: 30px;
+            margin-left: 30px;
+        }
+
+        .div_fiv {
+            border: 1px solid rgb(17, 10, 10);
+            display: flex;
+            width: 100px;
+            height: 70px;
+            gap: 1px;
+            padding: 10px;
+            flex-direction: row;
+            align-items: flex-start;
+        }
+
+        .div_six {
+            border: 1px solid rgb(18, 14, 14);
+            display: flex;
+            width: 100px;
+            height: 70px;
+            gap: 1px;
+            padding: 10px;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        .div_seven {
+            border: 1px solid rgb(27, 23, 23);
+            width: 100px;
+            height: 70px;
+            gap: 1px;
+            padding: 10px;
+            flex-direction: row;
+            display: flex;
+            align-items: end;
+        }
+
+        .div_eight {
+            border: 1px solid rgb(10, 10, 10);
+            width: 100px;
+            height: 70px;
+            gap: 1px;
+            padding: 10px;
+            display: flex;
+        }
+
+        .div_nine {
+            border: 1px solid rgb(21, 7, 7);
+            width: 100px;
+            height: 70px;
+            gap: 1px;
+            padding: 5px;
+            display: flex;
+            justify-content: left;
+            margin-left: 30px;
+        }
+    
