@@ -110,7 +110,6 @@ table tr:nth-child(10) {
 
 @media print {
     .div {
-
         background-color: white;
         height: 0.5rem;
         width: 20%;
@@ -141,7 +140,6 @@ table tr:nth-child(10) {
     }
 
     .cover_image {
-        display: block;
         display: flex;
         justify-content: end;
     }
