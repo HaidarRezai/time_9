@@ -1,0 +1,147 @@
+.cover {
+    height: auto;
+    width: 90%;
+    margin: auto;
+}
+
+.div {
+    height: 0.5rem;
+    width: 20%;
+    position: absolute;
+    top: 379px;
+    left: 74px;
+    background-color: white;
+}
+
+img {
+    width: 6rem;
+    height: 6rem;
+}
+
+.cover_image {
+    display: flex;
+    justify-content: end;
+    display: none;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    line-height: 3px;
+    margin-top: 100px;
+    font-size: small;
+}
+
+.right_text {
+    text-align: right;
+}
+
+.text1 {
+    line-height: 3px;
+}
+
+.div_table {
+    font-size: medium;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    font-size: 15px;
+}
+
+.table1 {
+    text-align: right;
+}
+
+th {
+    line-height: 3px;
+}
+
+#one {
+    padding-left: 20px;
+}
+
+th {
+    padding: 8px 0px;
+    border-bottom: 1.5px solid black;
+}
+
+table tr:nth-child(3) {
+    text-align: justify;
+    border-bottom: 1.5px solid black;
+}
+
+table tr:nth-child(5) {
+    border-bottom: 1.5px solid black;
+}
+
+table tr:nth-child(8) {
+    border-bottom: 1.5px solid black;
+}
+
+table tr:nth-child(10) {
+    border-bottom: 1.5px solid black;
+}
+
+.p1 {
+    padding: 10px;
+    line-height: 3px;
+    display: none;
+    border-bottom: 2px solid black;
+}
+
+.text_3 {
+    line-height: 2px;
+}
+
+.text_last {
+    line-height: 2px;
+    display: flex;
+    justify-content: space-between;
+    font-size: small;
+    display: none;
+}
+
+.text_5 {
+    text-align: right;
+}
+
+@media print {
+    .div {
+        background-color: white;
+        height: 0.5rem;
+        width: 20%;
+        position: absolute;
+        top: 480px;
+        left: 40px;
+
+    }
+
+    .text_last {
+        display: block;
+        line-height: 2px;
+        display: flex;
+        justify-content: space-between;
+        font-size: small;
+    }
+
+    .text_last {
+        display: flex;
+        justify-content: space-between;
+        margin-top: -13px;
+    }
+
+    .p1 {
+        margin-top: 140px;
+        padding-bottom: 10px;
+        display: block;
+    }
+
+    .cover_image {
+        display: flex;
+        justify-content: end;
+    }
+
+}
