@@ -1,0 +1,90 @@
+:root {
+    --background: #f3f3f3;
+    --button: rgba(6, 160, 160, 0.637);
+    --font: gray;
+    --white: rgb(0, 0, 0);
+    --hover_icon: #EEE4AB;
+}
+
+.dark {
+    --background: #000000;
+    --button: rgba(6, 160, 160, 0.637);
+    --font: black;
+    --white: white;
+}
+
+body {
+    background-color: var(--background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cover {
+    border-radius: 20px;
+    box-shadow: 0 0 20px 10px var(--button);
+    padding: 20px;
+    width: 20%;
+    height: auto;
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    cursor: pointer;
+}
+
+.icon {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.icon i {
+    color: var(--white);
+}
+
+.icon i:hover {
+    color: var(--hover_icon);
+}
+
+#h,
+#w,
+button {
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 20px;
+    transition: 360ms all;
+    font-size: 16px;
+    color: var(--font);
+}
+
+p {
+    color: var(--white);
+    padding: 10px;
+    transition: 360ms all;
+}
+
+#h:hover,
+#w:hover {
+    box-shadow: 0 0 20px var(--button);
+}
+
+button:hover {
+    background-color: var(--button);
+    color: var(--white);
+}
+
+p:hover {
+    box-shadow: 0 0 20px var(--button);
+    border-radius: 20px;
+    font-size: 16px;
+}
+
+@media screen and (max-width:900px) {
+    .cover {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        margin: 20px;
+    }
+}
