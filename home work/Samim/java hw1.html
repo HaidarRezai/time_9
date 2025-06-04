@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(20, 15, 46);
+        }
+        .cover {
+            padding-left: 8px;
+            width: 40%;
+            height: 430px;
+            margin: auto;
+            border-bottom: 1px rgb(184, 178, 200);  
+        }
+
+        input {
+            padding: 5px;
+            font-size: 15px;
+            width: 95%;
+            outline: none;
+            height: 8vh;
+            background-color: rgb(228, 230, 234);
+            border-bottom: 1px solid rgb(199, 194, 194);
+            color: black;
+        }
+
+        input[type="button"] {
+            padding: 5px;
+            border: 1px solid black;
+            font-size: 20px;
+            width: 567px;
+        }
+    </style>
+</head>
+<body>
+
+    <form action="" class="cover">
+        <input type="text" id="java" placeholder="JAVA" maxlength="100">
+        <input type="text" id="html" placeholder="HTML">
+        <input type="text" id="css" placeholder="CSS">
+        <input type="text" id="php" placeholder="PHP">
+        <input type="text" id="avrage" placeholder="avrage">
+        <input type="button" name="" value="Chick" onclick="score()">
+    </form>
+
+    
+    <script>
+        function score() {
+            var x = +document.getElementById('java').value;
+            var k = +document.getElementById('html').value;
+            var n = +document.getElementById('css').value;
+            var j = +document.getElementById('php').value;
+            var r = (x + k + n + j) / 4;
+            document.getElementById('avrage').value = r;
+        }
+
+    </script>
+
+</body>
+
+</html>
