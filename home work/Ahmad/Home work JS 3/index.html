@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <form action="">
+            <div class="cover">
+                <h1>Currency Converter USD/AFN</h1>
+                <div class="main_input">
+                    <input type="number" id="dollar1" class="input" min="0" max="100" placeholder=" ">
+                    <label>Dollar</label>
+                </div>
+                <div class="main_input">
+                    <input type="number" id="afn1" class="input" min="0" max="100" placeholder=" ">
+                    <label>AFN</label>
+                </div>
+                <button type="button" class="btn" onclick="usd()">Check Eligibility</button>
+            </div>
+        </form>
+    </div>
+    <div class="container">
+        <form action="">
+            <div class="cover">
+                <h1>Currency Converter AFN/USD</h1>
+                <div class="main_input">
+                    <input type="number" id="afn2" class="input" min="0" max="100" placeholder=" ">
+                    <label>AFN</label>
+                </div>
+                <div class="main_input">
+                    <input type="number" id="dollar2" class="input" min="0" max="100" placeholder=" ">
+                    <label>Dollar</label>
+                </div>
+                <button type="button" class="btn" onclick="afn()">Check Eligibility</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
