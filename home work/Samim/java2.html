@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(43, 36, 52);
+        }
+        
+        .cover {
+            margin: auto;
+            width: 30%;
+            height: 20rem;
+            border: 1px solid black;
+            display: flex;
+            flex-direction: column;
+            border-radius: 10px;
+            background-color: rgb(89, 64, 129);
+            backdrop-filter: blur(10px);
+            margin-top: 100px;
+        }
+
+        input {
+            margin: auto;
+            border: 1px solid black;
+            width: 80%;
+            height: 2rem;
+            border-radius: 10px;
+        }
+
+        button {
+            width: 50%;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            border-radius: 10px;
+            color: rgb(103, 52, 115);
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <form action="" class="cover">
+        <input type="text" id="username" placeholder="Username">
+        <input type="text" id="password" placeholder="password">
+        <button onclick="get()">click</button>
+    </form>
+    <script>
+        const info = {
+            username: "",
+            password: "",
+        }
+        function get() {
+            let x = document.getElementById("username").value;
+            let y = document.getElementById("password").value;
+
+
+            window.alert(x + " " + y)
+        }
+    </script>
+
+</body>
+</html>

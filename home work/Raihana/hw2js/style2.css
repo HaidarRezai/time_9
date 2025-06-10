@@ -1,0 +1,131 @@
+:root {
+    --background: #f3f3f3;
+    --border_color: black;
+    --shadow: gray;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(background.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+}
+
+.cover {
+    width: 25%;
+    height: 45vh;
+    box-shadow: 0 0 15px var(--shadow);
+    border-radius: 20px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.form_img {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    margin: -145px auto 95px auto;
+    /*Zentriert horizontal & gibt Abstand unten*/
+}
+
+.form_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#icon_1,
+#icon_2 {
+    margin-top: 15px;
+    margin-left: -40px;
+    color: var(--shadow);
+    position: fixed;
+}
+
+.form_in_la {
+    position: relative;
+}
+
+.form_in_la input {
+    border: none;
+    outline: none;
+    padding: 12px;
+    width: 350px;
+    border-radius: 20px;
+    margin-bottom: 25px;
+    transition: 360ms all;
+    font-size: 20px;
+}
+
+.sub {
+    border: none;
+    color: white;
+    background-color: rgb(99, 116, 97);
+    border-radius: 20px;
+    width: 350px;
+    padding: 12px;
+    transition: 360ms all;
+    font-size: 16px;
+}
+
+.form_in_la input:hover,
+.sub:hover {
+    background: transparent;
+    box-shadow: 0 0 20px var(--shadow);
+}
+
+.form_in_la label {
+    position: absolute;
+    top: 10px;
+    left: 16px;
+    color: gray;
+}
+
+.input:focus~label,
+.input:not(:placeholder-shown).input:not(:focus)~label {
+    top: -10px;
+    left: 2rem;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(10px);
+    background: transparent;
+}
+
+@media screen and (max-width:1000px) {
+    .cover {
+        width: 100%;
+        margin: 20px;
+        height: auto;
+    }
+
+    .form_in_la .sub,
+    input {
+        width: 100%;
+    }
+
+    .form_img {
+        width: 3rem;
+        height: 3rem;
+        display: block;
+        margin: -30px auto 30px auto;
+    }
+}
