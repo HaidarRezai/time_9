@@ -4,7 +4,7 @@ function submitt() {
   let englisch = + document.getElementById('englisch').value;
   let info = + document.getElementById('info').value;
   let result = (deutsch + mathe + englisch + info) / 4;
-  document.getElementById('result').value = result;
+  document.getElementById('result').value = `${result}%`;
 }
 
 
