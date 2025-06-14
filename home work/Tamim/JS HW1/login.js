@@ -20,8 +20,6 @@ const info = [
 1 loop 
     1 if
     2 break;
-
-
 */
 function getdata() {
     let x = document.getElementById('username').value;
