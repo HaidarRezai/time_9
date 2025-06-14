@@ -1,3 +1,6 @@
-let y = 90
-let x = `I live in ${y + 60} kabul city and I \'stady\' computer \"Programing\"`
-document.getElementById("para").innerHTML = x
+let x = `I live in kabul city, I stady computer \"Programing\", i Work at Amazon`;
+
+let y = x.split(",");
+
+y = y.length
+document.getElementById("para").innerHTML = y
