@@ -30,7 +30,8 @@ body {
 }
 
 .inside_container {
-    background-color: aliceblue;
+    background-color: rgba(255, 255, 255, 0.264)  ;
+    backdrop-filter: blur(25px);
     border-radius: 10px;
     height: 80%;
     width: 25%;
@@ -48,9 +49,12 @@ input {
     border: none;
     outline: none;
     padding: 35px 0 15px 20px;
+    background-color: transparent;
     border-bottom: 1px solid rgb(83, 83, 83);
 }
-
+::placeholder{
+    color: #434343;
+}
 label {
     position: absolute;
     left: 0;
@@ -67,7 +71,7 @@ a {
     text-decoration: none;
     display: flex;
     justify-content: end;
-    color: gray;
+    color: rgb(219, 218, 218);
     margin-top: -20px;
 }
 
@@ -138,7 +142,7 @@ button:hover {
 
 .text {
     font-size: 14px;
-    color: gray;
+    color: rgb(219, 218, 218);
 }
 
 @media screen and (max-width:1200px) {
