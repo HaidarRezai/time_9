@@ -1,3 +1,29 @@
 body {
     background-color: #f3f3f3;
 }
+
+#test div {
+    background-color: white;
+    padding: 20px;
+    margin: auto;
+    width: 40%;
+    border-radius: 20px;
+    box-shadow: 3px 3px 10px 1px gray;
+    display: grid;
+    gap: 20px;
+}
+
+#test input {
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 1px 1px 10px 1px rgb(195, 195, 195);
+}
+
+button {
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    background-color: green;
+    color: white;
+}
