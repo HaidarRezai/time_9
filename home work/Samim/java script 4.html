@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+
+            background-color: rgb(43, 36, 52);
+        }
+        
+        #para {
+            margin: auto;
+            width: 30%;
+            height: 20rem;
+            border: 1px solid black;
+            display: flex;
+            flex-direction: column;
+            border-radius: 30px;
+            background-color: rgb(71, 50, 104);
+            backdrop-filter: blur(10px);
+            margin-top: 100px;
+            box-shadow: 1px 1px 10px 2px white;
+        }
+        input {
+            margin: auto;
+          border: none;
+          border-bottom: 4px solid rgb(18, 9, 193);
+            width: 80%;
+            height: 2rem;
+            border-radius: 5px;
+            outline: none;
+        }
+
+        button {
+ 
+            width: 50%;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            border-radius: 5px;
+            color: rgb(1, 23, 219);
+            font-size: 20px;
+            border: none;
+            border-bottom: 2px solid rgb(11, 41, 190);
+        }
+    </style>
+</head>
+<body>
+    <div id="para">
+    <input type="text" name="" id="user" placeholder="username">
+    <input type="password" name="" id="pass" placeholder="password">
+    <button onclick="test()">login</button>
+    </div>
+    <script>
+        const info =[
+            {
+                id: 100,
+                name:"ahmad",
+                user: "admin1",
+                Password: 123
+            },
+
+             {
+                id: 200,
+                name:"omer",
+                user: "admin2",
+                Password: 1234
+            }
+        ]
+        function test(){
+            let user= document.getElementById("user").value;
+            let pass= document.getElementById("pass").value;
+            for(i of info){
+                if (i.user == user &&  i.Password == pass) {
+                    alert(i.name)
+                    break;
+                }
+            }
+        }
+    </script>
+</body>
+</html>
