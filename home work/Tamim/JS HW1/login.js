@@ -1,35 +1,32 @@
 const info = [
-    {
-        full_name: "Samim Sulimani",
-        Username: "admin1",
-        Password: "admin"
-    },
-    {
-        full_name: "Ahmad Sulimani",
-        Username: "admin2",
-        Password: "admin"
-    },
-    {
-        full_name: "Nazanin Sulimani",
-        Username: "admin3",
-        Password: "admin"
-    },
-]
-/*
+    { Username: "admin", Password: "admin" },
+    { Username: "tamim", Password: "tamim" },
+    { Username: "khan", Password: "khan" }
+];
 
-1 loop 
-    1 if
-    2 break;
-*/
 function getdata() {
     let x = document.getElementById('username').value;
     let y = document.getElementById('password').value;
-    info.Username = x;
-    info.Password = y;
-    if (x === info.Username && y === info.Password) {
-        alert('Your username ' + x + ' and Your Password ' + y + ' are correct');
+    // info.Username =x;
+    // info.Password =y;
+    // if(x === info.Username && y === info.Password){
+    //     alert('Your username ' + x + ' and Your Password '+ y +' are correct');
+    // }
+
+    // else{
+    //     alert('Your Username '+ x +' and Password ' + y +' is wrong');
+    // }
+
+    for (let i = 0; i < info.length; i++) {
+        if (info[i].Username === x && info[i].Password === y) {
+            alert("Your username " + info[i].Username + " and password is "+ info[i].Password + "       correct");
+            return;
+        }
+
     }
-    else {
-        alert('Your Username ' + x + 'and Password ' + y + 'is wrong');
-    }
-}
+    alert("Username is not exist in the Database");
+};
+
+
+
+
