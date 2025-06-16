@@ -1,6 +1,15 @@
-let x = `I live in kabul city, I stady computer \"Programing\", i Work at Amazon`;
-
-let y = x.split(",");
-
-y = y.length
-document.getElementById("para").innerHTML = y
+const arr = [
+    [1, 3, 4],
+    [6, 7, 8, 9],
+    "Omid",
+    "Farid",
+    "Abbas",
+    "Ahamd",
+    "Hamid"
+]
+counter = ""
+for (i of arr) {
+    counter = i
+    break;
+}
+document.getElementById("page").innerHTML = counter
