@@ -1,0 +1,49 @@
+.container {
+    width: 300px;
+    height: auto;
+    background-color: rgb(0, 225, 255);
+    margin: auto;
+    padding: 3px;
+    border: 1px solid green;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+}
+
+.number_input input {
+    width: 95%;
+    height: 60px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+    overflow: hidden;
+    margin-bottom: 4px;
+    font-size: 40px;
+}
+
+.number {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 5px;
+    gap: 3px;
+}
+
+button {
+    width: 70px;
+    height: 70px;
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    font-size: 20px;
+}
+
+.symbole {
+    background-color: rgba(0, 26, 255, 0.425);
+}
+
+button:hover {
+    background-color: rgb(0, 84, 126);
+}
