@@ -21,12 +21,10 @@ function test() {
     let x = document.getElementById("username").value;
     let y = document.getElementById("password").value;
 
-    for (let i = 0; i <= 2; i++) {
+    for (let i = 0; i <= login.length - 1; i++) {
         if (x === login[i].username && y === login[i].password) {
             alert("welcome in our website.");
-            return;
+            break;
         }
     }
-
-    alert("Your Password and your Username is incorrect.");
 }

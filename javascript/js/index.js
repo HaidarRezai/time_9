@@ -1,15 +1,17 @@
 const arr = [
-    [1, 3, 4],
-    [6, 7, 8, 9],
-    "Omid",
-    "Farid",
-    "Abbas",
-    "Ahamd",
-    "Hamid"
+    1, 2, 3, 4, 5
 ]
-counter = ""
-for (i of arr) {
-    counter = i
-    break;
+const names = [
+    "Ahmad", "Samim", "Tamin", "Rahana", "Nazanin"
+]
+
+const result = new Array()
+function test() {
+    arr.sort(function () { return 0.5 - Math.random() });
+    for (i of arr) {
+        result.push(names[i - 1])
+    }
+    document.getElementById("page").innerHTML = `${result}`
+
 }
-document.getElementById("page").innerHTML = counter
+
