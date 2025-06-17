@@ -12,7 +12,7 @@ function plus(){
     x =x.split("+");
     let result =0;
     for(i of x){
-        result +=number(i);
+        result += Number(i);
     }
     document.getElementById("input_number").value=result;
 }
