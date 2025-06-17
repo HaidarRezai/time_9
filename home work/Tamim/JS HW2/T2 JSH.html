@@ -10,7 +10,7 @@
 <body>
     <div class="container">
         <div class="number_input">
-            <input type="text" id="input_number">
+            <input type="text" id="input_number" readonly>
         </div>
         <div class="number">
             <button onclick="calc('1')">1</button>
@@ -28,7 +28,7 @@
             <button onclick="calc('0')">0</button>
             <button class="symbole" onclick="calc_remove()">Del</button>
             <button onclick="calc('*')" class="symbole">*</button>
-            <button onclick="calc('=')" class="symbole">=</button>
+            <button onclick="plus()" class="symbole">=</button>
         </div>
     </div>
 </body>

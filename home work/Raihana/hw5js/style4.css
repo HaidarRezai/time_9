@@ -1,0 +1,138 @@
+:root {
+    --background: #f3f3f3;
+    --shadow: gray;
+    --border: black;
+    --font: white;
+    --last_button: #62B6B7;
+    --button_color: #D3D3D3;
+    --first_but: #B3C8CF;
+    --hover: #439A97;
+}
+
+.dark {
+    --background: #1e1e1e;
+    --shadow: #555555;
+    --border: #888888;
+    --font: #f3f3f3;
+    --last_button: #3a7f80;
+    --button_color: #555555;
+    --first_but: #4e6c73;
+    --hover: #2d6f6d;
+}
+
+body {
+    background-color: var(--background);
+}
+
+.main_container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 25%;
+    height: auto;
+    padding: 20px;
+    box-shadow: 0 0 20px var(--last_button);
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.cover_button {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#display {
+    width: 85%;
+    padding: 20px;
+    border-radius: 30px;
+    font-size: 30px;
+    outline: none;
+    border: none;
+}
+
+button {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 28px;
+    outline: none;
+    border: none;
+    background-color: var(--button_color);
+    transition: 360ms all;
+}
+
+button:active {
+    background-color: var(--last_button);
+    color: var(--font);
+    transform: scale(1.03);
+}
+
+.first_but {
+    background-color: var(--first_but);
+}
+
+.first_but:active {
+    background-color: var(--last_button);
+    color: var(--font);
+}
+
+.color_but {
+    background-color: var(--last_button);
+    color: var(--font);
+}
+
+.color_but:hover {
+    background-color: var(--hover);
+}
+
+/* @media screen and (max-width:950px) {
+    .container {
+        width: 100%;
+        height: auto;
+        margin: 10px;
+    }
+
+    #display {
+        width: 100%;
+    }
+
+    .main_container {
+        height: auto;
+    }
+
+}
+
+@media screen and (max-width:300px) {
+    .container {
+        width: 100%;
+        height: auto;
+        margin: 10px;
+    }
+
+    button {
+        width: 1rem;
+        height: 1rem;
+        font-size: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #display {
+        width: 100%;
+        padding: 10px;
+        font-size: 10px;
+    }
+
+} */
