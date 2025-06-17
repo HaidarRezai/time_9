@@ -19,8 +19,8 @@ function getdata() {
 
     for (let i = 0; i < info.length; i++) {
         if (info[i].Username === x && info[i].Password === y) {
-            alert("Your username " + info[i].Username + " and password is "+ info[i].Password + "       correct");
-            return;
+            alert("Your username " + info[i].Username + " and password is " + info[i].Password + "       correct");
+            break;
         }
 
     }
