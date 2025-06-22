@@ -1,0 +1,35 @@
+.continer{
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    border:2px solid  rgb(128, 168, 170);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    margin-top: 250px;
+    padding: 40px;
+  
+}
+#icon{
+    margin-left: 70px;
+    font-size: 60px;
+    color: cadetblue;
+     /* font-weight: 600; */
+ 
+}
+button{
+    width: 200px;
+    padding: 10px;
+    border-radius: 6px;
+    color: white;
+    background-color: rgb(128, 168, 170);
+    border: none;
+ 
+    
+}
+button:active{
+    background-color:rgba(128, 168, 170,0.9) ;
+    transform: scale(1.03);
+    /* color: white; */
+}
+
