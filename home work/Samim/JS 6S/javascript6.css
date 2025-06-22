@@ -1,0 +1,38 @@
+  body {
+            background-color: whitesmoke;
+        }
+
+        #para {
+            margin: auto;
+            background-color: green;
+            padding: 20px;
+            width: 25%;
+            display: flex;
+            justify-content: center;
+            border-radius: 20px;
+            margin-top: 100px;
+        }
+
+        i {
+            background-color: green;
+            color: white;
+            font-size: 100px;
+        }
+
+        button {
+            margin: auto;
+            background-color: black;
+            position: relative;
+            top: 20px;
+            left: 620px;
+            width: 15%;
+            height: 3rem;
+            border-radius: 20px;
+            color: wheat;
+            font-size: 30px;
+            border: none;
+        }
+        button:hover{
+            transform:scale(1.01);
+            color:white;
+        }
