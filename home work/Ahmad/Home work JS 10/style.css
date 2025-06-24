@@ -1,0 +1,22 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.cover{
+    width: 800px;
+    height: auto;
+    box-shadow: 1px 2px 39px 1px gray;
+    outline: none;
+    border-radius: 20px;
+    padding: 20px;
+}
+p::before{
+    content: "-";
+}

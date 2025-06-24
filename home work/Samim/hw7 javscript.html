@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #d4d3d3;
+        }
+        #para{
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            border: 1px solid black;
+            width: 30%;
+            margin: auto;
+            box-shadow: 1px 1px 10px 1px;
+            background-color: white;
+            padding: 4px;
+
+        }
+    </style>
+</head>
+<body>
+    <p id="para"></p>
+    <script>
+        let arr=[
+            {
+                que: "what is your name",
+                opt: ["khan","milad","omer","farid"]
+            }, 
+             {
+                que: "what is your f/name",
+                opt: ["hamid","milad","omer","farid"]
+            }, 
+             {
+                que: "where are you form",
+                opt: ["Iran","Afghanistan","chine","Iraq"]
+            }, 
+        ]
+        for(i of arr){
+            document.getElementById("para").innerHTML+=`${i.que}? </br></br>`
+             for(y of i .opt){
+              document.getElementById("para").innerHTML+=`<span>${y}</span></br>`
+
+            }
+        }
+    </script>
+    
+</body>
+</html>
