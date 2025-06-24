@@ -3,7 +3,7 @@ while(x <= 10){
     let y = 2
     while(y <= 10){
         
-    document.getElementById('count').innerHTML += `${x} x ${y} = ${x * y}<br>`;
+    document.getElementById('count').innerHTML += `<div>${x} x ${y} = ${x * y}</div><br>`;
     y++;
     }
     x++
