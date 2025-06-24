@@ -1,0 +1,17 @@
+body{
+    background-color: #f3f3f3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div{
+    border-radius: 30px;
+    box-shadow: 0 0 30px rgb(130, 130, 222);
+    margin-top: 10%;
+    padding: 20px;
+    width: 20%;
+    height: auto;
+    font-size: 20px;
+}
