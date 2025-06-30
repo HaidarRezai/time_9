@@ -1,0 +1,30 @@
+.container {
+    width: 400px;
+    height: auto;
+    background-color: lightblue;
+    border-radius: 20px;
+    padding: 10px;
+    margin: auto;
+    margin-top: 200px;
+}
+
+input {
+    width: 380px;
+    height: 30px;
+    border-radius: 5px;
+    margin: 5px;
+    border: none;
+    outline: none;
+}
+
+input[type="submit"] {
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+    margin: 5px;
+    border: none;
+    outline: none;
+    box-shadow: 1px 1px 3px 1px rgb(37, 1, 1);
+    margin-left: 30px;
+    cursor: pointer;
+}
