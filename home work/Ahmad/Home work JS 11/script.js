@@ -1,29 +1,23 @@
-const items = document.querySelectorAll(".item");
+function execute() {
+    let name = document.getElementById('full_name').value;
+    let mail = document.getElementById('email').value;
+    let age = document.getElementById('age').value;
+    
+    if (name.match(/[a-z]/i)) {
+        document.getElementById('full_name').style.border = "2px solid green";
+    } else {
+        document.getElementById('full_name').style.border = "2px solid red";
+    }
 
-items.forEach((item) => {
-    item.addEventListener("click", () => {
-        document.querySelectorAll(".item.active").forEach((activeItem) => {
-            if (activeItem !== item) {
-                activeItem.classList.remove("active");
-                activeItem.querySelector(".body").style.maxHeight = null;
-            }
-        });
-        item.classList.toggle("active");
+    if (mail.includes('@')) {
+        document.getElementById('email').style.border = "2px solid green";
+    } else {
+        document.getElementById('email').style.border = "2px solid red";
+    }
 
-        const body = item.querySelector(".body");
-        if (item.classList.contains("active")) {
-            body.style.maxHeight = body.scrollHeight + "px";
-        } else {
-            body.style.maxHeight = null;
-        }
-    });
-});
-
-let y = "kabul is a city"
-let x = /k/gi;
-if(x.test(y))
-console.log('!GEFUNDEN')
-else{
-console.log('!NICHT GEFUNDEN')
-
+    if (age.match(/[0-9]/)) {
+        document.getElementById('age').style.border = "2px solid green";
+    } else {
+        document.getElementById('age').style.border = "2px solid red";
+    }
 }
