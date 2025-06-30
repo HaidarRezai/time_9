@@ -1,0 +1,54 @@
+body {
+    background-color: #f3f3f3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#demo {
+    background-color: #f3f3f3;
+    width: 35%;
+    height: auto;
+    padding: 25px;
+    margin-top: 10%;
+    border-radius: 40px;
+    box-shadow: 0 0 30px darkcyan;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 25px;
+}
+
+#but,
+#name,
+#phone,
+#email,
+#gender {
+    width: 100%;
+    border-radius: 25px;
+    padding: 10px;
+    font-size: 20px;
+    margin: 10px;
+    border: none;
+    outline: none;
+    transition: 200ms all;
+}
+#gender:hover,
+#name:hover,
+#phone:hover,
+#email:hover {
+    outline: 2px solid darkcyan;
+}
+
+#but {
+    background-color: darkcyan;
+    font-weight: 700;
+    transition: 300ms all;
+}
+
+#but:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 10px darkcyan;
+    background: transparent;
+    color: darkcyan;
+}
