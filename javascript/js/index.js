@@ -150,7 +150,6 @@ for (i of info) {
     document.getElementById("test").innerHTML += ``
 }
 document.getElementById("test").innerHTML += `<button onclick="result()">Submit</button>`
-
 function result() {
     let getCurOption = new Array()
     let mark = 0;
@@ -192,10 +191,6 @@ function result() {
         }
     }
 
-    // total_mark == 100 %
-    // 5 ==  ? %
     let pre = Math.round((mark * 100) / totla_mark)
-
     document.getElementById("test").innerHTML += `${mark}, ${pre}%`
-
 }
