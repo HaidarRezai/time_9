@@ -1,0 +1,11 @@
+#page{
+    /* border: 1px solid black; */
+    box-shadow: 0 0 10px rgb(204, 182, 108);
+    border-radius: 10px;
+    width: 250px;
+    height: auto;
+    margin: auto;
+    margin-top: 190px;
+    padding: 10px;
+
+}
