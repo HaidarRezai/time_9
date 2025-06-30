@@ -9,22 +9,23 @@
     display: flex;
     justify-content: center;
     align-items: center;  
+    flex-direction: column  ;
 }
 .cover{
-    display: grid;
-    grid-template-columns: auto auto   auto auto;
+    display: flex;
     justify-content: center;
-    align-items: center;
+    flex-direction: column;
     gap: 10px;
     padding: 20px;
-    width: 200px;
-    height: auto;
+    width: auto;
+    height: 100vh;
     background-color:rgb(11, 71, 101) ;
     color: white;
 }
 
 #count {
-  display: gÏrid;
-  grid-template-columns: repeat(4, 1fr);
+ display: flex;
+    justify-content: center;
   gap: 10px;
+  
 }
