@@ -1,0 +1,21 @@
+#para{
+    background-color: rgb(21, 43, 76);
+    width: 40%;
+    height: auto;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px 1px black;
+    color: rgb(190, 197, 203);
+}
+.one{
+    background-color: rgb(243, 242, 242);
+    border: 1px solid rgb(46, 46, 45);
+    border-radius: 10px;
+    width: 100px;
+}
+th,td{
+
+    margin-top: 10px;
+    padding: 20px;
+    margin-left: 30px;
+}
