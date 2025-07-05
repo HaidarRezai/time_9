@@ -9,8 +9,7 @@ body {
     width: 40%;
     border-radius: 20px;
     box-shadow: 3px 3px 10px 1px gray;
-    display: flex;
-    gap: 20px;
+
 }
 
 #cover input {
@@ -18,6 +17,13 @@ body {
     border-radius: 20px;
     border: none;
     box-shadow: 1px 1px 10px 1px rgb(195, 195, 195);
+}
+
+#room {
+    border-bottom: 1px solid gray;
+    display: flex;
+    gap: 20px;
+    padding: 20px;
 }
 
 button {
@@ -38,12 +44,44 @@ button {
     justify-content: center;
     background-image: linear-gradient(gray, white);
     transition: all 250ms;
+    cursor: pointer;
+
 }
 
 .btn:hover {
     background-image: linear-gradient(white, rgb(97, 97, 97));
+    transform: scale(1.1);
 }
 
+@keyframes example {
+    from {
+        outline-offset: 1px;
+    }
+
+    to {
+        outline-offset: 8px;
+    }
+}
+
+.active {
+    outline: 1px solid green;
+    animation-name: example;
+    animation-duration: 500ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.search {
+    outline: 1px solid rgb(247, 32, 236);
+    animation-name: example;
+    animation-duration: 500ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.root {
+    background-image: linear-gradient(rgb(156, 244, 240), rgb(73, 246, 200));
+}
 
 table {
     font-family: Arial, Helvetica, sans-serif;
