@@ -1,0 +1,74 @@
+body {
+    background-color: #354259;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6%;
+}
+
+#demo {
+    width: 60%;
+    padding: 20px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table td,
+table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+table tr:nth-child(even) {
+    background-color: #354259;
+}
+
+table tr {
+    transition: 250ms all;
+    color: rgb(174, 174, 174);
+}
+
+table tr:hover {
+    background-color: #9AA6B2;
+    color: black;
+}
+
+table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #BCCCDC;
+    color: white;
+}
+
+td img {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+}
+
+td img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.but {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background-image: linear-gradient(gray, white);
+    box-shadow: 0 0 10px gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 360ms all;
+}
+
+.but:hover {
+    background-image: linear-gradient(560deg, rgb(56, 54, 54), white, rgb(63, 62, 62));
+}

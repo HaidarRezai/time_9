@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #para{
+            border: 1px solid black;
+            margin: auto;
+            border-radius: 10px;
+            box-shadow: 1px 1px 10px 1px;
+            width: 40%;
+            height: 15rem;
+            padding: 15px;
+            border: 3px  solid green;
+        
+        }
+        input{
+            background-color: rgb(231, 227, 227);
+            width: 100%;
+            height: 2rem;
+            margin-top: 30px;
+            border: 2px solid black;
+            border-radius: 10px;
+       
+        }
+    </style>
+</head>
+<body>
+    <div input type="text" id="para">
+    </div>
+    <script>
+        let x = ``
+document.getElementById("para").innerHTML= x 
+document.getElementById("para").innerHTML+=`<input type= "text" id= "text" onchange="arr()" placeholder="Name">`
+document.getElementById("para").innerHTML+=`<input type="submit" onclick="arr()">`
+
+
+function arr(){
+    let enter = document.getElementById("text").value
+   enter = enter.match(/[a-z]/g);
+   document.getElementById("para").innerHTML += enter.join('');
+   if(enter){
+    document.getElementById("text").style.border = "2px solid green"
+
+   }   else {
+
+        document.getElementById("text").style.border = "2px solid red"
+   }
+   
+
+}
+  
+    </script>
+    
+</body>
+</html>
