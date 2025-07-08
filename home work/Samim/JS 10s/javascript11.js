@@ -23,7 +23,7 @@ let info = [
 
                 },
                 {
-                    name: "omid",
+                    name: "omer",
                     img: "https://www.shutterstock.com/image-photo/portrait-his-he-nicelooking-attractive-260nw-1481638418.jpg",
                     info: "    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium itaque id consequuntur sit.",
 
@@ -42,7 +42,7 @@ let info = [
 
                 },
                 {
-                    name: "farid",
+                    name: "frank",
                     img: "https://c8.alamy.com/comp/F90025/portrait-of-handsome-young-man-in-white-t-shirt-outdoors-looking-in-F90025.jpg",
                     info: "    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium itaque id consequuntur sit.",
 
@@ -56,19 +56,46 @@ let info = [
         person:
             [
                 {
-                    name: "waheed",
+                    name: "jan",
                     img: "https://media.istockphoto.com/id/1392528328/photo/portrait-of-smiling-handsome-man-in-white-t-shirt-standing-with-crossed-arms.jpg?s=612x612&w=0&k=20&c=6vUtfKvHhNsK9kdNWb7EJlksBDhBBok1bNjNRULsAYs=",
                     info: "    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium itaque id consequuntur sit.",
 
                 }
             ]
 
-    }
+    },
+    {
+        room: 5,
+        person:
+            [
+                {
+                    name: "max",
+                    img: "https://media.istockphoto.com/id/1392528328/photo/portrait-of-smiling-handsome-man-in-white-t-shirt-standing-with-crossed-arms.jpg?s=612x612&w=0&k=20&c=6vUtfKvHhNsK9kdNWb7EJlksBDhBBok1bNjNRULsAYs=",
+                    info: "    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium itaque id consequuntur sit.",
+
+                }
+            ]
+
+    },
+    {
+        room: 6,
+        person:
+            [
+                {
+                    name: "khan",
+                    img: "https://media.istockphoto.com/id/1392528328/photo/portrait-of-smiling-handsome-man-in-white-t-shirt-standing-with-crossed-arms.jpg?s=612x612&w=0&k=20&c=6vUtfKvHhNsK9kdNWb7EJlksBDhBBok1bNjNRULsAYs=",
+                    info: "    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium itaque id consequuntur sit.",
+
+                }
+            ]
+
+    },
 ];
 
 for (i in info) {
     document.getElementById("para").innerHTML += `<button class="one" onclick="check(${i})">${info[i].room}</button>`
 }
+
 function check(index) {
     document.getElementById("table").innerHTML = `
             
@@ -100,4 +127,22 @@ function check(index) {
                 `
     }
 
+}
+function search(){
+    let searchs=new Array();
+    let search = document.getElementById("search").value;
+    for( n in info){
+        for(p of info[n].person){
+            if (search == p.name){
+                searchs.push(n)
+               
+            }
+        }
+    } 
+    alert(searchs)
+    for(se of searchs){
+     document.getElementById(se).classList.add("search");
+
+        
+    }
 }
