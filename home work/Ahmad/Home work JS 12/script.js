@@ -25,16 +25,16 @@ let info = [
             { name: "Tom Aspinall", img: "https://ichef.bbci.co.uk/ace/branded_sport/1200/cpsprodpb/16A3A/production/_124403729_gettyimages-1239340361.jpg", text: "Speedy, technical British heavyweight.", record: '15-3' },
             {
                 name: "Daniel Cormier",
-                img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtWkt1OvltasVcXvlq4j4scnQCcgXpgiFHwA&s", 
+                img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtWkt1OvltasVcXvlq4j4scnQCcgXpgiFHwA&s",
                 text: "Double champ and UFC Hall of Famer. Known for elite wrestling and commentary career.",
                 record: '22-3 (1 NC)'
-            }, 
-              {
-        name: "Francis Ngannou",
-        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmsiaZWE-Y2z7_w2Kpwbq_LpeZFe8wUPi_2Q&s", 
-        text: "UFC Heavyweight KO‑Maschine und PFL‑Champion. Extrem explosive Schläge.",
-        record: '18-5'
-      },
+            },
+            {
+                name: "Francis Ngannou",
+                img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmsiaZWE-Y2z7_w2Kpwbq_LpeZFe8wUPi_2Q&s",
+                text: "UFC Heavyweight KO‑Maschine und PFL‑Champion. Extrem explosive Schläge.",
+                record: '18-5'
+            },
         ]
     },
     {
@@ -60,7 +60,7 @@ let info = [
 
 for (i in info) {
     document.getElementById("roomButtons").innerHTML += `
-    <button class="btn" onclick="showResult(${i})">     ${info[i].room} </button>
+    <button class="btn" onclick="showResult(${i})">${info[i].room}</button>
   `;
 }
 
@@ -75,7 +75,6 @@ function showResult(index) {
               <th>Full Name</th>
               <th>Informations</th>
               <th>Record</th>
-              
             </tr>
           </thead>
           <tbody>
@@ -88,7 +87,6 @@ function showResult(index) {
             <td>${p.name}</td>
             <td>${p.text}</td>
             <td>${p.record}</td>
-
           </tr>
         `;
     }

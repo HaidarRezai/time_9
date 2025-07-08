@@ -72,7 +72,7 @@ for (i in info) {
 function check(index) {
     document.getElementById("table").innerHTML = `
             
-             <table>
+        <table>
             <thead>
                 <tr>
                     <th>photo</th>
