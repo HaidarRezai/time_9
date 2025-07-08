@@ -18,6 +18,7 @@ let info = [
                 text: "lorem ipsum voluptate numpum opti auto in remember "
             },
 
+
         ]
     },
 
@@ -55,11 +56,19 @@ let info = [
     },
 ];
 
-for (i in info) {
-    document.getElementById("room").innerHTML += `<div class="btn" onclick="show_info(${i})">${info[i].room} </div>`;
+for (let i = 0; i < info.length; i++) {
+    document.getElementById("room").innerHTML += `<div class="btn" id="${i}" onclick="show_info(${i})">${info[i].room} </div>`;
 }
-
+let root = new Array()
 function show_info(index) {
+    root.push(index)
+    for (j of root) {
+        document.getElementById(j).classList.add("root")
+
+    }
+    document.getElementById(index).classList.add("active")
+    document.getElementById(root.slice(-2, -1)).classList.remove("active")
+
     document.getElementById("table").innerHTML =
         `<table id="customers">
             <thead>
@@ -69,12 +78,11 @@ function show_info(index) {
                     <th>Information</th>
                 </tr>
             </thead>
-            <tbody id="row">
-            
-           
+            <tbody id="row">              
          </tbody>
         </table>`;
-    for (i of info[index].person) {
+        
+    for (let i of info[index].person) {
         document.getElementById("row").innerHTML += `
         <tr>
         <td><img src="${i.img}"></td>
@@ -84,3 +92,23 @@ function show_info(index) {
         `
     }
 }
+function search() {
+    let search = document.getElementById("search_btn").value;
+
+    for (i in info) {
+        document.getElementById(i.toString()).classList.remove("such");
+    }
+
+    for (let n in info){
+        for (let p of info[n].person) {
+            if(search == p.name ) {
+                document.getElementById(n).classList.add("such");
+                
+            }
+
+        }
+    }
+}
+
+
+
