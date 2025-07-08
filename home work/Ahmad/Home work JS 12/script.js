@@ -100,12 +100,12 @@ function showResult(index) {
     document.getElementById("resultArea").innerHTML = html;
 }
 function searchFighters() {
-    const query = document.getElementById("searchInput").value.toLowerCase();
+    const query = document.getElementById("searchInput").value;
     let html = "";
 
     for (let i of info) {
         for (let p of i.person) {
-            if (p.name.toLowerCase().includes(query)) {
+            if (p.name.includes(query)) {
                 html += `
                     <table>
                         <thead>
