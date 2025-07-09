@@ -1,9 +1,1 @@
-function block() {
-    var x = 2
-
-}
-block()
-
-for (i of [1, 2, 3]) {
-    i * x
-}
+fetch('https://api.escuelajs.co/api/v1/products')

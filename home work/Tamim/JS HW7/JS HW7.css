@@ -1,0 +1,29 @@
+.container{
+    width: 70%;
+    height: auto;
+    border-radius: 20px;
+    background-color: lightblue;
+    margin: auto;   
+    padding: 10px;
+}
+input{
+    width: 90%;
+    height: 20px;
+    border-radius: 10px;
+    outline: none;
+    margin: auto;
+    border: none;
+    pad: 4px;
+    cursor: pointer;
+
+
+}
+button{
+    background-color: green;
+    color: white;
+    border-radius: 20px;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+
+}
