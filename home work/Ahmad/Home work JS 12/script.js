@@ -60,11 +60,19 @@ let info = [
 
 for (i in info) {
     document.getElementById("roomButtons").innerHTML += `
-    <button class="btn" onclick="showResult(${i})">     ${info[i].room} </button>
+    <button class="btn" id="${i}" onclick="showResult(${i})">${info[i].room} </button>
   `;
 }
-
+let root = new Array();
 function showResult(index) {
+     root.push(index)
+    for (j of root) {
+        document.getElementById(j).classList.add("root")
+    }
+    document.getElementById(index).classList.add("active")
+    document.getElementById(root.slice(-2, -1)).classList.remove("active")
+
+    
     const room = info[index];
     let html = `
         <h2>Weight Class ${room.room}</h2>
@@ -100,10 +108,11 @@ function showResult(index) {
     document.getElementById("resultArea").innerHTML = html;
 }
 function searchFighters() {
+   
     const query = document.getElementById("searchInput").value.toLowerCase();
     let html = "";
 
-    for (let i of info) {
+    for (let i of info) {   
         for (let p of i.person) {
             if (p.name.toLowerCase().includes(query)) {
                 html += `

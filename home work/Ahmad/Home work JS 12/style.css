@@ -27,7 +27,7 @@
       width: 90%;
     }
 
-    .btn {
+    .btn,.btn1 {
       padding: 10px 20px;
       margin: 5px;
       background-color: #6c5ce7;
@@ -99,4 +99,34 @@
 #searchInput:focus {
   border-color: #e60000; /* UFC red highlight */
   box-shadow: 0 0 10px #e60000;
+}
+.input_btn{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.btn1{
+  display: flex;
+  justify-content: center;
+  align-items: center ;
+  position: relative;
+  right: 35%;
+}
+.root{
+  color: #716d6d;
+}
+.active {
+  background-color: #6c5ce7;
+  animation: Act 300ms infinite 200ms alternate;
+  outline: 1px solid black;
+}
+
+@keyframes Act {
+  from {
+    outline-offset: 1px;
+  }
+  to {
+    outline-offset: 10px;
+  }
 }
