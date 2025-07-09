@@ -175,5 +175,5 @@ function search() {
     for (se of searchs) {
         document.getElementById(se).classList.add("search")
     }
-
 }
+
