@@ -1,0 +1,15 @@
+ #para{
+        width: 30%;
+        height: 10rem;
+        background-color: green;
+        color: rgb(254, 252, 249);
+        border: 2px solid black;
+        box-shadow: 1px 1px 10px 1px rgb(24, 21, 21);
+        margin: auto;
+        border-radius: 20px;
+        padding: 10px;
+        font-size: 20px;
+    }
+    input{
+        background-color: gray;
+    }
