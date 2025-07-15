@@ -1,0 +1,31 @@
+body {
+    background-color: #f3f3f3;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8%;
+}
+
+#cover {
+    width: 20%;
+    height: auto;
+    padding: 20px;
+    box-shadow: 0 0 15px gray;
+    border-radius: 30px;
+    background-image: linear-gradient(500deg, rgba(174, 184, 147, 0.589), rgba(4, 141, 187, 0.562), rgba(7, 120, 158, 0.725));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(61, 61, 61);
+}
+
+::selection{
+    background-color: rgba(4, 141, 187, 0.562);
+    color: white;
+}
