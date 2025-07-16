@@ -45,10 +45,10 @@ class Student extends Person {
 }
 
 ma = new Manger("Sara", "Ahmadi", "Female", "0894754938")
-document.getElementById("cover").innerHTML += ma.show_info() + "<br>";
+document.getElementById("cover_js").innerHTML += ma.show_info() + "<br>";
 
 te = new Teacher("Ahmad", "Ahmadi", "Male", "0485724875")
-document.getElementById("cover").innerHTML += te.show_info() + "<br>";
+document.getElementById("cover_js").innerHTML += te.show_info() + "<br>";
 
 stu = new Student("Asma", "Ahmadi", "Female", "0485744359347")
-document.getElementById("cover").innerHTML += stu.show_info() + "<br>";
+document.getElementById("cover_js").innerHTML += stu.show_info() + "<br>";

@@ -10,22 +10,32 @@ body {
 }
 
 #cover {
-    width: 20%;
+    width: 30%;
     height: auto;
     padding: 20px;
-    box-shadow: 0 0 15px gray;
+    box-shadow: 0 0 30px rgb(117, 205, 234);
     border-radius: 30px;
     background-image: linear-gradient(500deg, rgba(174, 184, 147, 0.589), rgba(4, 141, 187, 0.562), rgba(7, 120, 158, 0.725));
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     font-size: 25px;
     font-weight: 500;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: rgb(61, 61, 61);
 }
 
-::selection{
+::selection {
     background-color: rgba(4, 141, 187, 0.562);
     color: white;
+}
+
+h1 {
+    font-size: 3.5rem;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow:
+        7px 7px 0 rgba(7, 120, 158, 0.725),
+        15px 15px 0 rgba(174, 184, 147, 0.589);
 }
