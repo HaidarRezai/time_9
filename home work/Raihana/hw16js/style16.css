@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f3f3f3;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cover {
+    background-color: white;
+    width: 35%;
+    height: 100vh;
+    margin: 4%;
+    box-shadow: 0 0 30px gray;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.testing {
+    width: 12rem;
+    height: 12rem;
+    margin: 2%;
+    border-radius: 50%;
+    box-shadow: 0px 0px 15px 2px #8DBCC7,
+        inset 0px 0px 15px 15px #8DBCC7;
+    animation: test infinite;
+    animation-duration: 3s;
+    animation-direction: alternate;
+
+}
+
+#erste {
+    box-shadow: 0px 0px 15px 2px #A2AADB,
+        inset 0px 0px 15px 15px #A2AADB;
+}
+
+#zweite {
+    box-shadow: 0px 0px 15px 2px #526D82,
+        inset 0px 0px 15px 15px #526d82dc;
+}
+
+#driete {
+    box-shadow: 0px 0px 15px 2px #A7C1A8,
+        inset 0px 0px 15px 15px #A7C1A8;
+}
+
+@keyframes test {
+    from {
+        width: 0rem;
+        height: 0rem;
+    }
+
+    to {
+        width: 12rem;
+        height: 12rem;
+    }
+}
