@@ -1,0 +1,59 @@
+.text {
+    border: 2px solid black;
+    border-radius: 20px;
+    height: auto;
+    width: 40%;
+    margin: auto;
+    padding: 3px;
+}
+
+@keyframes text {
+    10% {
+        width: 2rem;
+        ;
+        height: 2rem;
+        ;
+        background-color: rgb(5, 225, 64);
+    }
+
+    20% {
+        width: 4rem;
+        ;
+        height: 4rem;
+        ;
+
+
+    }
+
+    40% {
+        width: 9rem;
+        height: 9rem;
+        border-bottom: 7px solid rgb(25, 24, 37);
+    }
+
+    70% {
+        width: 10rem;
+        height: 10rem;
+    }
+
+    90% {
+        width: 12rem;
+        height: 12rem;
+        background-color: rgb(4, 245, 4);
+    }
+}
+
+.testing {
+    background-color: rgb(21, 119, 124);
+    width: 200px;
+    border: 1px solid black;
+    border-radius: 20%;
+    height: 3rem;
+    width: 3rem;
+    background-color: green;
+    animation-name: text;
+    animation-duration: 4s;
+    margin: auto;
+    box-shadow: 1px 1px 10px 1px rgb(34, 34, 34);
+
+}
