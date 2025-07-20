@@ -1,21 +1,9 @@
-
-const letters = Array.from({ length: 26 }, (_, i) => String.fromCharCode(97 + i));
-let randomLetter = "";
-let score = 0;
-
-setInterval(() => {
-    let randomIndex = Math.floor(Math.random() * 26);
-    randomLetter = letters[randomIndex];
-    document.getElementById("text").value += randomLetter;}, 1000);
-
-function count() {
-    let userTyped = document.getElementById("text").value;
-
-    if (userTyped === randomLetter) {
-        score += 1;
-        document.querySelector(".point").textContent = "Points: " + score;
-    }
-    else{
-        score -= 1;
-    }
+let color = ['#205781', '#017eb3ff', '#208174ff', '#14abbfff']
+function growCircle() {
+  let divs = document.getElementsByTagName('div');
+  let x = Math.floor(Math.random() * divs.length);
+  let y = document.getElementsByTagName('div')[x];
+  y.setAttribute('class', 'grow');
+  y.style.backgroundColor = color[x];
 }
+setInterval(growCircle, 1000);
