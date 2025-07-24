@@ -1,0 +1,26 @@
+body {
+  margin: 0;
+  background-color: #111;
+  color: white;
+  font-family: sans-serif;
+  text-align: center;
+  padding-top: 50px;
+  overflow: hidden;
+}
+
+.star {
+  height: 10px;
+  width: 10px;
+  background-color: gold;
+  border-radius: 50%;
+  position: absolute;
+  pointer-events: none;
+  animation: fade 3s forwards;
+}
+
+@keyframes fade {
+  to {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+}
