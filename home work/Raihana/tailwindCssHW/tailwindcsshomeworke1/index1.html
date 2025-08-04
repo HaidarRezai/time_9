@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Ocean Cargo – Großes Layout</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body class="bg-white text-gray-800">
+
+    <div class="max-w-[1400px] mx-auto px-[30px] py-40 flex flex-col lg:flex-row gap-20     ">
+
+        <!-- Linke Seite: 3 große Bilder + vertikaler Text -->
+        <div class="relative w-full lg:w-[700px] h-[400px]">
+
+            <!-- Vertikaler Text rotate-[-90deg] -->
+            <div class="absolute -left-[-50px] top-[470px]  origin-left z-[-50] rotate-[-90deg] ">
+                <div
+                    class="bg-[#0a2458] text-white text-[18px] font-semibold px-[15px] py-1  w-[320px] rounded-md tracking-wide">
+                    www.trade.global/cargologistics
+                </div>
+            </div>
+
+            <!-- Bild 1 -->
+            <div class="absolute left-[20px] top-0 w-[220px] h-[220px] z-10">
+                <img src="auto2.avif"
+                    class="rounded-lg shadow-lg w-full h-full object-cover border-4 border-[#ffffff]" />
+            </div>
+
+            <!-- Bild 2 -->
+            <div
+                class="absolute left-[120px] top-[80px] w-[440px] h-[400px]   rounded-xl shadow-xl overflow-hidden relative">
+                <img src="auto1.webp" class="w-full h-full object-cover" />
+                <div class="absolute inset-0 flex items-center justify-center">
+                    <div class="bg-lime bg-lime-200 bg-opacity-80 p-2 rounded-full  w-[70px] h-[70px]">
+                        <i class="fas fa-play text-white text-xl flex items-center justify-center mt-[15px]"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bild 3 -->
+            <div class="absolute left-[440px] top-[360px] w-[220px] h-[220px] z-20 ">
+                <img src="auto3.jpg"
+                    class="rounded-lg shadow-lg w-full h-full object-cover border-4  border-[#ffffff]" />
+            </div>
+        </div>
+
+        <!-- Rechte Seite: Text -->
+        <div class="w-full lg:w-1/2 space-y-6 pt-2">
+            <p class="text-sm text-gray-600 font-medium flex items-center gap-2">
+                <i class="fas fa-shipping-fast text-[#0a2458]"></i>
+                Trusted Global Freight Services
+            </p>
+            <h1 class="text-4xl font-bold text-gray-900 leading-snug">
+                Personalized Logistics by <br />
+                <span class="text-lime-500">Ocean Cargo</span>
+            </h1>
+            <p class="text-gray-500 text-[18px] max-w-xl leading-relaxed">
+                At Ocean Cargo, our mission has always been to provide exceptional service with a personal touch.
+                We focus on quality over quantity, saving you time by handling all freight arrangements efficiently.
+            </p>
+            <ul class="space-y-3 text-gray-700 text-[17px]">
+                <li class="flex items-start gap-3">
+                    <i class="fas fa-check-circle text-lime-300 mt-1"></i>
+                    Competitive pricing on global vehicle transportation.
+                </li>
+                <li class="flex items-start gap-3">
+                    <i class="fas fa-check-circle text-lime-300 mt-1"></i>
+                    15+ years experience across 130+ countries.
+                </li>
+            </ul>
+            <div class="flex items-center gap-3 text-gray-800 font-medium text-[17px] pt-2">
+                <i class="fas fa-phone text-[#0a2458]"></i> +1 (443) 317-6161
+            </div>
+        </div>
+        <div
+            class="absolute top-[640px] left-[410px] rounded-l-lg w-[20%] h-[40px] border-0 border-l-2 border-b-2 border-lime-300 md:block">
+        </div>
+    </div>
+
+</body>
+
+</html>
