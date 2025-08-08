@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Business Co</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+</head>
+
+<body class="font-sans bg-white text-gray-900">
+    <!-- Header -->
+    <header class="w-full border-b">
+        <div class="max-w-8xl mx-auto px-6 py-6 flex justify-between items-center">
+            <h1 class="text-3xl md:text-4xl font-bold">P4P RANK UFC</h1>
+            <i onclick="openSidebar()" class="bi bi-list text-4xl cursor-pointer"></i>
+        </div>
+        <!-- Sidebar -->
+        <div id="sidebar"
+            class="fixed top-0 left-0 w-64 h-full bg-black text-white  transform -translate-x-full transition-transform duration-300 z-50">
+            <div class="p-6 flex flex-col gap-6">
+                <h2 class="text-2xl font-bold border-b pb-4">Menu</h2>
+                <a href="#" class="hover:text-cyan-500">Home</a>
+                <a href="#" class="hover:text-cyan-500">About</a>
+                <a href="#" class="hover:text-cyan-500">Fighters</a>
+                <a href="#" class="hover:text-cyan-500">Contact</a>
+                <button onclick="closeSidebar()" class="mt-auto text-left text-red-400">Close</button>
+            </div>
+        </div>
+    </header>
+    <!-- Main Hero Section -->
+    <main class="max-w-7.5xl mx-auto px-6 py-20 min-h-screen flex flex-col lg:flex-row items-center gap-16">
+
+        <!-- Left Column -->
+        <section class="flex-1">
+            <h1 class="font-black text-5xl md:text-6xl lg:text-7xl leading-tight mb-8">
+                Islam Makhachev <br />
+                is the best <br />
+                Pound-for-Pound Champ
+            </h1>
+
+            <p class="text-xl text-gray-800 italic mb-6 max-w-2xl">
+                Islam Makhachev is an impressive Russian mixed martial artist who holds the UFC Lightweight
+                Championship. He is the best UFC Fighter.
+            </p>
+
+            <p class="text-lg mb-6">
+                More info
+                <a href="https://en.wikipedia.org/wiki/Islam_Makhachev" target="_blank"
+                    class="text-cyan-700 font-bold hover:underline">wikipedia</a>
+            </p>
+
+            <a href="https://en.wikipedia.org/wiki/Islam_Makhachev" target="_blank"
+                class="inline-block px-10 py-4 bg-black text-white text-lg font-semibold rounded-full hover:bg-gray-800 transition">
+                LEARN MORE
+            </a>
+        </section>
+        <!-- Right Column: Bigger Image -->
+        <section class="flex-1 relative h-[900px] w-full max-w-[700px]">
+            <img src="img2.webp" alt="Islam Makhachev" class="w-full h-full object-cover rounded-xl shadow-lg" />
+            <div
+                class="absolute inset-0 bg-gradient-to-l -left-2 object-cover from-transparent to-white rounded-xl pointer-events-none">
+            </div>
+        </section>
+    </main>
+    <main>
+        <!-- Bottom Section -->
+        <section class="flex flex-row justify-center items-start mt-20 ">
+            <div class="flex flex-1 max-w-4xl h-[600px] bg-black text-white flex-col p-6 items-center justify-center">
+                <h1 class="text-3xl font-bold">Most Experience</h1>
+                <p class="max-w-[421px] mt-6 text-justify text-base leading-relaxed">
+                    In his second fight for the promotion, Makhachev faced Mansour Barnaoui on 9 April 2013 at M-1
+                    Challenge 38.He won via unanimous decision (30–27, 30–27, 30–27).
+                </p>
+
+            </div>
+
+            <div
+                class="flex flex-1 max-w-4xl h-[600px] bg-cyan-600  text-white flex-col p-6 items-center justify-center">
+                <h1 class="text-3xl font-bold">Most Experience</h1>
+                <p class="max-w-[421px] mt-6 text-justify text-base leading-relaxed">
+                    In his second fight for the promotion, Makhachev faced Mansour Barnaoui on 9 April 2013 at M-1
+                    Challenge 38.He won via unanimous decision (30–27, 30–27, 30–27).
+                </p>
+
+            </div>
+            <div
+                class="flex flex-1 max-w-4xl h-[600px] bg-cyan-800 text-white flex-col p-6 items-center justify-center">
+                <h1 class="text-3xl font-bold">Most Experience</h1>
+                <p class="max-w-[421px] mt-6 text-justify text-base leading-relaxed">
+                    In his second fight for the promotion, Makhachev faced Mansour Barnaoui on 9 April 2013 at M-1
+                    Challenge 38.He won via unanimous decision (30–27, 30–27, 30–27).
+                </p>
+            </div>
+        </section>
+        <section>
+            <div class="w-full h-[50vh] flex items-center flex-col justify-center">
+                <h1><i class="fas fa-anchor mt-20 text-9xl"></i></h1>
+                <h1 class="text-6xl font-bold mt-10">
+                    About Wrestling
+                </h1>
+                <p class="max-w-4xl mt-10 text-justify text-base leading-relaxed text-gray-800">
+                    Paragraph. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur id suscipit ex.
+                    Suspendisse rhoncus laoreet purus quis elementum. Phasellus sed efficitur dolor, et ultricies
+                    sapien. Quisque fringilla sit amet dolor commodo efficitur. Aliquam et sem odio. In ullamcorper nisi
+                    nunc, et molestie ipsum iaculis sit amet.
+                </p>
+                <a href="https://khabibgym.ae/" target="_blank"
+                    class="px-[40px] py-3 bg-black border-2 text-white text-1xl no-underline hover:bg-white hover:text-gray-700 font-semibold mt-20  hover:border-black transition">
+                    OUR CLUB
+                </a>
+
+            </div>
+
+        </section>
+        <section class="flex flex-col lg:flex-row w-full mt-40 h-screen">
+            <div class="w-full lg:w-1/2 h-1/2 lg:h-full">
+                <img src="img4.webp" alt="Businessman" class="w-full h-full object-cover">
+            </div>
+
+            <div class="w-full lg:w-1/2 bg-cyan-800 text-white flex flex-col justify-center items-start px-10 py-20">
+                <h1 class="text-4xl font-bold mb-6 leading-tight">
+                    When the gladiator comes to the arena, <br />
+                    he never chooses opponent
+                </h1>
+                <p class="mb-4 max-w-xl">
+                    P4P CHAMP
+                </p>
+                <p class="mb-8 max-w-xl">
+                    The phrase "When the gladiator comes to the arena, he never chooses opponent" is a quote from Islam
+                    Makhachev, referring to his mindset when facing a late replacement opponent at UFC 311, which was
+                    Renato Moicano after Arman Tsarukyan was injured, according to an Instagram post. The quote
+                    emphasizes his willingness to fight whoever is put in front of him, without preference.
+                </p>
+                <a href="https://www.google.com/search?sa=X&sca_esv=29b06b32b8894029&sxsrf=AE3TifNP1CsZMyo_n-_L3-PlE_pM87iWqA:1754214384413&udm=7&fbs=AIIjpHxU7SXXniUZfeShr2fp4giZud1z6kQpMfoEdCJxnpm_3UK3oyqvhV9opp98EEM6wbx2mto3TkvnBBRGiSTnDEQ8_20MrrKaby226Hi3fItSqa4AO93GPVadsrJz3DZsoZw7ozMfdTrQ5P-P0I9uGxBgXixwgH1hC-Lh5kCFvusPqCeZYfhsQm1ho-GjFxpDHZJaNfMdlV72PwSYWyIBSBNDoWFIwQ&q=when+the+gladiator+comes+to+arina+islam+makhachev&ved=2ahUKEwiDsvjpre6OAxWlA9sEHQeMCCwQtKgLegQIChAB&biw=1470&bih=831&dpr=2#fpstate=ive&vld=cid:abf83263,vid:0X2j3nM5W34,st:0 "
+                    target="_blank"
+                    class="bg-white text-cyan-500 px-6 py-3 rounded-full font-semibold hover:bg-gray-100 transition">
+                    LEARN MORE
+                </a>
+            </div>
+        </section>
+        <section class="w-full flex flex-col items-center p-20 bg-white">
+            <h1 class="font-black text-6xl mb-16">Our Team</h1>
+
+            <!-- First Row -->
+            <div class="w-full flex flex-wrap justify-around gap-16">
+
+
+
+                <!-- Ankalaev -->
+                <div class="flex flex-col items-center w-[250px] text-center space-y-3">
+                    <img src="https://cdn.vox-cdn.com/thumbor/ZnmrHp1pLAd8UT8g3UoVT136TOE=/0x0:2446x1631/1200x800/filters:focal(988x383:1378x773)/cdn.vox-cdn.com/uploads/chorus_image/image/66804430/1181095923.jpg.0.jpg"
+                        class="rounded-full h-[200px] w-[200px] object-cover shadow-md">
+                    <h2 class="font-bold text-lg">Abdulmanap Nurmagomedov</h2>
+                    <p class="text-gray-600">Main-Founder</p>
+                </div>
+
+                <!-- Khabib -->
+                <div class="flex flex-col items-center w-[250px] text-center space-y-3">
+                    <img src="https://m.media-amazon.com/images/M/MV5BYmE0ZTk4ZmMtMmY3YS00YjdiLWIyODItZWZkODk1ZDYwOTQ5XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+                        class="rounded-full h-[200px] w-[200px] object-cover shadow-md">
+                    <h2 class="font-bold text-lg">Khabib Nurmagomedov</h2>
+                    <p class="text-gray-600">The Co-Founder and Instructor</p>
+                </div>
+                <div class="flex flex-col items-center w-[250px] text-center space-y-3">
+                    <img src="https://talksport.com/wp-content/uploads/sites/5/2025/01/GettyImages-2194304443_032fe8.jpg?strip=all&w=960"
+                        class="rounded-full h-[200px] w-[200px] object-cover shadow-md">
+                    <h2 class="font-bold text-lg">Islam Makhachev</h2>
+                    <p class="text-gray-600">The Co-Contractor</p>
+                </div>
+            </div>
+
+            <!-- Second Row (Same Team Members Again) -->
+            <div class="w-full flex flex-wrap justify-around gap-16 mt-20">
+
+                <!-- Ankalaev -->
+                <div class="flex flex-col items-center w-[250px] text-center space-y-3">
+                    <img src="https://www.actumma.com/wp-content/uploads/2025/03/magomed-ankalaev-alex-pereira-ufc-mma-1.jpg"
+                        class="rounded-full h-[200px] w-[200px] object-cover shadow-md">
+                    <h2 class="font-bold text-lg">Magomed Ankalaev</h2>
+                    <p class="text-gray-600">The Instructor</p>
+                </div>
+                <!-- Usman -->
+                <div class="flex flex-col items-center w-[250px] text-center space-y-3">
+                    <img src="https://s-cdn.sportbox.ru/images/styles/1920_1080/fp_fotos/51/a2/0e1e1ec67c4095981a73c13a4941787b618d461b11360445499705.jpg"
+                        class="rounded-full h-[200px] w-[200px] object-cover shadow-md">
+                    <h2 class="font-bold text-lg">Usman Nurmagomedov</h2>
+                    <p class="text-gray-600">The Founder and Instructor</p>
+                </div>
+
+                <!-- Ankalaev -->
+                <div class="flex flex-col items-center w-[250px] text-center space-y-3">
+                    <img src="https://cdn.vox-cdn.com/thumbor/gBKokRElgWiwFelnmGSMEqkWrqU=/0x0:7608x5268/1200x800/filters:focal(3665x1201:4881x2417)/cdn.vox-cdn.com/uploads/chorus_image/image/73207651/2053897575.0.jpg"
+                        class="rounded-full h-[200px] w-[200px] object-cover shadow-md">
+                    <h2 class="font-bold text-lg"> Umar Nurmagomedov</h2>
+                    <p class="text-gray-600">The Instructor</p>
+                </div>
+            </div>
+            <a href="#" target="_blank"
+                class="inline-block px-10 py-4 mt-20 bg-black text-white text-lg font-semibold hover:bg-gray-600 transition">
+                LEARN MORE
+            </a>
+        </section>
+        <section class="flex flex-col lg:flex-row w-full mt-40 h-screen">
+
+            <div class="w-full lg:w-1/2 text-black flex flex-col justify-center items-start px-10 py-20">
+                <h1 class="text-4xl font-bold mb-6 leading-tight">
+                    Abdulmanap Magomedovich Nurmagomedov
+                </h1>
+                <p class="mb-4 max-w-xl">
+                    <q>Best MMA Coach</q>
+                </p>
+                <p class="mb-8 max-w-xl">
+                    The phrase "When the gladiator comes to the arena, he never chooses opponent" is a quote from Islam
+                    Makhachev, referring to his mindset when facing a late replacement opponent at UFC 311, which was
+                    Renato Moicano after Arman Tsarukyan was injured, according to an Instagram post. The quote
+                    emphasizes his willingness to fight whoever is put in front of him, without preference.
+                </p>
+                <a href="https://en.wikipedia.org/wiki/Abdulmanap_Nurmagomedov" target="_blank"
+                    class="bg-cyan-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-gray-100 transition">
+                    LEARN MORE
+                </a>
+            </div>
+            <div class="w-full lg:w-1/2 h-1/2 lg:h-full">
+                <img src="https://staticg.sportskeeda.com/editor/2022/02/c5948-16459893338519-1920.jpg"
+                    alt="Businessman" class="w-full h-full object-cover">
+            </div>
+
+        </section>
+        <section class="flex justify-between p-10 items-center px-20 bg-cyan-600 border-black">
+            <div class="text-white max-w-xl">
+                <h1 class="text-3xl font-black">Get to know today!</h1>
+                <p>
+                    Sample text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nunc justo sagittis
+                    suscipit ultrices.
+                </p>
+            </div>
+            <div class="">
+                <a href="#" target="_blank"
+                    class="inline-block px-10 py-4 bg-white text-cyan-700 rounded-full text-lg font-semibold hover:bg-cyan-100 transition">
+                    LEARN MORE
+                </a>
+            </div>
+        </section>
+
+
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
