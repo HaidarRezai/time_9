@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Partial Border Gallery (Centered)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        :root {
+            --board-w: 1400;
+            /* Your original layout width */
+            --board-h: 2000;
+            /* Your original layout height */
+        }
+
+        .scaled-artboard {
+            --s: min(calc(100vw / var(--board-w)), calc(100vh / var(--board-h)));
+            width: calc(var(--board-w) * 1px);
+            height: calc(var(--board-h) * 1px);
+            transform: scale(var(--s));
+            transform-origin: top left;
+        }
+
+        .scaled-artboard-holder {
+            width: calc(var(--board-w) * var(--s));
+            height: calc(var(--board-h) * var(--s));
+        }
+    </style>
+</head>
+
+<body class="min-h-screen bg-white overflow-auto flex justify-center items-center">
+    <!-- Holder centers artboard -->
+    <div class="scaled-artboard-holder flex justify-center items-center">
+        <div class="scaled-artboard relative bg-white ml-[400px]">
+
+            <!-- === ORIGINAL CONTENT === -->
+
+            <div class="absolute right-[550px] top-[250px] h-[200px] w-[200px] 
+        bg-[url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiiaLWU5cx0xwkmFuofJyQe8xFPzEw3nWEMvrLhxCLVpUvmFUaMjzmywLwaSVOu7UXyyQ&usqp=CAU')] 
+        bg-cover bg-center">
+            </div>
+
+            <div class="flex gap-4 max-w-[100%] mt-[150px]">
+                <!-- Image Card -->
+                <div class="relative w-[400px] h-[400px]">
+                    <div class="absolute -top-2 -left-2">
+                        <div class="w-[190px] border-t-[8px] border-orange-500"></div>
+                        <div class="h-[190px] border-l-[8px] border-orange-500"></div>
+                    </div>
+                    <div
+                        class="w-full h-full bg-[url('https://againstthecompass.com/wp-content/uploads/2023/06/can-you-travel-to-Afghanistan--1024x684.jpg')] bg-cover bg-center border-2 border-cyan-700">
+                    </div>
+                </div>
+
+                <!-- Another image card -->
+                <div class="relative w-[350px] h-[300px] top-[100px]">
+                    <div class="absolute -top-1 left-[351px]">
+                        <div class="absolute -top-1 -left-[202px] w-[150px] border-t-[8px] border-orange-500"></div>
+                        <div class="absolute h-[150px] -left-[60px] border-l-[8px] border-orange-500"></div>
+                    </div>
+                    <div
+                        class="w-full h-full bg-[url('https://c8.alamy.com/comp/2B018R2/afghanistan-giant-rock-hewn-chedi-at-mes-aynak-logar-province-courtesy-of-dlgation-archologique-franaise-cc-by-sa-40-license-about-30-kms-from-kabul-mes-aynek-is-a-trove-of-buddhist-monastery-ruins-statues-and-stupas-attesting-to-the-prolific-role-that-afghanistan-played-in-the-proliferation-of-buddhism-in-central-and-east-asia-currently-being-excavated-as-a-copper-mine-rescue-excavations-began-in-2009-work-was-undertaken-by-the-national-institute-of-archaeology-and-the-dlgation-archologique-franaise-en-afghanistan-2B018R2.jpg')] bg-cover bg-center border-2 border-cyan-700">
+                    </div>
+                </div>
+
+                <!-- Third image card -->
+                <div class="relative w-[200px] h-[150px] top-[250px]">
+                    <div
+                        class="w-full h-full bg-[url('https://www.middleeasteye.net/sites/default/files/styles/max_2600x2600/public/images-story/000_1N334K.jpg.jpg?itok=_onXmp2r')] bg-cover bg-center border-2 border-cyan-700">
+                    </div>
+                </div>
+
+                <!-- fourth image card -->
+                <div class="relative w-[680px] h-[150px] top-[410px] right-[837px]">
+                    <div
+                        class="w-full h-full bg-[url('https://media.npr.org/assets/img/2012/10/27/troops_wide-d8de87d7b70ac5f5b4de7f90021654c1b6dd3833.jpg?s=1100&c=50&f=jpeg')] bg-cover bg-center border-2 border-cyan-700">
+                    </div>
+                </div>
+
+                <div class="absolute w-[200px] h-[358px] left-[364px] top-[716px]">
+                    <div
+                        class="w-full h-full bg-[url('https://m.media-amazon.com/images/I/61XYS4doogL._UF894,1000_QL80_.jpg')] bg-cover bg-center border-2 border-cyan-700">
+                    </div>
+                </div>
+
+                <div class="absolute w-[350px] h-[300px] -bottom-[200px]">
+                    <div class="absolute -top-[950px] left-[235px]">
+                        <div class="absolute top-[127px] left-[120px] w-[150px] border-t-[8px] border-orange-500"></div>
+                        <div class="absolute h-[120px] top-[10px] left-[120px] border-l-[8px] border-orange-500"></div>
+                    </div>
+                    <div class="absolute w-[580px] h-[220px] -top-[1185px] -left-[220px] ">
+                        <div
+                            class="w-full h-full bg-[url('https://img.freepik.com/premium-photo/snow-leopard-portrait_1031776-16682.jpg')] bg-cover bg-center border-2 border-cyan-700">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- fifth image card -->
+                <div class="absolute w-[190px] h-[260px] left-[570px] top-[558px]">
+                    <div
+                        class="w-full h-full bg-[url('https://againstthecompass.com/wp-content/uploads/2023/06/Afghanistan-travel-tips-740x1024.jpg')] bg-cover bg-center border-2 border-cyan-700">
+                    </div>
+                </div>
+
+                <div class="absolute w-[200px] h-[150px] left-[768px] top-[558px]">
+                    <div
+                        class="w-full h-full bg-[url('https://www.middleeasteye.net/sites/default/files/styles/max_2600x2600/public/images-story/000_1N334K.jpg.jpg?itok=_onXmp2r')] bg-cover bg-center border-2 border-cyan-700">
+                    </div>
+                </div>
+
+                <div class="absolute left-[570px] top-[640px] w-[400px] h-[400px]">
+                    <svg viewBox="0 0 200 200" class="w-full h-full" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <pattern id="imgPattern" patternUnits="userSpaceOnUse" width="200" height="200">
+                                <image
+                                    href="https://www.unchartedbackpacker.com/wp-content/uploads/2016/03/DSC_0480.jpg"
+                                    width="200" height="200" />
+                            </pattern>
+                        </defs>
+                        <polygon points="200,0 99,0 99,90 -250,90 -250,200 200,200" fill="url(#imgPattern)" />
+                    </svg>
+                </div>
+
+                <div class="absolute w-[350px] h-[300px] -bottom-[200px]">
+                    <div class="absolute -top-[1068px] left-[852px]">
+                        <div class="absolute top-[134px] -left-[23px] w-[150px] border-t-[8px] border-orange-500"></div>
+                        <div class="absolute h-[120px] top-[14px] left-[120px] border-l-[8px] border-orange-500"></div>
+                    </div>
+
+                </div>
+
+                <!-- === END ORIGINAL CONTENT === -->
+
+            </div>
+        </div>
+</body>
+
+</html>
