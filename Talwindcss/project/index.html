@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+    <style>
+        .abc{
+            font-family: "Noto Sans", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+        }
+        @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+    </style>
+</head>
+<body class="transition-all">
+    <div class="bg-black/50 h-full w-full fixed top-0 left-0 hidden transition delay-150 duration-300 ease-in-out" id="cover">
+        <div class="bg-black text-white h-full w-[20%] relative -left-[40%] transition delay-150 duration-300 ease-in-out" id="window">
+             <i class="bi bi-x-lg absolute right-4 top-4" onclick="unshow()"></i>
+             <ul class="pt-20 flex flex-col items-center">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Dashbord</a></li>
+                  <li><a href="#">Home</a></li>
+                <li><a href="#">Dashbord</a></li>
+                  <li><a href="#">Home</a></li>
+                <li><a href="#">Dashbord</a></li>
+                  <li><a href="#">Home</a></li>
+                <li><a href="#">Dashbord</a></li>
+                  <li><a href="#">Home</a></li>
+                <li><a href="#">Dashbord</a></li>
+                  <li><a href="#">Home</a></li>
+                <li><a href="#">Dashbord</a></li>
+                
+             </ul>
+        </div>  
+    </div>
+   <header class="bg-white flex items-center m-auto justify-between p-4 max-w-[80%]">
+        <h1 class="text-2xl font-bold">Business Co</h1>
+        <i class="bi bi-blockquote-left text-2xl" onclick="show()"></i>
+   </header>
+   <main>
+    <section class="flex ml-[12%] bg-[url('./image/dsmin.jpg')] bg-cover bg-center max-md:bg-top-[50%] h-[90vh]">
+        <div class="flex flex-col gap-4 w-[40%] max-md:w-[90%]  mt-10 bg-white/50">
+            <h1 class="text-7xl max-md:text-2xl font-blod font-semibold abc">We help your brand to be recognizable</h1>
+            <p><i>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur</i></p>
+            <p>
+                Image from <a class="text-green-400" href="#">Freepik</a> 
+            </p>
+            <button class="bg-black text-white py-4 rounded-full w-40">Leatn More</button>
+        </div>
+    </section>
+    <section class="grid grid-cols-3 max-md:grid-cols-1 text-white h-[20rem] my-10">
+        <div class="bg-black p-10 flex flex-col items-center justify-center">
+            <h1 class="text-4xl font-blod">Quality Product</h1>
+            <p class="text-xl"><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm od tempor incididunt ut labore et dolore magna aliqua ut enim adminim.</i></p>
+        </div>
+        <div class="bg-[#38D2D9] p-10 flex flex-col items-center justify-center">
+            <h1 class="text-4xl font-blod">Quality Product</h1>
+            <p class="text-xl"><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm od tempor incididunt ut labore et dolore magna aliqua ut enim adminim.</i></p>
+        </div>
+        <div class="bg-[#14B8BF] p-10 flex flex-col items-center justify-center">
+            <h1 class="text-4xl font-blod">Quality Product</h1>
+            <p class="text-xl"><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm od tempor incididunt ut labore et dolore magna aliqua ut enim adminim.</i></p>
+        </div>
+    </section>
+    <section class="text-center flex flex-col justify-center border my-4 items-center">
+        <div class="w-[50%] flex flex-col gap-4 items-center">
+            <i class="bi bi-arrow-down-up rounded-full text-7xl  p-1"></i>
+            <h1 class="font-blod text-4xl">About Company</h1>
+            <p>Paragraph. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur id suscipit ex. Suspendisse rhoncus laoreet purus quis elementum. Phasellus sed efficitur dolor, et ultricies sapien. Quisque fringilla sit amet dolor commodo efficitur. Aliquam et sem odio. In ullamcorper nisi nunc, et molestie ipsum iaculis sit amet.</p>
+            <button class="border w-[12rem] p-2">Our Work</button>
+        </div>
+    </section>
+    <section class="grid grid-cols-2">
+        <div>
+            <img src="./image/download.jpeg" alt="">
+        </div>
+        <div class="p-20 bg-[#38D2D9] text-white flex flex-col gap-6 justify-center">
+            <h1 class="text-4xl font-blod">Doing The Right Thing, At The Right Time</h1>
+            <p class="font-blod text-2xl">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+            <p class="font-blod text-2xl">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <button class="bg-white text-[#38D2D9] px-6 py-2 rounded-full hover:bg-[#f3f3f3] w-40">LEARIN MORE</button>
+        </div>
+    </section>
+    <section class="flex flex-col items-center text-center">
+        <div class="my-10">
+            <h1 class="text-6xl">Our Services</h1>
+            <p class="my-8">Consectetur adipiscing elit nullam nunc justo sagittis suscipit ultrices.</p>
+        </div>
+        <div class="grid grid-cols-3 gap-16 max-w-[80%]">
+       
+            <div class="p-4 flex flex-col items-center gap-4">
+                <div class="w-[6rem] h-[6rem] text-white rounded-full flex justify-center bg-[#38D2D9] items-center text-4xl">
+                    <i class="bi bi-bluesky"></i>
+                </div>
+                <h1 class="font-blod text-4xl">Branding</h1>
+                <p class="text-[#616161]"><i>Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc justo sagittis suscipit ultrices.</i></p>
+            </div>
+
+            <div class="p-4 flex flex-col items-center gap-4">
+                <div class="w-[6rem] h-[6rem] text-white rounded-full flex justify-center bg-[#38D2D9] items-center text-4xl">
+                    <i class="bi bi-bluesky"></i>
+                </div>
+                <h1 class="font-blod text-4xl">Branding</h1>
+                <p class="text-[#616161]"><i>Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc justo sagittis suscipit ultrices.</i></p>
+            </div>
+            <div class="p-4 flex flex-col items-center gap-4">
+                <div class="w-[6rem] h-[6rem] text-white rounded-full flex justify-center bg-[#38D2D9] items-center text-4xl">
+                    <i class="bi bi-bluesky"></i>
+                </div>
+                <h1 class="font-blod text-4xl">Branding</h1>
+                <p class="text-[#616161]"><i>Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc justo sagittis suscipit ultrices.</i></p>
+            </div>
+            
+            <div class="p-4 flex flex-col items-center gap-4">
+                <div class="w-[6rem] h-[6rem] text-white rounded-full flex justify-center bg-[#38D2D9] items-center text-4xl">
+                    <i class="bi bi-bluesky"></i>
+                </div>
+                <h1 class="font-blod text-4xl">Branding</h1>
+                <p class="text-[#616161]"><i>Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc justo sagittis suscipit ultrices.</i></p>
+            </div>
+
+            <div class="p-4 flex flex-col items-center gap-4">
+                <div class="w-[6rem] h-[6rem] text-white rounded-full flex justify-center bg-[#38D2D9] items-center text-4xl">
+                    <i class="bi bi-bluesky"></i>
+                </div>
+                <h1 class="font-blod text-4xl">Branding</h1>
+                <p class="text-[#616161]"><i>Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc justo sagittis suscipit ultrices.</i></p>
+            </div>
+            <div class="p-4 flex flex-col items-center gap-4">
+                <div class="w-[6rem] h-[6rem] text-white rounded-full flex justify-center bg-[#38D2D9] items-center text-4xl">
+                    <i class="bi bi-bluesky"></i>
+                </div>
+                <h1 class="font-blod text-4xl">Branding</h1>
+                <p class="text-[#616161]"><i>Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc justo sagittis suscipit ultrices.</i></p>
+            </div>
+        </div>
+        <button class="border w-[12rem] p-2 border-[#38D2D9] mt-4">Our Work</button>
+    </section>
+    <section class="grid grid-cols-2 mt-8">
+        <div class="p-20 bg-[#f3f3f3] text-black flex flex-col gap-6 justify-center">
+            <h1 class="text-4xl font-blod">Doing The Right Thing, At The Right Time</h1>
+            <p class="font-blod text-2xl">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+            <p class="font-blod text-2xl">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <button class="bg-[#38D2D9] text-white px-6 py-2 rounded-full hover:bg-[#f3f3f3] w-40">LEARIN MORE</button>
+        </div>
+        <div>
+            <img src="./image/download.jpeg" alt="">
+        </div>
+    </section>
+    <section class="bg-[#38D2D9] text-white p-12">
+        <div class="max-w-[80%] m-auto flex items-center justify-center items-center gap-4">
+            <div>
+                <h1 class="text-4xl font-blod">Get to know today!</h1>
+                <p class="w-[80%]">Sample text. Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc justo sagittis suscipit ultrices.Doing The Right Thing, At The Right Time</p>
+            </div>
+            <button class="bg-white h-[3rem] text-[#38D2D9] px-6 py-2 rounded-full hover:bg-[#f3f3f3] w-40">LEARIN MORE</button>
+        </div>
+    </section>
+    <section class="max-w-[80%] m-auto text-center my-8">
+        <h1 class="font-blod text-4xl">Business And Marketing</h1>
+        <p>
+            ullam mauris nibh, pellentesque quis tincidunt eu, tincidunt sed nulla, sit amet tristique elit finibus.
+        </p>
+    </section>
+   </main>
+   <footer></footer>
+   <script>
+    function show(){
+        document.getElementById("cover").classList.remove("hidden")
+        document.getElementById("window").classList.remove("-left-[40%]")
+        document.getElementById("window").classList.add("left-0")
+    }
+    function unshow(){
+        document.getElementById("window").classList.remove("left-0")
+
+          document.getElementById("cover").classList.add("hidden")
+        document.getElementById("window").classList.add("-left-[40%]")                    
+    }
+   </script>
+</body>
+</html>
