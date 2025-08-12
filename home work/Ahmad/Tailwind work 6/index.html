@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="popup" id="popup">
+
+        <div class="popup_menu">
+            <i class="bi bi-x-circle-fill" id="close" onclick="closePopup()"></i>
+            <h1>404</h1>
+            <p>This website is under construrtion</p>
+        </div>
+    </div>
+    <div class="grid grid-cols-[20%_auto] ">
+        <!-- Header -->
+        <header class="bg-white flex justify-between items-center px-10 border-b-4 border-gray-300 col-span-2">
+            <img src="img1-removebg-preview.png" class="h-[90px]">
+            <h1 class="font-black text-2xl">Order Analysis</h1>
+            <i class="bi bi-three-dots font-black text-2xl border px-2 py-1 border-gray-400 rounded-xl cursor-pointer"
+                onclick="show()"></i>
+        </header>
+
+        <!-- Aside -->
+        <aside class="col-start-1 col-end-2 bg-gray-100  p-4 ">
+            <div class="flex justify-between items-center  ">
+                <div>
+                    <h2 class="font-bold ">Queries</h2>
+                </div>
+                <div>
+                    <i class="bi bi-plus text-xl cursor-pointer"></i>
+                </div>
+            </div>
+            <div class="mb-5">
+                <p class="px-2 text-md cursor-pointer"><i class="bi bi-layout-text-window-reverse text-gray-600"></i>
+                    Undelivered order</p>
+            </div>
+            <div class="flex justify-between items-center  ">
+                <div>
+                    <h2 class="font-bold ">Charts</h2>
+                </div>
+                <div>
+                    <i class="bi bi-plus text-xl cursor-pointer"></i>
+                </div>
+            </div>
+            <div class="py-1">
+                <p class="px-2 cursor-pointer text-md"><i class="bi bi-graph-up-arrow text-gray-600 "></i> Order per
+                    Month</p>
+            </div>
+            <div class="py-1">
+                <p class="px-2 cursor-pointer text-md"><i class="bi bi-life-preserver text-gray-600"></i> Order per
+                    Catagory</p>
+            </div>
+            <div class="py-1">
+                <p class="px-1 cursor-pointer text-md"><i class="bi bi-hash text-[20px] font-bold text-gray-600"></i>
+                    Undelivered order</p>
+            </div>
+            <div class="py-1">
+                <p class="px-2 cursor-pointer text-md"><i class="bi bi-layout-text-window-reverse text-gray-600"></i>
+                    Undelivered order</p>
+            </div>
+            <div class="flex justify-between cursor-pointer items-center mt-10 ">
+                <div>
+                    <h2 class="font-bold ">Dashboards</h2>
+                </div>
+                <div>
+                    <i class="bi bi-plus text-xl cursor-pointer"></i>
+                </div>
+            </div>
+            <div class="py-1">
+                <p class="px-2 text-md cursor-pointer"><i class="bi bi-grid-1x2  text-gray-600"></i> Undelivered order
+                </p>
+            </div>
+        </aside>
+
+        <!-- Main -->
+        <main class="col-start-2 col-end-3 bg-gray-200 p-4 ">
+            <div class="flex justify-between items-center text-gray-600 bg-white p-7 rounded-xl ">
+                <div>
+                    <h1 class="font-bold text-1xl">Order Analysis</h1>
+                </div>
+                <div class="flex items-center justify-between  w-80 ">
+                    <div>
+                        <p><i class="bi bi-filter"></i> Filter</p>
+                    </div>
+                    <div>
+                        <p><i class="bi bi-arrow-clockwise"></i> Refresh</p>
+                    </div>
+                    <div>
+                        <p><i class="bi bi-share"></i> Share</p>
+                    </div>
+                    <div>
+                        <p><i class="bi bi-pen"></i> Edit</p>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-2 flex justify-between gap-3 items-center">
+                <div class="bg-white w-50 p-5 flex-1 rounded-xl ">
+                    <h1 class="font-normal">Order</h1>
+                    <h1 class="font-black">66</h1>
+                    <p class="text-lime-600"><i class="bi bi-arrow-up"></i> 24.53%</p>
+                    <div class="h-24 w-full">
+                        <canvas id="cpuChart" class="w-full h-full"></canvas>
+                    </div>
+                </div>
+                <div class="bg-white w-50 p-5 flex-1  rounded-xl ">
+                    <h1 class="font-normal">Items</h1>
+                    <h1 class="font-black">60</h1>
+                    <p class="text-lime-600"><i class="bi bi-arrow-up"></i> 33.33%</p>
+                    <div class="h-24 w-full">
+                        <canvas id="cpuChart2" class="w-full h-full"></canvas>
+                    </div>
+                </div>
+
+                <div class="bg-white w-50 p-5 flex-1  rounded-xl ">
+                    <h1 class="font-normal">Net Total</h1>
+                    <h1 class="font-black">9.18k</h1>
+                    <p class="text-lime-600"><i class="bi bi-arrow-up"></i> 7.85%</p>
+                    <div class="h-24 w-full">
+                        <canvas id="cpuChart3" class="w-full h-full"></canvas>
+                    </div>
+                </div>
+                <div>
+                    <div class="bg-white w-50 flex-1  p-5 rounded-xl ">
+                        <h1 class="font-normal">Freight</h1>
+                        <h1 class="font-black">1.14k</h1>
+                        <p class="text-red-600"><i class="bi bi-arrow-down"></i> -4.7%</p>
+                        <div class="h-24 w-full">
+                            <canvas id="cpuChart4" class="w-full h-full"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex gap-4 mt-4">
+                <!-- Chart 1 -->
+                <div class="bg-white p-7 w-[50%] h-[380px]">
+                    <h1>Order per Month</h1>
+                    <canvas id="myChart" class="w-full h-full"></canvas>
+                </div>
+
+                <!-- Chart 2 -->
+                <div class="bg-white p-7 w-[50%] h-[380px]">
+                    <h1>Order per Category</h1>
+                    <canvas id="myChart1" class="w-full h-full"></canvas>
+                </div>
+            </div>
+            <div class="overflow-x-auto w-[1437px]">
+                <table
+                    class="mt-5 text-left bg-white border border-gray-300 border-collapse shadow rounded-lg overflow-hidden ">
+                    <thead>
+                        <!-- Title Row -->
+                        <tr class="bg-gray-100">
+                            <th colspan="10" class="p-4 text-gray-700 font-semibold">
+                                Order Value per Month per Status
+                            </th>
+                        </tr>
+
+                        <!-- Column Header Row -->
+                        <tr class="bg-gray-50">
+                            <th class="p-3 border border-gray-300 font-semibold">#</th>
+
+                            <th class="p-2 border border-gray-300 font-semibold">
+                                <div class="flex items-center justify-between whitespace-nowrap gap-2">
+                                    <span>order_status</span>
+                                    <i class="bi bi-sort-down"></i>
+                                </div>
+                            </th>
+
+                            <th class="p-2 border border-gray-300 font-semibold">
+                                <div class="flex items-center justify-between whitespace-nowrap gap-2">
+                                    <span>October 2016</span>
+                                    <i class="bi bi-arrow-down-up"></i>
+                                </div>
+                            </th>
+
+                            <th class="p-2 border border-gray-300 font-semibold">
+                                <div class="flex items-center justify-between whitespace-nowrap gap-2">
+                                    <span>January 2017</span>
+                                    <i class="bi bi-arrow-down-up"></i>
+                                </div>
+                            </th>
+
+                            <th class="p-2 border border-gray-300 font-semibold">
+                                <div class="flex items-center justify-between whitespace-nowrap gap-2">
+                                    <span>February 2017</span>
+                                    <i class="bi bi-arrow-down-up"></i>
+                                </div>
+                            </th>
+
+                            <th class="p-2 border border-gray-300 font-semibold">
+                                <div class="flex items-center justify-between whitespace-nowrap gap-2">
+                                    <span>March 2017</span>
+                                    <i class="bi bi-arrow-down-up"></i>
+                                </div>
+                            </th>
+
+                            <th class="p-2 border border-gray-300 font-semibold">
+                                <div class="flex items-center justify-between whitespace-nowrap gap-2">
+                                    <span>April 2017</span>
+                                    <i class="bi bi-arrow-down-up"></i>
+                                </div>
+                            </th>
+
+                            <th class="p-2 border border-gray-300 font-semibold">
+                                <div class="flex items-center justify-between whitespace-nowrap gap-2">
+                                    <span>May 2017</span>
+                                    <i class="bi bi-arrow-down-up"></i>
+                                </div>
+                            </th>
+
+                            <th class="p-2 border border-gray-300 font-semibold">
+                                <div class="flex items-center justify-between whitespace-nowrap gap-2">
+                                    <span>June 2017</span>
+                                    <i class="bi bi-arrow-down-up"></i>
+                                </div>
+                            </th>
+
+                            <th class="p-2 border border-gray-300 font-semibold">
+                                <div class="flex items-center justify-between whitespace-nowrap gap-2">
+                                    <span>July 2017</span>
+                                    <i class="bi bi-arrow-down-up"></i>
+                                </div>
+                            </th>
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td class="p-3 border border-gray-300"></td>
+
+                            <!-- Searchable cells -->
+                            <td class="p-2 border border-gray-300 relative">
+                                <i class="bi bi-search absolute left-3 top-2.5 text-gray-500"></i>
+                                <input type="search"
+                                    class="pl-8 shadow-xl bg-gray-300 outline-none focus:ring-2 focus:ring-cyan-800 p-1 rounded-md w-[150px]">
+                            </td>
+
+                            <!-- Repeat for other columns -->
+                            <td class="p-2 border border-gray-300 relative">
+                                <i class="bi bi-search absolute left-3 top-2.5 text-gray-500"></i>
+                                <input type="search"
+                                    class="pl-8 shadow-xl bg-gray-300 outline-none focus:ring-2 focus:ring-cyan-800 p-1 rounded-md w-[150px]">
+                            </td>
+
+                            <td class="p-2 border border-gray-300 relative">
+                                <i class="bi bi-search absolute left-3 top-2.5 text-gray-500"></i>
+                                <input type="search"
+                                    class="pl-8 shadow-xl bg-gray-300 outline-none focus:ring-2 focus:ring-cyan-800 p-1 rounded-md w-[150px]">
+                            </td>
+                            <td class="p-2 border border-gray-300 relative">
+                                <i class="bi bi-search absolute left-3 top-2.5 text-gray-500"></i>
+                                <input type="search"
+                                    class="pl-8 shadow-xl bg-gray-300 outline-none focus:ring-2 focus:ring-cyan-800 p-1 rounded-md w-[150px]">
+                            </td>
+
+                            <!-- Repeat for other columns -->
+                            <td class="p-2 border border-gray-300 relative">
+                                <i class="bi bi-search absolute left-3 top-2.5 text-gray-500"></i>
+                                <input type="search"
+                                    class="pl-8 shadow-xl bg-gray-300 outline-none focus:ring-2 focus:ring-cyan-800 p-1 rounded-md w-[150px]">
+                            </td>
+
+                            <td class="p-2 border border-gray-300 relative">
+                                <i class="bi bi-search absolute left-3 top-2.5 text-gray-500"></i>
+                                <input type="search"
+                                    class="pl-8 shadow-xl bg-gray-300 outline-none focus:ring-2 focus:ring-cyan-800 p-1 rounded-md w-[150px]">
+                            </td>
+                            <td class="p-2 border border-gray-300 relative">
+                                <i class="bi bi-search absolute left-3 top-2.5 text-gray-500"></i>
+                                <input type="search"
+                                    class="pl-8 shadow-xl bg-gray-300 outline-none focus:ring-2 focus:ring-cyan-800 p-1 rounded-md w-[150px]">
+                            </td>
+
+                            <!-- Repeat for other columns -->
+                            <td class="p-2 border border-gray-300 relative">
+                                <i class="bi bi-search absolute left-3 top-2.5 text-gray-500"></i>
+                                <input type="search"
+                                    class="pl-8 shadow-xl bg-gray-300 outline-none focus:ring-2 focus:ring-cyan-800 p-1 rounded-md w-[150px]">
+                            </td>
+
+                            <td class="p-2 border border-gray-300 relative">
+                                <i class="bi bi-search absolute left-3 top-2.5 text-gray-500"></i>
+                                <input type="search"
+                                    class="pl-8 shadow-xl bg-gray-300 outline-none focus:ring-2 focus:ring-cyan-800 p-1 rounded-md w-[150px]">
+                            </td>
+                        </tr>
+                        <tr class="">
+                            <td class="px-3 border border-gray-300">1</td>
+                            <td class="px-3 border border-gray-300">shipped</td>
+                            <td class="px-3 border border-gray-300 text-right">1.647.02</td>
+                            <td class="px-3 border border-gray-300 text-right">13.647.02</td>
+                            <td class="px-3 border border-gray-300 text-right">3.647.02</td>
+                            <td class="px-3 border border-gray-300 text-right">8.647.02</td>
+                            <td class="px-3 border border-gray-300 text-right">4.647.02</td>
+                            <td class="px-3 border border-gray-300 text-right">6.647.02</td>
+                            <td class="px-3 border border-gray-300 text-right">5.647.02</td>
+                            <td class="px-3 border border-gray-300 text-right">2.647.02</td>
+                        </tr>
+                        <tr class="">
+                            <td class="px-3 border border-gray-300">2</td>
+                            <td class="px-3 border border-gray-300">processing</td>
+                            <td class="px-3 border border-gray-300 text-right">647.02</td>
+                            <td class="px-3 border border-gray-300 text-right">1.647.02</td>
+                            <td class="px-3 border border-gray-300 text-right">47.02</td>
+                            <td class="px-3 border border-gray-300 text-right">8.64.02</td>
+                            <td class="px-3 border border-gray-300 text-right">4.47.02</td>
+                            <td class="px-3 border border-gray-300 text-right">47.02</td>
+                            <td class="px-3 border border-gray-300 text-right">547.02</td>
+                            <td class="px-3 border border-gray-300 text-right">247.02</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
+    <script src="chart.js"></script>
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+</body>
+</html>
