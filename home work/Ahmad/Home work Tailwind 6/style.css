@@ -1,0 +1,29 @@
+.popup {
+    position: fixed;
+    z-index: 10000;
+    backdrop-filter: blur(15px);
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    display: none; /* hidden by default */
+}
+
+.popup.show {
+    display: flex; /* flex centering when shown */
+}
+
+.popup_menu {
+    position: relative;
+    text-align: center;
+    color: #134B70;
+    font-size: 50px;
+    width: 700px;
+    background-color: #c3d3dd;
+    border-radius: 20px;
+    padding: 20px;
+}
+#close{
+    margin-left: 600px;
+    cursor: pointer;
+}
