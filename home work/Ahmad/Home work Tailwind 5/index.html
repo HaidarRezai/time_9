@@ -4,14 +4,12 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Partial Border Gallery (Centered)</title>
+    <title>Partial Border Gallery (Responsive Scale)</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         :root {
             --board-w: 1400;
-            /* Your original layout width */
             --board-h: 2000;
-            /* Your original layout height */
         }
 
         .scaled-artboard {
@@ -30,11 +28,12 @@
 </head>
 
 <body class="min-h-screen bg-white overflow-auto flex justify-center items-center">
-    <!-- Holder centers artboard -->
-    <div class="scaled-artboard-holder flex justify-center items-center">
-        <div class="scaled-artboard relative bg-white ml-[400px]">
 
-            <!-- === ORIGINAL CONTENT === -->
+    <!-- DESKTOP / NORMAL MODE -->
+    <div class="scaled-artboard-holder flex justify-center container items-center hidden md:flex">
+        <div class="scaled-artboard relative bg-white ml-[400px] lg:ml-0">
+
+            <!-- === ORIGINAL CONTENT START === -->
 
             <div class="absolute right-[550px] top-[250px] h-[200px] w-[200px] 
         bg-[url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiiaLWU5cx0xwkmFuofJyQe8xFPzEw3nWEMvrLhxCLVpUvmFUaMjzmywLwaSVOu7UXyyQ&usqp=CAU')] 
@@ -113,9 +112,7 @@
                     <svg viewBox="0 0 200 200" class="w-full h-full" xmlns="http://www.w3.org/2000/svg">
                         <defs>
                             <pattern id="imgPattern" patternUnits="userSpaceOnUse" width="200" height="200">
-                                <image
-                                    href="https://www.unchartedbackpacker.com/wp-content/uploads/2016/03/DSC_0480.jpg"
-                                    width="200" height="200" />
+                                <image href="DSC_0480.jpg" width="200" height="200" />
                             </pattern>
                         </defs>
                         <polygon points="200,0 99,0 99,90 -250,90 -250,200 200,200" fill="url(#imgPattern)" />
@@ -127,13 +124,27 @@
                         <div class="absolute top-[134px] -left-[23px] w-[150px] border-t-[8px] border-orange-500"></div>
                         <div class="absolute h-[120px] top-[14px] left-[120px] border-l-[8px] border-orange-500"></div>
                     </div>
-
                 </div>
 
-                <!-- === END ORIGINAL CONTENT === -->
-
             </div>
+            <!-- === ORIGINAL CONTENT END === -->
         </div>
+    </div>
+
+    <!-- MOBILE / RESPONSIVE MODE -->
+    <div class="grid grid-cols-1 gap-4 p-4 sm:grid-cols-2 md:hidden">
+        <img src="https://newsecuritybeat-org.s3.amazonaws.com/uploads/2021/04/Hindu-Kush-Matt-e1617975789245.jpg"
+            class="w-full rounded-lg border-2 border-cyan-700 shadow-lg" alt="">
+        <img src="https://miro.medium.com/1*FIaahX76LoVn0lsUP7ctNg.jpeg"
+            class="w-full rounded-lg border-2 border-cyan-700 shadow-lg" alt="">
+        <img src="https://www.theluminariesmagazine.com/content/images/size/w1600/2023/06/mohammad-rahmani-uXGWJknbFNg-unsplash.jpg"
+            class="w-full rounded-lg border-2 border-cyan-700 shadow-lg" alt="">
+        <img src="https://www.counterpunch.org/wp-content/dropzone/2016/05/shutterstock_361455506.jpg"
+            class="w-full rounded-lg border-2 border-cyan-700 shadow-lg" alt="">
+        <img src="https://i.pinimg.com/474x/a2/be/45/a2be45b57993c7e0e466bfb60f425d5c.jpg"
+            class="w-full rounded-lg border-2 border-cyan-700 shadow-lg" alt="">
+    </div>
+
 </body>
 
 </html>
