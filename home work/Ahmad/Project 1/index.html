@@ -1,0 +1,2708 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="logo_color.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+    
+
+    <title>Afghanistan Tours - Adventure Travel Packages</title>
+    <meta name="description"
+     content="Join our guided Afghanistan tours. Discover history, landscapes, and culture with expert travel guides.">
+</head>
+
+<body class="bg-gray-100">
+    <div>
+        <nav class="sticky  top-0 z-40 bg-[#0A2540] w-full h-[12vh] flex justify-between items-center text-white ">
+            <!-- Logo -->
+            <div>
+                <img src="logo_color.png" alt="logo afghan" class="h-20">
+            </div>
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex">
+                <ul class="flex gap-6 text-xl">
+                    <li
+                        class="relative cursor-pointer after:absolute after:left-0 after:bottom-0 after:h-[3px] after:w-0 after:bg-[#FF6A00] hover:after:w-full after:transition-all after:duration-300">
+                        <a href="#homeSection" id="openHome" class="no-underline text-white">Home</a>
+                    </li>
+                    <li
+                        class="relative cursor-pointer after:absolute after:left-0 after:bottom-0 after:h-[3px] after:w-0 after:bg-[#FF6A00] hover:after:w-full after:transition-all after:duration-300">
+                        <a href="#tourSection" id="openTours" class="no-underline text-white">Tours</a>
+                    </li>
+                    <li
+                        class="relative cursor-pointer after:absolute after:left-0 after:bottom-0 after:h-[3px] after:w-0 after:bg-[#FF6A00] hover:after:w-full after:transition-all after:duration-300">
+                        <a href="#gallerySection" id="openGallery" class="no-underline text-white">Gallery</a>
+                    </li>
+                    <li
+                        class="relative group cursor-pointer after:absolute after:left-0 after:bottom-0 after:h-[3px] after:w-0 after:bg-[#FF6A00] hover:after:w-full after:transition-all after:duration-300">
+                        <a href="#" class="no-underline text-white">Our guests <i class="bi bi-chevron-down"></i></a>
+                        <ul
+                            class="absolute left-0 mt-2 w-40 bg-[#1F2937] text-white rounded-md shadow-lg opacity-0 group-hover:opacity-100 invisible group-hover:visible transition duration-300">
+                            <li>
+                                <a href="#addReviewSection" data-target="addReview"
+                                    class="block px-4 py-2 hover:bg-[#FF6A00] rounded-t-md">Review</a>
+                            </li>
+                            <li>
+                                <a href="#feedbackSection" id="openfeedback"
+                                    class="block px-4 py-2 hover:bg-[#FF6A00] rounded-b-md">Give Us Feedback</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li
+                        class="relative cursor-pointer after:absolute after:left-0 after:bottom-0 after:h-[3px] after:w-0 after:bg-[#FF6A00] hover:after:w-full after:transition-all after:duration-300">
+                        <a href="#addFAQsSection" id="openFAQsReview" class="no-underline text-white">FAQs</a>
+                    </li>
+
+                    <li
+                        class="relative cursor-pointer after:absolute after:left-0 after:bottom-0 after:h-[3px] after:w-0 after:bg-[#FF6A00] hover:after:w-full after:transition-all after:duration-300">
+                        <a href="#contactSection" id="openContact" class="no-underline text-white">Contact</a>
+                    </li>
+                    <li
+                        class="relative cursor-pointer after:absolute after:left-0 after:bottom-0 after:h-[3px] after:w-0 after:bg-[#FF6A00] hover:after:w-full after:transition-all after:duration-300">
+                        <a href="#about" id="openAbout" class="no-underline text-white">About us</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="flex items-center gap-4 px-5">
+                <a href="#footer" class="transition-all">
+                    <i
+                        class="bi bi-telephone text-[22px]  transition-all text-white hover:text-[#FF6A00] cursor-pointer"></i></a>
+                <li class="relative group list-none">
+                    <i
+                        class="bi bi-person text-[30px] transition-all text-white hover:text-[#FF6A00] cursor-pointer"></i>
+                    <ul
+                        class="absolute right-0 mt-2 w-40 bg-[#1F2937] text-white rounded-md shadow-lg opacity-0 group-hover:opacity-100 invisible group-hover:visible transition duration-300">
+                        <li>
+                            <a href="#" class="block px-4 py-2 hover:bg-[#FF6A00] rounded-t-md">Register</a>
+                        </li>
+                        <li>
+                            <a href="#" class="block px-4 py-2 hover:bg-[#FF6A00] rounded-b-md">Log in</a>
+                        </li>
+                    </ul>
+                </li>
+            </div>
+        </nav>
+        <!--
+        this is menu for mobile mode 
+        -->
+        <div
+            class="md:hidden z-40 fixed bottom-0 left-0 right-0 flex gap-4 justify-around items-center text-[#CC5200] bg-white shadow-lg py-2">
+            <div id="menuBtn"
+                class="flex justify-center items-center flex-col hover:scale-109 cursor-pointer transition">
+                <i class="bi bi-menu-up text-xl"></i>
+                <p class="text-sm text-orange-700">Menu</p>
+            </div>
+            <div href="#homeSection" id="openHome"
+                class="flex justify-center items-center flex-col hover:scale-109 cursor-pointer transition">
+                <i class="bi bi-search text-xl"></i>
+                <p class="text-sm">Search</p>
+            </div>
+            <div class="flex justify-center items-center flex-col hover:scale-109 cursor-pointer transition">
+                <i class="bi bi-geo-alt text-xl"></i>
+                <p class="text-sm">Destination</p>
+            </div>
+            <div id="mobileMenu"
+                class="md:hidden fixed bottom-0 left-0 right-0 bg-[#0A2540] text-white p-6 transform translate-y-full transition-transform duration-500 z-40">
+                <!-- Close Button -->
+                <div class="flex justify-end mb-4">
+                    <i id="closeBtn" class="bi bi-x-lg text-2xl cursor-pointer hover:text-[#FF6A00]"></i>
+                </div>
+                <!-- Menu Links -->
+                <ul class="flex flex-col items-center gap-4 text-lg">
+                    <li><a href="#homeSection" id="openHome" class="hover:text-[#FF6A00]">Home</a></li>
+                    <li><a href="#tourSection" id="openTours" class="hover:text-[#FF6A00]">Tours</a></li>
+                    <li><a href="#gallerySection" id="openGallery" class="hover:text-[#FF6A00]">Gallery</a></li>
+                    <li class="relative group cursor-pointer">
+                        <a href="#" class="hover:text-[#FF6A00] flex items-center">
+                            Our Guests <i class="bi bi-chevron-down ml-1"></i>
+                        </a>
+                        <!-- Dropdown -->
+                        <ul
+                            class="absolute left-0 mt-2 w-40 bg-[#1F2937] text-white rounded-md shadow-lg opacity-0 group-hover:opacity-100 invisible group-hover:visible transition duration-300">
+                            <li>
+                                <a href="#addReviewSection" data-target="addReview"
+                                    class="block px-4 py-2 hover:bg-[#FF6A00] rounded-t-md">Review</a>
+                            </li>
+                            <li>
+                                <a href="#feedbackSection" id="openfeedback"
+                                    class="block px-4 py-2 hover:bg-[#FF6A00] rounded-b-md">Give Us Feedback</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#addFAQsSection" id="openFAQsReview" class="hover:text-[#FF6A00]">FAQs</a></li>
+                    <li><a href="#contactSection" id="openContact" class="hover:text-[#FF6A00]">Contact</a></li>
+                    <li><a href="#about" id="openAbout" class="hover:text-[#FF6A00]">About us</a></li>
+                </ul>
+            </div>
+        </div>
+        <!--menu ended here-->
+        <!-- start main-->
+        <!--
+        image and search bar
+        -->
+        <div id="mainContent" class="font-arial" loading="lazy">
+            <div
+                class="h-[50vh] w-full bg-[url('afghanistan-7447422_1280.jpg')] bg-cover bg-center flex flex-col justify-center items-center text-white">
+                <h1 class="text-4xl md:text-6xl font-bold text-center" data-aos="zoom-out">
+                    Bring on the world with <br> small group travel
+                </h1>
+                <div class="mt-8 w-full max-w-2xl flex bg-white rounded-full overflow-hidden" data-aos="fade-left">
+                    <input type="text" id="searchInput" placeholder="Where's your next adventure?"
+                        class="flex-1 px-6 py-4 text-gray-700 focus:outline-none rounded-l-full">
+                    <button id="searchBtn"
+                        class="px-6 bg-[#0A2540] text-white font-semibold flex items-center gap-2 rounded-r-full hover:bg-cyan-950 cursor-pointer transition">
+                        <i class="bi bi-search"></i>
+                        Search
+                    </button>
+                </div>
+            </div>
+            <!--End of search bar and image-->
+            <div class="ml-16 mr-3 mt-7 max-w-8xl space-y-6">
+                <div class="grid grid-cols-1  md:grid-cols-2 gap-10">
+                    <!-- Left Column -->
+                    <div data-aos="fade-right">
+                        <h1 class="font-extrabold text-3xl md:text-4xl text-gray-900 leading-snug mb-4">
+                            Explore <span class="text-[#FF6A00]">Afghanistan</span> with us
+                        </h1>
+                        <p class="text-gray-700 text-base leading-relaxed">
+                            Afghanistan Connections travel company provides bespoke trips and group tours
+                            throughout much of Afghanistan. Founded by experienced professionals with over
+                            10 years of expertise, we assist journalists and travelers in accessing remote
+                            regions of Afghanistan to gather stories and create lasting memories. We continue
+                            to support adventurous travelers in discovering the country.
+                        </p>
+                    </div>
+                    <!-- Right Column -->
+                    <div data-aos="fade-up">
+                        <h1 class="font-extrabold text-3xl md:text-4xl text-gray-900 leading-snug mb-4">
+                            Our <span class="text-[#FF6A00]">Group</span> Tours
+                        </h1>
+                        <p class="text-gray-700 text-base leading-relaxed">
+                            Afghanistan Connections travel company provides bespoke trips and group tours
+                            throughout much of Afghanistan. Founded by experienced professionals with over
+                            10 years of expertise, we assist journalists and travelers in accessing remote
+                            regions of Afghanistan to gather stories and create lasting memories. We continue
+                            to support adventurous travelers in discovering the country.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="ml-13 mr-3 mt-15 flex gap-10 p-3 max-w-8xl overflow-x-auto  " data-aos="fade-up">
+                <!-- Card 1 -->
+                <div
+                    class="w-[400px] pb-6 flex-shrink-0 rounded-xl overflow-hidden border border-gray-200 bg-white shadow-md transition-all duration-500 hover:scale-101 hover:shadow-2xl ">
+                    <div
+                        class="h-[40vh] rounded-xl w-full bg-cover bg-[url('https://thekabultimes.com/wp-content/uploads/2022/09/Minaret-and-Archaeological-Remains-of-Jam-1-750x502-1.jpg')]">
+                    </div>
+                    <div class="flex justify-between mt-1">
+                        <p class="font-semibold text-sm px-4"><i class="bi bi-calendar2-week font-bold text-lg"></i> 10
+                            DAY
+                            TOUR</p>
+                        <p class="font-semibold text-sm px-4"><i class="bi bi-people font-bold text-lg"></i> Maximum 10
+                        </p>
+                    </div>
+                    <div class="flex justify-center items-center">
+                        <h1 class="font-semibold text-2xl">Minaret of Jam Adventure</h1>
+                    </div>
+                    <div class="text-center">
+                        <p>The Minaret of Jam, built in the 12th century in Ghor Province, Afghanistan, is a stunning
+                            65-meter tower decorated with intricate brickwork and inscriptions.
+                            <a href="#" class="cursor-pointer hover:underline text-cyan-900">More...</a>
+                        </p>
+                    </div>
+                    <div id="openBooking" class="mt-4 flex justify-center items-center">
+                        <button class="px-6 py-2 rounded-xl border-2 cursor-pointer border-cyan-900 text-cyan-900 font-semibold 
+                      bg-white hover:bg-cyan-900 hover:text-white 
+                         transition-all duration-300 shadow-md hover:shadow-lg">
+                            View itinerary
+                        </button>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div
+                    class="w-[400px] flex-shrink-0 rounded-xl overflow-hidden border border-gray-200 bg-white shadow-md transition-all duration-500 hover:scale-101 hover:shadow-2xl ">
+                    <div
+                        class="h-[40vh] rounded-xl w-full bg-cover bg-[url('https://media.cnn.com/api/v1/images/stellar/prod/3eb1cbf9-05ef-4b93-8665-64cd832cc952.jpg?q=w_1110,c_fill')]">
+                    </div>
+                    <div class="flex justify-between mt-1">
+                        <p class="font-semibold text-sm px-4"><i class="bi bi-calendar2-week font-bold text-lg"></i> 7
+                            DAY
+                            TOUR</p>
+                        <p class="font-semibold text-sm px-4"><i class="bi bi-people font-bold text-lg"></i> Maximum 16
+                        </p>
+                    </div>
+                    <div class="flex justify-center items-center">
+                        <h1 class="font-semibold text-2xl">1 Week Tours to Afghanistan</h1>
+                    </div>
+                    <div class="text-center">
+                        <p>The Trip starts and end in Kabul. The trip take you to the top highlights and interesting
+                            places
+                            of the country. In this trip you are able to visit Kabul, Bamyan and Herat.
+                            <a href="#" class="cursor-pointer hover:underline text-cyan-900">More...</a>
+                        </p>
+                    </div>
+                    <div class="mt-4 flex justify-center items-center">
+                        <button id="openBooking" class="px-6 py-2 rounded-xl border-2 cursor-pointer border-cyan-900 text-cyan-900 font-semibold 
+                      bg-white hover:bg-cyan-900 hover:text-white 
+                         transition-all duration-300 shadow-md hover:shadow-lg">
+                            View itinerary
+                        </button>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div
+                    class="w-[400px] flex-shrink-0 rounded-xl overflow-hidden border border-gray-200 bg-white shadow-md transition-all duration-500 hover:scale-101 hover:shadow-2xl">
+                    <div
+                        class="h-[40vh] rounded-xl w-full bg-cover bg-[url('https://ichef.bbci.co.uk/ace/standard/1152/cpsprodpb/bf48/live/60252040-3ddc-11ef-9e1c-3b4a473456a6.jpg')]">
+                    </div>
+                    <div class="flex justify-between mt-1">
+                        <p class="font-semibold text-sm px-4"><i class="bi bi-calendar2-week font-bold text-lg"></i> 12
+                            DAY
+                            TOUR</p>
+                        <p class="font-semibold text-sm px-4"><i class="bi bi-people font-bold text-lg"></i> Maximum 12
+                        </p>
+                    </div>
+                    <div class="flex justify-center items-center">
+                        <h1 class="font-semibold text-2xl">Afghanistan in 12 days</h1>
+                    </div>
+                    <div class="text-center">
+                        <p>The Minaret of Jam, built in the 12th century in Ghor Province, Afghanistan, is a stunning
+                            65-meter tower decorated with intricate brickwork and inscriptions.
+                            <a href="#" class="cursor-pointer hover:underline text-cyan-900">More...</a>
+                        </p>
+                    </div>
+                    <div class="mt-4 flex justify-center items-center">
+                        <button id="openBooking" class="px-6 py-2 rounded-xl border-2 cursor-pointer border-cyan-900 text-cyan-900 font-semibold 
+                      bg-white hover:bg-cyan-900 hover:text-white 
+                         transition-all duration-300 shadow-md hover:shadow-lg">
+                            View itinerary
+                        </button>
+                    </div>
+                </div>
+                <!-- Card 4 -->
+                <div
+                    class="w-[400px] flex-shrink-0 rounded-xl overflow-hidden border border-gray-200 bg-white shadow-md transition-all duration-500 hover:scale-101 hover:shadow-2xl">
+                    <div
+                        class="h-[40vh] rounded-xl w-full bg-cover bg-[url('https://gdb.voanews.com/3a45699b-48fe-44d7-92a9-91cc30a7cfb6_w1080_h608.jpg')]">
+                    </div>
+                    <div class="flex justify-between mt-1">
+                        <p class="font-semibold text-sm px-4"><i class="bi bi-calendar2-week font-bold text-lg"></i> 7
+                            DAY
+                            TOUR</p>
+                        <p class="font-semibold text-sm px-4"><i class="bi bi-people font-bold text-lg"></i> Maximum 8
+                        </p>
+                    </div>
+                    <div class="flex justify-center items-center">
+                        <h1 class="font-semibold text-2xl">Buzkashi Tour</h1>
+                    </div>
+                    <div class="text-center">
+                        <p>The Minaret of Jam, built in the 12th century in Ghor Province, Afghanistan, is a stunning
+                            65-meter tower decorated with intricate brickwork and inscriptions.
+                            <a href="#" class="cursor-pointer hover:underline text-cyan-900">More...</a>
+                        </p>
+                    </div>
+                    <div class="mt-4 flex justify-center items-center">
+                        <button id="openBooking" class="px-6 py-2 rounded-xl border-2 cursor-pointer border-cyan-900 text-cyan-900 font-semibold 
+                      bg-white hover:bg-cyan-900 hover:text-white 
+                         transition-all duration-300 shadow-md hover:shadow-lg">
+                            View itinerary
+                        </button>
+                    </div>
+                </div>
+                <!-- Card 5 -->
+                <div
+                    class="w-[400px] flex-shrink-0 rounded-xl overflow-hidden border border-gray-200 bg-white shadow-md transition-all duration-500 hover:scale-101 hover:shadow-2xl">
+                    <div
+                        class="h-[40vh] rounded-xl w-full bg-cover bg-[url('https://pamirtrips.com/wp-content/uploads/wakhan-afghanistan-trip-hd-1-2.jpg')]">
+                    </div>
+                    <div class="flex justify-between mt-1">
+                        <p class="font-semibold text-sm px-4"><i class="bi bi-calendar2-week font-bold text-lg"></i> 14
+                            DAY
+                            TOUR</p>
+                        <p class="font-semibold text-sm px-4"><i class="bi bi-people font-bold text-lg"></i> Maximum 10
+                        </p>
+                    </div>
+                    <div class="flex justify-center items-center">
+                        <h1 class="font-semibold text-2xl">Wakhan Corridor</h1>
+                    </div>
+                    <div class="text-center">
+                        <p>The Minaret of Jam, built in the 12th century in Ghor Province, Afghanistan, is a stunning
+                            65-meter tower decorated with intricate brickwork and inscriptions.
+                            <a href="#" class="cursor-pointer hover:underline text-cyan-900">More...</a>
+                        </p>
+                    </div>
+                    <div id="openBooking" class="mt-4 flex justify-center items-center">
+                        <button class="px-6 py-2 rounded-xl border-2 cursor-pointer border-cyan-900 text-cyan-900 font-semibold 
+                      bg-white hover:bg-cyan-900 hover:text-white 
+                         transition-all duration-300 shadow-md hover:shadow-lg">
+                            View itinerary
+                        </button>
+                    </div>
+                </div>
+                <!-- Card 6 -->
+                <div
+                    class="w-[400px] flex-shrink-0 rounded-xl overflow-hidden border border-gray-200 bg-white shadow-md transition-all duration-500 hover:scale-101 hover:shadow-2xl ">
+                    <div
+                        class="h-[40vh] rounded-xl w-full bg-cover bg-[url('https://images.squarespace-cdn.com/content/v1/5cda9721c46f6d0e5379cf84/1569825698900-3B44CK4C410RWJNOV5VW/77FE2089-D5CE-4560-AC1F-05992AFC9B39.jpg')]">
+                    </div>
+                    <div class="flex justify-between mt-1">
+                        <p class="font-semibold text-sm px-4"><i class="bi bi-calendar2-week font-bold text-lg"></i> 7
+                            DAY
+                            TOUR</p>
+                        <p class="font-semibold text-sm px-4"><i class="bi bi-people font-bold text-lg"></i> Maximum 12
+                        </p>
+                    </div>
+                    <div class="flex justify-center items-center">
+                        <h1 class="font-semibold text-2xl">One Week Tour</h1>
+                    </div>
+                    <div class="text-center">
+                        <p>The Minaret of Jam, built in the 12th century in Ghor Province, Afghanistan, is a stunning
+                            65-meter tower decorated with intricate brickwork and inscriptions.
+                            <a href="#" class="cursor-pointer hover:underline text-cyan-900">More...</a>
+                        </p>
+                    </div>
+                    <div class="mt-4 flex justify-center items-center">
+                        <button id="openBooking" class="px-6 py-2 rounded-xl border-2 cursor-pointer border-cyan-900 text-cyan-900 font-semibold 
+                      bg-white hover:bg-cyan-900 hover:text-white 
+                         transition-all duration-300 shadow-md hover:shadow-lg">
+                            View itinerary
+                        </button>
+                    </div>
+                </div>
+                <!-- Card 5 -->
+                <div
+                    class="w-[400px] flex-shrink-0 rounded-xl overflow-hidden border border-gray-200 bg-white shadow-md transition-all duration-500 hover:scale-101 hover:shadow-2xl ">
+                    <div
+                        class="h-[40vh] rounded-xl w-full bg-cover bg-[url('https://afghansafari.com/wp-content/uploads/2024/04/%DB%8C%D8%A7%D9%81%D8%AA%D9%85-%DA%A9%D8%B1%D8%A7%D9%81%DB%8C%DA%A9-%DA%A9%D8%A7%D8%A8%D9%84-.webp')]">
+                    </div>
+                    <div class="flex justify-between mt-1">
+                        <p class="font-semibold text-sm px-4"><i class="bi bi-calendar2-week font-bold text-lg"></i> 7
+                            DAY
+                            TOUR</p>
+                        <p class="font-semibold text-sm px-4"><i class="bi bi-people font-bold text-lg"></i> Maximum 10
+                        </p>
+                    </div>
+                    <div class="flex justify-center items-center">
+                        <h1 class="font-semibold text-2xl">Monthly Tour</h1>
+                    </div>
+                    <div class="text-center">
+                        <p>The Minaret of Jam, built in the 12th century in Ghor Province, Afghanistan, is a stunning
+                            65-meter tower decorated with intricate brickwork and inscriptions.
+                            <a href="#" class="cursor-pointer hover:underline text-cyan-900">More...</a>
+                        </p>
+                    </div>
+                    <div class="mt-4 flex justify-center items-center">
+                        <button id="openBooking" class="px-6 py-2 rounded-xl border-2 cursor-pointer border-cyan-900 text-cyan-900 font-semibold 
+                      bg-white hover:bg-cyan-900 hover:text-white 
+                         transition-all duration-300 shadow-md hover:shadow-lg">
+                            View itinerary
+                        </button>
+                    </div>
+                </div>
+                <!-- Card 8 -->
+                <div
+                    class="w-[400px] flex-shrink-0 rounded-xl overflow-hidden border border-gray-200 bg-white shadow-md transition-all duration-500 hover:scale-101 hover:shadow-2xl ">
+                    <div
+                        class="h-[40vh] rounded-xl w-full bg-cover bg-[url('https://www.rjtravelagency.com/wp-content/uploads/2023/06/Trip-Afghanistan-8-1024x768.jpg')]">
+                    </div>
+                    <div class="flex justify-between mt-1">
+                        <p class="font-semibold text-sm px-4"><i class="bi bi-calendar2-week font-bold text-lg"></i> 15
+                            DAYS
+                            - 14 NIGHTS
+                            TOUR</p>
+                        <p class="font-semibold text-sm px-4"><i class="bi bi-people font-bold text-lg"></i> Maximum 18
+                        </p>
+                    </div>
+                    <div class="flex justify-center items-center">
+                        <h1 class="font-semibold text-2xl">15 Days In Afghanistan</h1>
+                    </div>
+                    <div class="text-center">
+                        <p>The Minaret of Jam, built in the 12th century in Ghor Province, Afghanistan, is a stunning
+                            65-meter tower decorated with intricate brickwork and inscriptions.
+                            <a href="#" class="cursor-pointer hover:underline text-cyan-900">More...</a>
+                        </p>
+                    </div>
+                    <div class="mt-4 flex justify-center items-center">
+                        <button id="openBooking" class="px-6 py-2 rounded-xl border-2 cursor-pointer border-cyan-900 text-cyan-900 font-semibold 
+                      bg-white hover:bg-cyan-900 hover:text-white 
+                         transition-all duration-300 shadow-md hover:shadow-lg">
+                            View itinerary
+                        </button>
+                    </div>
+                </div>
+                <!-- Card 9 -->
+                <div
+                    class="w-[400px] flex-shrink-0 rounded-xl overflow-hidden border border-gray-200 bg-white shadow-md transition-all duration-500 hover:scale-101 hover:shadow-2xl ">
+                    <div
+                        class="h-[40vh] rounded-xl w-full bg-cover bg-[url('https://www.youngpioneertours.com/wp-content/uploads/2023/05/Afghanistan-Band-E-Amir-Lake.jpg')]">
+                    </div>
+                    <div class="flex justify-between mt-1">
+                        <p class="font-semibold text-sm px-4"><i class="bi bi-calendar2-week font-bold text-lg"></i> 9
+                            DAYS
+                            - 8 NIGHTS
+                            TOUR</p>
+                        <p class="font-semibold text-sm px-4"><i class="bi bi-people font-bold text-lg"></i> Maximum
+                            2-18
+                        </p>
+                    </div>
+                    <div class="flex justify-center items-center">
+                        <h1 class="font-semibold text-2xl">9 day Tour</h1>
+                    </div>
+                    <div class="text-center">
+                        <p>The Minaret of Jam, built in the 12th century in Ghor Province, Afghanistan, is a stunning
+                            65-meter tower decorated with intricate brickwork and inscriptions.
+                            <a href="#" class="cursor-pointer hover:underline text-cyan-900">More...</a>
+                        </p>
+                    </div>
+                    <div class="mt-4 flex justify-center items-center">
+                        <button id="openBooking" class="px-6 py-2 rounded-xl border-2 cursor-pointer border-cyan-900 text-cyan-900 font-semibold 
+                      bg-white hover:bg-cyan-900 hover:text-white 
+                         transition-all duration-300 shadow-md hover:shadow-lg">
+                            View itinerary
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+            <div class="ml-16 mr-3 mt-25 max-w-8xl space-y-6 " data-aos="fade-up">
+                <div>
+                    <h1 class="font-extrabold text-3xl md:text-4xl text-gray-900 leading-snug mb-4">
+                        Our <span class="text-[#FF6A00]">Private</span> Tour
+                    </h1>
+                    <p class="text-gray-700 text-base leading-relaxed">
+                        Our bespoke trips are crafted with precision and tailored to fit your schedule seamlessly.
+                        Simply
+                        let us know your preferred dates, destinations, group size, and the experiences that inspire
+                        you—our
+                        team will meticulously handle every detail. From start to finish, we’ll create a personalized
+                        journey that exceeds expectations and delivers unforgettable memories.
+                    </p>
+                </div>
+            </div>
+            <div class="ml-13 mr-3 p-3 mt-15 flex gap-10 max-w-8xl overflow-x-auto overflow-y-hidden"
+                data-aos="fade-up">
+                <!-- Card 1 -->
+                <div
+                    class="w-[400px] pb-6 flex-shrink-0 rounded-xl overflow-hidden border border-gray-200 bg-white shadow-md transition-all duration-500 hover:scale-101 hover:shadow-2xl">
+                    <div
+                        class="h-[40vh] rounded-xl w-full bg-cover bg-[url('https://thekabultimes.com/wp-content/uploads/2022/09/Minaret-and-Archaeological-Remains-of-Jam-1-750x502-1.jpg')]">
+                    </div>
+                    <div class="flex justify-between mt-1">
+                        <p class="font-semibold text-sm px-4"><i class="bi bi-calendar2-week font-bold text-lg"></i> 10
+                            DAY
+                            TOUR</p>
+                        <p class="font-semibold text-sm px-4"><i class="bi bi-people font-bold text-lg"></i> Maximum 10
+                        </p>
+                    </div>
+                    <div class="flex justify-center items-center">
+                        <h1 class="font-semibold text-2xl">Minaret of Jam Adventure</h1>
+                    </div>
+                    <div class="text-center">
+                        <p>The Minaret of Jam, built in the 12th century in Ghor Province, Afghanistan, is a stunning
+                            65-meter tower decorated with intricate brickwork and inscriptions.
+                            <a href="#" class="cursor-pointer hover:underline text-cyan-900">More...</a>
+                        </p>
+                    </div>
+                    <div class="mt-4 flex justify-center items-center">
+                        <button id="openBooking" class="px-6 py-2 rounded-xl border-2 cursor-pointer border-cyan-900 text-cyan-900 font-semibold 
+                      bg-white hover:bg-cyan-900 hover:text-white 
+                         transition-all duration-300 shadow-md hover:shadow-lg">
+                            View itinerary
+                        </button>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div
+                    class="w-[400px] flex-shrink-0 rounded-xl overflow-hidden border border-gray-200 bg-white shadow-md transition-all duration-500 hover:scale-101 hover:shadow-2xl">
+                    <div
+                        class="h-[40vh] rounded-xl w-full bg-cover bg-[url('https://media.cnn.com/api/v1/images/stellar/prod/3eb1cbf9-05ef-4b93-8665-64cd832cc952.jpg?q=w_1110,c_fill')]">
+                    </div>
+                    <div class="flex justify-between mt-1">
+                        <p class="font-semibold text-sm px-4"><i class="bi bi-calendar2-week font-bold text-lg"></i> 7
+                            DAY
+                            TOUR</p>
+                        <p class="font-semibold text-sm px-4"><i class="bi bi-people font-bold text-lg"></i> Maximum 16
+                        </p>
+                    </div>
+                    <div class="flex justify-center items-center">
+                        <h1 class="font-semibold text-2xl">1 Week Tours to Afghanistan</h1>
+                    </div>
+                    <div class="text-center">
+                        <p>The Trip starts and end in Kabul. The trip take you to the top highlights and interesting
+                            places
+                            of the country. In this trip you are able to visit Kabul, Bamyan and Herat.
+                            <a href="#" class="cursor-pointer hover:underline text-cyan-900">More...</a>
+                        </p>
+                    </div>
+                    <div class="mt-4 flex justify-center items-center">
+                        <button id="openBooking" class="px-6 py-2 rounded-xl border-2 cursor-pointer border-cyan-900 text-cyan-900 font-semibold 
+                      bg-white hover:bg-cyan-900 hover:text-white 
+                         transition-all duration-300 shadow-md hover:shadow-lg">
+                            View itinerary
+                        </button>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div
+                    class="w-[400px] flex-shrink-0 rounded-xl overflow-hidden border border-gray-200 bg-white shadow-md transition-all duration-500 hover:scale-101 hover:shadow-2xl">
+                    <div
+                        class="h-[40vh] rounded-xl w-full bg-cover bg-[url('https://ichef.bbci.co.uk/ace/standard/1152/cpsprodpb/bf48/live/60252040-3ddc-11ef-9e1c-3b4a473456a6.jpg')]">
+                    </div>
+                    <div class="flex justify-between mt-1">
+                        <p class="font-semibold text-sm px-4"><i class="bi bi-calendar2-week font-bold text-lg"></i> 12
+                            DAY
+                            TOUR</p>
+                        <p class="font-semibold text-sm px-4"><i class="bi bi-people font-bold text-lg"></i> Maximum 12
+                        </p>
+                    </div>
+                    <div class="flex justify-center items-center">
+                        <h1 class="font-semibold text-2xl">Afghanistan in 12 days</h1>
+                    </div>
+                    <div class="text-center">
+                        <p>The Minaret of Jam, built in the 12th century in Ghor Province, Afghanistan, is a stunning
+                            65-meter tower decorated with intricate brickwork and inscriptions.
+                            <a href="#" class="cursor-pointer hover:underline text-cyan-900">More...</a>
+                        </p>
+                    </div>
+                    <div class="mt-4 flex justify-center items-center">
+                        <button id="openBooking" class="px-6 py-2 rounded-xl border-2 cursor-pointer border-cyan-900 text-cyan-900 font-semibold 
+                      bg-white hover:bg-cyan-900 hover:text-white 
+                         transition-all duration-300 shadow-md hover:shadow-lg">
+                            View itinerary
+                        </button>
+                    </div>
+                </div>
+                <!-- Card 4 -->
+                <div
+                    class="w-[400px] flex-shrink-0 rounded-xl overflow-hidden border border-gray-200 bg-white shadow-md transition-all duration-500 hover:scale-101 hover:shadow-2xl">
+                    <div
+                        class="h-[40vh] rounded-xl w-full bg-cover bg-[url('https://gdb.voanews.com/3a45699b-48fe-44d7-92a9-91cc30a7cfb6_w1080_h608.jpg')]">
+                    </div>
+                    <div class="flex justify-between mt-1">
+                        <p class="font-semibold text-sm px-4"><i class="bi bi-calendar2-week font-bold text-lg"></i> 7
+                            DAY
+                            TOUR</p>
+                        <p class="font-semibold text-sm px-4"><i class="bi bi-people font-bold text-lg"></i> Maximum 8
+                        </p>
+                    </div>
+                    <div class="flex justify-center items-center">
+                        <h1 class="font-semibold text-2xl">Buzkashi Tour</h1>
+                    </div>
+                    <div class="text-center">
+                        <p>The Minaret of Jam, built in the 12th century in Ghor Province, Afghanistan, is a stunning
+                            65-meter tower decorated with intricate brickwork and inscriptions.
+                            <a href="#" class="cursor-pointer hover:underline text-cyan-900">More...</a>
+                        </p>
+                    </div>
+                    <div class="mt-4 flex justify-center items-center">
+                        <button id="openBooking" class="px-6 py-2 rounded-xl border-2 cursor-pointer border-cyan-900 text-cyan-900 font-semibold 
+                      bg-white hover:bg-cyan-900 hover:text-white 
+                         transition-all duration-300 shadow-md hover:shadow-lg">
+                            View itinerary
+                        </button>
+                    </div>
+                </div>
+                <!-- Card 5 -->
+                <div
+                    class="w-[400px] flex-shrink-0 rounded-xl overflow-hidden border border-gray-200 bg-white shadow-md transition-all duration-500 hover:scale-101 hover:shadow-2xl">
+                    <div
+                        class="h-[40vh] rounded-xl w-full bg-cover bg-[url('https://pamirtrips.com/wp-content/uploads/wakhan-afghanistan-trip-hd-1-2.jpg')]">
+                    </div>
+                    <div class="flex justify-between mt-1">
+                        <p class="font-semibold text-sm px-4"><i class="bi bi-calendar2-week font-bold text-lg"></i> 14
+                            DAY
+                            TOUR</p>
+                        <p class="font-semibold text-sm px-4"><i class="bi bi-people font-bold text-lg"></i> Maximum 10
+                        </p>
+                    </div>
+                    <div class="flex justify-center items-center">
+                        <h1 class="font-semibold text-2xl">Wakhan Corridor</h1>
+                    </div>
+                    <div class="text-center">
+                        <p>The Minaret of Jam, built in the 12th century in Ghor Province, Afghanistan, is a stunning
+                            65-meter tower decorated with intricate brickwork and inscriptions.
+                            <a href="#" class="cursor-pointer hover:underline text-cyan-900">More...</a>
+                        </p>
+                    </div>
+                    <div class="mt-4 flex justify-center items-center">
+                        <button id="openBooking" class="px-6 py-2 rounded-xl border-2 cursor-pointer border-cyan-900 text-cyan-900 font-semibold 
+                      bg-white hover:bg-cyan-900 hover:text-white 
+                         transition-all duration-300 shadow-md hover:shadow-lg">
+                            View itinerary
+                        </button>
+                    </div>
+                </div>
+                <!-- Card 6 -->
+                <div
+                    class="w-[400px] flex-shrink-0 rounded-xl overflow-hidden border border-gray-200 bg-white shadow-md transition-all duration-500 hover:scale-101 hover:shadow-2xl">
+                    <div
+                        class="h-[40vh] rounded-xl w-full bg-cover bg-[url('https://images.squarespace-cdn.com/content/v1/5cda9721c46f6d0e5379cf84/1569825698900-3B44CK4C410RWJNOV5VW/77FE2089-D5CE-4560-AC1F-05992AFC9B39.jpg')]">
+                    </div>
+                    <div class="flex justify-between mt-1">
+                        <p class="font-semibold text-sm px-4"><i class="bi bi-calendar2-week font-bold text-lg"></i> 7
+                            DAY
+                            TOUR</p>
+                        <p class="font-semibold text-sm px-4"><i class="bi bi-people font-bold text-lg"></i> Maximum 12
+                        </p>
+                    </div>
+                    <div class="flex justify-center items-center">
+                        <h1 class="font-semibold text-2xl">One Week Tour</h1>
+                    </div>
+                    <div class="text-center">
+                        <p>The Minaret of Jam, built in the 12th century in Ghor Province, Afghanistan, is a stunning
+                            65-meter tower decorated with intricate brickwork and inscriptions.
+                            <a href="#" class="cursor-pointer hover:underline text-cyan-900">More...</a>
+                        </p>
+                    </div>
+                    <div class="mt-4 flex justify-center items-center">
+                        <button id="openBooking" class="px-6 py-2 rounded-xl border-2 cursor-pointer border-cyan-900 text-cyan-900 font-semibold 
+                      bg-white hover:bg-cyan-900 hover:text-white 
+                         transition-all duration-300 shadow-md hover:shadow-lg">
+                            View itinerary
+                        </button>
+                    </div>
+                </div>
+                <!-- Card 4 -->
+                <div
+                    class="w-[400px] flex-shrink-0 rounded-xl overflow-hidden border border-gray-200 bg-white shadow-md transition-all duration-500 hover:scale-101 hover:shadow-2xl">
+                    <div
+                        class="h-[40vh] rounded-xl w-full bg-cover bg-[url('https://afghansafari.com/wp-content/uploads/2024/04/%DB%8C%D8%A7%D9%81%D8%AA%D9%85-%DA%A9%D8%B1%D8%A7%D9%81%DB%8C%DA%A9-%DA%A9%D8%A7%D8%A8%D9%84-.webp')]">
+                    </div>
+                    <div class="flex justify-between mt-1">
+                        <p class="font-semibold text-sm px-4"><i class="bi bi-calendar2-week font-bold text-lg"></i> 7
+                            DAY
+                            TOUR</p>
+                        <p class="font-semibold text-sm px-4"><i class="bi bi-people font-bold text-lg"></i> Maximum 10
+                        </p>
+                    </div>
+                    <div class="flex justify-center items-center">
+                        <h1 class="font-semibold text-2xl">Monthly Tour</h1>
+                    </div>
+                    <div class="text-center">
+                        <p>The Minaret of Jam, built in the 12th century in Ghor Province, Afghanistan, is a stunning
+                            65-meter tower decorated with intricate brickwork and inscriptions.
+                            <a href="#" class="cursor-pointer hover:underline text-cyan-900">More...</a>
+                        </p>
+                    </div>
+                    <div class="mt-4 flex justify-center items-center">
+                        <button id="openBooking" class="px-6 py-2 rounded-xl border-2 cursor-pointer border-cyan-900 text-cyan-900 font-semibold 
+                      bg-white hover:bg-cyan-900 hover:text-white 
+                         transition-all duration-300 shadow-md hover:shadow-lg">
+                            View itinerary
+                        </button>
+                    </div>
+                </div>
+                <!-- Card 8 -->
+                <div
+                    class="w-[400px] flex-shrink-0 rounded-xl overflow-hidden border border-gray-200 bg-white shadow-md transition-all duration-500 hover:scale-101 hover:shadow-2xl">
+                    <div
+                        class="h-[40vh] rounded-xl w-full bg-cover bg-[url('https://www.rjtravelagency.com/wp-content/uploads/2023/06/Trip-Afghanistan-8-1024x768.jpg')]">
+                    </div>
+                    <div class="flex justify-between mt-1">
+                        <p class="font-semibold text-sm px-4"><i class="bi bi-calendar2-week font-bold text-lg"></i> 15
+                            DAYS
+                            - 14 NIGHTS
+                            TOUR</p>
+                        <p class="font-semibold text-sm px-4"><i class="bi bi-people font-bold text-lg"></i> Maximum 18
+                        </p>
+                    </div>
+                    <div class="flex justify-center items-center">
+                        <h1 class="font-semibold text-2xl">15 Days In Afghanistan</h1>
+                    </div>
+                    <div class="text-center">
+                        <p>The Minaret of Jam, built in the 12th century in Ghor Province, Afghanistan, is a stunning
+                            65-meter tower decorated with intricate brickwork and inscriptions.
+                            <a href="#" class="cursor-pointer hover:underline text-cyan-900">More...</a>
+                        </p>
+                    </div>
+                    <div class="mt-4 flex justify-center items-center">
+                        <button id="openBooking" class="px-6 py-2 rounded-xl border-2 cursor-pointer border-cyan-900 text-cyan-900 font-semibold 
+                      bg-white hover:bg-cyan-900 hover:text-white 
+                         transition-all duration-300 shadow-md hover:shadow-lg">
+                            View itinerary
+                        </button>
+                    </div>
+                </div>
+                <!-- Card 9 -->
+                <div
+                    class="w-[400px] flex-shrink-0 rounded-xl overflow-hidden border border-gray-200 bg-white shadow-md transition-all duration-500 hover:scale-101 hover:shadow-2xl">
+                    <div
+                        class="h-[40vh] rounded-xl w-full bg-cover bg-[url('https://www.youngpioneertours.com/wp-content/uploads/2023/05/Afghanistan-Band-E-Amir-Lake.jpg')]">
+                    </div>
+                    <div class="flex justify-between mt-1">
+                        <p class="font-semibold text-sm px-4"><i class="bi bi-calendar2-week font-bold text-lg"></i> 9
+                            DAYS
+                            - 8 NIGHTS
+                            TOUR</p>
+                        <p class="font-semibold text-sm px-4"><i class="bi bi-people font-bold text-lg"></i> Maximum
+                            2-18
+                        </p>
+                    </div>
+                    <div class="flex justify-center items-center">
+                        <h1 class="font-semibold text-2xl">9 day Tour</h1>
+                    </div>
+                    <div class="text-center">
+                        <p>The Minaret of Jam, built in the 12th century in Ghor Province, Afghanistan, is a stunning
+                            65-meter tower decorated with intricate brickwork and inscriptions.
+                            <a href="#" class="cursor-pointer hover:underline text-cyan-900">More...</a>
+                        </p>
+                    </div>
+                    <div class="mt-4 flex justify-center items-center">
+                        <button id="openBooking" class="px-6 py-2 rounded-xl border-2 cursor-pointer border-cyan-900 text-cyan-900 font-semibold 
+                      bg-white hover:bg-cyan-900 hover:text-white 
+                         transition-all duration-300 shadow-md hover:shadow-lg">
+                            View itinerary
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+            <div data-aos="fade-up"
+                class="relative w-full h-[78vh] flex flex-col bg-cover md:flex-row md:p-6 bg-center mt-20 
+                            bg-[url('https://cdn.theatlantic.com/media/img/photo/2012/12/afghanistan-november-2012/a01_56655631-1/original.jpg')]">
+
+                <!-- Black fade overlay (nur linke Seite) -->
+                <div class="absolute inset-0 bg-gradient-to-r from-black/70 to-transparent"></div>
+
+                <!-- Content über dem Fade -->
+                <div class="relative z-10 flex justify-center items-center w-full">
+                    <div class="text-center w-[60%]">
+                        <h1 class="text-white font-semibold text-3xl">Guest Experiences</h1>
+                        <p class="text-white font-semibold mt-4">
+                            The Minaret of Jam, built in the 12th century in Ghor Province, Afghanistan,
+                            is a stunning 65-meter tower decorated with intricate brickwork and inscriptions.
+                            <a href="#" class="cursor-pointer hover:underline text-cyan-400">More...</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="flex items-center items-center h-full">
+                    <div class="swiper w-full md:w-[70%]  h-full">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide flex items-center justify-center bg-white/70 text-2xl font-bold">
+                                <div class="h-full w-full ">
+                                    <div class="m-10 ">
+                                        <div class="flex gap-2 justify-center items-center">
+                                            <img src="https://www.adl.org/sites/default/files/images/2024-01/TATE%201280%20PRIMARY.png"
+                                                class="w-20 h-20 rounded-full object-cover">
+                                            <h1 class="text-cyan-950">Andrew Tate</h1>
+                                        </div>
+                                        <div class="text-center">
+                                            <p class="text-gray-700">The Minaret of Jam, built in the 12th century in
+                                                Ghor
+                                                Province, Afghanistan,
+                                                is a stunning
+                                                65-meter tower decorated with intricate brickwork and inscriptions.
+                                                <a href="#"
+                                                    class="cursor-pointer hover:underline text-cyan-900">More...</a>
+                                            </p>
+                                        </div>
+                                        <div class="flex justify-center gap-3 mt-2 items-center">
+                                            <div
+                                                class="bg-cyan-950 h-10 w-10 rounded-full flex items-center justify-center">
+                                                <a href="#"><i class="bi bi-instagram cursor-pointer "></i></a>
+                                            </div>
+                                            <div
+                                                class="bg-cyan-950 h-10 w-10 rounded-full flex items-center justify-center">
+                                                <a href="#"><i class="bi bi-facebook cursor-pointer "></i></a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide flex items-center justify-center bg-white/70 text-2xl font-bold">
+                                <div class="h-full w-full">
+                                    <div class="m-10">
+                                        <div class="flex gap-2 justify-center items-center">
+                                            <img src="https://m.media-amazon.com/images/M/MV5BYmE0ZTk4ZmMtMmY3YS00YjdiLWIyODItZWZkODk1ZDYwOTQ5XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+                                                class="w-20 h-20 rounded-full object-cover">
+                                            <h1 class="text-cyan-950">Khabib Nurmagomedov</h1>
+                                        </div>
+                                        <div class="text-center">
+                                            <p class="text-gray-700">The Minaret of Jam, built in the 12th century in
+                                                Ghor
+                                                Province, Afghanistan,
+                                                is a stunning
+                                                65-meter tower decorated with intricate brickwork and inscriptions.
+                                                <a href="#"
+                                                    class="cursor-pointer hover:underline text-cyan-900">More...</a>
+                                            </p>
+                                        </div>
+                                        <div class="flex justify-center gap-3 mt-2 items-center">
+                                            <div
+                                                class="bg-cyan-950 h-10 w-10 rounded-full flex items-center justify-center">
+                                                <a href="#"><i class="bi bi-instagram cursor-pointer "></i></a>
+                                            </div>
+                                            <div
+                                                class="bg-cyan-950 h-10 w-10 rounded-full flex items-center justify-center">
+                                                <a href="#"><i class="bi bi-facebook cursor-pointer "></i></a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide flex items-center justify-center bg-white/70 text-2xl font-bold">
+                                <div class="h-full w-full">
+                                    <div class="m-10">
+                                        <div class="flex gap-2 justify-center items-center">
+                                            <img src="https://i0.wp.com/thebodylockmma.com/wp-content/uploads/2020/09/Khamzat-Chimaev-2020-Hero-scaled.jpg?fit=1024%2C682&ssl=1"
+                                                class="w-20 h-20 rounded-full object-cover">
+                                            <h1 class="text-cyan-950">Khamzat Chimaev</h1>
+                                        </div>
+                                        <div class="text-center">
+                                            <p class="text-gray-700">The Minaret of Jam, built in the 12th century in
+                                                Ghor
+                                                Province, Afghanistan,
+                                                is a stunning
+                                                65-meter tower decorated with intricate brickwork and inscriptions.
+                                                <a href="#"
+                                                    class="cursor-pointer hover:underline text-cyan-900">More...</a>
+                                            </p>
+                                        </div>
+                                        <div class="flex justify-center gap-3 mt-2 items-center">
+                                            <div
+                                                class="bg-cyan-950 h-10 w-10 rounded-full flex items-center justify-center">
+                                                <a href="#"><i class="bi bi-instagram cursor-pointer "></i></a>
+                                            </div>
+                                            <div
+                                                class="bg-cyan-950 h-10 w-10 rounded-full flex items-center justify-center">
+                                                <a href="#"><i class="bi bi-facebook cursor-pointer "></i></a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide flex items-center justify-center bg-white/70 text-2xl font-bold">
+                                <div class="h-full w-full">
+                                    <div class="m-10">
+                                        <div class="flex gap-2 justify-center items-center">
+                                            <img src="https://upload.wikimedia.org/wikipedia/commons/2/25/Islam_Makhachev_2022_UFC_belt_%28cropped%29.png"
+                                                class="w-20 h-20 rounded-full object-cover">
+                                            <h1 class="text-cyan-950">Islam Makhachev</h1>
+                                        </div>
+                                        <div class="text-center">
+                                            <p class="text-gray-700">The Minaret of Jam, built in the 12th century in
+                                                Ghor
+                                                Province, Afghanistan,
+                                                is a stunning
+                                                65-meter tower decorated with intricate brickwork and inscriptions.
+                                                <a href="#"
+                                                    class="cursor-pointer hover:underline text-cyan-900">More...</a>
+                                            </p>
+                                        </div>
+                                        <div class="flex justify-center gap-3 mt-2 items-center">
+                                            <div
+                                                class="bg-cyan-950 h-10 w-10 rounded-full flex items-center justify-center">
+                                                <a href="#"><i class="bi bi-instagram cursor-pointer "></i></a>
+                                            </div>
+                                            <div
+                                                class="bg-cyan-950 h-10 w-10 rounded-full flex items-center justify-center">
+                                                <a href="#"><i class="bi bi-facebook cursor-pointer "></i></a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Navigation arrows -->
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+
+                        <!-- Pagination dots -->
+                        <div class="swiper-pagination"></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <section id="contactSection" class="hidden py-20 bg-gradient-to-br from-gray-50 to-gray-100">
+            <div class="grid grid-cols-1 md:grid-cols-[60%_40%] max-w-7xl mx-auto gap-10 px-6">
+
+                <!-- Form -->
+                <div class="flex justify-center items-start">
+                    <div class="w-full max-w-2xl bg-white shadow-xl rounded-2xl p-10 border border-gray-100">
+                        <h2 class="text-3xl font-extrabold text-gray-800 mb-2">Send us an email</h2>
+                        <p class="text-gray-500 mb-8 text-sm">Our team will get back to you as soon as possible.</p>
+
+                        <form class="space-y-6">
+                            <!-- Name -->
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-1">First Name<span
+                                            class="text-red-500">*</span></label>
+                                    <input type="text"
+                                        class="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-indigo-500 focus:outline-none">
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-1">Last Name<span
+                                            class="text-red-500">*</span></label>
+                                    <input type="text"
+                                        class="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-indigo-500 focus:outline-none">
+                                </div>
+                            </div>
+
+                            <!-- Email & Phone -->
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-1">E-mail<span
+                                            class="text-red-500">*</span></label>
+                                    <input type="email"
+                                        class="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-indigo-500 focus:outline-none">
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-1">Phone Number</label>
+                                    <input type="text"
+                                        class="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-indigo-500 focus:outline-none">
+                                </div>
+                            </div>
+
+                            <!-- Country & Direct -->
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-1">
+                                        Where do you live?<span class="text-red-500">*</span>
+                                    </label>
+                                    <select
+                                        class="w-full border border-gray-300 rounded-md p-2 focus:ring-2 focus:ring-indigo-500 focus:outline-none">
+                                        <option value="">---------</option>
+                                        <option value="AF">Afghanistan</option>
+                                        <option value="AL">Albania</option>
+                                        <option value="DZ">Algeria</option>
+                                        <option value="AS">American Samoa</option>
+                                        <option value="AD">Andorra</option>
+                                        <option value="AO">Angola</option>
+                                        <option value="AI">Anguilla</option>
+                                        <option value="AG">Antigua and Barbuda</option>
+                                        <option value="AR">Argentina</option>
+                                        <option value="AM">Armenia</option>
+                                        <option value="AW">Aruba</option>
+                                        <option value="AU">Australia</option>
+                                        <option value="AT">Austria</option>
+                                        <option value="AZ">Azerbaijan</option>
+                                        <option value="BS">Bahamas</option>
+                                        <option value="BH">Bahrain</option>
+                                        <option value="BD">Bangladesh</option>
+                                        <option value="BB">Barbados</option>
+                                        <option value="BY">Belarus</option>
+                                        <option value="BE">Belgium</option>
+                                        <option value="BZ">Belize</option>
+                                        <option value="BJ">Benin</option>
+                                        <option value="BM">Bermuda</option>
+                                        <option value="BT">Bhutan</option>
+                                        <option value="BO">Bolivia</option>
+                                        <option value="BA">Bosnia and Herzegovina</option>
+                                        <option value="BW">Botswana</option>
+                                        <option value="BR">Brazil</option>
+                                        <option value="BN">Brunei</option>
+                                        <option value="BG">Bulgaria</option>
+                                        <option value="BF">Burkina Faso</option>
+                                        <option value="BI">Burundi</option>
+                                        <option value="KH">Cambodia</option>
+                                        <option value="CM">Cameroon</option>
+                                        <option value="CA">Canada</option>
+                                        <option value="CV">Cape Verde</option>
+                                        <option value="CF">Central African Republic</option>
+                                        <option value="TD">Chad</option>
+                                        <option value="CL">Chile</option>
+                                        <option value="CN">China</option>
+                                        <option value="CO">Colombia</option>
+                                        <option value="KM">Comoros</option>
+                                        <option value="CR">Costa Rica</option>
+                                        <option value="HR">Croatia</option>
+                                        <option value="CU">Cuba</option>
+                                        <option value="CY">Cyprus</option>
+                                        <option value="CZ">Czech Republic</option>
+                                        <option value="DK">Denmark</option>
+                                        <option value="DJ">Djibouti</option>
+                                        <option value="DM">Dominica</option>
+                                        <option value="DO">Dominican Republic</option>
+                                        <option value="EC">Ecuador</option>
+                                        <option value="EG">Egypt</option>
+                                        <option value="SV">El Salvador</option>
+                                        <option value="EE">Estonia</option>
+                                        <option value="ET">Ethiopia</option>
+                                        <option value="FJ">Fiji</option>
+                                        <option value="FI">Finland</option>
+                                        <option value="FR">France</option>
+                                        <option value="DE">Germany</option>
+                                        <option value="GH">Ghana</option>
+                                        <option value="GR">Greece</option>
+                                        <option value="GD">Grenada</option>
+                                        <option value="GT">Guatemala</option>
+                                        <option value="GN">Guinea</option>
+                                        <option value="GW">Guinea-Bissau</option>
+                                        <option value="GY">Guyana</option>
+                                        <option value="HT">Haiti</option>
+                                        <option value="HN">Honduras</option>
+                                        <option value="HK">Hong Kong</option>
+                                        <option value="HU">Hungary</option>
+                                        <option value="IS">Iceland</option>
+                                        <option value="IN">India</option>
+                                        <option value="ID">Indonesia</option>
+                                        <option value="IR">Iran</option>
+                                        <option value="IQ">Iraq</option>
+                                        <option value="IE">Ireland</option>
+                                        <option value="IL">Israel</option>
+                                        <option value="IT">Italy</option>
+                                        <option value="JM">Jamaica</option>
+                                        <option value="JP">Japan</option>
+                                        <option value="JO">Jordan</option>
+                                        <option value="KZ">Kazakhstan</option>
+                                        <option value="KE">Kenya</option>
+                                        <option value="KR">Korea, Republic of</option>
+                                        <option value="KW">Kuwait</option>
+                                        <option value="KG">Kyrgyzstan</option>
+                                        <option value="LA">Lao</option>
+                                        <option value="LV">Latvia</option>
+                                        <option value="LB">Lebanon</option>
+                                        <option value="LS">Lesotho</option>
+                                        <option value="LR">Liberia</option>
+                                        <option value="LY">Libya</option>
+                                        <option value="LT">Lithuania</option>
+                                        <option value="LU">Luxembourg</option>
+                                        <option value="MO">Macao</option>
+                                        <option value="MG">Madagascar</option>
+                                        <option value="MW">Malawi</option>
+                                        <option value="MY">Malaysia</option>
+                                        <option value="MV">Maldives</option>
+                                        <option value="ML">Mali</option>
+                                        <option value="MT">Malta</option>
+                                        <option value="MX">Mexico</option>
+                                        <option value="MD">Moldova</option>
+                                        <option value="MC">Monaco</option>
+                                        <option value="MN">Mongolia</option>
+                                        <option value="ME">Montenegro</option>
+                                        <option value="MA">Morocco</option>
+                                        <option value="MZ">Mozambique</option>
+                                        <option value="MM">Myanmar</option>
+                                        <option value="NA">Namibia</option>
+                                        <option value="NP">Nepal</option>
+                                        <option value="NL">Netherlands</option>
+                                        <option value="NZ">New Zealand</option>
+                                        <option value="NI">Nicaragua</option>
+                                        <option value="NE">Niger</option>
+                                        <option value="NG">Nigeria</option>
+                                        <option value="NO">Norway</option>
+                                        <option value="OM">Oman</option>
+                                        <option value="PK">Pakistan</option>
+                                        <option value="PS">Palestine</option>
+                                        <option value="PA">Panama</option>
+                                        <option value="PG">Papua New Guinea</option>
+                                        <option value="PY">Paraguay</option>
+                                        <option value="PE">Peru</option>
+                                        <option value="PH">Philippines</option>
+                                        <option value="PL">Poland</option>
+                                        <option value="PT">Portugal</option>
+                                        <option value="PR">Puerto Rico</option>
+                                        <option value="QA">Qatar</option>
+                                        <option value="RO">Romania</option>
+                                        <option value="RU">Russia</option>
+                                        <option value="RW">Rwanda</option>
+                                        <option value="SA">Saudi Arabia</option>
+                                        <option value="SN">Senegal</option>
+                                        <option value="RS">Serbia</option>
+                                        <option value="SG">Singapore</option>
+                                        <option value="SK">Slovakia</option>
+                                        <option value="SI">Slovenia</option>
+                                        <option value="SO">Somalia</option>
+                                        <option value="ZA">South Africa</option>
+                                        <option value="ES">Spain</option>
+                                        <option value="LK">Sri Lanka</option>
+                                        <option value="SD">Sudan</option>
+                                        <option value="SR">Suriname</option>
+                                        <option value="SE">Sweden</option>
+                                        <option value="CH">Switzerland</option>
+                                        <option value="SY">Syria</option>
+                                        <option value="TW">Taiwan</option>
+                                        <option value="TJ">Tajikistan</option>
+                                        <option value="TZ">Tanzania</option>
+                                        <option value="TH">Thailand</option>
+                                        <option value="TG">Togo</option>
+                                        <option value="TT">Trinidad and Tobago</option>
+                                        <option value="TN">Tunisia</option>
+                                        <option value="TR">Turkey</option>
+                                        <option value="TM">Turkmenistan</option>
+                                        <option value="UG">Uganda</option>
+                                        <option value="UA">Ukraine</option>
+                                        <option value="AE">United Arab Emirates</option>
+                                        <option value="GB">United Kingdom</option>
+                                        <option value="US">United States</option>
+                                        <option value="UY">Uruguay</option>
+                                        <option value="UZ">Uzbekistan</option>
+                                        <option value="VE">Venezuela</option>
+                                        <option value="VN">Vietnam</option>
+                                        <option value="YE">Yemen</option>
+                                        <option value="ZM">Zambia</option>
+                                        <option value="ZW">Zimbabwe</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-1">Direct your message
+                                        to<span class="text-red-500">*</span></label>
+                                    <select
+                                        class="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-indigo-500 focus:outline-none">
+                                        <option>---------</option>
+                                        <option>Sales</option>
+                                        <option>Support</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <!-- Booking -->
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-1">Booking number</label>
+                                <input type="text"
+                                    class="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-indigo-500 focus:outline-none">
+                            </div>
+
+                            <!-- Subject -->
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-1">Subject<span
+                                        class="text-red-500">*</span></label>
+                                <input type="text"
+                                    class="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-indigo-500 focus:outline-none">
+                            </div>
+
+                            <!-- Comments -->
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-1">Questions and Comments<span
+                                        class="text-red-500">*</span></label>
+                                <textarea rows="4"
+                                    class="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-indigo-500 focus:outline-none"></textarea>
+                            </div>
+
+                            <!-- Submit -->
+                            <div>
+                                <button type="submit"
+                                    class="bg-[#0A2540] hover:bg-indigo-700 text-white font-semibold px-8 py-3 rounded-lg shadow-md w-full md:w-auto">
+                                    Contact Us
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Image -->
+                <div class="hidden md:block relative rounded-3xl overflow-hidden shadow-lg border border-gray-100">
+                    <img src="https://us.images.westend61.de/0001326441pw/mountain-village-in-the-panjshir-valley-afghanistan-asia-RHPLF13888.jpg"
+                        alt="kabul masjid"
+                        class="w-full h-full object-cover scale-105 hover:scale-110 transition-transform duration-700 ease-in-out rounded-3xl brightness-95" />
+                    <!-- Soft overlay -->
+                    <div class="absolute inset-0 bg-gradient-to-t from-sfont-semibold/50 via-transparent to-white/5">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="addReviewSection" data-page="addReview" class="hidden" loading="lazy">
+            <div class="max-w-7xl mx-auto px-6 py-12 space-y-10">
+                <div class="bg-white rounded-2xl shadow-lg p-6 grid md:grid-cols-[70%_30%] items-center gap-6">
+                    <div>
+                        <h2 class="text-2xl font-bold text-gray-900">Islam Makhachev</h2>
+                        <p class="text-gray-700 mt-3 leading-relaxed">
+                            Sardar was an amazing guide and made our trip to Afghanistan very smooth. He is very
+                            professional
+                            and has all
+                            the local knowledge and contacts that you will need in a country like Afghanistan. Many of
+                            my
+                            friends had
+                            traveled in the care of Sardar and his team and we all agreed that it was a very pleasant
+                            experience. In the
+                            end of the trip we all fell in love with Afghanistan!
+                        </p>
+                        <div class="flex space-x-3 mt-4">
+                            <a href="#" class="px-4 py-2 rounded-full flex items-center gap-2 text-white 
+                          bg-gradient-to-r from-[#f58529] via-[#dd2a7b] to-[#8134af] hover:opacity-90 transition">
+                                <i class="bi bi-instagram"></i> Instagram
+                            </a>
+
+                            <a href="#"
+                                class="px-4 py-2 bg-[#0A2540] text-white rounded-full flex items-center gap-2 hover:bg-blue-700">
+                                <i class="bi bi-facebook"></i> Facebook
+                            </a>
+                        </div>
+                    </div>
+                    <div class="overflow-hidden rounded-xl border-2 border-gray-200 shadow-md">
+                        <img src="https://s.yimg.com/ny/api/res/1.2/tpaFmdVQ7Kr6i9zwf84K3A--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTQyOTtjZj13ZWJw/https://media.zenfs.com/en/athlon_sports_articles_610/e0b78252653738e9dde3103599672ffc"
+                            alt="Reviewer Image" class="object-cover w-full h-[250px]">
+                    </div>
+                </div>
+                <div class="bg-white rounded-2xl shadow-lg p-6 grid md:grid-cols-[70%_30%] items-center gap-6">
+                    <div>
+                        <h2 class="text-2xl font-bold text-gray-900">Khabib Nurmagomedov</h2>
+                        <p class="text-gray-700 mt-3 leading-relaxed">
+                            I've spent ten incredible days in Afghanistan with Sardar and his professional and friendly
+                            crew.
+                            From Kabul to
+                            Bamyan, Kandahar, and Mazar, everything was perfectly organized. I always felt safe, learned
+                            so
+                            much, and left
+                            the country with unforgettable memories. Sardar is passionate about his country, and I will
+                            definitely use his
+                            services again!
+                        </p>
+                        <div class="flex space-x-3 mt-4">
+                            <a href="#" class="px-4 py-2 rounded-full flex items-center gap-2 text-white 
+                    bg-gradient-to-r from-[#f58529] via-[#dd2a7b] to-[#8134af] hover:opacity-90 transition">
+                                <i class="bi bi-instagram"></i> Instagram
+                            </a>
+
+                            <a href="#"
+                                class="px-4 py-2 bg-[#0A2540] text-white rounded-full flex items-center gap-2 hover:bg-blue-700">
+                                <i class="bi bi-facebook"></i> Facebook
+                            </a>
+                        </div>
+                    </div>
+                    <div class="overflow-hidden rounded-xl border-2 border-gray-200 shadow-md">
+                        <img src="https://platform.mmafighting.com/wp-content/uploads/sites/109/chorus/uploads/chorus_asset/file/8079721/030_Khabib_Nurmagomedov.0.jpg?quality=90&strip=all&crop=0,0,100,100"
+                            alt="Reviewer Image" class="object-cover w-full h-[250px]">
+                    </div>
+                </div>
+                <div class="bg-white rounded-2xl shadow-lg p-6 grid md:grid-cols-[70%_30%] items-center gap-6">
+                    <div>
+                        <h2 class="text-2xl font-bold text-gray-900">Khamzat Chimaev</h2>
+                        <p class="text-gray-700 mt-3 leading-relaxed">
+                            Sardar was an amazing guide and made our trip to Afghanistan very smooth. He is very
+                            professional
+                            and has all
+                            the local knowledge and contacts that you will need in a country like Afghanistan. Many of
+                            my
+                            friends had
+                            traveled in the care of Sardar and his team and we all agreed that it was a very pleasant
+                            experience. In the
+                            end of the trip we all fell in love with Afghanistan!
+                        </p>
+                        <div class="flex space-x-3 mt-4">
+                            <a href="#" class="px-4 py-2 rounded-full flex items-center gap-2 text-white 
+                          bg-gradient-to-r from-[#f58529] via-[#dd2a7b] to-[#8134af] hover:opacity-90 transition">
+                                <i class="bi bi-instagram"></i> Instagram
+                            </a>
+
+                            <a href="#"
+                                class="px-4 py-2 bg-[#0A2540] text-white rounded-full flex items-center gap-2 hover:bg-blue-700">
+                                <i class="bi bi-facebook"></i> Facebook
+                            </a>
+                        </div>
+                    </div>
+                    <div class="overflow-hidden rounded-xl border-2 border-gray-200 shadow-md">
+                        <img src="https://www.totalprosports.com/wp-content/uploads/2024/10/Khamzat-Chimaev-3-1024x563.jpg"
+                            alt="Reviewer Image" class="object-cover w-full h-[250px]">
+                    </div>
+                </div>
+                <div class="bg-white rounded-2xl shadow-lg p-6 grid md:grid-cols-[70%_30%] items-center gap-6">
+                    <div>
+                        <h2 class="text-2xl font-bold text-gray-900">Andrew Tate</h2>
+                        <p class="text-gray-700 mt-3 leading-relaxed">
+                            I've spent ten incredible days in Afghanistan with Sardar and his professional and friendly
+                            crew.
+                            From Kabul to
+                            Bamyan, Kandahar, and Mazar, everything was perfectly organized. I always felt safe, learned
+                            so
+                            much, and left
+                            the country with unforgettable memories. Sardar is passionate about his country, and I will
+                            definitely use his
+                            services again!
+                        </p>
+                        <div class="flex space-x-3 mt-4">
+                            <a href="#" class="px-4 py-2 rounded-full flex items-center gap-2 text-white 
+                    bg-gradient-to-r from-[#f58529] via-[#dd2a7b] to-[#8134af] hover:opacity-90 transition">
+                                <i class="bi bi-instagram"></i> Instagram
+                            </a>
+
+                            <a href="#"
+                                class="px-4 py-2 bg-[#0A2540] text-white rounded-full flex items-center gap-2 hover:bg-blue-700">
+                                <i class="bi bi-facebook"></i> Facebook
+                            </a>
+                        </div>
+                    </div>
+                    <div class="overflow-hidden rounded-xl border-2 border-gray-200 shadow-md">
+                        <img src="https://ichef.bbci.co.uk/news/480/cpsprodpb/724f/live/2a638270-79c8-11f0-8827-ede848a7813c.jpg.webp"
+                            alt="Reviewer Image" class="object-cover w-full h-[250px]">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="addFAQsSection" data-page="faqs" class="hidden py-20 bg-gray-50" loading="lazy">
+            <div class="max-w-4xl mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center text-gray-800 mb-10">
+                    Frequently Asked Questions
+                </h2>
+
+                <div class="space-y-4">
+
+                    <!-- Q1 -->
+                    <details class="border rounded-lg p-4 bg-white shadow-sm">
+                        <summary class="cursor-pointer font-semibold text-lg flex justify-between items-center">
+                            Is Afghanistan safe for tourists?
+                        </summary>
+                        <p class="mt-2 text-gray-600">
+                            Yes, we carefully design all our tours with safety in mind. We work with trusted local
+                            guides and always monitor the latest situation.
+                        </p>
+                    </details>
+
+                    <!-- Q2 -->
+                    <details class="border rounded-lg p-4 bg-white shadow-sm">
+                        <summary class="cursor-pointer font-semibold text-lg flex justify-between items-center">
+                            Do I need a visa to travel to Afghanistan?
+                        </summary>
+                        <p class="mt-2 text-gray-600">
+                            Most travelers require a visa. We provide guidance and all necessary documents for your
+                            application.
+                        </p>
+                    </details>
+
+                    <!-- Q3 -->
+                    <details class="border rounded-lg p-4 bg-white shadow-sm">
+                        <summary class="cursor-pointer font-semibold text-lg flex justify-between items-center">
+                            What’s included in the tour price?
+                        </summary>
+                        <p class="mt-2 text-gray-600">
+                            Tours usually include accommodation, transportation, local guides, and entrance fees.
+                            International flights are not included.
+                        </p>
+                    </details>
+
+                    <!-- Q4 -->
+                    <details class="border rounded-lg p-4 bg-white shadow-sm">
+                        <summary class="cursor-pointer font-semibold text-lg flex justify-between items-center">
+                            What should I pack for the trip?
+                        </summary>
+                        <p class="mt-2 text-gray-600">
+                            Bring modest clothing, walking shoes, a light jacket, and personal medication. We’ll send a
+                            packing checklist.
+                        </p>
+                    </details>
+
+                    <!-- Q5 -->
+                    <details class="border rounded-lg p-4 bg-white shadow-sm">
+                        <summary class="cursor-pointer font-semibold text-lg flex justify-between items-center">
+                            Can I customize my tour?
+                        </summary>
+                        <p class="mt-2 text-gray-600">
+                            Yes! We offer both group tours and private tours tailored to your interests and schedule.
+                        </p>
+                    </details>
+
+                    <!-- Q6 -->
+                    <details class="border rounded-lg p-4 bg-white shadow-sm">
+                        <summary class="cursor-pointer font-semibold text-lg flex justify-between items-center">
+                            When is the best time to visit Afghanistan?
+                        </summary>
+                        <p class="mt-2 text-gray-600">
+                            Spring (April–May) and autumn (September–October) are the best seasons for pleasant weather
+                            and stunning landscapes.
+                        </p>
+                    </details>
+
+                    <!-- Q7 -->
+                    <details class="border rounded-lg p-4 bg-white shadow-sm">
+                        <summary class="cursor-pointer font-semibold text-lg flex justify-between items-center">
+                            How big are the tour groups?
+                        </summary>
+                        <p class="mt-2 text-gray-600">
+                            Our groups are usually small (6–12 people) to ensure a personal and comfortable travel
+                            experience.
+                        </p>
+                    </details>
+
+                    <!-- Q8 -->
+                    <details class="border rounded-lg p-4 bg-white shadow-sm">
+                        <summary class="cursor-pointer font-semibold text-lg flex justify-between items-center">
+                            Is travel insurance required?
+                        </summary>
+                        <p class="mt-2 text-gray-600">
+                            Yes, travel insurance is mandatory. We can recommend trusted providers if you don’t have
+                            one.
+                        </p>
+                    </details>
+
+                    <!-- Q9 -->
+                    <details class="border rounded-lg p-4 bg-white shadow-sm">
+                        <summary class="cursor-pointer font-semibold text-lg flex justify-between items-center">
+                            What type of accommodation is provided?
+                        </summary>
+                        <p class="mt-2 text-gray-600">
+                            We arrange comfortable hotels and guesthouses. In remote areas, basic but clean lodging may
+                            be used.
+                        </p>
+                    </details>
+
+                    <!-- Q10 -->
+                    <details class="border rounded-lg p-4 bg-white shadow-sm">
+                        <summary class="cursor-pointer font-semibold text-lg flex justify-between items-center">
+                            How do I book a tour?
+                        </summary>
+                        <p class="mt-2 text-gray-600">
+                            Booking is simple – choose a tour on our website, fill in the form, and our team will
+                            contact you with next steps.
+                        </p>
+                    </details>
+                </div>
+            </div>
+        </section>
+        <section class="hidden max-w-7xl mx-auto px-4 py-12" id="gallerySection" data-page="gallery" loading="lazy">
+            <h2 class="text-5xl text-center mb-5 [font-family:'Pinyon_Script',cursive] text-orange-400">
+                Afghanistan Travel Gallery
+            </h2>
+            <!-- Responsive grid -->
+            <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+
+                <!-- Card -->
+                <div
+                    class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl hover:scale-[1.02] transition">
+                    <img src="https://www.explorandes.com/_next/image?url=https:%2F%2Fexplorandes.net%2Fblogs%2F28ddac30-e974-49cd-88e8-7d0040dd1acd%2Ff72b76d9-a4aa-4a26-9b27-60b7927e09ba.jpg&w=1200&q=75"
+                        alt="HINDU KUSH" class="h-56 w-full object-cover">
+                    <div class="p-4">
+                        <p class="text-gray-700 font-medium">HINDU KUSH FIRST SNOW VIEW</p>
+                    </div>
+                </div>
+
+                <!-- Card -->
+                <div
+                    class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl hover:scale-[1.02] transition">
+                    <img src="https://tse3.mm.bing.net/th/id/OIP.V_JWS5Zod6OVqh6et0joeQHaEK?w=700&h=393&rs=1&pid=ImgDetMain&o=7&rm=3"
+                        alt="SUNSET" class="h-56 w-full object-cover">
+                    <div class="p-4">
+                        <p class="text-gray-700 font-medium">AWSOME SUNSET OF KANDAHAR</p>
+                    </div>
+                </div>
+
+                <!-- Card -->
+                <div
+                    class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl hover:scale-[1.02] transition">
+                    <img src="https://live.staticflickr.com/3168/2930491685_d91bf2ff2c_b.jpg" alt="HERAT"
+                        class="h-56 w-full object-cover">
+                    <div class="p-4">
+                        <p class="text-gray-700 font-medium">HERAT CITADEL</p>
+                    </div>
+                </div>
+
+                <!-- Add more cards the same way -->
+                <div
+                    class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl hover:scale-[1.02] transition">
+                    <img src="https://facts.net/wp-content/uploads/2021/02/Blue-Mosque-Afghanistan-1024x683.jpg"
+                        alt="BLUE MOSQUE" class="h-56 w-full object-cover">
+                    <div class="p-4">
+                        <p class="text-gray-700 font-medium">BLUE MOSQUE</p>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl hover:scale-[1.02] transition">
+                    <img src="https://i.pinimg.com/originals/7a/2e/c7/7a2ec7008f206fa24cec375a03d39db4.jpg"
+                        alt="KABUL CITY" class="h-56 w-full object-cover">
+                    <div class="p-4">
+                        <p class="text-gray-700 font-medium">KABUL CITY</p>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl hover:scale-[1.02] transition">
+                    <img src="https://th.bing.com/th/id/R.bbc40e700342bc8cb9768b5fd5fc7479?rik=ujYzJzcfb1xjqw&riu=http%3a%2f%2fwww.worldtoptop.com%2fwp-content%2fuploads%2f2011%2f11%2fBand-e-Amir-Lakes_19.jpg&ehk=f3BUg6lJQsuMW8muZAVk9bwZmJZIdA7wnmKMxVuv2DY%3d&risl=&pid=ImgRaw&r=0"
+                        alt="BAND-E AMIR" class="h-56 w-full object-cover">
+                    <div class="p-4">
+                        <p class="text-gray-700 font-medium">BAND-E AMIR</p>
+                    </div>
+                </div>
+            </div>
+            <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 mt-4">
+
+                <!-- Card -->
+                <div
+                    class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl hover:scale-[1.02] transition">
+                    <img src="https://www.explorandes.com/_next/image?url=https:%2F%2Fexplorandes.net%2Fblogs%2F28ddac30-e974-49cd-88e8-7d0040dd1acd%2Ff72b76d9-a4aa-4a26-9b27-60b7927e09ba.jpg&w=1200&q=75"
+                        alt="HINDU KUSH" class="h-56 w-full object-cover">
+                    <div class="p-4">
+                        <p class="text-gray-700 font-medium">HINDU KUSH FIRST SNOW VIEW</p>
+                    </div>
+                </div>
+
+                <!-- Card -->
+                <div
+                    class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl hover:scale-[1.02] transition">
+                    <img src="https://tse3.mm.bing.net/th/id/OIP.V_JWS5Zod6OVqh6et0joeQHaEK?w=700&h=393&rs=1&pid=ImgDetMain&o=7&rm=3"
+                        alt="SUNSET" class="h-56 w-full object-cover">
+                    <div class="p-4">
+                        <p class="text-gray-700 font-medium">AWSOME SUNSET OF KANDAHAR</p>
+                    </div>
+                </div>
+
+                <!-- Card -->
+                <div
+                    class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl hover:scale-[1.02] transition">
+                    <img src="https://live.staticflickr.com/3168/2930491685_d91bf2ff2c_b.jpg" alt="HERAT"
+                        class="h-56 w-full object-cover">
+                    <div class="p-4">
+                        <p class="text-gray-700 font-medium">HERAT CITADEL</p>
+                    </div>
+                </div>
+
+                <!-- Add more cards the same way -->
+                <div
+                    class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl hover:scale-[1.02] transition">
+                    <img src="https://facts.net/wp-content/uploads/2021/02/Blue-Mosque-Afghanistan-1024x683.jpg"
+                        alt="BLUE MOSQUE" class="h-56 w-full object-cover">
+                    <div class="p-4">
+                        <p class="text-gray-700 font-medium">BLUE MOSQUE</p>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl hover:scale-[1.02] transition">
+                    <img src="https://i.pinimg.com/originals/7a/2e/c7/7a2ec7008f206fa24cec375a03d39db4.jpg"
+                        alt="KABUL CITY" class="h-56 w-full object-cover">
+                    <div class="p-4">
+                        <p class="text-gray-700 font-medium">KABUL CITY</p>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl hover:scale-[1.02] transition">
+                    <img src="https://th.bing.com/th/id/R.bbc40e700342bc8cb9768b5fd5fc7479?rik=ujYzJzcfb1xjqw&riu=http%3a%2f%2fwww.worldtoptop.com%2fwp-content%2fuploads%2f2011%2f11%2fBand-e-Amir-Lakes_19.jpg&ehk=f3BUg6lJQsuMW8muZAVk9bwZmJZIdA7wnmKMxVuv2DY%3d&risl=&pid=ImgRaw&r=0"
+                        alt="BAND-E AMIR" class="h-56 w-full object-cover">
+                    <div class="p-4">
+                        <p class="text-gray-700 font-medium">BAND-E AMIR</p>
+                    </div>
+                </div>
+            </div>
+            <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 mt-5">
+
+                <!-- Card -->
+                <div
+                    class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl hover:scale-[1.02] transition">
+                    <img src="https://www.explorandes.com/_next/image?url=https:%2F%2Fexplorandes.net%2Fblogs%2F28ddac30-e974-49cd-88e8-7d0040dd1acd%2Ff72b76d9-a4aa-4a26-9b27-60b7927e09ba.jpg&w=1200&q=75"
+                        alt="HINDU KUSH" class="h-56 w-full object-cover">
+                    <div class="p-4">
+                        <p class="text-gray-700 font-medium">HINDU KUSH FIRST SNOW VIEW</p>
+                    </div>
+                </div>
+
+                <!-- Card -->
+                <div
+                    class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl hover:scale-[1.02] transition">
+                    <img src="https://tse3.mm.bing.net/th/id/OIP.V_JWS5Zod6OVqh6et0joeQHaEK?w=700&h=393&rs=1&pid=ImgDetMain&o=7&rm=3"
+                        alt="SUNSET" class="h-56 w-full object-cover">
+                    <div class="p-4">
+                        <p class="text-gray-700 font-medium">AWSOME SUNSET OF KANDAHAR</p>
+                    </div>
+                </div>
+
+                <!-- Card -->
+                <div
+                    class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl hover:scale-[1.02] transition">
+                    <img src="https://live.staticflickr.com/3168/2930491685_d91bf2ff2c_b.jpg" alt="HERAT"
+                        class="h-56 w-full object-cover">
+                    <div class="p-4">
+                        <p class="text-gray-700 font-medium">HERAT CITADEL</p>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </section>
+        <section loading="lazy" id="feedbackSection" data-page="feedback"
+            class="hidden bg-gray-100 flex items-center justify-center min-h-screen">
+            <div
+                class="bg-white shadow-lg rounded-xl overflow-hidden flex flex-col md:flex-row w-[90%] md:w-[80%] lg:w-[70%]">
+                <!-- Left Side Image -->
+                <div class="hidden md:block md:w-1/2 bg-cover bg-center"
+                    style="background-image: url('https://img.freepik.com/premium-vector/feedback-minimal-logo-design_535143-70.jpg');">
+                </div>
+
+                <!-- Right Side Form -->
+                <div class="w-full md:w-1/2 p-8 flex flex-col justify-center">
+                    <h1 class="text-2xl font-bold text-[#0A2540] mb-6 text-center">We Value Your Feedback</h1>
+
+                    <form  method="POST" class="space-y-5">
+
+                        <!-- Name -->
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-700 mb-1">
+                                <i class="bi bi-person mr-1"></i> Your Name
+                            </label>
+                            <input type="text" id="name" name="name" placeholder="Enter your full name" required
+                                class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-[#0A2540] focus:outline-none">
+                        </div>
+
+                        <!-- Email -->
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700 mb-1">
+                                <i class="bi bi-envelope mr-1"></i> Email Address
+                            </label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email" required
+                                class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-[#0A2540] focus:outline-none">
+                        </div>
+
+                        <!-- Rating -->
+                        <div>
+                            <label for="rating" class="block text-sm font-medium text-gray-700 mb-1">
+                                <i class="bi bi-star mr-1"></i> Rating
+                            </label>
+                            <select id="rating" name="rating" required
+                                class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-[#0A2540] focus:outline-none">
+                                <option value="" disabled selected>Select a rating</option>
+                                <option value="5">⭐⭐⭐⭐⭐ Excellent</option>
+                                <option value="4">⭐⭐⭐⭐ Good</option>
+                                <option value="3">⭐⭐⭐ Average</option>
+                                <option value="2">⭐⭐ Poor</option>
+                                <option value="1">⭐ Very Poor</option>
+                            </select>
+                        </div>
+
+                        <!-- Feedback -->
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-700 mb-1">
+                                <i class="bi bi-chat-dots mr-1"></i> Your Feedback
+                            </label>
+                            <textarea id="message" name="message" placeholder="Write your feedback..." required
+                                class="w-full border border-gray-300 rounded-lg px-4 py-2 h-32 resize-none focus:ring-2 focus:ring-[#0A2540] focus:outline-none"></textarea>
+                        </div>
+
+                        <!-- Button -->
+                        <button type="submit"
+                            class="w-full cursor-pointer bg-[#0A2540] text-white font-semibold py-3 rounded-lg shadow-md hover:bg-[#FF6A00] transition duration-300">
+                            Submit Feedback
+                        </button>
+                    </form>
+
+                </div>
+            </div>
+        </section>
+        <section loading="lazy" id="tourSection" class="hidden ">
+            <!-- Header section  -->
+            <div class="flex justify-center">
+                <div class="w-[96%] p-10">
+                    <section>
+                        <div>
+                            <h1 class="font-bold text-[30px] text-[#0A2540]">Tours To <span
+                                    class="font-bold text-[30px] text-[#FF6A00]">Afghanistan</span></h1>
+                            <p class="text-[#0A2540] py-4  text-[18px]">Traveling in Afghanistan offers a rich tapestry
+                                of
+                                experiences, from
+                                its rugged landscapes to its vibrant cultural heritage. Visitors can explore the
+                                awe-inspiring
+                                Hindu Kush mountains, which provide a dramatic backdrop for trekking and adventure.
+                                Historical
+                                sites like the ancient city of Bamyan, with its monumental Buddha statues, and the
+                                bustling
+                                bazaars of Kabul reveal a storied past and a resilient spirit. The country’s diverse
+                                cultures
+                                and traditions, including its unique cuisine and local crafts, add depth to any journey
+                            </p>
+                        </div>
+                    </section>
+                    <section>
+                        <div>
+                            <h1 class="font-bold text-[30px] text-[#0A2540]">Our <span
+                                    class="font-bold text-[30px] text-[#FF6A00]">Group</span> Tours </h1>
+                            <p class="text-[#0A2540] py-4 text-[18px]">Traveling in Afghanistan offers a rich tapestry
+                                of
+                                experiences, from
+                                its rugged landscapes to its vibrant
+                                Our group trips feature set dates and itineraries, making it simple to join like-minded
+                                travelers and explore this incredible country together. Whether you're seeking a big
+                                adventure
+                                or something more intimate, our tours typically range from 12 to 18 participants—perfect
+                                for
+                                solo travelers, too. With guaranteed departures, you can feel confident your journey
+                                will go
+                                ahead as planned.</p>
+                        </div>
+                    </section>
+                    <!-- Foto section  -->
+                    <section>
+                        <div class="py-5 px-1 flex gap-4 items-start overflow-x-auto custom-scroll">
+                            <!-- Card: Minaret of Jam Adventure -->
+                            <div
+                                class="w-[360px] h-[720px] flex flex-col rounded-2xl overflow-hidden flex-shrink-0 shadow-md hover:shadow-xl hover:shadow-[#0A2540]/30 transform hover:scale-[1.03] transition duration-200 bg-white">
+
+                                <!-- Image -->
+                                <img src="https://www.familyholiday.net/wp-content/uploads/2012/03/Minaret-of-Jam-Afghanistan-_21.jpg"
+                                    alt="Minaret of Jam" class="w-full h-60 object-cover">
+
+                                <!-- Content -->
+                                <div class="flex-1 flex flex-col">
+                                    <!-- Info top -->
+                                    <div class="flex justify-between p-2 text-[#0A2540] text-sm">
+                                        <div class="flex gap-1 items-center">
+                                            <i class="bi bi-calendar-week"></i>
+                                            <p>10 Days</p>
+                                        </div>
+                                        <div class="flex gap-1 items-center">
+                                            <i class="bi bi-people"></i>
+                                            <p class="font-bold">Maximum 10</p>
+                                        </div>
+                                    </div>
+
+                                    <!-- Title -->
+                                    <h1 class="text-[#0A2540] font-extrabold text-[22px] p-2 text-center tracking-wide">
+                                        Minaret of Jam Adventure
+                                    </h1>
+
+                                    <!-- Description -->
+                                    <p class="text-[#0A2540]/80 p-2 leading-relaxed">
+                                        The trip takes you to the iconic minaret of Jam through the
+                                        central routes of Afghanistan and Hindu Kush mountains. In this trip ...
+                                    </p>
+
+                                    <!-- Departure Dates -->
+                                    <div class="px-4 py-6 text-[#0A2540] bg-gray-50 rounded-lg mx-4 shadow-sm">
+                                        <p class="font-semibold mb-2">Departures:</p>
+                                        <p>1 Sep – 10 Sep 2025</p>
+                                        <p>5 Oct – 14 Oct 2025</p>
+                                        <p>1 Apr – 10 Apr 2026</p>
+                                        <p>3 May – 12 May 2026</p>
+                                    </div>
+
+                                    <!-- Button -->
+                                    <div class="flex justify-center items-center mt-auto mb-6">
+                                        <button id="openBooking"
+                                            class="group flex items-center gap-2 bg-white text-[#0A2540] px-16 py-2 font-bold rounded-xl text-xl border border-[#0A2540] transition duration-300 hover:bg-[#0A2540] hover:text-white">
+                                            Book
+                                            <i
+                                                class="bi bi-airplane text-2xl transition duration-300 group-hover:rotate-90"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Card: 1 week tour to Afghanistan -->
+                            <div
+                                class="w-[360px] h-[720px] flex flex-col rounded-2xl overflow-hidden flex-shrink-0 shadow-md hover:shadow-xl hover:shadow-[#0A2540]/30 transform hover:scale-[1.03] transition duration-200 bg-white">
+                                <img src="https://th.bing.com/th/id/R.1d951106ce833e4091b4602206e8b055?rik=XXNAH%2fzDiwA1Fw&pid=ImgRaw&r=0"
+                                    alt="kabul" class="w-full h-60 object-cover">
+
+                                <div class="flex-1 flex flex-col">
+                                    <div class="flex justify-between p-2 text-[#0A2540] text-sm">
+                                        <div class="flex gap-1 items-center"><i class="bi bi-calendar-week"></i>
+                                            <p>7 Days</p>
+                                        </div>
+                                        <div class="flex gap-1 items-center"><i class="bi bi-people"></i>
+                                            <p class="font-bold">Maximum 16</p>
+                                        </div>
+                                    </div>
+
+                                    <h1 class="text-[#0A2540] font-extrabold text-[22px] p-2 text-center tracking-wide">
+                                        1 week
+                                        tour to Afghanistan</h1>
+
+                                    <p class="text-[#0A2540]/80 p-2 leading-relaxed">
+                                        The Trip starts and end in Kabul. The trip take you to the top highlights and
+                                        interesting places of the country. In this trip ...
+                                    </p>
+
+                                    <div class="px-4 py-6 text-[#0A2540] bg-gray-50 rounded-lg mx-4 shadow-sm">
+                                        <p class="font-semibold mb-2">Departures:</p>
+                                        <p>3 Jun – 9 Jun 2025</p>
+                                        <p>1 Jul – 7 Jul 2025</p>
+                                    </div>
+
+                                    <div class="flex justify-center items-center mt-auto mb-6">
+                                        <button id="openBooking"
+                                            class="group flex items-center gap-2 bg-white text-[#0A2540] px-16 py-2 font-bold rounded-xl text-xl border border-[#0A2540] transition duration-300 hover:bg-[#0A2540] hover:text-white">
+                                            Book
+                                            <i
+                                                class="bi bi-airplane text-2xl transition duration-300 group-hover:rotate-90"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Card: Afghanistan in 12 days -->
+                            <div
+                                class="w-[360px] h-[720px] flex flex-col rounded-2xl overflow-hidden flex-shrink-0 shadow-md hover:shadow-xl hover:shadow-[#0A2540]/30 transform hover:scale-[1.03] transition duration-200 bg-white">
+                                <img src="https://bharatdarshantour.com/wp-content/uploads/2019/06/Bharat-Darshan-Zanskar-trekking.jpg"
+                                    alt="" class="w-full h-60 object-cover">
+
+                                <div class="flex-1 flex flex-col">
+                                    <div class="flex justify-between p-2 text-[#0A2540] text-sm">
+                                        <div class="flex gap-1 items-center"><i class="bi bi-calendar-week"></i>
+                                            <p>12 Days</p>
+                                        </div>
+                                        <div class="flex gap-1 items-center"><i class="bi bi-people"></i>
+                                            <p class="font-bold">Maximum 12</p>
+                                        </div>
+                                    </div>
+
+                                    <h1 class="text-[#0A2540] font-extrabold text-[22px] p-2 text-center tracking-wide">
+                                        Afghanistan in 12 days</h1>
+
+                                    <p class="text-[#0A2540]/80 p-2 leading-relaxed">
+                                        The Trip starts and end in Kabul. The trip take you to the top highlights and
+                                        interesting places of the country. In this trip ...
+                                    </p>
+
+                                    <div class="px-4 py-6 text-[#0A2540] bg-gray-50 rounded-lg mx-4 shadow-sm">
+                                        <p class="font-semibold mb-2">Departures:</p>
+                                        <p>5 Oct – 16 Oct 2025</p>
+                                        <p>3 Nov – 14 Nov 2025</p>
+                                    </div>
+
+                                    <div class="flex justify-center items-center mt-auto mb-6">
+                                        <button id="openBooking"
+                                            class="group flex items-center gap-2 bg-white text-[#0A2540] px-16 py-2 font-bold rounded-xl text-xl border border-[#0A2540] transition duration-300 hover:bg-[#0A2540] hover:text-white">
+                                            Book
+                                            <i
+                                                class="bi bi-airplane text-2xl transition duration-300 group-hover:rotate-90"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Card: Buzkashi Tour -->
+                            <div
+                                class="w-[360px] h-[720px] flex flex-col rounded-2xl overflow-hidden flex-shrink-0 shadow-md hover:shadow-xl hover:shadow-[#0A2540]/30 transform hover:scale-[1.03] transition duration-200 bg-white">
+                                <img src="https://live.staticflickr.com/2468/3788861471_3515c1b976_z.jpg" alt="qandahr"
+                                    class="w-full h-60 object-cover">
+
+                                <div class="flex-1 flex flex-col">
+                                    <div class="flex justify-between p-2 text-[#0A2540] text-sm">
+                                        <div class="flex gap-1 items-center"><i class="bi bi-calendar-week"></i>
+                                            <p>14 Days</p>
+                                        </div>
+                                        <div class="flex gap-1 items-center"><i class="bi bi-people"></i>
+                                            <p class="font-bold">Maximum 10</p>
+                                        </div>
+                                    </div>
+
+                                    <h1 class="text-[#0A2540] font-extrabold text-[22px] p-2 text-center tracking-wide">
+                                        Buzkashi
+                                        Tour</h1>
+
+                                    <p class="text-[#0A2540]/80 p-2 leading-relaxed">
+                                        Venture into an extraordinary 7 days tour, beginning and ending in Kabul,
+                                        Afghanistan.
+                                        This carefully curated itinerary inclu ...
+                                    </p>
+
+                                    <div class="px-4 py-6 text-[#0A2540] bg-gray-50 rounded-lg mx-4 shadow-sm">
+                                        <p class="font-semibold mb-2">Departures:</p>
+                                        <p>5 Jan – 11 Jan 2026</p>
+                                        <p>17 Jan – 23 Jan 2026</p>
+                                        <p>3 Feb – 9 Feb 2026</p>
+                                        <p>15 Feb – 21 Feb 2026</p>
+                                    </div>
+
+                                    <div class="flex justify-center items-center mt-auto mb-6">
+                                        <button id="openBooking"
+                                            class="group flex items-center gap-2 bg-white text-[#0A2540] px-16 py-2 font-bold rounded-xl text-xl border border-[#0A2540] transition duration-300 hover:bg-[#0A2540] hover:text-white">
+                                            Book
+                                            <i
+                                                class="bi bi-airplane text-2xl transition duration-300 group-hover:rotate-90"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Card: Wakhan Corridor -->
+                            <div
+                                class="w-[360px] h-[720px] flex flex-col rounded-2xl overflow-hidden flex-shrink-0 shadow-md hover:shadow-xl hover:shadow-[#0A2540]/30 transform hover:scale-[1.03] transition duration-200 bg-white">
+                                <img src="https://th.bing.com/th/id/R.527544db9c649173878d160e586d0146?rik=NRyKG55Mdz1INA&riu=http%3a%2f%2fwww.wildlifemoments.de%2fwp-content%2fuploads%2f2019%2f06%2fBlog-25-Tajikistan-4.jpg&ehk=%2b3X5vk1Dij9WsuuOQgJmWq0Zu0a9jFdcvuEXAUsoNDA%3d&risl=&pid=ImgRaw&r=0"
+                                    alt="" class="w-full h-60 object-cover">
+
+                                <div class="flex-1 flex flex-col">
+                                    <div class="flex justify-between p-2 text-[#0A2540] text-sm">
+                                        <div class="flex gap-1 items-center"><i class="bi bi-calendar-week"></i>
+                                            <p>14 Days</p>
+                                        </div>
+                                        <div class="flex gap-1 items-center"><i class="bi bi-people"></i>
+                                            <p class="font-bold">Maximum 10</p>
+                                        </div>
+                                    </div>
+
+                                    <h1 class="text-[#0A2540] font-extrabold text-[22px] p-2 text-center tracking-wide">
+                                        Wakhan
+                                        Corridor</h1>
+
+                                    <p class="text-[#0A2540]/80 p-2 leading-relaxed">
+                                        The Wakhan Corridor is 13 days tour.Known for its rugged beauty and isolation,
+                                        the
+                                        corridor is home to the nomadic Wakhi and ...
+                                    </p>
+
+                                    <div class="px-4 py-6 text-[#0A2540] bg-gray-50 rounded-lg mx-4 shadow-sm">
+                                        <p class="font-semibold mb-2">Departures:</p>
+                                        <p>17 Jun – 29 Jun 2025</p>
+                                        <p>6 Jul – 19 Jul 2025</p>
+                                        <p>10 Aug – 22 Aug 2025</p>
+                                    </div>
+
+                                    <div class="flex justify-center items-center mt-auto mb-6">
+                                        <button id="openBooking"
+                                            class="group flex items-center gap-2 bg-white text-[#0A2540] px-16 py-2 font-bold rounded-xl text-xl border border-[#0A2540] transition duration-300 hover:bg-[#0A2540] hover:text-white">
+                                            Book
+                                            <i
+                                                class="bi bi-airplane text-2xl transition duration-300 group-hover:rotate-90"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Card: One Week Tour (Max 12) -->
+                            <div
+                                class="w-[360px] h-[720px] flex flex-col rounded-2xl overflow-hidden flex-shrink-0 shadow-md hover:shadow-xl hover:shadow-[#0A2540]/30 transform hover:scale-[1.03] transition duration-200 bg-white">
+                                <img src="https://farm8.staticflickr.com/7439/12205894803_4fa77590c8_b.jpg" alt="logar"
+                                    class="w-full h-60 object-cover">
+
+                                <div class="flex-1 flex flex-col">
+                                    <div class="flex justify-between p-2 text-[#0A2540] text-sm">
+                                        <div class="flex gap-1 items-center"><i class="bi bi-calendar-week"></i>
+                                            <p>7 Days</p>
+                                        </div>
+                                        <div class="flex gap-1 items-center"><i class="bi bi-people"></i>
+                                            <p class="font-bold">Maximum 12</p>
+                                        </div>
+                                    </div>
+
+                                    <h1 class="text-[#0A2540] font-extrabold text-[22px] p-2 text-center tracking-wide">
+                                        One Week
+                                        Tour</h1>
+
+                                    <p class="text-[#0A2540]/80 p-2 leading-relaxed">
+                                        The tour starts and ends in Kabul; it takes you to the north and central part of
+                                        Afghanistan. You will visit Kabul, Bamyan, B ...
+                                    </p>
+
+                                    <div class="px-4 py-6 text-[#0A2540] bg-gray-50 rounded-lg mx-4 shadow-sm">
+                                        <p class="font-semibold mb-2">Departures:</p>
+                                        <p>14 Sep – 20 Sep 2025</p>
+                                        <p>13 Oct – 19 Oct 2025</p>
+                                        <p>1 Dec – 7 Dec 2025</p>
+                                    </div>
+
+                                    <div class="flex justify-center items-center mt-auto mb-6">
+                                        <button id="openBooking"
+                                            class="group flex items-center gap-2 bg-white text-[#0A2540] px-16 py-2 font-bold rounded-xl text-xl border border-[#0A2540] transition duration-300 hover:bg-[#0A2540] hover:text-white">
+                                            Book
+                                            <i
+                                                class="bi bi-airplane text-2xl transition duration-300 group-hover:rotate-90"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Card: One Week Tour (Max 10) -->
+                            <div
+                                class="w-[360px] h-[720px] flex flex-col rounded-2xl overflow-hidden flex-shrink-0 shadow-md hover:shadow-xl hover:shadow-[#0A2540]/30 transform hover:scale-[1.03] transition duration-200 bg-white">
+                                <img src="https://images.pexels.com/photos/628524/pexels-photo-628524.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200"
+                                    alt="bamjan" class="w-full h-60 object-cover">
+
+                                <div class="flex-1 flex flex-col">
+                                    <div class="flex justify-between p-2 text-[#0A2540] text-sm">
+                                        <div class="flex gap-1 items-center"><i class="bi bi-calendar-week"></i>
+                                            <p>7 Days</p>
+                                        </div>
+                                        <div class="flex gap-1 items-center"><i class="bi bi-people"></i>
+                                            <p class="font-bold">Maximum 10</p>
+                                        </div>
+                                    </div>
+
+                                    <h1 class="text-[#0A2540] font-extrabold text-[22px] p-2 text-center tracking-wide">
+                                        One Week
+                                        Tour</h1>
+
+                                    <p class="text-[#0A2540]/80 p-2 leading-relaxed">
+                                        The Tour starts and ends in Kabul. In this trip you will be able to explore
+                                        central
+                                        parts of Afghanistan Kabul, Bamyan, Ghazn ...
+                                    </p>
+
+                                    <div class="px-4 py-6 text-[#0A2540] bg-gray-50 rounded-lg mx-4 shadow-sm">
+                                        <p class="font-semibold mb-2">Departures:</p>
+                                        <p>7 Sep – 13 Sep 2025</p>
+                                        <p>9 Nov – 15 Nov 2025</p>
+                                        <p>3 Oct – 9 Oct 2025</p>
+                                    </div>
+
+                                    <div class="flex justify-center items-center mt-auto mb-6">
+                                        <button id="openBooking"
+                                            class="group flex items-center gap-2 bg-white text-[#0A2540] px-16 py-2 font-bold rounded-xl text-xl border border-[#0A2540] transition duration-300 hover:bg-[#0A2540] hover:text-white">
+                                            Book
+                                            <i
+                                                class="bi bi-airplane text-2xl transition duration-300 group-hover:rotate-90"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Card: One Week Tour (15 Days 14 Nights) -->
+                            <div
+                                class="w-[360px] h-[720px] flex flex-col rounded-2xl overflow-hidden flex-shrink-0 shadow-md hover:shadow-xl hover:shadow-[#0A2540]/30 transform hover:scale-[1.03] transition duration-200 bg-white">
+                                <img src="https://pbs.twimg.com/media/EV5hq1CXgAEUF11.jpg" alt="logar"
+                                    class="w-full h-60 object-cover">
+
+                                <div class="flex-1 flex flex-col">
+                                    <div class="flex justify-between p-2 text-[#0A2540] text-sm">
+                                        <div class="flex gap-1 items-center"><i class="bi bi-calendar-week"></i>
+                                            <p>15 Days 14 Nights</p>
+                                        </div>
+                                        <div class="flex gap-1 items-center"><i class="bi bi-people"></i>
+                                            <p class="font-bold">Maximum 18</p>
+                                        </div>
+                                    </div>
+
+                                    <h1 class="text-[#0A2540] font-extrabold text-[22px] p-2 text-center tracking-wide">
+                                        One Week
+                                        Tour</h1>
+
+                                    <p class="text-[#0A2540]/80 p-2 leading-relaxed">
+                                        The trip starts and ends in Kabul. An immersive 15 days adventure of Central,
+                                        Northern,
+                                        Western and Southern Afghanistan. Thi ...
+                                    </p>
+
+                                    <div class="px-4 py-6 text-[#0A2540] bg-gray-50 rounded-lg mx-4 shadow-sm">
+                                        <p class="font-semibold mb-2">Departures:</p>
+                                        <p>3 Sep – 17 Sep 2025</p>
+                                        <p>1 Oct – 15 Oct 2025</p>
+                                        <p>23 Sep – 7 Oct 2025</p>
+                                    </div>
+
+                                    <div class="flex justify-center items-center mt-auto mb-6">
+                                        <button id="openBooking"
+                                            class="group flex items-center gap-2 bg-white text-[#0A2540] px-16 py-2 font-bold rounded-xl text-xl border border-[#0A2540] transition duration-300 hover:bg-[#0A2540] hover:text-white">
+                                            Book
+                                            <i
+                                                class="bi bi-airplane text-2xl transition duration-300 group-hover:rotate-90"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Card: 9 Days in Afghanistan -->
+                            <div
+                                class="w-[360px] h-[720px] flex flex-col rounded-2xl overflow-hidden flex-shrink-0 shadow-md hover:shadow-xl hover:shadow-[#0A2540]/30 transform hover:scale-[1.03] transition duration-200 bg-white">
+                                <img src="https://tse1.mm.bing.net/th/id/OIP.lYH8Mo5_iEEHW1qxvwDrqAHaE8?r=0&w=1500&h=1000&rs=1&pid=ImgDetMain&o=7&rm=3"
+                                    alt="khost" class="w-full h-60 object-cover">
+
+                                <div class="flex-1 flex flex-col">
+                                    <div class="flex justify-between p-2 text-[#0A2540] text-sm">
+                                        <div class="flex gap-1 items-center"><i class="bi bi-calendar-week"></i>
+                                            <p>9 Days 8 Nights</p>
+                                        </div>
+                                        <div class="flex gap-1 items-center"><i class="bi bi-people"></i>
+                                            <p class="font-bold">Maximum 2-18</p>
+                                        </div>
+                                    </div>
+
+                                    <h1 class="text-[#0A2540] font-extrabold text-[22px] p-2 text-center tracking-wide">
+                                        9 Days
+                                        in Afghanistan</h1>
+
+                                    <p class="text-[#0A2540]/80 p-2 leading-relaxed">
+                                        The trip starts from Kabul and ends in Kabul. In this trip you will be able to
+                                        explore
+                                        the top highlights of Afghanistan in ...
+                                    </p>
+
+                                    <div class="px-4 py-6 text-[#0A2540] bg-gray-50 rounded-lg mx-4 shadow-sm">
+                                        <p class="font-semibold mb-2">Departures:</p>
+                                        <p>3 Sep – 17 Sep 2025</p>
+                                        <p>1 Oct – 15 Oct 2025</p>
+                                        <p>23 Sep – 7 Oct 2025</p>
+                                        <p>3 Sep – 17 Sep 2025</p>
+                                    </div>
+
+                                    <div class="flex justify-center items-center mt-auto mb-6">
+                                        <button id="openBooking"
+                                            class="group flex items-center gap-2 bg-white text-[#0A2540] px-16 py-2 font-bold rounded-xl text-xl border border-[#0A2540] transition duration-300 hover:bg-[#0A2540] hover:text-white">
+                                            Book
+                                            <i
+                                                class="bi bi-airplane text-2xl transition duration-300 group-hover:rotate-90"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </section>
+                    <!-- Driete section   -->
+                    <section>
+                        <div class="py-10 ">
+                            <h1 class="font-bold text-[30px] text-[#0A2540]">Our Private<span
+                                    class="font-bold text-[30px] text-[#FF6A00]"> Tours</span></h1>
+                            <p class="text-[#0A2540] text-[18px] py-4">Traveling in Afghanistan offers a rich tapestry
+                                of
+                                experiences, from
+                                Our bespoke trips are crafted with precision and tailored to fit your schedule
+                                seamlessly.
+                                Simply let us know your preferred dates, destinations, group size, and the experiences
+                                that
+                                inspire you—our team will meticulously handle every detail. From start to finish, we’ll
+                                create a
+                                personalized journey that exceeds expectations and delivers unforgettable memories.</p>
+                        </div>
+                    </section>
+                    <!--Andere Foto section  -->
+                    <section>
+                        <div class="py-5 px-1 flex gap-4 items-start overflow-x-auto custom-scroll">
+                            <!-- Card 1 -->
+                            <div
+                                class="w-[360px] h-[720px] flex flex-col rounded-2xl overflow-hidden flex-shrink-0 shadow-md hover:shadow-xl hover:shadow-[#0A2540]/30 transform hover:scale-[1.03] transition duration-200 bg-white">
+                                <img src="https://www.familyholiday.net/wp-content/uploads/2012/03/Minaret-of-Jam-Afghanistan-_21.jpg"
+                                    alt="kabul" class="w-full h-60 object-cover">
+
+                                <div class="flex-1 flex flex-col">
+                                    <div class="flex justify-between p-2 text-[#0A2540] text-sm">
+                                        <div class="flex gap-1 items-center"><i class="bi bi-calendar-week"></i>
+                                            <p>10 Days</p>
+                                        </div>
+                                        <div class="flex gap-1 items-center"><i class="bi bi-people"></i>
+                                            <p class="font-bold">Maximum 10</p>
+                                        </div>
+                                    </div>
+
+                                    <h1 class="text-[#0A2540] font-extrabold text-[22px] p-2 text-center tracking-wide">
+                                        Minaret
+                                        of Jam Adventure</h1>
+
+                                    <p class="text-[#0A2540]/80 p-2 leading-relaxed">
+                                        The trip takes to the iconic minaret of Jam through the central routes of
+                                        Afghanistan
+                                        and Hindu Kush mountains. In this trip ...
+                                    </p>
+
+                                    <div class="px-4 py-6 text-[#0A2540] bg-gray-50 rounded-lg mx-4 shadow-sm">
+                                        <p class="font-semibold mb-2">Departures:</p>
+                                        <p>1 Sep – 10 Sep 2025</p>
+                                        <p>5 Oct – 14 Oct 2025</p>
+                                        <p>1 Apr – 10 Apr 2026</p>
+                                        <p>3 May – 12 May 2026</p>
+                                    </div>
+
+                                    <div class="flex justify-center items-center mt-auto mb-6">
+                                        <button id="openBooking"
+                                            class="group flex items-center gap-2 bg-white text-[#0A2540] px-16 py-2 font-bold rounded-xl text-xl border border-[#0A2540] transition duration-300 hover:bg-[#0A2540] hover:text-white">
+                                            Book
+                                            <i
+                                                class="bi bi-airplane text-2xl transition duration-300 group-hover:rotate-90"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Card 2 -->
+                            <div
+                                class="w-[360px] h-[720px] flex flex-col rounded-2xl overflow-hidden flex-shrink-0 shadow-md hover:shadow-xl hover:shadow-[#0A2540]/30 transform hover:scale-[1.03] transition duration-200 bg-white">
+                                <img src="https://th.bing.com/th/id/R.1d951106ce833e4091b4602206e8b055?rik=XXNAH%2fzDiwA1Fw&pid=ImgRaw&r=0"
+                                    alt="mazar" class="w-full h-60 object-cover">
+
+                                <div class="flex-1 flex flex-col">
+                                    <div class="flex justify-between p-2 text-[#0A2540] text-sm">
+                                        <div class="flex gap-1 items-center"><i class="bi bi-calendar-week"></i>
+                                            <p>7 Days</p>
+                                        </div>
+                                        <div class="flex gap-1 items-center"><i class="bi bi-people"></i>
+                                            <p class="font-bold">Maximum 16</p>
+                                        </div>
+                                    </div>
+
+                                    <h1 class="text-[#0A2540] font-extrabold text-[22px] p-2 text-center tracking-wide">
+                                        1 week
+                                        tour to Afghanistan</h1>
+
+                                    <p class="text-[#0A2540]/80 p-2 leading-relaxed">
+                                        The Trip starts and ends in Kabul. The trip takes you to the top highlights and
+                                        interesting places of the country. In this trip ...
+                                    </p>
+
+                                    <div class="px-4 py-6 text-[#0A2540] bg-gray-50 rounded-lg mx-4 shadow-sm">
+                                        <p class="font-semibold mb-2">Departures:</p>
+                                        <p>3 Jun – 9 Jun 2025</p>
+                                        <p>1 Jul – 7 Jul 2025</p>
+                                    </div>
+
+                                    <div class="flex justify-center items-center mt-auto mb-6">
+                                        <button id="openBooking"
+                                            class="group flex items-center gap-2 bg-white text-[#0A2540] px-16 py-2 font-bold rounded-xl text-xl border border-[#0A2540] transition duration-300 hover:bg-[#0A2540] hover:text-white">
+                                            Book
+                                            <i
+                                                class="bi bi-airplane text-2xl transition duration-300 group-hover:rotate-90"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Card 3 -->
+                            <div
+                                class="w-[360px] h-[720px] flex flex-col rounded-2xl overflow-hidden flex-shrink-0 shadow-md hover:shadow-xl hover:shadow-[#0A2540]/30 transform hover:scale-[1.03] transition duration-200 bg-white">
+                                <img src="https://bharatdarshantour.com/wp-content/uploads/2019/06/Bharat-Darshan-Zanskar-trekking.jpg"
+                                    alt="herat" class="w-full h-60 object-cover">
+
+                                <div class="flex-1 flex flex-col">
+                                    <div class="flex justify-between p-2 text-[#0A2540] text-sm">
+                                        <div class="flex gap-1 items-center"><i class="bi bi-calendar-week"></i>
+                                            <p>12 Days</p>
+                                        </div>
+                                        <div class="flex gap-1 items-center"><i class="bi bi-people"></i>
+                                            <p class="font-bold">Maximum 12</p>
+                                        </div>
+                                    </div>
+
+                                    <h1 class="text-[#0A2540] font-extrabold text-[22px] p-2 text-center tracking-wide">
+                                        Afghanistan in 12 days</h1>
+
+                                    <p class="text-[#0A2540]/80 p-2 leading-relaxed">
+                                        The Trip starts and end in Kabul. The trip take you to the top highlights and
+                                        interesting places of the country. In this trip ...
+                                    </p>
+
+                                    <div class="px-4 py-6 text-[#0A2540] bg-gray-50 rounded-lg mx-4 shadow-sm">
+                                        <p class="font-semibold mb-2">Departures:</p>
+                                        <p>5 Oct – 16 Oct 2025</p>
+                                        <p>3 Nov – 14 Nov 2025</p>
+                                    </div>
+
+                                    <div class="flex justify-center items-center mt-auto mb-6">
+                                        <button id="openBooking"
+                                            class="group flex items-center gap-2 bg-white text-[#0A2540] px-16 py-2 font-bold rounded-xl text-xl border border-[#0A2540] transition duration-300 hover:bg-[#0A2540] hover:text-white">
+                                            Book
+                                            <i
+                                                class="bi bi-airplane text-2xl transition duration-300 group-hover:rotate-90"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Card 4 -->
+                            <div
+                                class="w-[360px] h-[720px] flex flex-col rounded-2xl overflow-hidden flex-shrink-0 shadow-md hover:shadow-xl hover:shadow-[#0A2540]/30 transform hover:scale-[1.03] transition duration-200 bg-white">
+                                <img src="https://live.staticflickr.com/2468/3788861471_3515c1b976_z.jpg" alt=""
+                                    class="w-full h-60 object-cover">
+
+                                <div class="flex-1 flex flex-col">
+                                    <div class="flex justify-between p-2 text-[#0A2540] text-sm">
+                                        <div class="flex gap-1 items-center"><i class="bi bi-calendar-week"></i>
+                                            <p>14 Days</p>
+                                        </div>
+                                        <div class="flex gap-1 items-center"><i class="bi bi-people"></i>
+                                            <p class="font-bold">Maximum 10</p>
+                                        </div>
+                                    </div>
+
+                                    <h1 class="text-[#0A2540] font-extrabold text-[22px] p-2 text-center tracking-wide">
+                                        Buzkashi
+                                        Tour</h1>
+
+                                    <p class="text-[#0A2540]/80 p-2 leading-relaxed">
+                                        Venture into an extraordinary 7 days tour, beginning and ending in Kabul,
+                                        Afghanistan.
+                                        This carefully curated itinerary inclu ...
+                                    </p>
+
+                                    <div class="px-4 py-6 text-[#0A2540] bg-gray-50 rounded-lg mx-4 shadow-sm">
+                                        <p class="font-semibold mb-2">Departures:</p>
+                                        <p>5 Jan – 11 Jan 2026</p>
+                                        <p>17 Jan – 23 Jan 2026</p>
+                                        <p>3 Feb – 9 Feb 2026</p>
+                                        <p>15 Feb – 21 Feb 2026</p>
+                                    </div>
+
+                                    <div class="flex justify-center items-center mt-auto mb-6">
+                                        <button id="openBooking"
+                                            class="group flex items-center gap-2 bg-white text-[#0A2540] px-16 py-2 font-bold rounded-xl text-xl border border-[#0A2540] transition duration-300 hover:bg-[#0A2540] hover:text-white">
+                                            Book
+                                            <i
+                                                class="bi bi-airplane text-2xl transition duration-300 group-hover:rotate-90"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Card 5 -->
+                            <div
+                                class="w-[360px] h-[720px] flex flex-col rounded-2xl overflow-hidden flex-shrink-0 shadow-md hover:shadow-xl hover:shadow-[#0A2540]/30 transform hover:scale-[1.03] transition duration-200 bg-white">
+                                <img src="https://th.bing.com/th/id/R.527544db9c649173878d160e586d0146?rik=NRyKG55Mdz1INA&riu=http%3a%2f%2fwww.wildlifemoments.de%2fwp-content%2fuploads%2f2019%2f06%2fBlog-25-Tajikistan-4.jpg&ehk=%2b3X5vk1Dij9WsuuOQgJmWq0Zu0a9jFdcvuEXAUsoNDA%3d&risl=&pid=ImgRaw&r=0"
+                                    alt="paghman" class="w-full h-60 object-cover">
+
+                                <div class="flex-1 flex flex-col">
+                                    <div class="flex justify-between p-2 text-[#0A2540] text-sm">
+                                        <div class="flex gap-1 items-center"><i class="bi bi-calendar-week"></i>
+                                            <p>14 Days</p>
+                                        </div>
+                                        <div class="flex gap-1 items-center"><i class="bi bi-people"></i>
+                                            <p class="font-bold">Maximum 10</p>
+                                        </div>
+                                    </div>
+
+                                    <h1 class="text-[#0A2540] font-extrabold text-[22px] p-2 text-center tracking-wide">
+                                        Wakhan
+                                        Corridor</h1>
+
+                                    <p class="text-[#0A2540]/80 p-2 leading-relaxed">
+                                        The Wakhan Corridor is 13 days tour. Known for its rugged beauty and isolation,
+                                        the
+                                        corridor is home to the nomadic Wakhi and ...
+                                    </p>
+
+                                    <div class="px-4 py-6 text-[#0A2540] bg-gray-50 rounded-lg mx-4 shadow-sm">
+                                        <p class="font-semibold mb-2">Departures:</p>
+                                        <p>17 Jun – 29 Jun 2025</p>
+                                        <p>6 Jul – 19 Jul 2025</p>
+                                        <p>10 Aug – 22 Aug 2025</p>
+                                    </div>
+
+                                    <div class="flex justify-center items-center mt-auto mb-6">
+                                        <button id="openBooking"
+                                            class="group flex items-center gap-2 bg-white text-[#0A2540] px-16 py-2 font-bold rounded-xl text-xl border border-[#0A2540] transition duration-300 hover:bg-[#0A2540] hover:text-white">
+                                            Book
+                                            <i
+                                                class="bi bi-airplane text-2xl transition duration-300 group-hover:rotate-90"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Card 6 -->
+                            <div
+                                class="w-[360px] h-[720px] flex flex-col rounded-2xl overflow-hidden flex-shrink-0 shadow-md hover:shadow-xl hover:shadow-[#0A2540]/30 transform hover:scale-[1.03] transition duration-200 bg-white">
+                                <img src="https://farm8.staticflickr.com/7439/12205894803_4fa77590c8_b.jpg" alt=""
+                                    class="w-full h-60 object-cover">
+
+                                <div class="flex-1 flex flex-col">
+                                    <div class="flex justify-between p-2 text-[#0A2540] text-sm">
+                                        <div class="flex gap-1 items-center"><i class="bi bi-calendar-week"></i>
+                                            <p>7 Days</p>
+                                        </div>
+                                        <div class="flex gap-1 items-center"><i class="bi bi-people"></i>
+                                            <p class="font-bold">Maximum 12</p>
+                                        </div>
+                                    </div>
+
+                                    <h1 class="text-[#0A2540] font-extrabold text-[22px] p-2 text-center tracking-wide">
+                                        One Week
+                                        Tour</h1>
+
+                                    <p class="text-[#0A2540]/80 p-2 leading-relaxed">
+                                        The tour starts and ends in Kabul; it takes you to the north and central part of
+                                        Afghanistan. You will visit Kabul, Bamyan, B ...
+                                    </p>
+
+                                    <div class="px-4 py-6 text-[#0A2540] bg-gray-50 rounded-lg mx-4 shadow-sm">
+                                        <p class="font-semibold mb-2">Departures:</p>
+                                        <p>14 Sep – 20 Sep 2025</p>
+                                        <p>13 Oct – 19 Oct 2025</p>
+                                        <p>1 Dec – 7 Dec 2025</p>
+                                    </div>
+
+                                    <div class="flex justify-center items-center mt-auto mb-6">
+                                        <button id="openBooking"
+                                            class="group flex items-center gap-2 bg-white text-[#0A2540] px-16 py-2 font-bold rounded-xl text-xl border border-[#0A2540] transition duration-300 hover:bg-[#0A2540] hover:text-white">
+                                            Book
+                                            <i
+                                                class="bi bi-airplane text-2xl transition duration-300 group-hover:rotate-90"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Card 7 -->
+                            <div
+                                class="w-[360px] h-[720px] flex flex-col rounded-2xl overflow-hidden flex-shrink-0 shadow-md hover:shadow-xl hover:shadow-[#0A2540]/30 transform hover:scale-[1.03] transition duration-200 bg-white">
+                                <img src="https://images.pexels.com/photos/628524/pexels-photo-628524.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200"
+                                    alt="khost" class="w-full h-60 object-cover">
+
+                                <div class="flex-1 flex flex-col">
+                                    <div class="flex justify-between p-2 text-[#0A2540] text-sm">
+                                        <div class="flex gap-1 items-center"><i class="bi bi-calendar-week"></i>
+                                            <p>7 Days</p>
+                                        </div>
+                                        <div class="flex gap-1 items-center"><i class="bi bi-people"></i>
+                                            <p class="font-bold">Maximum 10</p>
+                                        </div>
+                                    </div>
+
+                                    <h1 class="text-[#0A2540] font-extrabold text-[22px] p-2 text-center tracking-wide">
+                                        One Week
+                                        Tour</h1>
+
+                                    <p class="text-[#0A2540]/80 p-2 leading-relaxed">
+                                        The Tour starts and ends in Kabul. In this trip you will be able to explore
+                                        central
+                                        parts of Afghanistan Kabul, Bamyan, Ghazn ...
+                                    </p>
+
+                                    <div class="px-4 py-6 text-[#0A2540] bg-gray-50 rounded-lg mx-4 shadow-sm">
+                                        <p class="font-semibold mb-2">Departures:</p>
+                                        <p>7 Sep – 13 Sep 2025</p>
+                                        <p>9 Nov – 15 Nov 2025</p>
+                                        <p>3 Oct – 9 Oct 2025</p>
+                                    </div>
+
+                                    <div class="flex justify-center items-center mt-auto mb-6">
+                                        <button id="openBooking"
+                                            class="group flex items-center gap-2 bg-white text-[#0A2540] px-16 py-2 font-bold rounded-xl text-xl border border-[#0A2540] transition duration-300 hover:bg-[#0A2540] hover:text-white">
+                                            Book
+                                            <i
+                                                class="bi bi-airplane text-2xl transition duration-300 group-hover:rotate-90"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Card 8 -->
+                            <div
+                                class="w-[360px] h-[720px] flex flex-col rounded-2xl overflow-hidden flex-shrink-0 shadow-md hover:shadow-xl hover:shadow-[#0A2540]/30 transform hover:scale-[1.03] transition duration-200 bg-white">
+                                <img src="https://pbs.twimg.com/media/EV5hq1CXgAEUF11.jpg" alt="ghazni"
+                                    class="w-full h-60 object-cover">
+
+                                <div class="flex-1 flex flex-col">
+                                    <div class="flex justify-between p-2 text-[#0A2540] text-sm">
+                                        <div class="flex gap-1 items-center"><i class="bi bi-calendar-week"></i>
+                                            <p>15 Days 14 Nights</p>
+                                        </div>
+                                        <div class="flex gap-1 items-center"><i class="bi bi-people"></i>
+                                            <p class="font-bold">Maximum 18</p>
+                                        </div>
+                                    </div>
+
+                                    <h1 class="text-[#0A2540] font-extrabold text-[22px] p-2 text-center tracking-wide">
+                                        One Week
+                                        Tour</h1>
+
+                                    <p class="text-[#0A2540]/80 p-2 leading-relaxed">
+                                        The trip starts and ends in Kabul. An immersive 15 days adventure of Central,
+                                        Northern,
+                                        Western and Southern Afghanistan. Thi ...
+                                    </p>
+
+                                    <div class="px-4 py-6 text-[#0A2540] bg-gray-50 rounded-lg mx-4 shadow-sm">
+                                        <p class="font-semibold mb-2">Departures:</p>
+                                        <p>3 Sep – 17 Sep 2025</p>
+                                        <p>1 Oct – 15 Oct 2025</p>
+                                        <p>23 Sep – 7 Oct 2025</p>
+                                    </div>
+
+                                    <div class="flex justify-center items-center mt-auto mb-6">
+                                        <button id="openBooking"
+                                            class="group flex items-center gap-2 bg-white text-[#0A2540] px-16 py-2 font-bold rounded-xl text-xl border border-[#0A2540] transition duration-300 hover:bg-[#0A2540] hover:text-white">
+                                            Book
+                                            <i
+                                                class="bi bi-airplane text-2xl transition duration-300 group-hover:rotate-90"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Card 9 -->
+                            <div
+                                class="w-[360px] h-[720px] flex flex-col rounded-2xl overflow-hidden flex-shrink-0 shadow-md hover:shadow-xl hover:shadow-[#0A2540]/30 transform hover:scale-[1.03] transition duration-200 bg-white">
+                                <img src="https://tse1.mm.bing.net/th/id/OIP.lYH8Mo5_iEEHW1qxvwDrqAHaE8?r=0&w=1500&h=1000&rs=1&pid=ImgDetMain&o=7&rm=3"
+                                    alt="Kandahar" class="w-full h-60 object-cover">
+
+                                <div class="flex-1 flex flex-col">
+                                    <div class="flex justify-between p-2 text-[#0A2540] text-sm">
+                                        <div class="flex gap-1 items-center"><i class="bi bi-calendar-week"></i>
+                                            <p>9 Days 8 Nights</p>
+                                        </div>
+                                        <div class="flex gap-1 items-center"><i class="bi bi-people"></i>
+                                            <p class="font-bold">Maximum 2–18</p>
+                                        </div>
+                                    </div>
+
+                                    <h1 class="text-[#0A2540] font-extrabold text-[22px] p-2 text-center tracking-wide">
+                                        9 Days
+                                        in Afghanistan</h1>
+
+                                    <p class="text-[#0A2540]/80 p-2 leading-relaxed">
+                                        The trip starts from Kabul and ends in Kabul. In this trip you will be able to
+                                        explore
+                                        the top highlights of Afghanistan in ...
+                                    </p>
+
+                                    <div class="px-4 py-6 text-[#0A2540] bg-gray-50 rounded-lg mx-4 shadow-sm">
+                                        <p class="font-semibold mb-2">Departures:</p>
+                                        <p>3 Sep – 17 Sep 2025</p>
+                                        <p>1 Oct – 15 Oct 2025</p>
+                                        <p>23 Sep – 7 Oct 2025</p>
+                                        <p>3 Sep – 17 Sep 2025</p>
+                                    </div>
+
+                                    <div class="flex justify-center items-center mt-auto mb-6">
+                                        <button id="openBooking"
+                                            class="group flex items-center gap-2 bg-white text-[#0A2540] px-16 py-2 font-bold rounded-xl text-xl border border-[#0A2540] transition duration-300 hover:bg-[#0A2540] hover:text-white">
+                                            Book
+                                            <i
+                                                class="bi bi-airplane text-2xl transition duration-300 group-hover:rotate-90"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </section>
+        <section loading="lazy" id="about" class="hidden bg-gray-100 py-16">
+            <div class="max-w-6xl mx-auto px-6">
+                <!-- Title -->
+                <h2 class="text-4xl font-bold text-center text-[#0A2540] mb-12">
+                    About <span class="text-[#FF6A00]">Us</span>
+                </h2>
+
+                <!-- Content -->
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <!-- Left: Text -->
+                    <div class="space-y-6 text-gray-700">
+                        <p class="text-lg leading-relaxed">
+                            <strong>Afghanistan Connections</strong> is an adventurous travel operator
+                            that offers exceptional access to some of the most fascinating and hard-to-reach
+                            places in Afghanistan. We organize both group tours and individually tailored experiences.
+                        </p>
+
+                        <h3 class="text-2xl font-semibold text-[#0A2540]">Our Values</h3>
+                        <p>
+                            Our experienced guides are not only highly qualified but also deeply connected
+                            with the regions. Through language skills and cultural understanding, we enable
+                            authentic encounters that build bridges between people.
+                        </p>
+
+                        <h3 class="text-2xl font-semibold text-[#0A2540]">Our Mission</h3>
+                        <p>
+                            We are committed to sustainable tourism and support local communities by working
+                            with independent accommodations and local service providers. Every step contributes
+                            to creating positive change.
+                        </p>
+
+                        <h3 class="text-2xl font-semibold text-[#0A2540]">Our Tours</h3>
+                        <p>
+                            With small groups of 4 to a maximum of 12 people, we guarantee safety, flexibility,
+                            and genuine encounters with local people. Our tours combine fixed routes with
+                            individually designed travel experiences.
+                        </p>
+
+                        <!-- Contact -->
+                        <div class="mt-6">
+                            <h3 class="text-2xl font-semibold text-[#FF6A00] mb-2">Contact Us</h3>
+                            <p><strong>Phone:</strong> +93 (0) 780 484 046</p>
+                            <p><strong>Email:</strong> Info@afghanistanconnections.com</p>
+                            <p><strong>Address:</strong> 12 Street, Qallah-e-Fathullah, Kabul, Afghanistan</p>
+                        </div>
+                    </div>
+                    <!-- Right: Image -->
+                    <div class="flex justify-center h-full">
+                        <img src="https://pbs.twimg.com/media/EZ5XNiFWkAAzw7M.jpg" alt="Afghanistan Connections"
+                            class="rounded-2xl shadow-lg w-[500px] object-cover">
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section loading="lazy" id="bookingsection" class="hidden bg-gray-100">
+            <div class="max-w-3xl mx-auto bg-white rounded-2xl shadow-lg p-10 mt-12">
+                <!-- Title -->
+                <h2 class="text-3xl font-bold text-center text-[#0A2540] mb-8">
+                    Booking Request
+                </h2>
+                <p class="text-center text-gray-600 mb-10">
+                    Please fill in the details below to book your trip.
+                </p>
+
+                <!-- Form -->
+                <form action="#" method="POST" class="space-y-6">
+                    <!-- Full Name & Email -->
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-gray-700 font-medium mb-2">Full Name</label>
+                            <input type="text" placeholder="Enter your full name"
+                                class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-[#FF6A00] outline-none">
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 font-medium mb-2">Email <span
+                                    class="text-red-500">*</span></label>
+                            <input type="email" placeholder="Enter your email"
+                                class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-[#FF6A00] outline-none">
+                        </div>
+                    </div>
+
+                    <!-- Phone / WhatsApp -->
+                    <div>
+                        <label class="block text-gray-700 font-medium mb-2">Phone / WhatsApp</label>
+                        <input type="text" placeholder="+93 700 000 000"
+                            class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-[#FF6A00] outline-none">
+                    </div>
+
+                    <!-- Date -->
+                    <div>
+                        <label class="block text-gray-700 font-medium mb-2">Preferred Date</label>
+                        <input type="date"
+                            class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-[#FF6A00] outline-none">
+                    </div>
+
+                    <!-- Message -->
+                    <div>
+                        <label class="block text-gray-700 font-medium mb-2">Your Message</label>
+                        <textarea rows="4" placeholder="Let us know your enquiries..."
+                            class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-[#FF6A00] outline-none"></textarea>
+                    </div>
+
+                    <!-- Submit -->
+                    <div class="text-center">
+                        <button type="submit"
+                            class="bg-[#0A2540] text-white px-8 py-3 rounded-xl font-semibold hover:bg-[#FF6A00] transition duration-300">
+                            Submit Booking
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <!-- Footer -->
+        <footer loading="lazy" id="footer" class="bg-[#0A2540] text-white w-full ">
+            <div class="max-w-7xl mx-auto px-6 py-12 grid md:grid-cols-3 gap-10">
+
+                <!-- Logo & About -->
+                <div class="space-y-4 text-center md:text-left">
+                    <img src="logo_color.png" class="h-16 mx-auto md:mx-0" alt="logo image">
+                    <p class="text-gray-300 text-sm leading-relaxed">
+                        Embark on a Thrilling Adventure in Afghanistan.
+                        Discover Hidden Gems and Experience Unforgettable Culture!
+                    </p>
+                    <p class="text-xs text-gray-400">© 2025 Afghanistan Connections</p>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="space-y-3 text-center md:text-left">
+                    <h2 class="text-xl font-semibold text-white">Contact Us</h2>
+                    <p><i class="bi bi-file-earmark-text"></i> ATO-KBL-1479</p>
+                    <p><i class="bi bi-envelope-at-fill"></i> Info@afghanistanconnections.com</p>
+                    <p><i class="bi bi-telephone"></i> +93 (0) 780484046</p>
+                    <p><i class="bi bi-geo-alt"></i> 12 street, Qallah-e-Fathullah, Kabul - Afghanistan</p>
+                </div>
+
+                <!-- Social Media -->
+                <div class="text-center md:text-left">
+                    <h2 class="text-xl font-semibold mb-4">Follow Us</h2>
+                    <div class="flex justify-center md:justify-start gap-4">
+                        <a href="#" class="bg-white/10 hover:bg-white/20 p-3 rounded-full">
+                            <i class="bi bi-instagram text-xl"></i>
+                        </a>
+                        <a href="#" class="bg-white/10 hover:bg-white/20 p-3 rounded-full">
+                            <i class="bi bi-facebook text-xl"></i>
+                        </a>
+                        <a href="#" class="bg-white/10 hover:bg-white/20 p-3 rounded-full">
+                            <i class="bi bi-whatsapp text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
