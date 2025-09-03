@@ -63,3 +63,30 @@ details[open] summary::after {
     content: "➖";
     transform: rotate(180deg);
 }
+
+@keyframes marquee {
+  0%   { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 45s linear infinite;
+}
+  .faq-content {
+    max-height: 3.2em; /* ~2 lines */
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+  }
+
+  .faq-card.open .faq-content {
+    max-height: 1000px; /* big enough to show full text */
+  }
+
+  .faq-arrow {
+    transition: transform 0.3s ease;
+  }
+
+  .faq-card.open .faq-arrow {
+    transform: rotate(180deg);
+  }
