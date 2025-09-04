@@ -1,3 +1,4 @@
+// Mit Function
 function Head() {
     return (
         <header className="text-white text-2xl p-2 bg-[#1E202D] col-span-2 ">

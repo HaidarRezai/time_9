@@ -1,4 +1,5 @@
-function Bmain() {
+// Mit Arrow Function
+const Bmain = () => {
     return (
         <>
             <div className="text-white py-2">
