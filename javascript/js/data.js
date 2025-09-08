@@ -1,4 +1,4 @@
-export let info = [
+let info = [
     {
         room: 1,
         person: [
@@ -121,3 +121,5 @@ export let info = [
     },
 ];
 
+
+export default info
