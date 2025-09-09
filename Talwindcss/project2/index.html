@@ -13,9 +13,9 @@
   <script src="https://cdn.tailwindcss.com"></script>
 
 </head>
-<body class="p-10">
-    <div class="w-[70%] h-[50%] bg-black text-white m-auto rounded-2xl border border-2xl border-white overflow-hidden">
-      <div class="flex justify-between p-2 bg-[#1C1F26]">
+<body class="p-10 max-md:p-2">
+    <div class="w-[70%] max-md:w-[100%] h-[50%] bg-black text-white m-auto rounded-2xl border border-2xl border-white overflow-hidden">
+      <div class="flex justify-between p-2 max-md:p-1 bg-[#1C1F26]">
         <div class="flex gap-2">
           <div class="bg-[#2D313A] h-6 w-6 flex p-2 justify-center items-center rounded-md" title="Previous">
             <i class="bi bi-caret-left text-[#A8B3CF]"></i>
@@ -30,23 +30,138 @@
           </div>
         </div>
       </div>
-      <div class="p-4 grid grid-cols-[74%_auto] gap-6">
-        <div class="border p-4 rounded-2xl">
-          <div class="flex justify-between items-center">
+      <div class="p-4 max-md:p-0 grid grid-cols-[74%_auto] max-md:grid-cols-1 gap-6">
+        <div class="p-4">
+          <div class="flex max-md:flex-col max-md:items-start max-md:gap-6 justify-between items-center my-6">
             <div class="flex gap-2 items-center">
               <div class="w-12 h-12 rounded-full overflow-hidden">
                 <img src="./image/profile.webp" alt="">
               </div>
               <div>
-                <h1>Omid Ahamdi, Age:26</h1>
-                <i class="bi bi-outlet text-blue-600"></i>
+                <h1 class="text-[#A8B3CF]"><b>Omid Ahamdi</b>, @Omid_admadi Age:26</h1>
+                <div class="flex items-center gap-1">
+                  <i class="bi bi-outlet text-blue-600"></i>
+                  <span class="font-bold">1.1k</span>
+                  <div class="w-4 h-4 overflow-hidden rounded-full border border-2xl border-gray-600">
+                    <img src="./image/pen.png" alt="">
+                  </div>
+                </div>
               </div>  
             </div>
             <div>
+              <button class="border p-2 rounded-xl">
+                <i class="bi bi-arrow-up-right-square"></i>
+                <span>Read post</span>
+              </button>
+              <i class="bi bi-three-dots-vertical text-[#A8B3CF] font-bold"></i>
+            </div>
+          </div>
+          <p>Motia is trending on GitHub</p>
+          <div class="border border-[#2D323B] rounded-2xl  my-4 p-2 text-[#CFD6E6]">
+            <div class="grid justify-between grid-cols-2 max-md:grid-cols-1 gap-6">
+              <div class="flex flex-col gap-6">
+                <h1 class="font-bold text-2xl">Welcome to TrailBase</h1>
+                <p>1m read time</p>
+                <button class="border p-2 rounded-xl">
+                  <i class="bi bi-arrow-up-right-square"></i>
+                  <span>Read post</span>
+                </button>
+              </div>
+              <div>
+                <img src="./image/2.webp" alt="" class="rounded-2xl">
+              </div>
+            </div>
+            <div class="flex max-md:flex-col gap-2 py-4">
+              <div class="border border-[#CFD6E6] rounded-2xl flex gap-3 px-2">
+                <i class="bi bi-arrow-up-right-square"></i>
+                <p class="font-bold">Testing for website</p>
+              </div>  
+              <div class="border border-[#CFD6E6] rounded-2xl flex gap-3 px-2">
+                <i class="bi bi-arrow-up-right-square"></i>
+                <p class="font-bold">Testing for website</p>
+              </div>
+              <div class="border border-[#CFD6E6] rounded-2xl flex gap-3 px-2">
+                <i class="bi bi-arrow-up-right-square"></i>
+                <p class="font-bold">Testing for website</p>
+              </div>      
+            </div>
+            <div>
+              <p>TrailBase is an open-source Firebase alternative built with Rust, Axum, SQLite, and V8 for high performance. It claims to be 11x faster than PocketBase and 40x faster than Supabase while maintaining a small footprint. The platform leverages fast technologies like Rust for low overhead, Axum for HTTP serving, SQLite for database operations, and V8 for JavaScript execution to deliver superior performance for backend applications.</p>
+            </div>
+            <div class="flex gap-6 my-6">
+              <a href="#">23 Upvotes</a>
+              <a href="#">2 Comments</a>
+            </div>
+            <div class="grid grid-cols-6 max-md:grid-cols-2 border border-[#1C1F26] p-4 rounded-2xl font-bold gap-6">
+              <div class="hover:bg-green-100 hover:text-gray-600 w-8 h-8 rounded-xl flex items-center justify-center">
+                <i class="bi bi-arrow-down-square"></i>
+              </div>
+              <div  class="hover:bg-green-100 hover:text-gray-600 w-8 h-8 rounded-xl flex items-center justify-center">
+                <i class="bi bi-arrow-up-square"></i>
+              </div>
+              <div class="flex gap-2">
+                <i class="bi bi-send-arrow-up"></i>
+                <span>Comments</span>
+              </div>
+              <div class="flex gap-2">
+                <i class="bi bi-envelope-arrow-up"></i>
+                <span>Award</span>
+              </div>
+              <div class="flex gap-2">
+                <i class="bi bi-cloud-arrow-up"></i>
+                <span>Comments</span>
+              </div>
+              <div class="flex gap-2">
+                <i class="bi bi-arrow-clockwise"></i>
+                <span>Award</span>
+              </div>
             </div>
           </div>
         </div>
-        <div class="border p-4 rounded-2xl">2</div>
+        <div class="border border-[#1C1F26] p-4 rounded-2xl">
+          <div class="flex justify-between items-center">
+            <div class="w-10 h-10 overflow-hidden my-2 rounded-full justify-center items-center">
+              <img src="./image/profile.webp" class="w-[100%] h-[100%] object" alt="">
+            </div>
+            <div>
+              <i class="bi bi-three-dots-vertical text-[#A8B3CF] font-bold"></i>
+                <button>Save</button>
+            </div>
+          </div>
+          <h1 class="font-bold">
+            Mobile developers
+          </h1>
+          <p>
+            For iOS, Android and all the developers in between, this is the Squad for mobile developers.
+            8.5K Members
+          </p>
+          <div class="flex gap-6 my-6">
+            <a href="#">23 Upvotes</a>
+            <a href="#">2 Comments</a>
+          </div>
+        </div>
+        <div class="border border-[#1C1F26] p-4 rounded-2xl">
+          <div class="flex justify-between items-center">
+            <div class="w-10 h-10 overflow-hidden my-2 rounded-full justify-center items-center">
+              <img src="./image/profile.webp" class="w-[100%] h-[100%] object" alt="">
+            </div>
+            <div>
+              <i class="bi bi-three-dots-vertical text-[#A8B3CF] font-bold"></i>
+                <button>Save</button>
+            </div>
+          </div>
+          <h1 class="font-bold">
+            Mobile developers
+          </h1>
+          <p>
+            For iOS, Android and all the developers in between, this is the Squad for mobile developers.
+            8.5K Members
+          </p>
+          <div class="flex gap-6 my-6">
+            <a href="#">23 Upvotes</a>
+            <a href="#">2 Comments</a>
+          </div>
+        </div>
       </div>
     </div>
 </body>
